@@ -1,0 +1,41 @@
+# SpaceAnalysisInterfaces Framework
+
+## Object Index
+
+  * [Clash](SpaceAnalysisInterfaces/interface_Clash_5563.md)
+  * [ClashResult](SpaceAnalysisInterfaces/interface_ClashResult_26594.md)
+  * [ClashResults](SpaceAnalysisInterfaces/interface_ClashResults_31864.md)
+  * [Clashes](SpaceAnalysisInterfaces/interface_Clashes_10879.md)
+  * [Conflict](SpaceAnalysisInterfaces/interface_Conflict_14180.md)
+  * [Conflicts](SpaceAnalysisInterfaces/interface_Conflicts_18103.md)
+  * [Distance](SpaceAnalysisInterfaces/interface_Distance_13954.md)
+  * [Distances](SpaceAnalysisInterfaces/interface_Distances_17870.md)
+  * [Inertia](SpaceAnalysisInterfaces/interface_Inertia_10894.md)
+  * [Inertias](SpaceAnalysisInterfaces/interface_Inertias_14370.md)
+  * [Measurable](SpaceAnalysisInterfaces/interface_Measurable_21738.md)
+  * [MeasureSettingAtt](SpaceAnalysisInterfaces/interface_MeasureSettingAtt_61701.md)
+  * [SPAWorkbench](SpaceAnalysisInterfaces/interface_SPAWorkbench_29716.md)
+  * [Section](SpaceAnalysisInterfaces/interface_Section_11089.md)
+  * [SectioningSettingAtt](SpaceAnalysisInterfaces/interface_SectioningSettingAtt_85288.md)
+  * [Sections](SpaceAnalysisInterfaces/interface_Sections_14574.md)
+
+## Enumerated Types Index
+
+  * [CatClashComputationType](SpaceAnalysisInterfaces/enum_CatClashComputationType_112738.md)
+  * [CatClashExportType](SpaceAnalysisInterfaces/enum_CatClashExportType_69048.md)
+  * [CatClashImportType](SpaceAnalysisInterfaces/enum_CatClashImportType_68774.md)
+  * [CatClashInterferenceType](SpaceAnalysisInterfaces/enum_CatClashInterferenceType_120652.md)
+  * [CatConflictComparison](SpaceAnalysisInterfaces/enum_CatConflictComparison_93987.md)
+  * [CatConflictStatus](SpaceAnalysisInterfaces/enum_CatConflictStatus_62234.md)
+  * [CatConflictType](SpaceAnalysisInterfaces/enum_CatConflictType_47830.md)
+  * [CatDistanceComputationType](SpaceAnalysisInterfaces/enum_CatDistanceComputationType_143950.md)
+  * [CatDistanceMeasureType](SpaceAnalysisInterfaces/enum_CatDistanceMeasureType_101708.md)
+  * [CatGridPositionMode](SpaceAnalysisInterfaces/enum_CatGridPositionMode_75400.md)
+  * [CatMeasurableName](SpaceAnalysisInterfaces/enum_CatMeasurableName_59602.md)
+  * [CatSecWindowOpenMode](SpaceAnalysisInterfaces/enum_CatSecWindowOpenMode_82170.md)
+  * [CatSectionBehavior](SpaceAnalysisInterfaces/enum_CatSectionBehavior_68434.md)
+  * [CatSectionClippingMode](SpaceAnalysisInterfaces/enum_CatSectionClippingMode_100444.md)
+  * [CatSectionGridStyle](SpaceAnalysisInterfaces/enum_CatSectionGridStyle_76008.md)
+  * [CatSectionPlaneNormal](SpaceAnalysisInterfaces/enum_CatSectionPlaneNormal_91976.md)
+  * [CatSectionPlaneOrigin](SpaceAnalysisInterfaces/enum_CatSectionPlaneOrigin_91941.md)
+  * [CatSectionType](SpaceAnalysisInterfaces/enum_CatSectionType_41996.md)

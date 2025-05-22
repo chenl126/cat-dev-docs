@@ -1,0 +1,3 @@
+# CatSampledSplitType (Enumeration)
+
+**__**
