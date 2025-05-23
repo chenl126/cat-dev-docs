@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **GetDirection**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oDirection`)
+### Sub **GetDirection**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oDirection`)
 
-Returns the unit-vector pointing in the direction of the line.
+   Returns the unit-vector pointing in the direction of the line.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Returns the unit-vector pointing in the direction of the line.
 
 ### Sub **GetOrigin**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oOrigin`)
 
-Returns a point lying on the line
+   Returns a point lying on the line
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Returns a point lying on the line
 
 ### Sub **SetData**( double  `iX`,  double  `iY`,  double  `iXDirection`,  double  `iYDirection`)
 
-Modifies the caracteristics of the infinite line
+   Modifies the caracteristics of the infinite line
 
 **Parameters:**
 

@@ -5,9 +5,9 @@ This object contains the output stream generated for the output files (APT, etc.
 
 ## Methods
 
-### Sub **AddObjectToGenerate**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
+### Sub **AddObjectToGenerate**(| [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md) | `iObject`)
 
-Adds an object to the output stream.
+   Adds an object to the output stream.
 
   * With buffer: V5R13 and next <=> AddObjectToGenerate
   * Without buffer: V5R12 and previous <=> AddObjectToGenerate
@@ -19,7 +19,7 @@ Adds an object to the output stream.
 
 ### Sub **AddObjectToGenerateFromBuffer**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
 
-Adds an object to the output stream from the buffer.
+   Adds an object to the output stream from the buffer.
 
 **Parameters:**
 
@@ -27,7 +27,7 @@ Adds an object to the output stream from the buffer.
 
 ### Sub **AddObjectToGenerateWithBuffer**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
 
-Adds an object to the output stream within the buffer.
+   Adds an object to the output stream within the buffer.
 
 **Parameters:**
 
@@ -35,7 +35,7 @@ Adds an object to the output stream within the buffer.
 
 ### Sub **AddObjectToGenerateWithOutBuffer**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
 
-Adds an object to the output stream without the buffer.
+   Adds an object to the output stream without the buffer.
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ Adds an object to the output stream without the buffer.
 
 ### Sub **AddObjectToModalValues**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
 
-Adds an object to the modal values manager only.
+   Adds an object to the modal values manager only.
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Adds an object to the modal values manager only.
 
 ### Sub **GetFT06Stream**( [CATIAManufacturingOutput](../ManufacturingInterfaces/interface_ManufacturingOutput_79839.md)  `oStream`)
 
-Retrieves the FT06 stream.
+   Retrieves the FT06 stream.
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ Retrieves the FT06 stream.
 
 ### Sub **GetLastObjectToGenerate**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `oObject`)
 
-Retrieves the last object to generate.
+   Retrieves the last object to generate.
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ Retrieves the last object to generate.
 
 ### Sub **GetOutputStream**( [CATIAManufacturingOutput](../ManufacturingInterfaces/interface_ManufacturingOutput_79839.md)  `oStream`)
 
-Retrieves the output stream.
+   Retrieves the output stream.
 
 **Parameters:**
 
@@ -75,10 +75,10 @@ Retrieves the output stream.
 
 ### Sub **ResetAllModalValues**( )
 
-Resets all modal values.  
+   Resets all modal values.  
 ### Sub **SetLastObjectToGenerate**( [CATBaseUnknown](../System/interface_CATBaseUnknown_40786.md)  `iObject`)
 
-Sets the last Activity to generate.
+   Sets the last Activity to generate.
 
 **Parameters:**
 

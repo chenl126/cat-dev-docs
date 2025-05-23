@@ -1,6 +1,7 @@
 # CatDimScore (Enumeration)
 
 **_Dimension scoring mode._**
+
 **Role** : Define the scoring mode.
 
 **Values:**

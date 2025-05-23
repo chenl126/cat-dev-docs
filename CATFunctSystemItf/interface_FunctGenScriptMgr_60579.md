@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **CurrentScript**( ) As long
+### Property **CurrentScript**(| ) As long
 
-Get the CurrentScript.  
+   Get the CurrentScript.  
 ### Property **Scripts**( ) As [CATIAFunctScripts](../CATFunctSystemItf/interface_FunctScripts_31940.md) (Read Only)
 
-Get the Generative Scripts collection.
+   Get the Generative Scripts collection.

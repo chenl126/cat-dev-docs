@@ -5,9 +5,9 @@
 
 ## Properties
 
-### Property **Value**( ) As double
+### Property **Value**(| ) As double
 
-Retrieves value (in millimeters).
+   Retrieves value (in millimeters).
 
 **Parameters:**
 

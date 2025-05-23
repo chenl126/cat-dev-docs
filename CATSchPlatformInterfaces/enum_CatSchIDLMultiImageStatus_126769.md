@@ -1,6 +1,7 @@
 # CatSchIDLMultiImageStatus (Enumeration)
 
 **_Status of the image in MIO._**
+
 **Role** : In Multi-Image-Object concept, to specify the status of the image.
 
 **Values:**

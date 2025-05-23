@@ -5,9 +5,9 @@ A 2D spline is defined by its constituting control points.
 
 ## Methods
 
-### Sub **GetControlPoints**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCtrlPoints`)
+### Sub **GetControlPoints**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oCtrlPoints`)
 
-Returns the control points making up the spline.
+   Returns the control points making up the spline.
 
 **Parameters:**
 
@@ -17,13 +17,13 @@ Returns the control points making up the spline.
 spline`mySpline`:
 
 ```VBScript
-mySpline.GetControlPoints **ControlPoints**
+     mySpline.GetControlPoints **ControlPoints**
 
 ```
 
 ### Func **GetNumberOfControlPoints**( ) As double
 
-Returns the number of Control Points of the Spline
+   Returns the number of Control Points of the Spline
 
 **Parameters:**
 
@@ -31,7 +31,7 @@ Returns the number of Control Points of the Spline
 
 ### Sub **InsertControlPointAfter**( [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)  `iCtrlPoint`,  long  `iPosition`)
 
-Inserts control points in the spline. If a 2D point is given (and not a control
+   Inserts control points in the spline. If a 2D point is given (and not a control
 point), a new control point is created and aggregated in the spline.
 
 **Parameters:**
@@ -45,6 +45,6 @@ To insert a new control point as the first element, set iPosition to 0.
 element of the spline`mySpline`:
 
 ```VBScript
-call mySpline.**InsertControlPointAfter** (myCtrlPoint, 1)
+     call mySpline.**InsertControlPointAfter** (myCtrlPoint, 1)
 
 ```

@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Commands**( ) As [CATIAMechanismCommands](../KinematicsInterfaces/interface_MechanismCommands_61399.md) (Read Only)
+### Property **Commands**(| ) As [CATIAMechanismCommands](../KinematicsInterfaces/interface_MechanismCommands_61399.md) (Read Only)
 
-Returns the collection of commands in the mechanism.
+   Returns the collection of commands in the mechanism.
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Returns the collection of commands in the mechanism.
 
 ### Property **FixedPart**( ) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Returns or sets the fixed part of the mechanism.
+   Returns or sets the fixed part of the mechanism.
 
 **Parameters:**
 
@@ -22,7 +22,7 @@ Returns or sets the fixed part of the mechanism.
 
 ### Property **Joints**( ) As [CATIAJoints](../KinematicsInterfaces/interface_Joints_8428.md) (Read Only)
 
-Returns the collection of joints in the mechanism.
+   Returns the collection of joints in the mechanism.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Returns the collection of joints in the mechanism.
 
 ### Property **NbCommands**( ) As long (Read Only)
 
-Returns the number of commands in the mechanism.
+   Returns the number of commands in the mechanism.
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ Returns the number of commands in the mechanism.
 
 ### Property **NbDof**( ) As long (Read Only)
 
-Returns the degree of freedom of the mechanism.
+   Returns the degree of freedom of the mechanism.
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Returns the degree of freedom of the mechanism.
 
 ### Property **NbJoints**( ) As long (Read Only)
 
-Returns the number of joints in the mechanism.
+   Returns the number of joints in the mechanism.
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ Returns the number of joints in the mechanism.
 
 ### Property **NbProducts**( ) As long (Read Only)
 
-Returns the number of products (i.e. bodies) involved in the mechanism.
+   Returns the number of products (i.e. bodies) involved in the mechanism.
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Methods
 
 ### Func **AddCommand**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iCmdType`,  [CATIAJoint](../KinematicsInterfaces/interface_Joint_5842.md)  `iJoint`) As [CATIAMechanismCommand](../KinematicsInterfaces/interface_MechanismCommand_53914.md)
 
-Adds a command in the mechanism, on a joint.
+   Adds a command in the mechanism, on a joint.
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ Adds a command in the mechanism, on a joint.
 
 ### Func **AddJoint**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iJointType`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iListElem`) As [CATIAJoint](../KinematicsInterfaces/interface_Joint_5842.md)
 
-Adds a joint in the mechanism.
+   Adds a joint in the mechanism.
 
 **Parameters:**
 
@@ -83,7 +83,7 @@ Adds a joint in the mechanism.
 
 ### Sub **GetCommandValues**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `ioCmdValues`)
 
-Allows to retrieve current state of the mechanism.
+   Allows to retrieve current state of the mechanism.
 
 **Parameters:**
 
@@ -91,25 +91,27 @@ Allows to retrieve current state of the mechanism.
 
 ### Func **GetProduct**( long  `iIndex`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Returns an item from the list of the products involved in the mechanism.
+   Returns an item from the list of the products involved in the mechanism.
 
 **Parameters:**
 
 ` iIndex`      The index for the product.
 ` oProduct`      The product at that index.
+
 **Returns:**      HRESULT  
 ### Sub **GetProductMotion**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `ioMotion`)
 
-Retrieves motion from initial state to current state for a part of the mechanism.
+   Retrieves motion from initial state to current state for a part of the mechanism.
 
 **Parameters:**
 
 ` iProduct`      The moving product
 ` ioMotion`      The motion matrix (12 real values, compatible with the Move object)
+
 **See also:**      [Move](../InfInterfaces/interface_Move_3742.md) 
 ### Sub **PutCommandValues**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iCmdValues`)
 
-Triggers immediate mechanism solving (motion is NOT applied to the model).
+   Triggers immediate mechanism solving (motion is NOT applied to the model).
 
 **Parameters:**
 
@@ -117,4 +119,4 @@ Triggers immediate mechanism solving (motion is NOT applied to the model).
 
 ### Sub **Update**( )
 
-Reassembles the mechanism after dimension changes in the parts.
+   Reassembles the mechanism after dimension changes in the parts.

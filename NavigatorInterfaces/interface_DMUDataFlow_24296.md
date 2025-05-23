@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **CacheExport**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPrefix`,  long  `iData`)
+### Sub **CacheExport**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iDirectory`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iPrefix`,| | long | `iData`)
 
-Exports all documents related to the product in a directory.
+   Exports all documents related to the product in a directory.
 
 **Parameters:**
 
@@ -19,7 +19,7 @@ Exports all documents related to the product in a directory.
 
 ### Sub **CacheImport**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`)
 
-Imports in the cache of marked documents in a directory.
+   Imports in the cache of marked documents in a directory.
 
 **Parameters:**
 
@@ -27,10 +27,10 @@ Imports in the cache of marked documents in a directory.
 
 ### Sub **Collapse**( )
 
-Collapse the product by replacing all sub-product by corresponding components.  
+   Collapse the product by replacing all sub-product by corresponding components.  
 ### Sub **ReplaceByCGR**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPrefix`)
 
-Replaces all components of the product by the corresponding CGR located in a directory.
+   Replaces all components of the product by the corresponding CGR located in a directory.
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ Replaces all components of the product by the corresponding CGR located in a dir
 
 ### Sub **SaveAsFrozen**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPrefix`,  long  `iData`,  long  `iCache`)
 
-Saves all documents related to the product in a directory.
+   Saves all documents related to the product in a directory.
 
 **Parameters:**
 

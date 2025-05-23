@@ -4,16 +4,16 @@
 
 ## Properties
 
-### Property **X**( ) As double (Read Only)
+### Property **X**(| ) As double (Read Only)
 
-Returns the X coordinate.  
+   Returns the X coordinate.  
 ### Property **Y**( ) As double (Read Only)
 
-Returns the Y coordinate.  Methods
+   Returns the Y coordinate.  Methods
 
 ### Sub **SetCoords**( double  `iX`,  double  `iY`)
 
-Sets the coordinates.
+   Sets the coordinates.
 
 **Parameters:**
 

@@ -1,6 +1,7 @@
 # HybridShapeTrim (Object)
 
 **_Represents the hybrid shape trim object._**
+
 **Role** : To access the data of the hybrid shape trim object. This data includes:
 
   * The first element (surface or curve) to be trimmed
@@ -14,23 +15,23 @@ Use the CATIAHybridShapeFactory to create a HybridShapeTrim object.
 
 ## Properties
 
-### Property **AutomaticExtrapolationMode**( ) As boolean
+### Property **AutomaticExtrapolationMode**(| ) As boolean
 
-Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode = TRUE : Automatic extrapolation mode is on. = FALSE : Automatic extrapolation mode is off. This example retrieves in `AutoExtrapolMode` the automatic extrapolation mode status for the `Trim` hybrid shape feature.
+   Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode = TRUE : Automatic extrapolation mode is on. = FALSE : Automatic extrapolation mode is off. This example retrieves in `AutoExtrapolMode` the automatic extrapolation mode status for the `Trim` hybrid shape feature.
 
 ```VBScript
-Dim AutoExtrapolMode As boolean
-AutoExtrapolMode = Trim.AutomaticExtrapolationMode
+     Dim AutoExtrapolMode As boolean
+     AutoExtrapolMode = Trim.AutomaticExtrapolationMode
 
 ```
 
 ### Property **Connex**( ) As boolean
 
-Gets or sets connected mode. Connex = TRUE : the check of connexity is enable. Connex = FALSE : the check of connexity is disable. This example retrieves in `Connex` the connected mode for the `Trim` hybrid shape feature.
+   Gets or sets connected mode. Connex = TRUE : the check of connexity is enable. Connex = FALSE : the check of connexity is disable. This example retrieves in `Connex` the connected mode for the `Trim` hybrid shape feature.
 
 ```VBScript
-Dim Connex As boolean
-Connex = Trim.Connex
+     Dim Connex As boolean
+     Connex = Trim.Connex
 
 ```
 
@@ -39,14 +40,15 @@ Connex = Trim.Connex
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the first element to be trimmed.  **Example:**      This example retrieves in `Surface1` the first element to be trimmed for the `hybTrim` hybrid shape feature.
 
 ```VBScript
-Dim Surface1 As Reference
-Set Surface1 = hybTrim.FirstElem
+     Dim Surface1 As Reference
+     Set Surface1 = hybTrim.FirstElem
 
 ```
 
 ### Property **FirstOrientation**( ) As long
 
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the first orientation used to compute the trim.
+
 **Role** : The orientation specifies the kept parts of the first element to be trimmed.
 
   * When trimming surfaces:
@@ -59,38 +61,38 @@ Set Surface1 = hybTrim.FirstElem
 **Example:**      This example retrieves in `firstOrient` the orientation of the first element used by the `hybTrim` hybrid shape feature.
 
 ```VBScript
-Dim firstOrient As long
-Set firstOrient = hybTrim.FirstOrientation
+     Dim firstOrient As long
+     Set firstOrient = hybTrim.FirstOrientation
 
 ```
 
 ### Property **IntersectionComputation**( ) As boolean
 
-Gets or sets Intersection computation mode. IntersectionComputation = TRUE : Intersection is computed. = FALSE : Intersection is not computed. This example retrieves in `Intersection` the Intersection computation mode for the `Trim` hybrid shape feature.
+   Gets or sets Intersection computation mode. IntersectionComputation = TRUE : Intersection is computed. = FALSE : Intersection is not computed. This example retrieves in `Intersection` the Intersection computation mode for the `Trim` hybrid shape feature.
 
 ```VBScript
-Dim Intersection As boolean
-Intersection = Trim.IntersectionComputation
+     Dim Intersection As boolean
+     Intersection = Trim.IntersectionComputation
 
 ```
 
 ### Property **Manifold**( ) As boolean
 
-Gets or sets manifold mode. Manifold = TRUE : the check of manifold is enable. Manifold = FALSE : the check of manifold is disable. This example retrieves in `Manifold` the manifold mode for the `Trim` hybrid shape feature.
+   Gets or sets manifold mode. Manifold = TRUE : the check of manifold is enable. Manifold = FALSE : the check of manifold is disable. This example retrieves in `Manifold` the manifold mode for the `Trim` hybrid shape feature.
 
 ```VBScript
-Dim Manifold As boolean
-Connex = Trim.Manifold
+     Dim Manifold As boolean
+     Connex = Trim.Manifold
 
 ```
 
 ### Property **Mode**( ) As long
 
-Gets or sets Trim mode. Mode = 1 : Standard. = 2 : Pieces. This example retrieves in `Mode` the mode for the `Trim` hybrid shape feature.
+   Gets or sets Trim mode. Mode = 1 : Standard. = 2 : Pieces. This example retrieves in `Mode` the mode for the `Trim` hybrid shape feature.
 
 ```VBScript
-Dim Mode As long
-Mode = Trim.Mode
+     Dim Mode As long
+     Mode = Trim.Mode
 
 ```
 
@@ -99,14 +101,15 @@ Mode = Trim.Mode
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the second element to be trimmed.  **Example:**      This example retrieves in `Surface2` the second element to be trimmed for the `hybTrim` hybrid shape trim object.
 
 ```VBScript
-Dim Surface2 As Reference
-Set Surface2 = hybTrim.SecondElem
+     Dim Surface2 As Reference
+     Set Surface2 = hybTrim.SecondElem
 
 ```
 
 ### Property **SecondOrientation**( ) As long
 
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the second orientation used to compute the trim.
+
 **Role** : The orientation specifies the kept parts of the second element to be trimmed.
 
   * When trimming surfaces:
@@ -119,34 +122,35 @@ Set Surface2 = hybTrim.SecondElem
 **Example:**      This example retrieves in `secondOrient` the orientation of the second element used by the `hybTrim` hybrid shape trim object.
 
 ```VBScript
-Dim secondOrient As long
-Set secondOrient = hybTrim.SecondOrientation
+     Dim secondOrient As long
+     Set secondOrient = hybTrim.SecondOrientation
 
 ```
 
 ### Property **Simplify**( ) As boolean
 
-Returns or sets whether the simplification of the resulting topology is or should be activated.
+   Returns or sets whether the simplification of the resulting topology is or should be activated.
+
 **Legal values** : True to activate the simplification, and False otherwise.
 
 **Example:**      This example activates the simplification of the resulting topology of the `hybTrim` hybrid shape trim object.
 
 ```VBScript
- hybTrim.Simplify = True
+      hybTrim.Simplify = True
 
 ```
 
 ### Property **Support**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the support element.
+   Returns or sets the support element.
 This support element may not exist.
 Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).
 
 **Example:**      This example retrieves in `supportElement` the support element of the `hybTrim` hybrid shape trim object.
 
 ```VBScript
-Dim supportElement As Reference
-Set supportElement = hybTrim.Support
+     Dim supportElement As Reference
+     Set supportElement = hybTrim.Support
 
 ```
 
@@ -154,7 +158,7 @@ Methods
 
 ### Sub **AddElementToKeep**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`)
 
-Adds an element to specifications. This element will be kept.
+   Adds an element to specifications. This element will be kept.
 
 **Parameters:**
 
@@ -162,7 +166,7 @@ Adds an element to specifications. This element will be kept.
 
 ### Sub **AddElementToRemove**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`)
 
-Adds an element to specifications. This element will be removed.
+   Adds an element to specifications. This element will be removed.
 
 **Parameters:**
 
@@ -170,7 +174,7 @@ Adds an element to specifications. This element will be removed.
 
 ### Func **GetElem**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Gets the trimmed feature at a given index.
+   Gets the trimmed feature at a given index.
 
 **Parameters:**
 
@@ -179,7 +183,7 @@ Gets the trimmed feature at a given index.
 
 ### Func **GetKeptElem**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Gets the kept feature at a given index.
+   Gets the kept feature at a given index.
 
 **Parameters:**
 
@@ -188,7 +192,7 @@ Gets the kept feature at a given index.
 
 ### Func **GetNbElem**( ) As long
 
-Gets the number of elements: couple(element, index of portion to keep on element).
+   Gets the number of elements: couple(element, index of portion to keep on element).
 
 **Parameters:**
 
@@ -196,7 +200,7 @@ Gets the number of elements: couple(element, index of portion to keep on element
 
 ### Func **GetNbElementsToKeep**( ) As long
 
-Gets the number of elements to keep.
+   Gets the number of elements to keep.
 
 **Parameters:**
 
@@ -204,7 +208,7 @@ Gets the number of elements to keep.
 
 ### Func **GetNbElementsToRemove**( ) As long
 
-Gets the number of elements to remove.
+   Gets the number of elements to remove.
 
 **Parameters:**
 
@@ -212,7 +216,7 @@ Gets the number of elements to remove.
 
 ### Func **GetNextOrientation**( long  `iRank`) As long
 
-Gets Orientation used to compute the feature, referring to the next trimmed element.
+   Gets Orientation used to compute the feature, referring to the next trimmed element.
 
 **Parameters:**
 
@@ -221,7 +225,7 @@ Gets Orientation used to compute the feature, referring to the next trimmed elem
 
 ### Func **GetPortionToKeep**( long  `iRank`) As long
 
-Gets a portion to keep number, giving the index of the element.
+   Gets a portion to keep number, giving the index of the element.
 
 **Parameters:**
 
@@ -230,7 +234,7 @@ Gets a portion to keep number, giving the index of the element.
 
 ### Func **GetPreviousOrientation**( long  `iRank`) As long
 
-Gets Orientation used to compute the feature, referring to the previous trimmed element.
+   Gets Orientation used to compute the feature, referring to the previous trimmed element.
 
 **Parameters:**
 
@@ -239,7 +243,7 @@ Gets Orientation used to compute the feature, referring to the previous trimmed 
 
 ### Func **GetRemovedElem**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Gets the removed feature at a given index.
+   Gets the removed feature at a given index.
 
 **Parameters:**
 
@@ -251,7 +255,7 @@ Gets the removed feature at a given index.
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the first orientation used to compute the trim.  **Example:**      This example inverts the first orientation to compute the `hybTrim` hybrid shape trim object.
 
 ```VBScript
-hybTrim.InvertFirstOrientation
+     hybTrim.InvertFirstOrientation
 
 ```
 
@@ -260,13 +264,13 @@ hybTrim.InvertFirstOrientation
 **Deprecated:**      V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the second orientation used to compute the trim. This example inverts the first orientation to compute the `hybTrim` hybrid shape trim object.
 
 ```VBScript
-hybTrim.InvertSecondOrientation
+     hybTrim.InvertSecondOrientation
 
 ```
 
 ### Sub **RemoveElementToKeep**( long  `iRank`)
 
-Removes an element from specifications.
+   Removes an element from specifications.
 
 **Parameters:**
 
@@ -274,7 +278,7 @@ Removes an element from specifications.
 
 ### Sub **RemoveElementToRemove**( long  `iRank`)
 
-Removes an element from specifications.
+   Removes an element from specifications.
 
 **Parameters:**
 
@@ -282,7 +286,7 @@ Removes an element from specifications.
 
 ### Sub **SetElem**( long  `iRank`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`)
 
-Modifies the trimmed feature at a given index. Use AddElem method to specify a new trimmed element
+   Modifies the trimmed feature at a given index. Use AddElem method to specify a new trimmed element
 
 **Parameters:**
 
@@ -291,7 +295,7 @@ Modifies the trimmed feature at a given index. Use AddElem method to specify a n
 
 ### Sub **SetNextOrientation**( long  `iRank`,  long  `iOrientation`)
 
-Sets the orientation used to compute the feature, referring to the next trimmed element.
+   Sets the orientation used to compute the feature, referring to the next trimmed element.
 
 **Parameters:**
 
@@ -300,7 +304,7 @@ Sets the orientation used to compute the feature, referring to the next trimmed 
 
 ### Sub **SetPortionToKeep**( long  `iRank`,  long  `iPortionNumber`)
 
-Sets a portion to keep number in Pieces mode.
+   Sets a portion to keep number in Pieces mode.
 
 **Parameters:**
 
@@ -309,7 +313,7 @@ Sets a portion to keep number in Pieces mode.
 
 ### Sub **SetPreviousOrientation**( long  `iRank`,  long  `iOrientation`)
 
-Sets the orientation used to compute the feature, referring to the previous trimmed element.
+   Sets the orientation used to compute the feature, referring to the previous trimmed element.
 
 **Parameters:**
 

@@ -4,25 +4,25 @@
 
 ## Properties
 
-### Property **CountFail**( ) As long (Read Only)
+### Property **CountFail**(| ) As long (Read Only)
 
-Returns the number of failed tuples in the failed tuples collection. It is redundant with [Collection.Count](../System/interface_Collection_22150.htm#Count) for [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collection. For [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collection, it will fail.
+   Returns the number of failed tuples in the failed tuples collection. It is redundant with [Collection.Count](../System/interface_Collection_22150.htm#Count) for [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collection. For [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collection, it will fail.
 
 **Example:**      This example retrieves in `ObjectNumber` the number of tuples currently gathered in `MyCollection`.
 
 ```VBScript
-ObjectNumber = MyCollection.CountFail
+     ObjectNumber = MyCollection.CountFail
 
 ```
 
 ### Property **CountSucceed**( ) As long (Read Only)
 
-Returns the number of succeeded tuples in the succeeded tuples collection. It is redundant with [Collection.Count](../System/interface_Collection_22150.htm#Count) for [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collection. For [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collection, it will fail.
+   Returns the number of succeeded tuples in the succeeded tuples collection. It is redundant with [Collection.Count](../System/interface_Collection_22150.htm#Count) for [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collection. For [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collection, it will fail.
 
 **Example:**      This example retrieves in `ObjectNumber` the number of tuples currently gathered in `MyCollection`.
 
 ```VBScript
-ObjectNumber = MyCollection.CountSucceed
+     ObjectNumber = MyCollection.CountSucceed
 
 ```
 
@@ -30,7 +30,7 @@ Methods
 
 ### Func **FailItem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAExpertReportObject](../GenKnowledgeInterfaces/interface_ExpertReportObject_69280.md)
 
-Retrieves a report failed component from a failed tuples collection, using its index or its name from the Check collection. It is redundant with [ExpertReportObjects.Item](../GenKnowledgeInterfaces/interface_ExpertReportObjects_77702.htm#Item) for [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collections. For [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collections, it will fail.
+   Retrieves a report failed component from a failed tuples collection, using its index or its name from the Check collection. It is redundant with [ExpertReportObjects.Item](../GenKnowledgeInterfaces/interface_ExpertReportObjects_77702.htm#Item) for [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collections. For [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collections, it will fail.
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ Retrieves a report failed component from a failed tuples collection, using its i
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the component.  **Returns:**      The retrieved Report component  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAExpertReportObject](../GenKnowledgeInterfaces/interface_ExpertReportObject_69280.md)
 
-Retrieves a Report component using its index or its name from the Check collection.
+   Retrieves a Report component using its index or its name from the Check collection.
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Retrieves a Report component using its index or its name from the Check collecti
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the component.  **Returns:**      The retrieved Report component  
 ### Func **SucceedItem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAExpertReportObject](../GenKnowledgeInterfaces/interface_ExpertReportObject_69280.md)
 
-Retrieves a report component from a succeeded tuples collection, using its index or its name from the Check collection. It is redundant with [ExpertReportObjects.Item](../GenKnowledgeInterfaces/interface_ExpertReportObjects_77702.htm#Item) for [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collections. For [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collections, it will fail.
+   Retrieves a report component from a succeeded tuples collection, using its index or its name from the Check collection. It is redundant with [ExpertReportObjects.Item](../GenKnowledgeInterfaces/interface_ExpertReportObjects_77702.htm#Item) for [ExpertCheckRuntime.Succeeds](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Succeeds) collections. For [ExpertCheckRuntime.Failures](../GenKnowledgeInterfaces/interface_ExpertCheckRuntime_68956.htm#Failures) collections, it will fail.
 
 **Parameters:**
 

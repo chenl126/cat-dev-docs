@@ -1,13 +1,14 @@
 # HybridShapeLineAngle (Object)
 
 **_Line defined from a reference curve, a plane or a surface, a point and an angle._**
+
 **Role** : Allows to access data of the the line feature created with an angle to a curve.
 
 ## Properties
 
-### Property **Angle**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
+### Property **Angle**(| ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-**Role** : Get the angle to the reference curve of the line.
+   **Role** : Get the angle to the reference curve of the line.
 
 **Parameters:**
 
@@ -15,7 +16,7 @@
 
 ### Property **BeginOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-**Role** : Get the start length of the line.
+   **Role** : Get the start length of the line.
 
 **Parameters:**
 
@@ -23,7 +24,7 @@
 
 ### Property **Curve**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-**Role** : Get the reference curve.
+   **Role** : Get the reference curve.
 
 **Parameters:**
 
@@ -31,7 +32,7 @@
 
 ### Property **EndOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-**Role** : Get the end length of the line.
+   **Role** : Get the end length of the line.
 
 **Parameters:**
 
@@ -39,7 +40,7 @@
 
 ### Property **Geodesic**( ) As boolean
 
-**Role** : Get geodesic mode. If geodesic, the line lies on the support surface, otherwise the surface is only used to compute the line direction.
+   **Role** : Get geodesic mode. If geodesic, the line lies on the support surface, otherwise the surface is only used to compute the line direction.
 
 **Parameters:**
 
@@ -47,7 +48,7 @@
 
 ### Property **Orientation**( ) As long
 
-**Role** : Get the line orientation. Orientation allows to reverse the line direction from the reference point. For a line of L length, it is the same as creating this line with -L length.
+   **Role** : Get the line orientation. Orientation allows to reverse the line direction from the reference point. For a line of L length, it is the same as creating this line with -L length.
 
 **Parameters:**
 
@@ -55,7 +56,7 @@
 
 ### Property **Point**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-**Role** : Get the starting point of the line.
+   **Role** : Get the starting point of the line.
 
 **Parameters:**
 
@@ -63,7 +64,7 @@
 
 ### Property **Surface**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-**Role** : Get the support surface.
+   **Role** : Get the support surface.
 
 **Parameters:**
 
@@ -72,7 +73,7 @@ Methods
 
 ### Func **GetLengthType**( ) As long
 
-Gets the length type Default is 0.
+   Gets the length type Default is 0.
 
 **Parameters:**
 
@@ -80,7 +81,7 @@ Gets the length type Default is 0.
 
 ### Func **GetSymmetricalExtension**( ) As boolean
 
-Gets whether the symmetrical extension of the line is active.
+   Gets whether the symmetrical extension of the line is active.
 
 **Parameters:**
 
@@ -88,7 +89,7 @@ Gets whether the symmetrical extension of the line is active.
 
 ### Sub **SetLengthType**( long  `iType`)
 
-Sets the length type Default is 0.
+   Sets the length type Default is 0.
 
 **Parameters:**
 
@@ -96,7 +97,7 @@ Sets the length type Default is 0.
 
 ### Sub **SetSymmetricalExtension**( boolean  `iSym`)
 
-Sets the symmetrical extension of the line (start = -end).
+   Sets the symmetrical extension of the line (start = -end).
 
 **Parameters:**
 

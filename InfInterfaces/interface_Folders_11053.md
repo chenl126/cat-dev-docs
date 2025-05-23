@@ -5,9 +5,9 @@ It lists all the folders contained in the folder. It allows to retrieve [Folder]
 
 ## Methods
 
-### Func **Item**( long  `iNumber`) As [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)
+### Func **Item**(| long | `iNumber`) As [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)
 
-Returns a folder using its index or its name from the folder collection.
+   Returns a folder using its index or its name from the folder collection.
 
 **Parameters:**
 
@@ -15,9 +15,9 @@ Returns a folder using its index or its name from the folder collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved folder **Example:**      This example retrieves in `ThisFolder` the third folder, and it `ThatFolder` the folder named `MyFolder`. in the `TestFolders` folder collection.
 
 ```VBScript
-Dim ThisFolder As Folder
-Set ThisFolder = TestFolders.Item(3)
-Dim ThatFolder As Folder
-Set ThatFolder = TestFolders.Item("MyFolder")
+     Dim ThisFolder As Folder
+     Set ThisFolder = TestFolders.Item(3)
+     Dim ThatFolder As Folder
+     Set ThatFolder = TestFolders.Item("MyFolder")
 
 ```

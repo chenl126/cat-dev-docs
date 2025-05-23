@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **ValueList**( ) As [CATIAList](../KnowledgeInterfaces/interface_List_3838.md) (Read Only)
+### Property **ValueList**(| ) As [CATIAList](../KnowledgeInterfaces/interface_List_3838.md) (Read Only)
 
-Returns or sets the value of the List object.
+   Returns or sets the value of the List object.

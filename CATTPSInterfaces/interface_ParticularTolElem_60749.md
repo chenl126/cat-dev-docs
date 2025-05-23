@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **ParticularGeometry**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **ParticularGeometry**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Retrieves particular geometry of the toleranced element.
+   Retrieves particular geometry of the toleranced element.

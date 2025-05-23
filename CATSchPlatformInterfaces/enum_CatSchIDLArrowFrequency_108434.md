@@ -1,6 +1,7 @@
 # CatSchIDLArrowFrequency (Enumeration)
 
 **_Schematic route arrow frequency._**
+
 **Role** : Indicates which route segments get a flow arrow display.
 
 **Values:**

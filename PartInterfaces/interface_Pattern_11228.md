@@ -7,26 +7,26 @@ It is the base object for rectangular and circular patterns. A pattern shape is 
 
 ## Properties
 
-### Property **ItemToCopy**( ) As [CATIABase](../System/interface_AnyObject_17321.md)
+### Property **ItemToCopy**(| ) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Returns or sets the shape to be copied.
+   Returns or sets the shape to be copied.
 
 **Example:**     The following example returns in `shape` the copied shape of the pattern `firstPattern`, and then sets it to `pad1`:
 
 ```VBScript
-Set shape = firstPattern.ItemToCopy
-firstPattern.ItemToCopy = pad1
+     Set shape = firstPattern.ItemToCopy
+     firstPattern.ItemToCopy = pad1
 
 ```
 
 ### Property **RotationAngle**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-Returns the pattern global rotation angle. The rotation is applied to the whole pattern, but not to the shapes themselves. The shape to be copied is used as the rotation center.
+   Returns the pattern global rotation angle. The rotation is applied to the whole pattern, but not to the shapes themselves. The shape to be copied is used as the rotation center.
 
 **Example:**     The following example returns in `globAng` the rotation of pattern `firstPattern`:
 
 ```VBScript
-Set globAng = firstPattern.RotationAngle
+     Set globAng = firstPattern.RotationAngle
 
 ```
 
@@ -34,7 +34,7 @@ Methods
 
 ### Sub **ActivatePosition**( long  `iPosU`,  long  `iPosV`)
 
-Allows user to activate an instance of the pattern.
+   Allows user to activate an instance of the pattern.
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ Allows user to activate an instance of the pattern.
 
 ### Sub **DesactivatePosition**( long  `iPosU`,  long  `iPosV`)
 
-Allows user to desactivate an instance of the pattern.
+   Allows user to desactivate an instance of the pattern.
 
 **Parameters:**
 

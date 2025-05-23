@@ -1,6 +1,7 @@
 # CatPspIDLFlowCapability (Enumeration)
 
 **_Flow capability directions._**
+
 **Role** : Represents flow direction capability of a connector.
 
 **Values:**

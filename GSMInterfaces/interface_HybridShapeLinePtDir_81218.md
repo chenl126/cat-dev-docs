@@ -1,6 +1,7 @@
 # HybridShapeLinePtDir (Object)
 
 **_Line defined by a point and a direction._**
+
 **Role** : To access data of the line feature created by using a passing point and a direction.
 
 Use the CATIAHybridShapeFactory to create a HybridShapeLinePtDir object.
@@ -9,74 +10,74 @@ Use the CATIAHybridShapeFactory to create a HybridShapeLinePtDir object.
 
 ## Properties
 
-### Property **BeginOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
+### Property **BeginOffset**(| ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the start length of the line.
+   Returns the start length of the line.
 Start length : extension of the line, beginning at the starting point
 
 **Example** :      This example retrieves in `oStart` the beginning offset length for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oStart As  CATIALength
-Set oStart = LinePtDir.BeginOffset
+     Dim oStart As  CATIALength
+     Set oStart = LinePtDir.BeginOffset
 
 ```
 
 ### Property **Dir**( ) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-Returns or Sets the direction of the line.
+   Returns or Sets the direction of the line.
 
 **Example** :      This example retrieves in `oDir` the direction for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oDir As CATIAHybridShapeDirection
-Set oDir = LinePtDir.Dir
+     Dim oDir As CATIAHybridShapeDirection
+     Set oDir = LinePtDir.Dir
 
 ```
 
 ### Property **EndOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the end length of the line.
+   Returns the end length of the line.
 End length : extension of the line, beginning at the ending point
 
 **Example** :      This example retrieves in `oEnd` the starting length for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oEnd As  CATIALength
-Set oEnd = LinePtDir.EndOffset
+     Dim oEnd As  CATIALength
+     Set oEnd = LinePtDir.EndOffset
 
 ```
 
 ### Property **Orientation**( ) As long
 
-Returns or Sets the line orientation.
+   Returns or Sets the line orientation.
 Orientation allows to reverse the line direction from the reference point.
 For a line of L length, it is the same as creating this line with -L length : Orientation : can be 1 or -1
 
 **Example** :      This example retrieves in `oOrientation` the starting length for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oOrientation As long
-Set oOrientation = LinePtDir.Orientation
+     Dim oOrientation As long
+     Set oOrientation = LinePtDir.Orientation
 
 ```
 
 ### Property **Point**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or Sets the starting point of the line.
+   Returns or Sets the starting point of the line.
 Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Vertex](../MecModInterfaces/interface_Vertex_8466.md).
 
 **Example** :      This example retrieves in `oPoint` the starting point for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oPoint As Reference
-Set oPoint = LinePtDir.Point
+     Dim oPoint As Reference
+     Set oPoint = LinePtDir.Point
 
 ```
 
 ### Property **Support**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or Sets the supporting surface.
+   Returns or Sets the supporting surface.
 Note: the support surface is not mandatory for LinePtDir
 
 Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).
@@ -84,8 +85,8 @@ Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_
 **Example** :      This example retrieves in `oSurface` the supporting surface (if it exist) for the `LinePtDir` hybrid shape feature.
 
 ```VBScript
-Dim oSurface As Reference
-Set oSurface = LinePtDir.Surface
+     Dim oSurface As Reference
+     Set oSurface = LinePtDir.Surface
 
 ```
 
@@ -93,7 +94,7 @@ Methods
 
 ### Func **GetLengthType**( ) As long
 
-Gets the length type Default is 0.
+   Gets the length type Default is 0.
 
 **Parameters:**
 
@@ -101,7 +102,7 @@ Gets the length type Default is 0.
 
 ### Func **GetSymmetricalExtension**( ) As boolean
 
-Gets whether the symmetrical extension of the line is active.
+   Gets whether the symmetrical extension of the line is active.
 
 **Parameters:**
 
@@ -109,10 +110,10 @@ Gets whether the symmetrical extension of the line is active.
 
 ### Sub **RemoveSupport**( )
 
-Removes the support surface.  
+   Removes the support surface.  
 ### Sub **SetLengthType**( long  `iType`)
 
-Sets the length type Default is 0.
+   Sets the length type Default is 0.
 
 **Parameters:**
 
@@ -120,7 +121,7 @@ Sets the length type Default is 0.
 
 ### Sub **SetSymmetricalExtension**( boolean  `iSym`)
 
-Sets the symmetrical extension of the line (start = -end).
+   Sets the symmetrical extension of the line (start = -end).
 
 **Parameters:**
 

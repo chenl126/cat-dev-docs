@@ -1,6 +1,7 @@
 # CatTextFlipMode (Enumeration)
 
 **_Text mirroring mode._**
+
 **Role** : Defines the mirror mode of the text.
 
 **Values:**

@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **OriginalDescription**( ) As [CATIAFunctionalDescription](../CATFunctSystemItf/interface_FunctionalDescription_95375.md) (Read Only)
+### Property **OriginalDescription**(| ) As [CATIAFunctionalDescription](../CATFunctSystemItf/interface_FunctionalDescription_95375.md) (Read Only)
 
-Returns the Original Description the Variant comes from.
+   Returns the Original Description the Variant comes from.

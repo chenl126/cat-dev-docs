@@ -1,6 +1,7 @@
 # CATSearchContextScope (Enumeration)
 
 **_The Default Power Input Context Scope setting attribute range of values._**
+
 **Role** : This enum is used in the [SearchSettingAtt](../InfInterfaces/interface_SearchSettingAtt_54192.md) interface.
 
 **Values:**

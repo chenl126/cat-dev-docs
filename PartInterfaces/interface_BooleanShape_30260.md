@@ -7,13 +7,13 @@ It is the base object for add, assemble, intersect, remove, and split shapes.
 
 ## Properties
 
-### Property **Body**( ) As [CATIABody](../MecModInterfaces/interface_Body_3736.md) (Read Only)
+### Property **Body**(| ) As [CATIABody](../MecModInterfaces/interface_Body_3736.md) (Read Only)
 
-Returns the inserted body.  Methods
+   Returns the inserted body.  Methods
 
 ### Sub **SetOperatedObject**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReferenceObject`)
 
-Modifies the Second Operand. input object to replace with Body or Volume  
+   Modifies the Second Operand. input object to replace with Body or Volume  
 ### Sub **SetOperatingVolume**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReferenceObject`)
 
-Swaps the operands. Both the Operands must be Volume. This is available only for Volume Add and Volume UnionTrim Operations
+   Swaps the operands. Both the Operands must be Volume. This is available only for Volume Add and Volume UnionTrim Operations

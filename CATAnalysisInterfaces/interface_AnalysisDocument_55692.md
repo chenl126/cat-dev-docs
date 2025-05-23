@@ -10,16 +10,16 @@ This analysis manager is the root object at the top of the structure of the Anal
 
 ## Properties
 
-### Property **Analysis**( ) As [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md) (Read Only)
+### Property **Analysis**(| ) As [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md) (Read Only)
 
-Returns the root analysis object from the current analysis document.
+   Returns the root analysis object from the current analysis document.
 
 **Example:**     The following example returns in `RootAnalysis` the root analysis object of the active document, assumed to be an analysis document:
 
 ```VBScript
-Dim AnalysisDocument As Document
-Set AnalysisDocument = CATIA.ActiveDocument
-Dim RootAnalysis As AnalysisManager
-Set RootAnalysis = AnalysisDocument.Analysis
+     Dim AnalysisDocument As Document
+     Set AnalysisDocument = CATIA.ActiveDocument
+     Dim RootAnalysis As AnalysisManager
+     Set RootAnalysis = AnalysisDocument.Analysis
 
 ```

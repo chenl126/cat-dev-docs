@@ -4,38 +4,38 @@
 
 ## Methods
 
-### Func **Add**( ) As [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)
+### Func **Add**(| ) As [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)
 
-Creates a new case and adds it to the case collection. This case will be plugged under the analysis model.
+   Creates a new case and adds it to the case collection. This case will be plugged under the analysis model.
 
 **Returns:**      The created case  **Example:**      The following example creates a case `NewCase` in the case collection of the `ModelAnalysis` Analysis model .
 
 ```VBScript
-Dim ModelAnalysis As AnalysisModel
-Dim NewCase As AnalysisCase
-Set NewCase = ModelAnalysis.AnalysisCases.Add()
+     Dim ModelAnalysis As AnalysisModel
+     Dim NewCase As AnalysisCase
+     Set NewCase = ModelAnalysis.AnalysisCases.Add()
 
 ```
 
 ### Sub **AddExistingCase**( [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)  `iCase`)
 
-Adds an existing analysis case to the analysis cases collection.
+   Adds an existing analysis case to the analysis cases collection.
 
 **Parameters:**
 
 ` iCase`      The Existing Analysis Case.  **Example:**      This example adds `ThisAnalysisCase` in the `analysisCases` analysis cases collection.
 
 ```VBScript
-Dim ThisAnalysisCase As AnalysisCase
-Dim analysisCases As AnalysisCases
-...
-analysisCases.AddExistingCase(ThisAnalysisCase)
+     Dim ThisAnalysisCase As AnalysisCase
+     Dim analysisCases As AnalysisCases
+     ...
+     analysisCases.AddExistingCase(ThisAnalysisCase)
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)
 
-Returns a case using its index or its name from the case collection.
+   Returns a case using its index or its name from the case collection.
 
 **Parameters:**
 
@@ -43,28 +43,28 @@ Returns a case using its index or its name from the case collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved case. **Example:**      This example retrieves in ` ThisCase` the fifth case in the collection and in ` ThatCase` the case named `"MyCase` in the case collection of the `AnalysisModel` Analysis model.
 
 ```VBScript
-Set CaseColl = AnalysisModel.AnalysisCases
-Set ThisCase = CaseColl.Item(5)
-Set ThatCase = CaseColl.Item("MyCase")
+     Set CaseColl = AnalysisModel.AnalysisCases
+     Set ThisCase = CaseColl.Item(5)
+     Set ThatCase = CaseColl.Item("MyCase")
 
 ```
 
 ### Func **NewCase**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)
 
-Creates a new case and adds it to the case collection. This case will be plugged under the analysis model.
+   Creates a new case and adds it to the case collection. This case will be plugged under the analysis model.
 
 **Returns:**      The created case  **Example:**      The following example creates a case `NewCase` in the case collection of the `ModelAnalysis` Analysis model .
 
 ```VBScript
-Dim ModelAnalysis As AnalysisModel
-Dim NewCase As AnalysisCase
-Set NewCase = ModelAnalysis.AnalysisCases.NewCase("AnalysisPreproCase")()
+     Dim ModelAnalysis As AnalysisModel
+     Dim NewCase As AnalysisCase
+     Set NewCase = ModelAnalysis.AnalysisCases.NewCase("AnalysisPreproCase")()
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a case using its index or its name from the case collection.
+   Removes a case using its index or its name from the case collection.
 
 **Parameters:**
 
@@ -72,6 +72,6 @@ Removes a case using its index or its name from the case collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property. **Example:**      This example removes the fifth case in the collection.
 
 ```VBScript
-AnalysisModel.AnalysisCases.Remove (5)
+     AnalysisModel.AnalysisCases.Remove (5)
 
 ```

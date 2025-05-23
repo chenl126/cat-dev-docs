@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Curvature**( ) As double
+### Property **Curvature**(| ) As double
 
-Returns the curvature properties of the spline control point
+   Returns the curvature properties of the spline control point
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Methods
 
 ### Sub **GetTangent**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oTangent`)
 
-Returns the tangent properties of the spline control point
+   Returns the tangent properties of the spline control point
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Returns the tangent properties of the spline control point
 
 ### Sub **SetTangent**( double  `iTangentX`,  double  `iTangentY`)
 
-Imposes the tangent properties of the spline control point
+   Imposes the tangent properties of the spline control point
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Imposes the tangent properties of the spline control point
 
 ### Sub **UnsetCurvature**( )
 
-Unsets the curvature properties of the spline control point  
+   Unsets the curvature properties of the spline control point  
 ### Sub **UnsetTangent**( )
 
-Unsets the tangent properties of the spline control point
+   Unsets the tangent properties of the spline control point

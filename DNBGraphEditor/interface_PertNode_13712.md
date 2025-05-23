@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **GetLocation**( double  `xx`,  double  `yy`)
+### Sub **GetLocation**(| double | `xx`,| | double | `yy`)
 
-This method gets the Location of the PertNode in the PERT Chart
+   This method gets the Location of the PertNode in the PERT Chart
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ This method gets the Location of the PertNode in the PERT Chart
 
 ### Sub **SetIcon**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`)
 
-This method sets Icon for the PertNode in the PERT Chart
+   This method sets Icon for the PertNode in the PERT Chart
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ This method sets Icon for the PertNode in the PERT Chart
 
 ### Sub **SetLocation**( double  `xx`,  double  `yy`)
 
-This method place the PertNode in the PERT Chart at any location by specifying the X and Y Coordinates in the Grid.
+   This method place the PertNode in the PERT Chart at any location by specifying the X and Y Coordinates in the Grid.
 
 **Parameters:**
 

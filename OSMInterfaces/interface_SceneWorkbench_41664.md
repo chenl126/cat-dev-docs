@@ -4,16 +4,16 @@
 
 ## Properties
 
-### Property **WorkScenes**( ) As [CATIAWorkScenes](../OSMInterfaces/interface_Scenes_8092.md) (Read Only)
+### Property **WorkScenes**(| ) As [CATIAWorkScenes](../OSMInterfaces/interface_Scenes_8092.md) (Read Only)
 
-Returns the Scenes collection.
+   Returns the Scenes collection.
 
 **Example:**      This example retrieves the WorkScenes collection of the active document.
 
 ```VBScript
-   Dim TheWorkSceneWorkbench As Workbench
-   Set TheWorkSceneWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SceneWorkbench" )
-   Dim TheScenesList As WorkScenes
-   Set TheScenesList = TheWorkSceneWorkbench.WorkScenes
+        Dim TheWorkSceneWorkbench As Workbench
+        Set TheWorkSceneWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SceneWorkbench" )
+        Dim TheScenesList As WorkScenes
+        Set TheScenesList = TheWorkSceneWorkbench.WorkScenes
 
 ```

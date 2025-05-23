@@ -7,9 +7,10 @@ For the definitions of methods and variables common to every thematic, see the [
 
 ## Properties
 
-### Property **ABND**( ) As boolean
+### Property **ABND**(| ) As boolean
 
-Returns or sets the state ot the abend severity level field.
+   Returns or sets the state ot the abend severity level field.
+
 **Role** : Returns or sets the state ot the abend severity level field.
 
 **Parameters:**
@@ -20,7 +21,8 @@ Returns or sets the state ot the abend severity level field.
 
 ### Property **CERR**( ) As boolean
 
-Returns or sets the state ot the critical error severity level field.
+   Returns or sets the state ot the critical error severity level field.
+
 **Role** : Returns or sets the state ot the critical error severity level field.
 
 **Parameters:**
@@ -31,7 +33,8 @@ Returns or sets the state ot the critical error severity level field.
 
 ### Property **CMND**( ) As boolean
 
-Returns or sets the state ot the command name field.
+   Returns or sets the state ot the command name field.
+
 **Role** : Returns or sets the state ot the command name field.
 
 **Parameters:**
@@ -42,7 +45,8 @@ Returns or sets the state ot the command name field.
 
 ### Property **COMT**( ) As boolean
 
-Returns or sets the state ot the abend comment level field.
+   Returns or sets the state ot the abend comment level field.
+
 **Role** : Returns or sets the state ot the comment severity level field.
 
 **Parameters:**
@@ -53,7 +57,8 @@ Returns or sets the state ot the abend comment level field.
 
 ### Property **MSGE**( ) As boolean
 
-Returns or sets the state ot the message field.
+   Returns or sets the state ot the message field.
+
 **Role** : Returns or sets the state ot the message field.
 
 **Parameters:**
@@ -64,7 +69,8 @@ Returns or sets the state ot the message field.
 
 ### Property **UREP**( ) As boolean
 
-Returns or sets the state ot the user report severity level field.
+   Returns or sets the state ot the user report severity level field.
+
 **Role** : Returns or sets the state ot the user report severity level field.
 
 **Parameters:**
@@ -75,7 +81,8 @@ Returns or sets the state ot the user report severity level field.
 
 ### Property **WARN**( ) As boolean
 
-Returns or sets the state ot the warning severity level field.
+   Returns or sets the state ot the warning severity level field.
+
 **Role** : Returns or sets the state ot the warning severity level field.
 
 **Parameters:**
@@ -86,7 +93,8 @@ Returns or sets the state ot the warning severity level field.
 
 ### Property **WKBN**( ) As boolean
 
-Returns or sets the state ot the workbench name field.
+   Returns or sets the state ot the workbench name field.
+
 **Role** : Returns or sets the state ot the workbench name field.
 
 **Parameters:**

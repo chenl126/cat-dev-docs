@@ -1,6 +1,7 @@
 # CatDimLineRep (Enumeration)
 
 **_Dimension line representation._**
+
 **Role** : CatDimLineRep is used to specify dimension line representation.
 
 **Values:**

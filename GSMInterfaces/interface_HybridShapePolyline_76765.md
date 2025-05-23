@@ -1,6 +1,7 @@
 # HybridShapePolyline (Object)
 
 **_Represents the hybrid shape polyline curve object._**
+
 **Role** : To access or set the data of the hybrid shape polyline object. This data includes:
 
   * Elements
@@ -12,9 +13,9 @@ Use the [HybridShapeFactory](../GSMInterfaces/interface_HybridShapeFactory_68680
 
 ## Properties
 
-### Property **Closure**( ) As boolean
+### Property **Closure**(| ) As boolean
 
-Returns or sets the flag to decide closure of the polyline.
+   Returns or sets the flag to decide closure of the polyline.
 
 **Parameters:**
 
@@ -23,14 +24,14 @@ Returns or sets the flag to decide closure of the polyline.
 **Example** :      This example retrieves the closure property of the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-Dim HybShpPolClosure As  boolean
-HybShpPolClosure = HybShpPolyline.Closure
+     Dim HybShpPolClosure As  boolean
+     HybShpPolClosure = HybShpPolyline.Closure
 
 ```
 
 ### Property **NumberOfElements**( ) As long (Read Only)
 
-Returns the number of elements of the polyline.
+   Returns the number of elements of the polyline.
 
 **Parameters:**
 
@@ -39,8 +40,8 @@ Returns the number of elements of the polyline.
 **Example** :      This example retrieves the number of elements in the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-Dim HybShpPolNoOfEle As  long
-HybShpPolNoOfEle = HybShpPolyline.NumberOfElements
+     Dim HybShpPolNoOfEle As  long
+     HybShpPolNoOfEle = HybShpPolyline.NumberOfElements
 
 ```
 
@@ -48,7 +49,7 @@ Methods
 
 ### Sub **GetElement**( long  `iPosition`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oElement`,  [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `oRadius`)
 
-Returns the element of the polyline.
+   Returns the element of the polyline.
 
 **Parameters:**
 
@@ -59,15 +60,15 @@ Returns the element of the polyline.
 **Example** :      This example retrieves the element and radius of the polyline at specified position of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-Dim HybShpPolylineElement As Reference
-Dim HybShpPolylineRadius As Reference
-HybShpPolyline.GetElement 1, HybShpPolylineElement,HybShpPolylineRadius
+     Dim HybShpPolylineElement As Reference
+     Dim HybShpPolylineRadius As Reference
+     HybShpPolyline.GetElement 1, HybShpPolylineElement,HybShpPolylineRadius
 
 ```
 
 ### Sub **InsertElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  long  `iPosition`)
 
-Inserts the element at a specified position in the polyline.
+   Inserts the element at a specified position in the polyline.
 
 **Parameters:**
 
@@ -77,13 +78,13 @@ Inserts the element at a specified position in the polyline.
 **Example** :      This example inserts the element in the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-HybShpPolyline.InsertElement PointReference,1
+     HybShpPolyline.InsertElement PointReference,1
 
 ```
 
 ### Sub **RemoveElement**( long  `iPosition`)
 
-Removes the element at a specified position in the polyline.
+   Removes the element at a specified position in the polyline.
 
 **Parameters:**
 
@@ -92,13 +93,13 @@ Removes the element at a specified position in the polyline.
 **Example** :      This example removes the element in the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-HybShpPolyline.RemoveElement 1
+     HybShpPolyline.RemoveElement 1
 
 ```
 
 ### Sub **ReplaceElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  long  `iPosition`)
 
-Replaces the element at a specified position in the polyline.
+   Replaces the element at a specified position in the polyline.
 
 **Parameters:**
 
@@ -108,13 +109,13 @@ Replaces the element at a specified position in the polyline.
 **Example** :      This example replaces the element in the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-HybShpPolyline.ReplaceElement PointReference, 1
+     HybShpPolyline.ReplaceElement PointReference, 1
 
 ```
 
 ### Sub **SetRadius**( long  `iPosition`,  double  `iRadius`)
 
-Sets the radius at specified position of the polyline.
+   Sets the radius at specified position of the polyline.
 
 **Parameters:**
 
@@ -124,6 +125,6 @@ Sets the radius at specified position of the polyline.
 **Example** :      This example sets the radius at the specific position of the polyline of the `HybShpPolyline` hybrid shape polyline.
 
 ```VBScript
-HybShpPolyline.SetRadius 1, 10
+     HybShpPolyline.SetRadius 1, 10
 
 ```

@@ -6,9 +6,9 @@
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns a reference using its index or its name from the References collection.
+   Returns a reference using its index or its name from the References collection.
 
 **Parameters:**
 
@@ -16,7 +16,7 @@ Returns a reference using its index or its name from the References collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved reference  **Example:**      This example retrieves the last item in the `RefList` reference collection by means of the Count property.
 
 ```VBScript
-Dim LastRef As Reference
-Set LastRef = RefList.Item(RefList.Count)
+     Dim LastRef As Reference
+     Set LastRef = RefList.Item(RefList.Count)
 
 ```

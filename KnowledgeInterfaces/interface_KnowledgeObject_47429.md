@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Hidden**( ) As boolean
+### Property **Hidden**(| ) As boolean
 
-Returns or sets wether the relation is hidden or should be hidden. or not.  
+   Returns or sets wether the relation is hidden or should be hidden. or not.  
 ### Property **IsConst**( ) As boolean
 
-Returns or sets wether the relation is Const or should be Const. or not.
+   Returns or sets wether the relation is Const or should be Const. or not.

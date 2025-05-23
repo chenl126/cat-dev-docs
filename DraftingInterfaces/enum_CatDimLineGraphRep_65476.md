@@ -1,6 +1,7 @@
 # CatDimLineGraphRep (Enumeration)
 
 **_Dimension line graphical representation._**
+
 **Role** : CatDimLineGraphRep is used to specify dimension line graphical representation.
 
 **Values:**

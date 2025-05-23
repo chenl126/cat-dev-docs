@@ -4,21 +4,21 @@
 
 ## Methods
 
-### Func **Add**( ) As [CATIABody](../MecModInterfaces/interface_Body_3736.md)
+### Func **Add**(| ) As [CATIABody](../MecModInterfaces/interface_Body_3736.md)
 
-Creates a new body and adds it to the Bodies collection. This body becomes the current one
+   Creates a new body and adds it to the Bodies collection. This body becomes the current one
 
 **Returns:**      The created body  **Example:**      The following example creates a body names `NewBody` in the body collection of the `rootPart` part in the `partDoc` part document. `NewBody` becomes the current body in `partDoc`.
 
 ```VBScript
-Set rootPart = partDoc.Part
-Set NewBody = rootPart.Bodies.Add()
+     Set rootPart = partDoc.Part
+     Set NewBody = rootPart.Bodies.Add()
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIABody](../MecModInterfaces/interface_Body_3736.md)
 
-Returns a body using its index or its name from the Bodies collection.
+   Returns a body using its index or its name from the Bodies collection.
 
 **Parameters:**
 
@@ -26,8 +26,8 @@ Returns a body using its index or its name from the Bodies collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved body **Example:**      This example retrieves in `ThisBody` the fifth body in the collection and in `ThatBody` the body named `MyBody` in the body collection of the `partDoc` part document.
 
 ```VBScript
-Set BodyColl = partDoc.Part.Bodies
-Set ThisBody = BodyColl.Item(5)
-Set ThatBody = BodyColl.Item("MyBody")
+     Set BodyColl = partDoc.Part.Bodies
+     Set ThisBody = BodyColl.Item(5)
+     Set ThatBody = BodyColl.Item("MyBody")
 
 ```

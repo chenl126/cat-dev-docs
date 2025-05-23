@@ -5,9 +5,9 @@ It lists all the files contained in the folder. It allows to retrieve [File](../
 
 ## Methods
 
-### Func **Item**( long  `iNumber`) As [CATIAFile](../InfInterfaces/interface_File_3552.md)
+### Func **Item**(| long | `iNumber`) As [CATIAFile](../InfInterfaces/interface_File_3552.md)
 
-Returns a file using its index or its name from the file collection.
+   Returns a file using its index or its name from the file collection.
 
 **Parameters:**
 
@@ -15,9 +15,9 @@ Returns a file using its index or its name from the file collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved file **Example:**      This example retrieves in `ThisFile` the third file, and it `ThatFile` the file named `MyFile`. in the `TestFiles` file collection.
 
 ```VBScript
-Dim ThisFile As File
-Set ThisFile = TestFiles.Item(3)
-Dim ThatFile As File
-Set ThatFile = TestFiles.Item("MyFile")
+     Dim ThisFile As File
+     Set ThisFile = TestFiles.Item(3)
+     Dim ThatFile As File
+     Set ThatFile = TestFiles.Item("MyFile")
 
 ```

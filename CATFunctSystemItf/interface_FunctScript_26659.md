@@ -6,6 +6,6 @@ It is managed on a Functional Element, thru the GenerativeKnowledge Facet Manage
 
 ## Properties
 
-### Property **ScriptText**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **ScriptText**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Get the ScriptText.
+   Get the ScriptText.

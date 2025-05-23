@@ -7,9 +7,9 @@ Geometric elements are created with the 2D factory for the sketch and with the 3
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAGeometricElement](../SketcherInterfaces/interface_GeometricElement_54654.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAGeometricElement](../SketcherInterfaces/interface_GeometricElement_54654.md)
 
-Returns a geometric element using its index or its name from the GeometricElements collection.
+   Returns a geometric element using its index or its name from the GeometricElements collection.
 
 **Parameters:**
 
@@ -17,6 +17,6 @@ Returns a geometric element using its index or its name from the GeometricElemen
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved geometric element  **Example:**      This example retrieves the last item in the geometric element collection.
 
 ```VBScript
-Set lastCst = cstList.Item(cstList.Count)
+     Set lastCst = cstList.Item(cstList.Count)
 
 ```

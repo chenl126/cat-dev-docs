@@ -5,14 +5,14 @@ When a ProductDocument is created, a root product is created whose parent is the
 
 ## Properties
 
-### Property **Product**( ) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) (Read Only)
+### Property **Product**(| ) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) (Read Only)
 
-Returns the root product.
+   Returns the root product.
 
 **Example:**      This example retrieves the root product of the `MyProductDoc` ProductDocument in `RootProduct`.
 
 ```VBScript
-Dim RootProduct As Product
-Set RootProduct = MyProductDoc.Product
+     Dim RootProduct As Product
+     Set RootProduct = MyProductDoc.Product
 
 ```

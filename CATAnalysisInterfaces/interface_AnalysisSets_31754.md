@@ -4,47 +4,49 @@
 
 ## Methods
 
-### Func **Add**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`,  [CATAnalysisSetType](../CATAnalysisInterfaces/enum_CATAnalysisSetType_67392.md)  `iSetType`) As [CATIAAnalysisSet](../CATAnalysisInterfaces/interface_AnalysisSet_26478.md)
+### Func **Add**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iType`,| | [CATAnalysisSetType](../CATAnalysisInterfaces/enum_CATAnalysisSetType_67392.md) | `iSetType`) As [CATIAAnalysisSet](../CATAnalysisInterfaces/interface_AnalysisSet_26478.md)
 
-Creates a new analysis set and adds it to the analysis sets collection.
+   Creates a new analysis set and adds it to the analysis sets collection.
 The analysis set will be aggregated on the Analysis Model
 
 **Parameters:**
 
 ` iType`      The type of the set to create.
 ` iSetType`      The category of the set for update.
+
 **Returns:**      The created Analysis Set  **Example:**      This example create `ThisAnalysisSet` in the `analysisSets`analysis
 sets collection. The set to create is supposed to be a load set defined as an input of
 the case for the update.
 
 ```VBScript
-Dim ThisAnalysisSet As AnalysisSet
-Set ThisAnalysisSet = analysisSets.Add("LoadSet", 0)
+     Dim ThisAnalysisSet As AnalysisSet
+     Set ThisAnalysisSet = analysisSets.Add("LoadSet", 0)
 
 ```
 
 ### Sub **AddExistingSet**( [CATIAAnalysisSet](../CATAnalysisInterfaces/interface_AnalysisSet_26478.md)  `iSet`,  [CATAnalysisSetType](../CATAnalysisInterfaces/enum_CATAnalysisSetType_67392.md)  `iSetType`)
 
-Adds an existing analysis set to the analysis sets collection.
+   Adds an existing analysis set to the analysis sets collection.
 
 **Parameters:**
 
 ` iSet`      The Existing Analysis Set.
 ` iSetType`      The category of the set for update.
+
 **Example:**      This example adds `ThisAnalysisSet` in the `analysisSets`analysis
 sets collection. The set to add is supposed to be a restrain set defined as an input of
 the case for the update.
 
 ```VBScript
-Dim ThisAnalysisSet As AnalysisSet
-...
-analysisSets.AddExistingSet(ThisAnalysisSet, 0)
+     Dim ThisAnalysisSet As AnalysisSet
+     ...
+     analysisSets.AddExistingSet(ThisAnalysisSet, 0)
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`,  [CATAnalysisSetSearchType](../CATAnalysisInterfaces/enum_CATAnalysisSetSearchType_118426.md)  `iSerachType`) As [CATIAAnalysisSet](../CATAnalysisInterfaces/interface_AnalysisSet_26478.md)
 
-Returns an analysis set using its index or its name from the analysis sets collection.
+   Returns an analysis set using its index or its name from the analysis sets collection.
 
 **Parameters:**
 
@@ -53,31 +55,32 @@ Returns an analysis set using its index or its name from the analysis sets colle
 [CATAnalysisSetType.CATAnalysisSetSearchType](../CATAnalysisInterfaces/enum_CATAnalysisSetType_67392.htm#CATAnalysisSetSearchType) **Returns:**      The retrieved analysis set  **Example:**      This example retrieves in `ThisAnalysisSet` the third analysis set, and in `ThatAnalysisSet` the analysis set named `MySet` in the analysis set collection of an Analysis Case of analysis model.
 
 ```VBScript
-Dim ThisAnalysisSet As AnalysisSet
-Set ThisAnalysisSet = analysisCase.AnalysisSets.Item(3,1)
-Dim ThatAnalysisSet As AnalysisSet
-Set ThatAnalysisSet = analysisCase.AnalysisSets.Item("MySet")
+     Dim ThisAnalysisSet As AnalysisSet
+     Set ThisAnalysisSet = analysisCase.AnalysisSets.Item(3,1)
+     Dim ThatAnalysisSet As AnalysisSet
+     Set ThatAnalysisSet = analysisCase.AnalysisSets.Item("MySet")
 
 ```
 
 ### Func **ItemByType**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAAnalysisSet](../CATAnalysisInterfaces/interface_AnalysisSet_26478.md)
 
-Returns an analysis set using its type from the analysis sets collection.
+   Returns an analysis set using its type from the analysis sets collection.
 
 **Parameters:**
 
 ` iType`      The type of the set required for the search
+
 **Returns:**      The retrieved analysis set  **Example:**      This example retrieves in `ThisAnalysisSet` the "LoadSet" analysis set in the analysis set collection.
 
 ```VBScript
-Dim ThisAnalysisSet As AnalysisSet
-Set ThisAnalysisSet = analysisCase.AnalysisSets.ItemByType("LoadSet")
+     Dim ThisAnalysisSet As AnalysisSet
+     Set ThisAnalysisSet = analysisCase.AnalysisSets.ItemByType("LoadSet")
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a set using its index or its name from the set collection.
+   Removes a set using its index or its name from the set collection.
 
 **Parameters:**
 

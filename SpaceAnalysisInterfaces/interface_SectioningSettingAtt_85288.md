@@ -4,57 +4,57 @@
 
 ## Properties
 
-### Property **ClippingMode**( ) As [CatSectionClippingMode](../SpaceAnalysisInterfaces/enum_CatSectionClippingMode_100444.md)
+### Property **ClippingMode**(| ) As [CatSectionClippingMode](../SpaceAnalysisInterfaces/enum_CatSectionClippingMode_100444.md)
 
-Returns or sets the ClippingMode parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the ClippingMode parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **DisplayCutInWireframe**( ) As boolean
 
-Returns or sets the DisplayCutInWireframe parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the DisplayCutInWireframe parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridAutoFiltering**( ) As boolean
 
-Returns or sets the GridAutoFiltering parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridAutoFiltering parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridAutoResize**( ) As boolean
 
-Returns or sets the GridAutoResize parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridAutoResize parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridHeightStep**( ) As float
 
-Returns or sets the GridHeightStep parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridHeightStep parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridPositionMode**( ) As [CatGridPositionMode](../SpaceAnalysisInterfaces/enum_CatGridPositionMode_75400.md)
 
-Returns or sets the GridPositionMode parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridPositionMode parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridStyle**( ) As [CatSectionGridStyle](../SpaceAnalysisInterfaces/enum_CatSectionGridStyle_76008.md)
 
-Returns or sets the GridStyle parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridStyle parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **GridWidthStep**( ) As float
 
-Returns or sets the GridWidthStep parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the GridWidthStep parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **HidePlane**( ) As boolean
 
-Returns or sets the HidePlane parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the HidePlane parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **HideResult**( ) As boolean
 
-Returns or sets the HideResult parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the HideResult parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **PlaneNormal**( ) As [CatSectionPlaneNormal](../SpaceAnalysisInterfaces/enum_CatSectionPlaneNormal_91976.md)
 
-Returns or sets the PlaneNormal parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the PlaneNormal parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **PlaneOrigin**( ) As [CatSectionPlaneOrigin](../SpaceAnalysisInterfaces/enum_CatSectionPlaneOrigin_91941.md)
 
-Returns or sets the PlaneOrigin parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the PlaneOrigin parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **SectionFill**( ) As boolean
 
-Returns or sets the SectionFill parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the SectionFill parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **UpdateResult**( ) As boolean
 
-Returns or sets the UpdateResult parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the UpdateResult parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **ViewerAutoOpen**( ) As boolean
 
-Returns or sets the ViewerAutoOpen parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the ViewerAutoOpen parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **ViewerAutoReframe**( ) As boolean
 
-Returns or sets the ViewerAutoReframe parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the ViewerAutoReframe parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **ViewerLock2D**( ) As boolean
 
-Returns or sets the ViewerLock2D parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
+   Returns or sets the ViewerLock2D parameter.  Ensure consistency with the C++ interface to which the work is delegated.  
 ### Property **WindowDefaultHeight**( ) As long
 
 **Role** :Retrieve section window default height if the window open mode is catSecWindow_DefaultSize
@@ -62,6 +62,7 @@ Returns or sets the ViewerLock2D parameter.  Ensure consistency with the C++ int
 **Parameters:**
 
 ` oWindowDefaultHeight`
+
 **Returns:**      S_OK Successfully retieved the window open mode E_FAIL Failed to retrieved the window open mode  
 ### Property **WindowDefaultWidth**( ) As long
 
@@ -70,6 +71,7 @@ Returns or sets the ViewerLock2D parameter.  Ensure consistency with the C++ int
 **Parameters:**
 
 ` oWindowDefaultWidth`
+
 **Returns:**      S_OK Successfully retieved the window open mode E_FAIL Failed to retrieved the window open mode  
 ### Property **WindowOpenMode**( ) As [CatSecWindowOpenMode](../SpaceAnalysisInterfaces/enum_CatSecWindowOpenMode_82170.md)
 
@@ -80,11 +82,13 @@ Returns or sets the ViewerLock2D parameter.  Ensure consistency with the C++ int
 ` oWindowOpenMode`      **Legal values** :
 `catSecWindow_DefaultSize :`Opens the sectioning window(s) with the default size specified in the Tools->Options.
 `catSecWindow_TileVertically :`Tiles the sectioning window(s) vertically in the viewer
+
 **Returns:**      S_OK Successfully retieved the window open mode E_FAIL Failed to retrieved the window open mode  Methods
 
 ### Func **GetClippingModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ClippingMode parameter.
+   Retrieves environment informations for the ClippingMode parameter.
+
 **Role** :Retrieves the state of the ClippingMode parameter in the current environment.
 
 **Parameters:**
@@ -93,10 +97,12 @@ Retrieves environment informations for the ClippingMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetDisplayCutInWireframeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the DisplayCutInWireframe parameter.
+   Retrieves environment informations for the DisplayCutInWireframe parameter.
+
 **Role** :Retrieves the state of the DisplayCutInWireframe parameter in the current environment.
 
 **Parameters:**
@@ -105,10 +111,12 @@ Retrieves environment informations for the DisplayCutInWireframe parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridAutoFilteringInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridAutoFiltering parameter.
+   Retrieves environment informations for the GridAutoFiltering parameter.
+
 **Role** :Retrieves the state of the GridAutoFiltering parameter in the current environment.
 
 **Parameters:**
@@ -117,10 +125,12 @@ Retrieves environment informations for the GridAutoFiltering parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridAutoResizeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridAutoResize parameter.
+   Retrieves environment informations for the GridAutoResize parameter.
+
 **Role** :Retrieves the state of the GridAutoResize parameter in the current environment.
 
 **Parameters:**
@@ -129,10 +139,12 @@ Retrieves environment informations for the GridAutoResize parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridHeightStepInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridHeightStep parameter.
+   Retrieves environment informations for the GridHeightStep parameter.
+
 **Role** :Retrieves the state of the GridHeightStep parameter in the current environment.
 
 **Parameters:**
@@ -141,10 +153,12 @@ Retrieves environment informations for the GridHeightStep parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridPositionModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridPositionMode parameter.
+   Retrieves environment informations for the GridPositionMode parameter.
+
 **Role** :Retrieves the state of the GridPositionMode parameter in the current environment.
 
 **Parameters:**
@@ -153,10 +167,12 @@ Retrieves environment informations for the GridPositionMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridStyleInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridStyle parameter.
+   Retrieves environment informations for the GridStyle parameter.
+
 **Role** :Retrieves the state of the GridStyle parameter in the current environment.
 
 **Parameters:**
@@ -165,10 +181,12 @@ Retrieves environment informations for the GridStyle parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetGridWidthStepInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the GridWidthStep parameter.
+   Retrieves environment informations for the GridWidthStep parameter.
+
 **Role** :Retrieves the state of the GridWidthStep parameter in the current environment.
 
 **Parameters:**
@@ -177,10 +195,12 @@ Retrieves environment informations for the GridWidthStep parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetHidePlaneInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the HidePlane parameter.
+   Retrieves environment informations for the HidePlane parameter.
+
 **Role** :Retrieves the state of the HidePlane parameter in the current environment.
 
 **Parameters:**
@@ -189,10 +209,12 @@ Retrieves environment informations for the HidePlane parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetHideResultInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the HideResult parameter.
+   Retrieves environment informations for the HideResult parameter.
+
 **Role** :Retrieves the state of the HideResult parameter in the current environment.
 
 **Parameters:**
@@ -201,10 +223,11 @@ Retrieves environment informations for the HideResult parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **GetPlaneColor**( long  `oR`,  long  `oG`,  long  `oB`)
 
-Returns the PlaneColor parameter.
+   Returns the PlaneColor parameter.
 
 **Parameters:**
 
@@ -214,7 +237,8 @@ Returns the PlaneColor parameter.
 
 ### Func **GetPlaneColorInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PlaneColor parameter.
+   Retrieves environment informations for the PlaneColor parameter.
+
 **Role** :Retrieves the state of the PlaneColor parameter in the current environment.
 
 **Parameters:**
@@ -223,10 +247,12 @@ Retrieves environment informations for the PlaneColor parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPlaneNormalInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PlaneNormal parameter.
+   Retrieves environment informations for the PlaneNormal parameter.
+
 **Role** :Retrieves the state of the PlaneNormal parameter in the current environment.
 
 **Parameters:**
@@ -235,10 +261,12 @@ Retrieves environment informations for the PlaneNormal parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPlaneOriginInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PlaneOrigin parameter.
+   Retrieves environment informations for the PlaneOrigin parameter.
+
 **Role** :Retrieves the state of the PlaneOrigin parameter in the current environment.
 
 **Parameters:**
@@ -247,10 +275,12 @@ Retrieves environment informations for the PlaneOrigin parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetSectionFillInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the SectionFill parameter.
+   Retrieves environment informations for the SectionFill parameter.
+
 **Role** :Retrieves the state of the SectionFill parameter in the current environment.
 
 **Parameters:**
@@ -259,10 +289,12 @@ Retrieves environment informations for the SectionFill parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUpdateResultInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UpdateResult parameter.
+   Retrieves environment informations for the UpdateResult parameter.
+
 **Role** :Retrieves the state of the UpdateResult parameter in the current environment.
 
 **Parameters:**
@@ -271,10 +303,12 @@ Retrieves environment informations for the UpdateResult parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetViewerAutoOpenInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ViewerAutoOpen parameter.
+   Retrieves environment informations for the ViewerAutoOpen parameter.
+
 **Role** :Retrieves the state of the ViewerAutoOpen parameter in the current environment.
 
 **Parameters:**
@@ -283,10 +317,12 @@ Retrieves environment informations for the ViewerAutoOpen parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetViewerAutoReframeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ViewerAutoReframe parameter.
+   Retrieves environment informations for the ViewerAutoReframe parameter.
+
 **Role** :Retrieves the state of the ViewerAutoReframe parameter in the current environment.
 
 **Parameters:**
@@ -295,10 +331,12 @@ Retrieves environment informations for the ViewerAutoReframe parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetViewerLock2DInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ViewerLock2D parameter.
+   Retrieves environment informations for the ViewerLock2D parameter.
+
 **Role** :Retrieves the state of the ViewerLock2D parameter in the current environment.
 
 **Parameters:**
@@ -307,10 +345,12 @@ Retrieves environment informations for the ViewerLock2D parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetWindowDefaultHeightInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the WindowDefaultHeight parameter.
+   Retrieves environment informations for the WindowDefaultHeight parameter.
+
 **Role** :Retrieves the state of the WindowDefaultHeight parameter in the current environment.
 
 **Parameters:**
@@ -319,10 +359,12 @@ Retrieves environment informations for the WindowDefaultHeight parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetWindowDefaultWidthInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the WindowDefaultWidth parameter.
+   Retrieves environment informations for the WindowDefaultWidth parameter.
+
 **Role** :Retrieves the state of the WindowDefaultWidth parameter in the current environment.
 
 **Parameters:**
@@ -331,10 +373,12 @@ Retrieves environment informations for the WindowDefaultWidth parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetWindowOpenModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the WindowOpenMode parameter.
+   Retrieves environment informations for the WindowOpenMode parameter.
+
 **Role** :Retrieves the state of the WindowOpenMode parameter in the current environment.
 
 **Parameters:**
@@ -343,10 +387,12 @@ Retrieves environment informations for the WindowOpenMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **SetClippingModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the ClippingMode parameter.
+   Locks or unlocks the ClippingMode parameter.
+
 **Role** :Locks or unlocks the PlaneOrigin parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -357,7 +403,8 @@ Locks or unlocks the ClippingMode parameter.
 
 ### Sub **SetDisplayCutInWireframeLock**( boolean  `iLocked`)
 
-Locks or unlocks the DisplayCutInWireframe parameter.
+   Locks or unlocks the DisplayCutInWireframe parameter.
+
 **Role** :Locks or unlocks the DisplayCutInWireframe parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -368,7 +415,8 @@ Locks or unlocks the DisplayCutInWireframe parameter.
 
 ### Sub **SetGridAutoFilteringLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridAutoFiltering parameter.
+   Locks or unlocks the GridAutoFiltering parameter.
+
 **Role** :Locks or unlocks the GridAutoFiltering parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -379,7 +427,8 @@ Locks or unlocks the GridAutoFiltering parameter.
 
 ### Sub **SetGridAutoResizeLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridAutoResize parameter.
+   Locks or unlocks the GridAutoResize parameter.
+
 **Role** :Locks or unlocks the GridAutoResize parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -390,7 +439,8 @@ Locks or unlocks the GridAutoResize parameter.
 
 ### Sub **SetGridHeightStepLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridHeightStep parameter.
+   Locks or unlocks the GridHeightStep parameter.
+
 **Role** :Locks or unlocks the GridHeightStep parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -401,7 +451,8 @@ Locks or unlocks the GridHeightStep parameter.
 
 ### Sub **SetGridPositionModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridPositionMode parameter.
+   Locks or unlocks the GridPositionMode parameter.
+
 **Role** :Locks or unlocks the GridPositionMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -412,7 +463,8 @@ Locks or unlocks the GridPositionMode parameter.
 
 ### Sub **SetGridStyleLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridStyle parameter.
+   Locks or unlocks the GridStyle parameter.
+
 **Role** :Locks or unlocks the GridStyle parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -423,7 +475,8 @@ Locks or unlocks the GridStyle parameter.
 
 ### Sub **SetGridWidthStepLock**( boolean  `iLocked`)
 
-Locks or unlocks the GridWidthStep parameter.
+   Locks or unlocks the GridWidthStep parameter.
+
 **Role** :Locks or unlocks the GridWidthStep parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -434,7 +487,8 @@ Locks or unlocks the GridWidthStep parameter.
 
 ### Sub **SetHidePlaneLock**( boolean  `iLocked`)
 
-Locks or unlocks the HidePlane parameter.
+   Locks or unlocks the HidePlane parameter.
+
 **Role** :Locks or unlocks the HidePlane parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -445,7 +499,8 @@ Locks or unlocks the HidePlane parameter.
 
 ### Sub **SetHideResultLock**( boolean  `iLocked`)
 
-Locks or unlocks the HideResult parameter.
+   Locks or unlocks the HideResult parameter.
+
 **Role** :Locks or unlocks the HideResult parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -456,7 +511,7 @@ Locks or unlocks the HideResult parameter.
 
 ### Sub **SetPlaneColor**( long  `iR`,  long  `iG`,  long  `iB`)
 
-Sets the PlaneColor parameter.
+   Sets the PlaneColor parameter.
 
 **Parameters:**
 
@@ -466,7 +521,8 @@ Sets the PlaneColor parameter.
 
 ### Sub **SetPlaneColorLock**( boolean  `iLocked`)
 
-Locks or unlocks the PlaneColor parameter.
+   Locks or unlocks the PlaneColor parameter.
+
 **Role** :Locks or unlocks the PlaneColor parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -477,7 +533,8 @@ Locks or unlocks the PlaneColor parameter.
 
 ### Sub **SetPlaneNormalLock**( boolean  `iLocked`)
 
-Locks or unlocks the PlaneNormal parameter.
+   Locks or unlocks the PlaneNormal parameter.
+
 **Role** :Locks or unlocks the PlaneNormal parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -488,7 +545,8 @@ Locks or unlocks the PlaneNormal parameter.
 
 ### Sub **SetPlaneOriginLock**( boolean  `iLocked`)
 
-Locks or unlocks the PlaneOrigin parameter.
+   Locks or unlocks the PlaneOrigin parameter.
+
 **Role** :Locks or unlocks the PlaneOrigin parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -499,7 +557,8 @@ Locks or unlocks the PlaneOrigin parameter.
 
 ### Sub **SetSectionFillLock**( boolean  `iLocked`)
 
-Locks or unlocks the SectionFill parameter.
+   Locks or unlocks the SectionFill parameter.
+
 **Role** :Locks or unlocks the SectionFill parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -510,7 +569,8 @@ Locks or unlocks the SectionFill parameter.
 
 ### Sub **SetUpdateResultLock**( boolean  `iLocked`)
 
-Locks or unlocks the UpdateResult parameter.
+   Locks or unlocks the UpdateResult parameter.
+
 **Role** :Locks or unlocks the UpdateResult parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -521,7 +581,8 @@ Locks or unlocks the UpdateResult parameter.
 
 ### Sub **SetViewerAutoOpenLock**( boolean  `iLocked`)
 
-Locks or unlocks the ViewerAutoOpen parameter.
+   Locks or unlocks the ViewerAutoOpen parameter.
+
 **Role** :Locks or unlocks the ViewerAutoOpen parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -532,7 +593,8 @@ Locks or unlocks the ViewerAutoOpen parameter.
 
 ### Sub **SetViewerAutoReframeLock**( boolean  `iLocked`)
 
-Locks or unlocks the ViewerAutoReframe parameter.
+   Locks or unlocks the ViewerAutoReframe parameter.
+
 **Role** :Locks or unlocks the ViewerAutoReframe parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -543,7 +605,8 @@ Locks or unlocks the ViewerAutoReframe parameter.
 
 ### Sub **SetViewerLock2DLock**( boolean  `iLocked`)
 
-Locks or unlocks the ViewerLock2D parameter.
+   Locks or unlocks the ViewerLock2D parameter.
+
 **Role** :Locks or unlocks the ViewerLock2D parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -554,7 +617,8 @@ Locks or unlocks the ViewerLock2D parameter.
 
 ### Sub **SetWindowDefaultHeightLock**( boolean  `iLocked`)
 
-Locks or unlocks the WindowDefaultHeight parameter.
+   Locks or unlocks the WindowDefaultHeight parameter.
+
 **Role** :Locks or unlocks the WindowDefaultHeight parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -565,7 +629,8 @@ Locks or unlocks the WindowDefaultHeight parameter.
 
 ### Sub **SetWindowDefaultWidthLock**( boolean  `iLocked`)
 
-Locks or unlocks the WindowDefaultWidth parameter.
+   Locks or unlocks the WindowDefaultWidth parameter.
+
 **Role** :Locks or unlocks the WindowDefaultWidth parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -576,7 +641,8 @@ Locks or unlocks the WindowDefaultWidth parameter.
 
 ### Sub **SetWindowOpenModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the WindowOpenMode parameter.
+   Locks or unlocks the WindowOpenMode parameter.
+
 **Role** :Locks or unlocks the WindowOpenMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**

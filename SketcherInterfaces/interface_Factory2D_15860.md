@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **CreateCircle**( double  `iCenterX`,  double  `iCenterY`,  double  `iRadius`,  double  `iStartParam`,  double  `iEndParam`) As [CATIACircle2D](../SketcherInterfaces/interface_Circle2D_11806.md)
+### Func **CreateCircle**(| double | `iCenterX`,| | double | `iCenterY`,| | double | `iRadius`,| | double | `iStartParam`,| | double | `iEndParam`) As [CATIACircle2D](../SketcherInterfaces/interface_Circle2D_11806.md)
 
-Creates and returns a 2D circle arc.
+   Creates and returns a 2D circle arc.
 
 **Parameters:**
 
@@ -20,7 +20,7 @@ This parameter may take any value between iStartParam excluded and 4PI included.
 
 ### Func **CreateClosedCircle**( double  `iCenterX`,  double  `iCenterY`,  double  `iRadius`) As [CATIACircle2D](../SketcherInterfaces/interface_Circle2D_11806.md)
 
-Creates and returns a closed 2D circle.
+   Creates and returns a closed 2D circle.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Creates and returns a closed 2D circle.
 
 ### Func **CreateClosedEllipse**( double  `iCenterX`,  double  `iCenterY`,  double  `iMajorX`,  double  `iMajorY`,  double  `iMajorRadius`,  double  `iMinorRadius`) As [CATIAEllipse2D](../SketcherInterfaces/interface_Ellipse2D_15520.md)
 
-Creates and returns a closed 2D ellipse.
+   Creates and returns a closed 2D ellipse.
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ Creates and returns a closed 2D ellipse.
 
 ### Func **CreateControlPoint**( double  `iX`,  double  `iY`) As [CATIAControlPoint2D](../SketcherInterfaces/interface_ControlPoint2D_39214.md)
 
-Creates and returns a 2D spline control point.
+   Creates and returns a 2D spline control point.
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Creates and returns a 2D spline control point.
 
 ### Func **CreateEllipse**( double  `iCenterX`,  double  `iCenterY`,  double  `iMajorX`,  double  `iMajorY`,  double  `iMajorRadius`,  double  `iMinorRadius`,  double  `iStartParam`,  double  `iEndParam`) As [CATIAEllipse2D](../SketcherInterfaces/interface_Ellipse2D_15520.md)
 
-Creates and returns a 2D ellipse arc.
+   Creates and returns a 2D ellipse arc.
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ This parameter may take any value between iStartParam excluded and 4PI included.
 
 ### Func **CreateHyperbola**( double  `iCenterX`,  double  `iCenterY`,  double  `iAxisX`,  double  `iAxisY`,  double  `iMajorRadius`,  double  `iMinorRadius`) As [CATIAHyperbola2D](../SketcherInterfaces/interface_Hyperbola2D_23520.md)
 
-Creates and returns a hyperbola.
+   Creates and returns a hyperbola.
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ Creates and returns a hyperbola.
 
 ### Func **CreateIntersection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGeometry`) As [CATIAGeometry2D](../SketcherInterfaces/interface_Geometry2D_19898.md)
 
-Creates and returns the intersection of an object with the sketch.
+   Creates and returns the intersection of an object with the sketch.
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ Creates and returns the intersection of an object with the sketch.
 
 ### Func **CreateIntersections**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGeometry`) As [CATIAGeometricElements](../MecModInterfaces/interface_GeometricElements_62160.md)
 
-Creates and returns the possible intersections of an object with the sketch.
+   Creates and returns the possible intersections of an object with the sketch.
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ Creates and returns the possible intersections of an object with the sketch.
 
 ### Func **CreateLine**( double  `iX1`,  double  `iY1`,  double  `iX2`,  double  `iY2`) As [CATIALine2D](../SketcherInterfaces/interface_Line2D_6416.md)
 
-Creates and returns a 2D line.
+   Creates and returns a 2D line.
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ Creates and returns a 2D line.
 
 ### Func **CreateLineFromVector**( double  `iX1`,  double  `iY1`,  double  `iUX`,  double  `iUY`) As [CATIALine2D](../SketcherInterfaces/interface_Line2D_6416.md)
 
-Creates and returns a 2D line.
+   Creates and returns a 2D line.
 
 **Parameters:**
 
@@ -120,7 +120,7 @@ Creates and returns a 2D line.
 
 ### Func **CreateParabola**( double  `iCenterX`,  double  `iCenterY`,  double  `iAxisX`,  double  `iAxisY`,  double  `iFocalDistance`) As [CATIAParabola2D](../SketcherInterfaces/interface_Parabola2D_18844.md)
 
-Creates and returns a parabola.
+   Creates and returns a parabola.
 
 **Parameters:**
 
@@ -132,7 +132,7 @@ Creates and returns a parabola.
 
 ### Func **CreatePoint**( double  `iX`,  double  `iY`) As [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)
 
-Creates and returns a 2D point.
+   Creates and returns a 2D point.
 
 **Parameters:**
 
@@ -141,7 +141,7 @@ Creates and returns a 2D point.
 
 ### Func **CreateProjection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGeometry`) As [CATIAGeometry2D](../SketcherInterfaces/interface_Geometry2D_19898.md)
 
-Creates and returns the projection of an object on the sketch.
+   Creates and returns the projection of an object on the sketch.
 
 **Parameters:**
 
@@ -149,7 +149,7 @@ Creates and returns the projection of an object on the sketch.
 
 ### Func **CreateProjections**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGeometry`) As [CATIAGeometricElements](../MecModInterfaces/interface_GeometricElements_62160.md)
 
-Creates and returns the possible projections of an object on the sketch.
+   Creates and returns the possible projections of an object on the sketch.
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ Creates and returns the possible projections of an object on the sketch.
 
 ### Func **CreateSpline**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iPoles`) As [CATIASpline2D](../SketcherInterfaces/interface_Spline2D_12098.md)
 
-Creates and returns a 2D b-spline.
+   Creates and returns a 2D b-spline.
 
 **Parameters:**
 

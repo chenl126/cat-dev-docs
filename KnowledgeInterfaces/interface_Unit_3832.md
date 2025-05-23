@@ -5,16 +5,16 @@ This interface allows convertion.
 
 ## Properties
 
-### Property **Magnitude**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **Magnitude**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns the magnitude associated to the unit.  
+   Returns the magnitude associated to the unit.  
 ### Property **Symbol**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns the symbol associated to the unit.  Methods
+   Returns the symbol associated to the unit.  Methods
 
 ### Func **ConvertFromMKS**( double  `iValueInMKS`) As double
 
-Convert the initial value (expressed in MKS unit) in its equivalent in the current unit.
+   Convert the initial value (expressed in MKS unit) in its equivalent in the current unit.
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Convert the initial value (expressed in MKS unit) in its equivalent in the curre
 
 ### Func **ConvertFromStorageUnit**( double  `iValueInStorageUnit`) As double
 
-Convert the initial value (expressed in storage unit) in its equivalent in the current unit.
+   Convert the initial value (expressed in storage unit) in its equivalent in the current unit.
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ Convert the initial value (expressed in storage unit) in its equivalent in the c
 
 ### Func **ConvertToMKS**( double  `iValueInThisUnit`) As double
 
-Convert the initial value in its equivalent in MKS unit.
+   Convert the initial value in its equivalent in MKS unit.
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ Convert the initial value in its equivalent in MKS unit.
 
 ### Func **ConvertToStorageUnit**( double  `iValueInThisUnit`) As double
 
-Convert the initial value in its equivalent in storage unit.
+   Convert the initial value in its equivalent in storage unit.
 
 **Parameters:**
 

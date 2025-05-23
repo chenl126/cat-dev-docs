@@ -4,12 +4,12 @@
 
 ## Methods
 
-### Func **AddFreeParameter**( [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md)  `parameter`) As [CATIAFreeParameter](../KnowledgeInterfaces/interface_FreeParameter_36139.md)
+### Func **AddFreeParameter**(| [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md) | `parameter`) As [CATIAFreeParameter](../KnowledgeInterfaces/interface_FreeParameter_36139.md)
 
-Adds a free parameter. This parameter must not be read only.  
+   Adds a free parameter. This parameter must not be read only.  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFreeParameter](../KnowledgeInterfaces/interface_FreeParameter_36139.md)
 
-Retrieves an optimization using its index or its name from the Free Parameters collection.
+   Retrieves an optimization using its index or its name from the Free Parameters collection.
 
 **Parameters:**
 
@@ -17,10 +17,10 @@ Retrieves an optimization using its index or its name from the Free Parameters c
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when changing the free parameter name by the property panel.  **Returns:**      The retrieved free parameter  **Example:**      This example retrieves the last free parameter in the `free parameters` collection.
 
 ```VBScript
-Set lastFreeParameter = freeParameters.Item(freeParameters.Count)
+     Set lastFreeParameter = freeParameters.Item(freeParameters.Count)
 
 ```
 
 ### Sub **RemoveFreeParameter**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a free parameter.
+   Removes a free parameter.

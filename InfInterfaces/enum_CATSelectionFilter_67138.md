@@ -1,6 +1,7 @@
 # CATSelectionFilter (Enumeration)
 
 **_Values to use as selection filter._**
+
 **Role** : Values which can be given as filter to [Selection.SelectElement2](../InfInterfaces/interface_Selection_18040.htm#SelectElement2), [Selection.SelectElement3](../InfInterfaces/interface_Selection_18040.htm#SelectElement3), [Selection.IndicateOrSelectElement2D](../InfInterfaces/interface_Selection_18040.htm#IndicateOrSelectElement2D) or [Selection.IndicateOrSelectElement3D](../InfInterfaces/interface_Selection_18040.htm#IndicateOrSelectElement3D), beside the automation object names.
 
 **Values:**

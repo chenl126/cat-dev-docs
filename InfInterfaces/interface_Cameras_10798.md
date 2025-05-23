@@ -9,9 +9,9 @@ The cameras of the Cameras collection are available using the dialog box display
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIACamera](../InfInterfaces/interface_Camera_7798.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIACamera](../InfInterfaces/interface_Camera_7798.md)
 
-Returns a camera using its index or its name from the Cameras collection.
+   Returns a camera using its index or its name from the Cameras collection.
 
 **Parameters:**
 
@@ -19,16 +19,16 @@ Returns a camera using its index or its name from the Cameras collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved camera  **Example:**      This example retrieves in `ThisCamera` the ninth camera, and in `ThatCamera` the camera named `MyCamera` in the camera collection of the active document.
 
 ```VBScript
-Dim ThisCamera As Camera
-Set ThisCamera = CATIA.ActiveDocument.Cameras.Item(9)
-Dim ThatCamera As Camera
-Set ThatCamera = CATIA.ActiveDocument.Cameras.Item("MyCamera")
+     Dim ThisCamera As Camera
+     Set ThisCamera = CATIA.ActiveDocument.Cameras.Item(9)
+     Dim ThatCamera As Camera
+     Set ThatCamera = CATIA.ActiveDocument.Cameras.Item("MyCamera")
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a camera from the Cameras collection.
+   Removes a camera from the Cameras collection.
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ Removes a camera from the Cameras collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property. You cannot remove the first seventh cameras in the collection.  **Example:**      The following example removes the tenth camera and the camera named `CameraToBeRemoved` in the camera collection of the active document.
 
 ```VBScript
-CATIA.ActiveDocument.Cameras.Remove(10)
-CATIA.ActiveDocument.Cameras.Remove("CameraToBeRemoved")
+     CATIA.ActiveDocument.Cameras.Remove(10)
+     CATIA.ActiveDocument.Cameras.Remove("CameraToBeRemoved")
 
 ```

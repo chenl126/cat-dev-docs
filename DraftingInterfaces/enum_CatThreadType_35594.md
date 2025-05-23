@@ -1,6 +1,7 @@
 # CatThreadType (Enumeration)
 
 **_Thread type._**
+
 **Role** : Define the thread type.
 
 **Values:**

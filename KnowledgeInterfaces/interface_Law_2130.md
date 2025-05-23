@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **AddFormalParameter**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iMagnitude`)
+### Sub **AddFormalParameter**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iMagnitude`)
 
-Creates a formal parameter for the law.
+   Creates a formal parameter for the law.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Creates a formal parameter for the law.
 
 ### Sub **RemoveFormalParameter**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`)
 
-Removes a formal parameter of the law.
+   Removes a formal parameter of the law.
 
 **Parameters:**
 

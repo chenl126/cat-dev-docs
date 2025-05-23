@@ -6,16 +6,16 @@ The ParameterSet object is a neutral object that contains parameters, like the P
 The following example shows how to retrieve it on a part:
 
 ```VBScript
-Dim CATDocs As Documents
-Set CATDocs = CATIA.Documents
-Dim part1 As Document
-Set part1   = CATDocs.Add("CATPart")
-Dim parameters1 As Parameters
-Set parameters1 = part1.Part.Parameters
-Dim ParameterSet1 As ParameterSet
-Set ParameterSet1 = parameters1.RootParameterSet
-Dim parameterSets1 As ParameterSets
-Set parameterSets1 = parameterSet1.ParameterSets
+     Dim CATDocs As Documents
+     Set CATDocs = CATIA.Documents
+     Dim part1 As Document
+     Set part1   = CATDocs.Add("CATPart")
+     Dim parameters1 As Parameters
+     Set parameters1 = part1.Part.Parameters
+     Dim ParameterSet1 As ParameterSet
+     Set ParameterSet1 = parameters1.RootParameterSet
+     Dim parameterSets1 As ParameterSets
+     Set parameterSets1 = parameterSet1.ParameterSets
 
 ```
 
@@ -23,12 +23,12 @@ This collection is not a collection of all parameter sets of a document, but a c
 
 ## Methods
 
-### Func **CreateSet**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`) As [CATIAParameterSet](../KnowledgeInterfaces/interface_ParameterSet_31016.md)
+### Func **CreateSet**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`) As [CATIAParameterSet](../KnowledgeInterfaces/interface_ParameterSet_31016.md)
 
-Creates a set of parameters and appends it to the parameter set which corresponds to this collection.  
+   Creates a set of parameters and appends it to the parameter set which corresponds to this collection.  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAParameterSet](../KnowledgeInterfaces/interface_ParameterSet_31016.md)
 
-Returns a parameter set using its index or its name from the ParameterSets collection.
+   Returns a parameter set using its index or its name from the ParameterSets collection.
 
 **Parameters:**
 
@@ -36,6 +36,6 @@ Returns a parameter set using its index or its name from the ParameterSets colle
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property .  **Example:**      This example retrieves the parameter set named "Parameters.1" in the `parameterSets` collection:
 
 ```VBScript
-Set theSet = parameterSets.Item("Parameters.1")
+     Set theSet = parameterSets.Item("Parameters.1")
 
 ```

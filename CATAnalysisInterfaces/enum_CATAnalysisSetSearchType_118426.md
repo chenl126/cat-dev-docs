@@ -1,6 +1,7 @@
 # CATAnalysisSetSearchType (Enumeration)
 
 **_Search type for analysis sets._**
+
 **Role:** CATAnalysisSetSearchType defines the criterion for searching sets.
 
 **Values:**

@@ -12,9 +12,9 @@ i.e:
 
 ## Methods
 
-### Func **AddNew3DCorner**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iRadius`,  long  `iOrientation1`,  long  `iOrientation2`,  boolean  `iTrim`) As [CATIAHybridShapeCorner](../GSMInterfaces/interface_HybridShapeCorner_60814.md)
+### Func **AddNew3DCorner**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iElement1`,| | [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iElement2`,| | [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md) | `iDirection`,| | double | `iRadius`,| | long | `iOrientation1`,| | long | `iOrientation2`,| | boolean | `iTrim`) As [CATIAHybridShapeCorner](../GSMInterfaces/interface_HybridShapeCorner_60814.md)
 
-Creates a new 3D Corner within the current body.
+   Creates a new 3D Corner within the current body.
 Create a 3D corner curve between a point and a curve or 2 curves along a direction.
 
 **Parameters:**
@@ -31,7 +31,7 @@ if TRUE the 2 curves are trimed and asembled with the corner.
 
 ### Func **AddNew3DCurveOffset**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurveToOffset`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iOffset`,  double  `iCornerRadius`,  double  `iCornerTension`) As [CATIAHybridShape3DCurveOffset](../GSMInterfaces/interface_HybridShape3DCurveOffset_116318.md)
 
-Creates a 3D Curve Offset.
+   Creates a 3D Curve Offset.
 
 **Parameters:**
 
@@ -40,10 +40,11 @@ Creates a 3D Curve Offset.
 ` iOffsetValue`      Offset Value.
 ` iCornerRadius`      Radius of the 3D corners.
 ` iCornerTension`      Tension of the 3D corners.
+
 **Returns:**      CATIGSM3DCurveOffset_var created 3DCurveOffset.  
 ### Func **AddNewAffinity**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`,  double  `iXRatio`,  double  `iYRatio`,  double  `iZRatio`) As [CATIAHybridShapeAffinity](../GSMInterfaces/interface_HybridShapeAffinity_76221.md)
 
-Creates a new Affinity within the current body.
+   Creates a new Affinity within the current body.
 
 **Parameters:**
 
@@ -56,7 +57,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewAxisLine**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`) As [CATIAHybridShapeAxisLine](../GSMInterfaces/interface_HybridShapeAxisLine_74458.md)
 
-Creates a new AxisLine within the current body.
+   Creates a new AxisLine within the current body.
 
 **Parameters:**
 
@@ -65,7 +66,7 @@ Creates a new AxisLine within the current body.
 
 ### Func **AddNewAxisToAxis**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReferenceAxis`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iTargetAxis`) As [CATIAHybridShapeAxisToAxis](../GSMInterfaces/interface_HybridShapeAxisToAxis_91226.md)
 
-Creates a new axis to axis transformation within the current body.
+   Creates a new axis to axis transformation within the current body.
 
 **Parameters:**
 
@@ -76,7 +77,7 @@ Creates a new axis to axis transformation within the current body.
 
 ### Func **AddNewBlend**( ) As [CATIAHybridShapeBlend](../GSMInterfaces/interface_HybridShapeBlend_52604.md)
 
-Creates a new blend surface within the current body.
+   Creates a new blend surface within the current body.
 
 **Parameters:**
 
@@ -84,7 +85,7 @@ Creates a new blend surface within the current body.
 
 ### Func **AddNewBoundary**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iInitialElement`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  long  `iTypedePropagation`) As [CATIAHybridShapeBoundary](../GSMInterfaces/interface_HybridShapeBoundary_76575.md)
 
-Creates a new Boundary within the current body.
+   Creates a new Boundary within the current body.
 
 **Parameters:**
 
@@ -99,7 +100,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewBoundaryOfSurface**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Surface`) As [CATIAHybridShapeBoundary](../GSMInterfaces/interface_HybridShapeBoundary_76575.md)
 
-Creates a Boundary within the current body.
+   Creates a Boundary within the current body.
 
 **Parameters:**
 
@@ -108,7 +109,7 @@ Creates a Boundary within the current body.
 
 ### Func **AddNewBump**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iBodyToBump`) As [CATIAHybridShapeBump](../GSMInterfaces/interface_HybridShapeBump_47115.md)
 
-Creates a new Bump within the current body.
+   Creates a new Bump within the current body.
 Note: require GSO license.
 
 **Parameters:**
@@ -118,7 +119,7 @@ Note: require GSO license.
 
 ### Func **AddNewCircle2PointsRad**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  boolean  `iGeodesic`,  double  `iRadius`,  long  `iOri`) As [CATIAHybridShapeCircle2PointsRad](../GSMInterfaces/interface_HybridShapeCircle2PointsRad_146741.md)
 
-Creates a new Circle passing through 2 points with a radius within the current body.
+   Creates a new Circle passing through 2 points with a radius within the current body.
 
 **Parameters:**
 
@@ -135,7 +136,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircle3Points**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint3`) As [CATIAHybridShapeCircle3Points](../GSMInterfaces/interface_HybridShapeCircle3Points_117560.md)
 
-Creates a new circle passing through 3 points within the current body.
+   Creates a new circle passing through 3 points within the current body.
 
 **Parameters:**
 
@@ -149,7 +150,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleBitangentPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  long  `iOri1`,  long  `iOri2`) As [CATIAHybridShapeCircleBitangentPoint](../GSMInterfaces/interface_HybridShapeCircleBitangentPoint_199815.md)
 
-Creates a new circle tangent to 2 curves and passing through one point within the current body.
+   Creates a new circle tangent to 2 curves and passing through one point within the current body.
 
 **Parameters:**
 
@@ -167,7 +168,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleBitangentRadius**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iRadius`,  long  `iOri1`,  long  `iOri2`) As [CATIAHybridShapeCircleBitangentRadius](../GSMInterfaces/interface_HybridShapeCircleBitangentRadius_212126.md)
 
-Creates a new circle tangent to 2 curves and with a radius within the current body.
+   Creates a new circle tangent to 2 curves and with a radius within the current body.
 
 **Parameters:**
 
@@ -184,7 +185,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleCenterAxis**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  double  `iValue`,  boolean  `iProjection`) As [CATIAHybridShapeCircleCenterAxis](../GSMInterfaces/interface_HybridShapeCircleCenterAxis_150107.md)
 
-Creates a circle from point and axis.
+   Creates a circle from point and axis.
 
 **Parameters:**
 
@@ -196,7 +197,7 @@ Creates a circle from point and axis.
 
 ### Func **AddNewCircleCenterAxisWithAngles**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  double  `iValue`,  boolean  `iProjection`,  double  `iStartAngle`,  double  `iEndAngle`) As [CATIAHybridShapeCircleCenterAxis](../GSMInterfaces/interface_HybridShapeCircleCenterAxis_150107.md)
 
-Creates a circle from point and axis.
+   Creates a circle from point and axis.
 
 **Parameters:**
 
@@ -212,7 +213,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleCenterTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenterElem`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iTangentCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iRadius`) As [CATIAHybridShapeCircleCenterTangent](../GSMInterfaces/interface_HybridShapeCircleCenterTangent_186102.md)
 
-Creates a new circle with given center element and tangent curve.
+   Creates a new circle with given center element and tangent curve.
 
 **Parameters:**
 
@@ -224,7 +225,7 @@ Creates a new circle with given center element and tangent curve.
 
 ### Func **AddNewCircleCtrPt**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrossingPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  boolean  `iGeodesic`) As [CATIAHybridShapeCircleCtrPt](../GSMInterfaces/interface_HybridShapeCircleCtrPt_98914.md)
 
-Creates a new whole circle defined by its center, a passing point within the current body.
+   Creates a new whole circle defined by its center, a passing point within the current body.
 
 **Parameters:**
 
@@ -239,7 +240,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleCtrPtWithAngles**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrossingPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  boolean  `iGeodesic`,  double  `iStartAngle`,  double  `iEndAngle`) As [CATIAHybridShapeCircleCtrPt](../GSMInterfaces/interface_HybridShapeCircleCtrPt_98914.md)
 
-Creates a new circle defined by its center, a passing point and angles within the current body.
+   Creates a new circle defined by its center, a passing point and angles within the current body.
 
 **Parameters:**
 
@@ -256,7 +257,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleCtrRad**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  boolean  `iGeodesic`,  double  `iRadius`) As [CATIAHybridShapeCircleCtrRad](../GSMInterfaces/interface_HybridShapeCircleCtrRad_106865.md)
 
-Creates a new whole circle defined by its center and a radius within the current body.
+   Creates a new whole circle defined by its center and a radius within the current body.
 
 **Parameters:**
 
@@ -270,7 +271,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleCtrRadWithAngles**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  boolean  `iGeodesic`,  double  `iRadius`,  double  `iStartAngle`,  double  `iEndAngle`) As [CATIAHybridShapeCircleCtrRad](../GSMInterfaces/interface_HybridShapeCircleCtrRad_106865.md)
 
-Creates a new circle defined by its center, a radius and angles within the current body.
+   Creates a new circle defined by its center, a radius and angles within the current body.
 
 **Parameters:**
 
@@ -286,7 +287,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCircleDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapeCircleExplicit](../GSMInterfaces/interface_HybridShapeCircleExplicit_130251.md)
 
-Creates a new datum of circle within the current body.
+   Creates a new datum of circle within the current body.
 
 **Parameters:**
 
@@ -295,7 +296,7 @@ Creates a new datum of circle within the current body.
 
 ### Func **AddNewCircleTritangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve3`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  long  `iOri1`,  long  `iOri2`,  long  `iOri3`) As [CATIAHybridShapeCircleTritangent](../GSMInterfaces/interface_HybridShapeCircleTritangent_152975.md)
 
-Creates a new tritangent circle within the current body.
+   Creates a new tritangent circle within the current body.
 
 **Parameters:**
 
@@ -314,7 +315,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCombine**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iFirstCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSecondCurve`,  long  `iNearestSolutions`) As [CATIAHybridShapeCombine](../GSMInterfaces/interface_HybridShapeCombine_67178.md)
 
-Creates a new Combine within the current body. By default, the combine direction is the normal of each curve. If you want to change see CATIAHybridShapeCombine interfaces.
+   Creates a new Combine within the current body. By default, the combine direction is the normal of each curve. If you want to change see CATIAHybridShapeCombine interfaces.
 
 **Parameters:**
 
@@ -329,7 +330,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewConic**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iStartingPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iEndPoint`) As [CATIAHybridShapeConic](../GSMInterfaces/interface_HybridShapeConic_52888.md)
 
-Creates a new conic within the current body.
+   Creates a new conic within the current body.
 
 **Parameters:**
 
@@ -344,7 +345,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewConicalReflectLineWithType**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iOrigin`,  double  `iAngle`,  long  `iOrientationSupport`,  long  `iType`) As [CATIAHybridShapeReflectLine](../GSMInterfaces/interface_HybridShapeReflectLine_99604.md)
 
-Creates a new conical ReflectLine within the current body.
+   Creates a new conical ReflectLine within the current body.
 Create a conical reflectline curve on a support surface from an origin point with an angle.
 
 **Parameters:**
@@ -354,13 +355,15 @@ Create a conical reflectline curve on a support surface from an origin point wit
 ` iAngle`      Angle of the reflectline.
 ` iOrientationSupport`      Manage the angle used to compute the reflectline. Value can be 1 or -1
 ` iType`      Manage the type used to compute the reflectline. Value can be 0 or 1 Returns or sets whether the reflectline curve is or should be created with the normal to the support or the tangent plane to the support.
+
 **Role** : The TypeSolution indicates whether the created reflectline curve is compute with the angle between the normale to the support and the direction or with the angle between the tangent plane to the support and the direction..
+
 **Legal values** : 0 for the normal and 1 for the tangent plane.
 ` oReflectLine`      Created conical reflectline.
 
 ### Func **AddNewConnect**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint1`,  long  `iOrient1`,  long  `iContinuity1`,  double  `iTension1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint2`,  long  `iOrient2`,  long  `iContinuity2`,  double  `iTension2`,  boolean  `Trim`) As [CATIAHybridShapeConnect](../GSMInterfaces/interface_HybridShapeConnect_67838.md)
 
-Creates a new Connect within the current body.
+   Creates a new Connect within the current body.
 
 **Parameters:**
 
@@ -385,7 +388,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCorner**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iRadius`,  long  `iOrientation1`,  long  `iOrientation2`,  boolean  `iTrim`) As [CATIAHybridShapeCorner](../GSMInterfaces/interface_HybridShapeCorner_60814.md)
 
-Creates a new Corner within the current body.
+   Creates a new Corner within the current body.
 Create a corner curve between a point and a curve or 2 curves on a support surface.
 
 **Parameters:**
@@ -405,7 +408,7 @@ if TRUE the 2 curves are trimed and asembled with the corner.
 
 ### Func **AddNewCurveDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapeCurveExplicit](../GSMInterfaces/interface_HybridShapeCurveExplicit_121424.md)
 
-Creates a new datum of curve within the current body.
+   Creates a new datum of curve within the current body.
 
 **Parameters:**
 
@@ -414,7 +417,7 @@ Creates a new datum of curve within the current body.
 
 ### Func **AddNewCurvePar**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Curve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Support`,  double  `Distance`,  boolean  `InvertDirection`,  boolean  `Geodesic`) As [CATIAHybridShapeCurvePar](../GSMInterfaces/interface_HybridShapeCurvePar_74955.md)
 
-Creates a new CurvePar within the current body.
+   Creates a new CurvePar within the current body.
 
 **Parameters:**
 
@@ -430,7 +433,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewCurveSmooth**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIACurve`) As [CATIAHybridShapeCurveSmooth](../GSMInterfaces/interface_HybridShapeCurveSmooth_102554.md)
 
-Creates a new CurveSmooth within the current body.
+   Creates a new CurveSmooth within the current body.
 
 **Parameters:**
 
@@ -439,7 +442,7 @@ Creates a new CurveSmooth within the current body.
 
 ### Func **AddNewCylinder**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  double  `iRadius`,  double  `iFirstLength`,  double  `iSecondLength`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`) As [CATIAHybridShapeCylinder](../GSMInterfaces/interface_HybridShapeCylinder_75955.md)
 
-Creates a new Cylinder within the current body.
+   Creates a new Cylinder within the current body.
 
 **Parameters:**
 
@@ -453,7 +456,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewDatums**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`) As [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)
 
-Creates datums from a multi-domain result feature, one datum is created by object domain.
+   Creates datums from a multi-domain result feature, one datum is created by object domain.
 Note; Available only for a shape design feature as input ( not for datum feature ).
 
 **Parameters:**
@@ -465,24 +468,24 @@ Level of availability = V5R14
 **Example** :      This example converts a hybrid shape object in as much as datums that the original hybrid shape features contains of domain
 
 ```VBScript
- Dim HShape
- Set reference   = part.CreateReferenceFromObject(hybridShapeObject)
- ' Convert to Datums
- HShape = hybridShapeFactory.AddNewDatums reference
- Num =UBound(HShape)
- For i = 0 to Num
-       hybridBody1.AppendHybridShape HShape (i)
- Next
- part.InWorkObject = HShape(num)
- part.Update
- ' Delete original feature
- hybridShapeFactory.DeleteObjectForDatum reference
+      Dim HShape
+      Set reference   = part.CreateReferenceFromObject(hybridShapeObject)
+      ' Convert to Datums
+      HShape = hybridShapeFactory.AddNewDatums reference
+      Num =UBound(HShape)
+      For i = 0 to Num
+            hybridBody1.AppendHybridShape HShape (i)
+      Next
+      part.InWorkObject = HShape(num)
+      part.Update
+      ' Delete original feature
+      hybridShapeFactory.DeleteObjectForDatum reference
 
 ```
 
 ### Func **AddNewDevelop**( long  `iMode`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iToDevelop`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`) As [CATIAHybridShapeDevelop](../GSMInterfaces/interface_HybridShapeDevelop_68134.md)
 
-Creates a new Develop within the current body.
+   Creates a new Develop within the current body.
 Note: require either DL1 or GSO license.
 
 **Parameters:**
@@ -496,7 +499,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewDirection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-Creates a new direction specified by an element within the current body.
+   Creates a new direction specified by an element within the current body.
 
 **Parameters:**
 
@@ -507,7 +510,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewDirectionByCoord**( double  `iX`,  double  `iY`,  double  `iZ`) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-Creates a new Direction specifed by coordinates within the current body.
+   Creates a new Direction specifed by coordinates within the current body.
 
 **Parameters:**
 
@@ -518,13 +521,13 @@ Creates a new Direction specifed by coordinates within the current body.
 
 ### Func **AddNewEmptyRotate**( ) As [CATIAHybridShapeRotate](../GSMInterfaces/interface_HybridShapeRotate_60980.md)
 
-Creates a new empty Rotate within the current body.  
+   Creates a new empty Rotate within the current body.  
 ### Func **AddNewEmptyTranslate**( ) As [CATIAHybridShapeTranslate](../GSMInterfaces/interface_HybridShapeTranslate_84680.md)
 
-Creates a new empty Translate within the current body.  
+   Creates a new empty Translate within the current body.  
 ### Func **AddNewExtract**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Element`) As [CATIAHybridShapeExtract](../GSMInterfaces/interface_HybridShapeExtract_68586.md)
 
-Creates a new Extract within the current body.
+   Creates a new Extract within the current body.
 
 **Parameters:**
 
@@ -535,7 +538,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewExtractMulti**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Element`) As [CATIAHybridShapeExtractMulti](../GSMInterfaces/interface_HybridShapeExtractMulti_111881.md)
 
-Creates a new Multiple Extract within the current body.
+   Creates a new Multiple Extract within the current body.
 
 **Parameters:**
 
@@ -546,7 +549,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewExtrapolLength**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iBoundary`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iToExtrapol`,  double  `iLength`) As [CATIAHybridShapeExtrapol](../GSMInterfaces/interface_HybridShapeExtrapol_76994.md)
 
-Creates a new Extrapol (specified by length) within the current body.
+   Creates a new Extrapol (specified by length) within the current body.
 
 **Parameters:**
 
@@ -559,7 +562,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewExtrapolUntil**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iBoundary`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iToExtrapol`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iUntil`) As [CATIAHybridShapeExtrapol](../GSMInterfaces/interface_HybridShapeExtrapol_76994.md)
 
-Creates a new Extrapol (until an element) within the current body.
+   Creates a new Extrapol (until an element) within the current body.
 
 **Parameters:**
 
@@ -572,7 +575,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewExtremum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObjet`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDir`,  long  `iMinMax`) As [CATIAHybridShapeExtremum](../GSMInterfaces/interface_HybridShapeExtremum_77426.md)
 
-Creates a new Extremum within the current body.
+   Creates a new Extremum within the current body.
 
 **Parameters:**
 
@@ -585,7 +588,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewExtremumPolar**( short  `iType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAContour`) As [CATIAHybridShapeExtremumPolar](../GSMInterfaces/interface_HybridShapeExtremumPolar_122024.md)
 
-Creates a new Extremum Polar within the current body.
+   Creates a new Extremum Polar within the current body.
 
 **Parameters:**
 
@@ -595,7 +598,7 @@ Creates a new Extremum Polar within the current body.
 
 ### Func **AddNewExtrude**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObjectToExtrude`,  double  `iOffsetDebut`,  double  `iOffsetFin`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`) As [CATIAHybridShapeExtrude](../GSMInterfaces/interface_HybridShapeExtrude_68828.md)
 
-Creates a new extrude within the current body.
+   Creates a new extrude within the current body.
 
 **Parameters:**
 
@@ -609,7 +612,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewFill**( ) As [CATIAHybridShapeFill](../GSMInterfaces/interface_HybridShapeFill_46556.md)
 
-Creates a new Fill within the current body.
+   Creates a new Fill within the current body.
 
 **Parameters:**
 
@@ -617,7 +620,7 @@ Creates a new Fill within the current body.
 
 ### Func **AddNewFilletBiTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  double  `iRadius`,  long  `iOrientation1`,  long  `iOrientation2`,  long  `iSupportsTrimMode`,  long  `iRibbonRelimitationMode`) As [CATIAHybridShapeFilletBiTangent](../GSMInterfaces/interface_HybridShapeFilletBiTangent_138802.md)
 
-Creates a new a sphere bitangent fillet between two skins.
+   Creates a new a sphere bitangent fillet between two skins.
 
 **Parameters:**
 
@@ -634,7 +637,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewFilletTriTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iRemoveElem`,  long  `iOrientation1`,  long  `iOrientation2`,  long  `iRemoveOrientation`,  long  `iSupportsTrimMode`,  long  `iRibbonRelimitationMode`) As [CATIAHybridShapeFilletTriTangent](../GSMInterfaces/interface_HybridShapeFilletTriTangent_151605.md)
 
-Creates a new a tritangent fillet between three skins.
+   Creates a new a tritangent fillet between three skins.
 
 **Parameters:**
 
@@ -653,7 +656,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewHealing**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iBodyToheal`) As [CATIAHybridShapeHealing](../GSMInterfaces/interface_HybridShapeHealing_66984.md)
 
-Creates a new healing within the current body.
+   Creates a new healing within the current body.
 
 **Parameters:**
 
@@ -662,7 +665,7 @@ Creates a new healing within the current body.
 
 ### Func **AddNewHelix**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`,  boolean  `iInvertAxis`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iStartingPoint`,  double  `iPitch`,  double  `iHeight`,  boolean  `iClockwiseRevolution`,  double  `iStartingAngle`,  double  `iTaperAngle`,  boolean  `iTaperOutward`) As [CATIAHybridShapeHelix](../GSMInterfaces/interface_HybridShapeHelix_53588.md)
 
-Creates a new Helix within the current body.
+   Creates a new Helix within the current body.
 
 **Parameters:**
 
@@ -681,7 +684,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewHybridScaling**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElemToScale`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  double  `iRatio`) As [CATIAHybridShapeScaling](../GSMInterfaces/interface_HybridShapeScaling_67358.md)
 
-Creates a new scaling within the current body.
+   Creates a new scaling within the current body.
 
 **Parameters:**
 
@@ -694,7 +697,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewHybridSplit**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  long  `iOrientation`) As [CATIAHybridShapeSplit](../GSMInterfaces/interface_HybridShapeSplit_54298.md)
 
-Creates a new Split within the current body.
+   Creates a new Split within the current body.
 
 **Parameters:**
 
@@ -707,7 +710,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewHybridTrim**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement1`,  long  `iOrientation1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  long  `iOrientation2`) As [CATIAHybridShapeTrim](../GSMInterfaces/interface_HybridShapeTrim_47387.md)
 
-Creates a new Trim within the current body by cutting and joining two elements.
+   Creates a new Trim within the current body by cutting and joining two elements.
 You can trim a surface by a surface or a curve by a curve.
 
 **Parameters:**
@@ -720,7 +723,7 @@ You can trim a surface by a surface or a curve by a curve.
 
 ### Func **AddNewIntegratedLaw**( long  `iType`) As [CATIAHybridShapeIntegratedLaw](../GSMInterfaces/interface_HybridShapeIntegratedLaw_119452.md)
 
-Creates Integrated Law.
+   Creates Integrated Law.
 
 **Parameters:**
 
@@ -728,7 +731,7 @@ Creates Integrated Law.
 
 ### Func **AddNewIntersection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject2`) As [CATIAHybridShapeIntersection](../GSMInterfaces/interface_HybridShapeIntersection_112946.md)
 
-Creates a new Intersection within the current body.
+   Creates a new Intersection within the current body.
 
 **Parameters:**
 
@@ -740,7 +743,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewInverse**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Element`,  long  `Inverse`) As [CATIAHybridShapeInverse](../GSMInterfaces/interface_HybridShapeInverse_68654.md)
 
-Creates a new Inverse within the current body.
+   Creates a new Inverse within the current body.
 
 **Parameters:**
 
@@ -750,7 +753,7 @@ Creates a new Inverse within the current body.
 
 ### Func **AddNewJoin**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Element1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `Element2`) As [CATIAHybridShapeAssemble](../GSMInterfaces/interface_HybridShapeAssemble_75219.md)
 
-Creates a new Join within the current body.
+   Creates a new Join within the current body.
 
 **Parameters:**
 
@@ -763,7 +766,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLawDistProj**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReference`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iDefinition`) As [CATIAHybridShapeLawDistProj](../GSMInterfaces/interface_HybridShapeLawDistProj_100210.md)
 
-Creates a new law within the current body.
+   Creates a new law within the current body.
 
 **Parameters:**
 
@@ -775,7 +778,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineAngle**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  boolean  `iGeodesic`,  double  `iBeginOffset`,  double  `iEndOffset`,  double  `iAngle`,  boolean  `iOrientation`) As [CATIAHybridShapeLineAngle](../GSMInterfaces/interface_HybridShapeLineAngle_81468.md)
 
-Creates a new angle line within the current body.
+   Creates a new angle line within the current body.
 
 **Parameters:**
 
@@ -794,7 +797,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineBiTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`) As [CATIAHybridShapeLineBiTangent](../GSMInterfaces/interface_HybridShapeLineBiTangent_117650.md)
 
-Creates a new bitangent line within the current body.
+   Creates a new bitangent line within the current body.
 
 **Parameters:**
 
@@ -808,7 +811,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineBisecting**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine2`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`,  long  `SolutionNb`) As [CATIAHybridShapeLineBisecting](../GSMInterfaces/interface_HybridShapeLineBisecting_119248.md)
 
-Creates a new bisecting line within the current body.
+   Creates a new bisecting line within the current body.
 
 **Parameters:**
 
@@ -823,7 +826,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineBisectingOnSupport**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`,  long  `SolutionNb`) As [CATIAHybridShapeLineBisecting](../GSMInterfaces/interface_HybridShapeLineBisecting_119248.md)
 
-Creates a new bisecting line on a support within the current body.
+   Creates a new bisecting line on a support within the current body.
 
 **Parameters:**
 
@@ -840,7 +843,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineBisectingOnSupportWithPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iRefPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`,  long  `SolutionNb`) As [CATIAHybridShapeLineBisecting](../GSMInterfaces/interface_HybridShapeLineBisecting_119248.md)
 
-Creates a new bisecting line on a support with a atarting point within the current body.
+   Creates a new bisecting line on a support with a atarting point within the current body.
 
 **Parameters:**
 
@@ -859,7 +862,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineBisectingWithPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLine2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iRefPoint`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`,  long  `SolutionNb`) As [CATIAHybridShapeLineBisecting](../GSMInterfaces/interface_HybridShapeLineBisecting_119248.md)
 
-Creates a new bisecting line with a starting point within the current body.
+   Creates a new bisecting line with a starting point within the current body.
 
 **Parameters:**
 
@@ -876,7 +879,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapeLineExplicit](../GSMInterfaces/interface_HybridShapeLineExplicit_110473.md)
 
-Creates a new datum of line within the current body.
+   Creates a new datum of line within the current body.
 
 **Parameters:**
 
@@ -885,7 +888,7 @@ Creates a new datum of line within the current body.
 
 ### Func **AddNewLineNormal**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`) As [CATIAHybridShapeLineNormal](../GSMInterfaces/interface_HybridShapeLineNormal_91444.md)
 
-Creates a new normal line within the current body.
+   Creates a new normal line within the current body.
 
 **Parameters:**
 
@@ -900,7 +903,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtDir**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`) As [CATIAHybridShapeLinePtDir](../GSMInterfaces/interface_HybridShapeLinePtDir_81218.md)
 
-Creates a new point-direction line within the current body.
+   Creates a new point-direction line within the current body.
 
 **Parameters:**
 
@@ -914,7 +917,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtDirOnSupport**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`) As [CATIAHybridShapeLinePtDir](../GSMInterfaces/interface_HybridShapeLinePtDir_81218.md)
 
-Creates a new point-direction line within the current body.
+   Creates a new point-direction line within the current body.
 
 **Parameters:**
 
@@ -931,7 +934,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtPt**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtOrigine`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtExtremite`) As [CATIAHybridShapeLinePtPt](../GSMInterfaces/interface_HybridShapeLinePtPt_73797.md)
 
-Creates a new point-point line within the current body.
+   Creates a new point-point line within the current body.
 
 **Parameters:**
 
@@ -943,7 +946,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtPtExtended**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtOrigine`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtExtremite`,  double  `iBeginOffset`,  double  `iEndOffset`) As [CATIAHybridShapeLinePtPt](../GSMInterfaces/interface_HybridShapeLinePtPt_73797.md)
 
-Creates a new point-point line with extensions within the current body.
+   Creates a new point-point line with extensions within the current body.
 
 **Parameters:**
 
@@ -957,7 +960,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtPtOnSupport**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtOrigine`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtExtremite`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`) As [CATIAHybridShapeLinePtPt](../GSMInterfaces/interface_HybridShapeLinePtPt_73797.md)
 
-Creates a new point-point line with support within the current body.
+   Creates a new point-point line with support within the current body.
 
 **Parameters:**
 
@@ -972,7 +975,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLinePtPtOnSupportExtended**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtOrigine`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPtExtremite`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iBeginOffset`,  double  `iEndOffset`) As [CATIAHybridShapeLinePtPt](../GSMInterfaces/interface_HybridShapeLinePtPt_73797.md)
 
-Creates a new point-point line with extensions and with support within the current body.
+   Creates a new point-point line with extensions and with support within the current body.
 
 **Parameters:**
 
@@ -989,7 +992,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineTangency**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`) As [CATIAHybridShapeLineTangency](../GSMInterfaces/interface_HybridShapeLineTangency_109970.md)
 
-Creates a new tangent line within the current body.
+   Creates a new tangent line within the current body.
 
 **Parameters:**
 
@@ -1004,7 +1007,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLineTangencyOnSupport**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iBeginOffset`,  double  `iEndOffset`,  boolean  `iOrientation`) As [CATIAHybridShapeLineTangency](../GSMInterfaces/interface_HybridShapeLineTangency_109970.md)
 
-Creates a new tangent line within the current body.
+   Creates a new tangent line within the current body.
 
 **Parameters:**
 
@@ -1022,7 +1025,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewLoft**( ) As [CATIAHybridShapeLoft](../GSMInterfaces/interface_HybridShapeLoft_47138.md)
 
-Creates a new Loft within the current body.
+   Creates a new Loft within the current body.
 
 **Parameters:**
 
@@ -1030,7 +1033,7 @@ Creates a new Loft within the current body.
 
 ### Func **AddNewNear**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `MultiElement`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ReferenceElement`) As [CATIAHybridShapeNear](../GSMInterfaces/interface_HybridShapeNear_46501.md)
 
-Creates a new Near within the current body.
+   Creates a new Near within the current body.
 
 **Parameters:**
 
@@ -1043,7 +1046,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewOffset**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObjectToOffset`,  double  `iOffset`,  boolean  `iOrientation`,  double  `iPrecision`) As [CATIAHybridShapeOffset](../GSMInterfaces/interface_HybridShapeOffset_60716.md)
 
-Creates a new offset within the current body.
+   Creates a new offset within the current body.
 
 **Parameters:**
 
@@ -1056,7 +1059,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlane1Curve**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlanarCurve`) As [CATIAHybridShapePlane1Curve](../GSMInterfaces/interface_HybridShapePlane1Curve_97590.md)
 
-Creates a new plane passing through one planar curve within the current body.
+   Creates a new plane passing through one planar curve within the current body.
 
 **Parameters:**
 
@@ -1066,7 +1069,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlane1Line1Pt**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLn`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`) As [CATIAHybridShapePlane1Line1Pt](../GSMInterfaces/interface_HybridShapePlane1Line1Pt_110762.md)
 
-Creates a new plane passing through 1 line and 1 point within the current body.
+   Creates a new plane passing through 1 line and 1 point within the current body.
 
 **Parameters:**
 
@@ -1078,7 +1081,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlane2Lines**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLn1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iLn2`) As [CATIAHybridShapePlane2Lines](../GSMInterfaces/interface_HybridShapePlane2Lines_97036.md)
 
-Creates a new plane passing through 2 lines within the current body.
+   Creates a new plane passing through 2 lines within the current body.
 
 **Parameters:**
 
@@ -1090,7 +1093,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlane3Points**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt3`) As [CATIAHybridShapePlane3Points](../GSMInterfaces/interface_HybridShapePlane3Points_108127.md)
 
-Creates a new plane passing through 3 points within the current body.
+   Creates a new plane passing through 3 points within the current body.
 
 **Parameters:**
 
@@ -1104,7 +1107,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlaneAngle**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iRevolAxis`,  double  `iAngle`,  boolean  `iOrientation`) As [CATIAHybridShapePlaneAngle](../GSMInterfaces/interface_HybridShapePlaneAngle_89924.md)
 
-Creates a new angle plane within the current body.
+   Creates a new angle plane within the current body.
 
 **Parameters:**
 
@@ -1120,7 +1123,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlaneDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapePlaneExplicit](../GSMInterfaces/interface_HybridShapePlaneExplicit_120282.md)
 
-Creates a new datum of plane within the current body.
+   Creates a new datum of plane within the current body.
 
 **Parameters:**
 
@@ -1129,7 +1132,7 @@ Creates a new datum of plane within the current body.
 
 ### Func **AddNewPlaneEquation**( double  `iA_Coeff`,  double  `iB_Coeff`,  double  `iC_Coeff`,  double  `iD_Coeff`) As [CATIAHybridShapePlaneEquation](../GSMInterfaces/interface_HybridShapePlaneEquation_120590.md)
 
-Creates a new equation plane within the current body. Plane equation is Ax+By+Cz = D.
+   Creates a new equation plane within the current body. Plane equation is Ax+By+Cz = D.
 
 **Parameters:**
 
@@ -1141,7 +1144,7 @@ Creates a new equation plane within the current body. Plane equation is Ax+By+Cz
 
 ### Func **AddNewPlaneMean**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iListOfPoints`,  long  `NbPoint`) As [CATIAHybridShapePlaneMean](../GSMInterfaces/interface_HybridShapePlaneMean_81488.md)
 
-Creates a new mean through points plane within the current body.
+   Creates a new mean through points plane within the current body.
 
 **Parameters:**
 
@@ -1151,7 +1154,7 @@ Creates a new mean through points plane within the current body.
 
 ### Func **AddNewPlaneNormal**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`) As [CATIAHybridShapePlaneNormal](../GSMInterfaces/interface_HybridShapePlaneNormal_100394.md)
 
-Creates a new normal plane within the current body.
+   Creates a new normal plane within the current body.
 
 **Parameters:**
 
@@ -1163,7 +1166,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlaneOffset**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  double  `iOffset`,  boolean  `iOrientation`) As [CATIAHybridShapePlaneOffset](../GSMInterfaces/interface_HybridShapePlaneOffset_100364.md)
 
-Creates a new offset plane within the current body.
+   Creates a new offset plane within the current body.
 
 **Parameters:**
 
@@ -1176,7 +1179,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlaneOffsetPt**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`) As [CATIAHybridShapePlaneOffsetPt](../GSMInterfaces/interface_HybridShapePlaneOffsetPt_118752.md)
 
-Creates a new offset trough point plane within the current body.
+   Creates a new offset trough point plane within the current body.
 
 **Parameters:**
 
@@ -1189,7 +1192,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPlaneTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`) As [CATIAHybridShapePlaneTangent](../GSMInterfaces/interface_HybridShapePlaneTangent_109906.md)
 
-Creates a new tangent plane within the current body.
+   Creates a new tangent plane within the current body.
 
 **Parameters:**
 
@@ -1201,7 +1204,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointBetween**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint2`,  double  `iRatio`,  long  `iOrientation`) As [CATIAHybridShapePointBetween](../GSMInterfaces/interface_HybridShapePointBetween_110853.md)
 
-Creates a new PointBetween within the current body.
+   Creates a new PointBetween within the current body.
 
 **Parameters:**
 
@@ -1215,7 +1218,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointCenter**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`) As [CATIAHybridShapePointCenter](../GSMInterfaces/interface_HybridShapePointCenter_101398.md)
 
-Creates a new circle center point within the current body.
+   Creates a new circle center point within the current body.
 
 **Parameters:**
 
@@ -1226,7 +1229,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointCoord**( double  `iX`,  double  `iY`,  double  `iZ`) As [CATIAHybridShapePointCoord](../GSMInterfaces/interface_HybridShapePointCoord_92194.md)
 
-Creates a new point defined by its cartesian coordinates within the current body.
+   Creates a new point defined by its cartesian coordinates within the current body.
 
 **Parameters:**
 
@@ -1237,7 +1240,7 @@ Creates a new point defined by its cartesian coordinates within the current body
 
 ### Func **AddNewPointCoordWithReference**( double  `iX`,  double  `iY`,  double  `iZ`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`) As [CATIAHybridShapePointCoord](../GSMInterfaces/interface_HybridShapePointCoord_92194.md)
 
-Creates a new point defined its the cartesian coordinates regarding a reference point.
+   Creates a new point defined its the cartesian coordinates regarding a reference point.
 
 **Parameters:**
 
@@ -1250,7 +1253,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapePointExplicit](../GSMInterfaces/interface_HybridShapePointExplicit_121688.md)
 
-Creates a new datum of point within the current body.
+   Creates a new datum of point within the current body.
 
 **Parameters:**
 
@@ -1259,7 +1262,7 @@ Creates a new datum of point within the current body.
 
 ### Func **AddNewPointOnCurveFromDistance**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  double  `iLong`,  boolean  `iOrientation`) As [CATIAHybridShapePointOnCurve](../GSMInterfaces/interface_HybridShapePointOnCurve_110373.md)
 
-Creates a new point on a curve from a distance to an extremity within the current body.
+   Creates a new point on a curve from a distance to an extremity within the current body.
 
 **Parameters:**
 
@@ -1271,7 +1274,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnCurveFromPercent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  double  `iLong`,  boolean  `iOrientation`) As [CATIAHybridShapePointOnCurve](../GSMInterfaces/interface_HybridShapePointOnCurve_110373.md)
 
-Creates a new point on a curve from a ratio of distance to an extremity within the current body.
+   Creates a new point on a curve from a ratio of distance to an extremity within the current body.
 
 **Parameters:**
 
@@ -1283,7 +1286,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnCurveWithReferenceFromDistance**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  double  `iLong`,  boolean  `iOrientation`) As [CATIAHybridShapePointOnCurve](../GSMInterfaces/interface_HybridShapePointOnCurve_110373.md)
 
-Creates a new point on a curve with a reference point and from a distance within the current body.
+   Creates a new point on a curve with a reference point and from a distance within the current body.
 
 **Parameters:**
 
@@ -1297,7 +1300,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnCurveWithReferenceFromPercent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  double  `iLong`,  boolean  `iOrientation`) As [CATIAHybridShapePointOnCurve](../GSMInterfaces/interface_HybridShapePointOnCurve_110373.md)
 
-Creates a new point on a curve with a reference point and from a ratio of distance within the current body.
+   Creates a new point on a curve with a reference point and from a ratio of distance within the current body.
 
 **Parameters:**
 
@@ -1311,7 +1314,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnPlane**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  double  `iX`,  double  `iY`) As [CATIAHybridShapePointOnPlane](../GSMInterfaces/interface_HybridShapePointOnPlane_108958.md)
 
-Creates a new point on a plane within the current body.
+   Creates a new point on a plane within the current body.
 
 **Parameters:**
 
@@ -1324,7 +1327,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnPlaneWithReference**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  double  `iX`,  double  `iY`) As [CATIAHybridShapePointOnPlane](../GSMInterfaces/interface_HybridShapePointOnPlane_108958.md)
 
-Creates a new point on a plane with a reference point within the current body.
+   Creates a new point on a plane with a reference point within the current body.
 
 **Parameters:**
 
@@ -1340,7 +1343,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnSurface**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iX`) As [CATIAHybridShapePointOnSurface](../GSMInterfaces/interface_HybridShapePointOnSurface_129465.md)
 
-Creates a new point on a surface within the current body.
+   Creates a new point on a surface within the current body.
 
 **Parameters:**
 
@@ -1352,7 +1355,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointOnSurfaceWithReference**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurface`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPt`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iX`) As [CATIAHybridShapePointOnSurface](../GSMInterfaces/interface_HybridShapePointOnSurface_129465.md)
 
-Creates a new point on a surface with a reference point within the current body.
+   Creates a new point on a surface with a reference point within the current body.
 
 **Parameters:**
 
@@ -1366,7 +1369,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPointTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCurve`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`) As [CATIAHybridShapePointTangent](../GSMInterfaces/interface_HybridShapePointTangent_111286.md)
 
-Creates a new tangent to curve point within the current body.
+   Creates a new tangent to curve point within the current body.
 
 **Parameters:**
 
@@ -1377,7 +1380,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewPolyline**( ) As [CATIAHybridShapePolyline](../GSMInterfaces/interface_HybridShapePolyline_76765.md)
 
-Creates a new Polyline within the current body.
+   Creates a new Polyline within the current body.
 
 **Parameters:**
 
@@ -1385,7 +1388,7 @@ Creates a new Polyline within the current body.
 
 ### Func **AddNewPositionTransfo**( long  `iMode`) As [CATIAHybridShapePositionTransfo](../GSMInterfaces/interface_HybridShapePositionTransfo_143932.md)
 
-Creates a new PositionTransfo within the current body.
+   Creates a new PositionTransfo within the current body.
 
 **Parameters:**
 
@@ -1394,7 +1397,7 @@ Creates a new PositionTransfo within the current body.
 
 ### Func **AddNewProject**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`) As [CATIAHybridShapeProject](../GSMInterfaces/interface_HybridShapeProject_68370.md)
 
-Creates a new Project within the current body.
+   Creates a new Project within the current body.
 
 **Parameters:**
 
@@ -1418,7 +1421,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewReflectLineWithType**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDir`,  double  `iAngle`,  long  `iOrientationSupport`,  long  `iOrientationDirection`,  long  `iType`) As [CATIAHybridShapeReflectLine](../GSMInterfaces/interface_HybridShapeReflectLine_99604.md)
 
-Creates a new ReflectLine within the current body.
+   Creates a new ReflectLine within the current body.
 Create a reflectline curve on a support surface along a direction with an angle.
 
 **Parameters:**
@@ -1428,13 +1431,15 @@ Create a reflectline curve on a support surface along a direction with an angle.
 ` iOrientationSupport`      Manage the angle used to compute the reflectline. Value can be 1 or -1
 ` iOrientationDirection`      Manage the angle used to compute the reflectline. Value can be 1 or -1
 ` iType`      Manage the type used to compute the reflectline. Value can be 0 or 1 Returns or sets whether the reflectline curve is or should be created with the normal to the support or the tangent plane to the support.
+
 **Role** : The TypeSolution indicates whether the created reflectline curve is compute with the angle between the normale to the support and the direction or with the angle between the tangent plane to the support and the direction..
+
 **Legal values** : 0 for the normal and 1 for the tangent plane.
 ` oReflectLine`      Created reflectline.
 
 ### Func **AddNewRevol**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObjectToExtrude`,  double  `iOffsetDebut`,  double  `iOffsetFin`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`) As [CATIAHybridShapeRevol](../GSMInterfaces/interface_HybridShapeRevol_54128.md)
 
-Creates a new revolution within the current body.
+   Creates a new revolution within the current body.
 
 **Parameters:**
 
@@ -1450,7 +1455,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewRotate**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iToRotate`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`,  double  `iAngle`) As [CATIAHybridShapeRotate](../GSMInterfaces/interface_HybridShapeRotate_60980.md)
 
-Creates a new Rotate within the current body.
+   Creates a new Rotate within the current body.
 
 **Parameters:**
 
@@ -1463,7 +1468,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewSection**( ) As [CATIAHybridShapeSection](../GSMInterfaces/interface_HybridShapeSection_68352.md)
 
-Creates a new section.
+   Creates a new section.
 
 **Parameters:**
 
@@ -1471,7 +1476,7 @@ Creates a new section.
 
 ### Func **AddNewSphere**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenter`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iAxis`,  double  `iRadius`,  double  `iBeginParallelAngle`,  double  `iEndParallelAngle`,  double  `iBeginMeridianAngle`,  double  `iEndMeridianAngle`) As [CATIAHybridShapeSphere](../GSMInterfaces/interface_HybridShapeSphere_60614.md)
 
-Creates a new Sphere within the current body.
+   Creates a new Sphere within the current body.
 
 **Parameters:**
 
@@ -1487,7 +1492,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewSpine**( ) As [CATIAHybridShapeSpine](../GSMInterfaces/interface_HybridShapeSpine_53676.md)
 
-Creates a new spine within the current body.
+   Creates a new spine within the current body.
 
 **Parameters:**
 
@@ -1495,7 +1500,7 @@ Creates a new spine within the current body.
 
 ### Func **AddNewSpiral**( long  `iType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCenterPoint`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iAxis`,  double  `iStartingRadius`,  boolean  `iClockwiseRevolution`) As [CATIAHybridShapeSpiral](../GSMInterfaces/interface_HybridShapeSpiral_60794.md)
 
-Creates a new Spiral within the current body.
+   Creates a new Spiral within the current body.
 
 **Parameters:**
 
@@ -1509,7 +1514,7 @@ Creates a new Spiral within the current body.
 
 ### Func **AddNewSpline**( ) As [CATIAHybridShapeSpline](../GSMInterfaces/interface_HybridShapeSpline_60786.md)
 
-Creates a new Spline within the current body.
+   Creates a new Spline within the current body.
 
 **Parameters:**
 
@@ -1517,7 +1522,7 @@ Creates a new Spline within the current body.
 
 ### Func **AddNewSurfaceDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapeSurfaceExplicit](../GSMInterfaces/interface_HybridShapeSurfaceExplicit_141550.md)
 
-Creates a new datum of surface within the current body.
+   Creates a new datum of surface within the current body.
 
 **Parameters:**
 
@@ -1526,7 +1531,7 @@ Creates a new datum of surface within the current body.
 
 ### Func **AddNewSweepCircle**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide1`) As [CATIAHybridShapeSweepCircle](../GSMInterfaces/interface_HybridShapeSweepCircle_100044.md)
 
-Creates a new SweepCircle within the current body.
+   Creates a new SweepCircle within the current body.
 
 **Parameters:**
 
@@ -1536,7 +1541,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewSweepConic**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAGuide1`) As [CATIAHybridShapeSweepConic](../GSMInterfaces/interface_HybridShapeSweepConic_91167.md)
 
-Creates a new SweepConic within the current body.
+   Creates a new SweepConic within the current body.
 
 **Parameters:**
 
@@ -1545,7 +1550,7 @@ Creates a new SweepConic within the current body.
 
 ### Func **AddNewSweepExplicit**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iProfile`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`) As [CATIAHybridShapeSweepExplicit](../GSMInterfaces/interface_HybridShapeSweepExplicit_121314.md)
 
-Creates a new SweepExplicit within the current body.
+   Creates a new SweepExplicit within the current body.
 
 **Parameters:**
 
@@ -1557,7 +1562,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewSweepLine**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide1`) As [CATIAHybridShapeSweepLine](../GSMInterfaces/interface_HybridShapeSweepLine_82824.md)
 
-Creates a new SweepLine within the current body.
+   Creates a new SweepLine within the current body.
 
 **Parameters:**
 
@@ -1566,7 +1571,7 @@ Creates a new SweepLine within the current body.
 
 ### Func **AddNewSymmetry**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReference`) As [CATIAHybridShapeSymmetry](../GSMInterfaces/interface_HybridShapeSymmetry_78389.md)
 
-Creates a new Symmetry within the current body.
+   Creates a new Symmetry within the current body.
 
 **Parameters:**
 
@@ -1578,7 +1583,7 @@ Sub-element(s) supported (see
 
 ### Func **AddNewTransfer**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElementToTransfer`,  long  `iTypeOfTransfer`) As [CATIAHybridShapeTransfer](../GSMInterfaces/interface_HybridShapeTransfer_76460.md)
 
-Creates a new Transfer within the current body.
+   Creates a new Transfer within the current body.
 Note: require DL1 license.
 
 **Parameters:**
@@ -1589,7 +1594,7 @@ Note: require DL1 license.
 
 ### Func **AddNewTranslate**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iDirection`,  double  `iDistance`) As [CATIAHybridShapeTranslate](../GSMInterfaces/interface_HybridShapeTranslate_84680.md)
 
-Creates a new Translate within the current body.
+   Creates a new Translate within the current body.
 
 **Parameters:**
 
@@ -1599,10 +1604,11 @@ Creates a new Translate within the current body.
 ` oTranslate`      Created translation
 ` oTranslate`      Created Translate (Empty feature)
 Note: Then translate mode and inputs has to be initialized
+
 **See also:**      [HybridShapeTranslate](../GSMInterfaces/interface_HybridShapeTranslate_84680.md) 
 ### Func **AddNewUnfold**( ) As [CATIAHybridShapeUnfold](../GSMInterfaces/interface_HybridShapeUnfold_60645.md)
 
-Creates a new Unfold within the current body.
+   Creates a new Unfold within the current body.
 Note: require DL1 license.
 
 **Parameters:**
@@ -1611,7 +1617,7 @@ Note: require DL1 license.
 
 ### Func **AddNewVolumeDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`) As [CATIAHybridShapeVolumeExplicit](../GSMInterfaces/interface_HybridShapeVolumeExplicit_132217.md)
 
-Creates a new datum of volume within the current body.
+   Creates a new datum of volume within the current body.
 Note: requires GSO License
 
 **Parameters:**
@@ -1621,7 +1627,7 @@ Note: requires GSO License
 
 ### Func **AddNewWrapCurve**( ) As [CATIAHybridShapeWrapCurve](../GSMInterfaces/interface_HybridShapeWrapCurve_83970.md)
 
-Creates a new Wrap Curve Surface within the current body.
+   Creates a new Wrap Curve Surface within the current body.
 Note: require GSO license.
 
 **Parameters:**
@@ -1630,7 +1636,7 @@ Note: require GSO license.
 
 ### Func **AddNewWrapSurface**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iBodyToDeform`) As [CATIAHybridShapeWrapSurface](../GSMInterfaces/interface_HybridShapeWrapSurface_100696.md)
 
-Creates a new Wrap Surface within the current body.
+   Creates a new Wrap Surface within the current body.
 Note: require GSO license.
 
 **Parameters:**
@@ -1640,7 +1646,7 @@ Note: require GSO license.
 
 ### Sub **ChangeFeatureName**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `Name`)
 
-Set display name for Shape Design Features.
+   Set display name for Shape Design Features.
 
 **Parameters:**
 
@@ -1649,7 +1655,7 @@ Set display name for Shape Design Features.
 
 ### Sub **DeleteObjectForDatum**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iObject`)
 
-Deletes an object within the current body.
+   Deletes an object within the current body.
 
 **Parameters:**
 
@@ -1657,7 +1663,7 @@ Deletes an object within the current body.
 
 ### Sub **GSMVisibility**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`,  long  `Show`)
 
-Set Visibility attribut for Shape Design Features.
+   Set Visibility attribut for Shape Design Features.
 
 **Parameters:**
 
@@ -1666,7 +1672,7 @@ Set Visibility attribut for Shape Design Features.
 
 ### Func **GetGeometricalFeatureType**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`) As short
 
-Returns type of "geometrical" shape Design feature .
+   Returns type of "geometrical" shape Design feature .
 
 **Parameters:**
 

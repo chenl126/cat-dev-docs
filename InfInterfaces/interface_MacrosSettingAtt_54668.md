@@ -4,12 +4,13 @@
 
 ## Methods
 
-### Func **GetDefaultMacroLibraries**( ) As [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)
+### Func **GetDefaultMacroLibraries**(| ) As [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)
 
-Returns the list of default macro libraries.  
+   Returns the list of default macro libraries.  
 ### Func **GetDefaultMacroLibrariesInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `AdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oLocked`) As boolean
 
-Retrieves environment informations for the default macro libraries setting.
+   Retrieves environment informations for the default macro libraries setting.
+
 **Role** :Retrieves the state of the parameter default macro libraries setting in the current environment.
 
 **Parameters:**
@@ -22,10 +23,11 @@ If the parameter is not locked, AdminLevel gives the administration level that w
 
 ### Func **GetExternalReferences**( ) As [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)
 
-Returns the list of external references.  
+   Returns the list of external references.  
 ### Func **GetExternalReferencesInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `AdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oLocked`) As boolean
 
-Retrieves environment informations for the external references setting.
+   Retrieves environment informations for the external references setting.
+
 **Role** :Retrieves the state of the parameter external references setting in the current environment.
 
 **Parameters:**
@@ -38,10 +40,11 @@ If the parameter is not locked, AdminLevel gives the administration level that w
 
 ### Func **GetLanguageEditor**( [CATScriptLanguage](../System/enum_CATScriptLanguage_59191.md)  `iLanguage`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns the editor path for the specified language.  
+   Returns the editor path for the specified language.  
 ### Func **GetLanguageEditorInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `AdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oLocked`) As boolean
 
-Retrieves environment informations for the language editors setting.
+   Retrieves environment informations for the language editors setting.
+
 **Role** :Retrieves the state of the parameter language editors setting in the current environment.
 
 **Parameters:**
@@ -54,10 +57,11 @@ If the parameter is not locked, AdminLevel gives the administration level that w
 
 ### Sub **SetDefaultMacroLibraries**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iLibraries`)
 
-Sets the list of default macro libraries.  
+   Sets the list of default macro libraries.  
 ### Sub **SetDefaultMacroLibrariesLock**( boolean  `iLocked`)
 
-Locks or unlocks the default macro libraries setting.
+   Locks or unlocks the default macro libraries setting.
+
 **Role** :Locks or unlocks the default macro libraries setting if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -68,10 +72,11 @@ Locks or unlocks the default macro libraries setting.
 
 ### Sub **SetExternalReferences**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iReferences`)
 
-Sets the list of external references.  
+   Sets the list of external references.  
 ### Sub **SetExternalReferencesLock**( boolean  `iLocked`)
 
-Locks or unlocks the external references setting.
+   Locks or unlocks the external references setting.
+
 **Role** :Locks or unlocks the external references setting if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -82,10 +87,11 @@ Locks or unlocks the external references setting.
 
 ### Sub **SetLanguageEditor**( [CATScriptLanguage](../System/enum_CATScriptLanguage_59191.md)  `iLanguage`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iEditorPath`)
 
-Sets the editor path for the specified language.  
+   Sets the editor path for the specified language.  
 ### Sub **SetLanguageEditorLock**( boolean  `iLocked`)
 
-Locks or unlocks the language editors setting.
+   Locks or unlocks the language editors setting.
+
 **Role** :Locks or unlocks the language editors setting if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**

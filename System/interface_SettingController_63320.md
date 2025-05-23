@@ -1,6 +1,7 @@
 # SettingController (Object)
 
 **_Represents the base object for setting controllers._**
+
 **Role** : A setting controller manages all or only a part of the parameters available in a property page of the dialog displayed using the Options command of the Tools menu. Each setting parameter may be represented by one or several setting attribute in the underlying setting repository.
 
 All setting controllers share the five methods of the SettingController object to deal with the whole set, or a subset of the setting attributes:
@@ -19,22 +20,25 @@ In addition, each setting controller exposes four methods per setting parameter:
 ```
 
 Locks or unlocks the PARAMETER setting parameter.
+
 **Role** : Locking a setting parameter prevents the end user, or the administrators below the current one, from changing the setting parameter value. Locking or unlocking the PARAMETER setting parameter is an administrator task and is possible when running a session in the administration mode only.
 
 **Parameters**
 
 `iLocked`
     [in] A flag to indicate whether the PARAMETER setting parameter should be locked.
+
 **Legal values** : `True` to lock, and `False` to unlock.
 
   * **Retrieving the Setting Parameter State**
 
 ```VBScript
-                                   inout CATBSTR ioLocked,
-                                   out  /*IDLRETVAL*/ boolean oModified);
+                                        inout CATBSTR ioLocked,
+                                        out  /*IDLRETVAL*/ boolean oModified);
 ```
 
 Retrieves information about the PARAMETER setting parameter.
+
 **Role** : This information defines the state of the setting parameter and is made up of:
 
     * The administration level that sets the current value or the value used to reset it
@@ -53,27 +57,33 @@ Retrieves information about the PARAMETER setting parameter.
 where n is an integer starting from 0 representing the rank of the administration level.
 `ioLocked`
     [inout] A character string to indicate whether the parameter is locked and the level of administration where the locking has been proceeded.
+
 **Legal values** :
     * **Locked at Admin Level n** if the setting parameter is locked by then administration level n,
 where n is an integer starting from 0. The setting parameter can not be modified at the current level.
     * **Locked** if the setting parameter is locked by the current administration level. Only an admistrator can get this value.
     * **Unlocked** if the setting parameter is not locked
+
 **Returns**
+
     **True** to indicate that the setting parameter value has been explicitely modified at the current administrator or user level. This is only possible with unlocked parameters. **False** means that it inherits the administered value.
 
 ## Methods
 
-### Sub **Commit**( )
+### Sub **Commit**(| )
 
-Makes a memory copy of the setting attribute values.
+   Makes a memory copy of the setting attribute values.
+
 **Role** : `Commit` saves the current values of the setting attributes managed by the setting controller in a specific memory area. Successive calls to `Commit` overwrite the memory area. The values saved by the last call to `Commit` can be restored from that memory area using the Rollback method.  
 ### Sub **ResetToAdminValues**( )
 
-Restores the administrated values of the all attributes.
+   Restores the administrated values of the all attributes.
+
 **Role** : `ResetToAdminValues` restores all the values of the setting attributes managed by the setting controller to either the values set by the setting administrator, or to their default values if the setting administrator did not change them.  
 ### Sub **ResetToAdminValuesByName**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iAttList`)
 
-Restores the administrated values of a subset of the attributes.
+   Restores the administrated values of a subset of the attributes.
+
 **Role** : `ResetToAdminValuesByName` restores the values of a subset of the setting attributes managed by the setting controller to either the values set by the setting administrator, or to their default values if the setting administrator did not change them.
 
 **Parameters:**
@@ -82,9 +92,11 @@ Restores the administrated values of a subset of the attributes.
 
 ### Sub **Rollback**( )
 
-Restores the last memory copy of the setting attribute values.
+   Restores the last memory copy of the setting attribute values.
+
 **Role** : `Rollback` restores the values of the setting attributes managed by the setting controller from the memory area. All values of the setting attributes managed by the setting controller modified since the last call to Commit are restored to the values they had when this last Commit was called.  
 ### Sub **SaveRepository**( )
 
-Makes a persistent copy of the setting attribute values on file.
+   Makes a persistent copy of the setting attribute values on file.
+
 **Role** : `SaveRepository` saves the current values of the setting attributes managed by the setting controller in a setting repository file. To avoid inconsistencies, `SaveRepository` first saves the values in the memory area used by the Commit method by calling Commit before writing the values in the setting repository file.

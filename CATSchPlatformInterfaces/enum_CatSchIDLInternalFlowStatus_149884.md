@@ -1,6 +1,7 @@
 # CatSchIDLInternalFlowStatus (Enumeration)
 
 **_Schematic internal flow flow status._**
+
 **Role** : For inserting a component into a route.
 
 **Values:**

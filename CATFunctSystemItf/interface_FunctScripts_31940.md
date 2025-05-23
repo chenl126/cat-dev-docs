@@ -6,15 +6,15 @@ It is managed on a Functional Element, thru the GenerativeKnowledge Facet Manage
 
 ## Methods
 
-### Func **Create**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`) As [CATIAFunctScript](../CATFunctSystemItf/interface_FunctScript_26659.md)
+### Func **Create**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`) As [CATIAFunctScript](../CATFunctSystemItf/interface_FunctScript_26659.md)
 
-Create a FunctScript.  
+   Create a FunctScript.  
 ### Sub **Delete**( [CATIAFunctScript](../CATFunctSystemItf/interface_FunctScript_26659.md)  `iScript`)
 
-Delete a FunctScript.  
+   Delete a FunctScript.  
 ### Func **Elem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFunctScript](../CATFunctSystemItf/interface_FunctScript_26659.md)
 
-Returns an association using its index or its name from the Scripts collection.
+   Returns an association using its index or its name from the Scripts collection.
 
 **Parameters:**
 
@@ -22,13 +22,13 @@ Returns an association using its index or its name from the Scripts collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved Script **Example:**      This example retrieves in `Act1` the fifth Script in the collection and in `Act2` the Script named `Moves`.
 
 ```VBScript
-Dim FunctElem As FunctionalObject
-Set FunctElem = FunctDoc.CurrentDescription.Objects.Elem("Valve")
-Dim FacetGKW As FunctionalGenScriptMgr
-Set FacetGKW = FunctElem.GetFacetByName("GKW")
-Dim Assoc1 As FunctScript
-Set Assoc1 = FacetGKW.Scripts.Elem(5)
-Dim Assoc2 As FunctScript
-Set Assoc2 = FacetGKW.Scripts.Elem("Producing the Skeleton 2D")
+     Dim FunctElem As FunctionalObject
+     Set FunctElem = FunctDoc.CurrentDescription.Objects.Elem("Valve")
+     Dim FacetGKW As FunctionalGenScriptMgr
+     Set FacetGKW = FunctElem.GetFacetByName("GKW")
+     Dim Assoc1 As FunctScript
+     Set Assoc1 = FacetGKW.Scripts.Elem(5)
+     Dim Assoc2 As FunctScript
+     Set Assoc2 = FacetGKW.Scripts.Elem("Producing the Skeleton 2D")
 
 ```

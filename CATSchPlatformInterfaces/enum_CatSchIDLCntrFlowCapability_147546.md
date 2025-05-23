@@ -1,6 +1,7 @@
 # CatSchIDLCntrFlowCapability (Enumeration)
 
 **_Schematic connector flow directions._**
+
 **Role** : Possible flow directions of a connector.
 
 **Values:**

@@ -11,63 +11,63 @@ Another attribute called the profile type defines the type of the parametric con
 
 ## Properties
 
-### Property **CatalogName**( ) As [CATIAParameter](../KnowledgeInterfaces/interface_Parameter_17963.md) (Read Only)
+### Property **CatalogName**(| ) As [CATIAParameter](../KnowledgeInterfaces/interface_Parameter_17963.md) (Read Only)
 
-Returns the parameter defining the catalog name.
+   Returns the parameter defining the catalog name.
 
 **Example:**
 
 ```VBScript
-Dim name As Parameter
-Set name = Section_1.CatalogName
+     Dim name As Parameter
+     Set name = Section_1.CatalogName
 
 ```
 
 ### Property **FamilyName**( ) As [CATIAParameter](../KnowledgeInterfaces/interface_Parameter_17963.md) (Read Only)
 
-Returns the parameter defining the family name.
+   Returns the parameter defining the family name.
 
 **Example:**
 
 ```VBScript
-Dim name As Parameter
-Set name = Section_1.FamilyName
+     Dim name As Parameter
+     Set name = Section_1.FamilyName
 
 ```
 
 ### Property **ProfileType**( ) As [CATIAParameter](../KnowledgeInterfaces/interface_Parameter_17963.md) (Read Only)
 
-Returns the parameter defining the profile type of the section.
+   Returns the parameter defining the profile type of the section.
 
 **Example:**
 
 ```VBScript
-Dim type As Parameter
-Set type = Section_1.ProfileType
+     Dim type As Parameter
+     Set type = Section_1.ProfileType
 
 ```
 
 ### Property **SectionName**( ) As [CATIAParameter](../KnowledgeInterfaces/interface_Parameter_17963.md) (Read Only)
 
-Returns the parameter defining the section name.
+   Returns the parameter defining the section name.
 
 **Example:**
 
 ```VBScript
-Dim name As Parameter
-Set name = Section_1.SectionName
+     Dim name As Parameter
+     Set name = Section_1.SectionName
 
 ```
 
 ### Property **StrAnchorPoints**( ) As [CATIAStrAnchorPoints](../StructureInterfaces/interface_StrAnchorPoints_48821.md) (Read Only)
 
-Returns the collection of anchor points.
+   Returns the collection of anchor points.
 
 ```VBScript
 
-  **Example:**
-       Dim anchorPts As StrAnchorPoints
-Set anchorPts = Section_1.StrAnchorPoints
+       **Example:**
+            Dim anchorPts As StrAnchorPoints
+     Set anchorPts = Section_1.StrAnchorPoints
 
 ```
 
@@ -75,12 +75,12 @@ Methods
 
 ### Sub **GetProperty**( [CATStrSectionProperties](../StructureInterfaces/enum_CATStrSectionProperties_112005.md)  `iProperty`,  double  `oValue`)
 
-Get a property value.
+   Get a property value.
 
 **Example:**
 
 ```VBScript
-Dim type As Parameter
-Set type = Section_1.GetProperty(CatStrArea)
+     Dim type As Parameter
+     Set type = Section_1.GetProperty(CatStrArea)
 
 ```

@@ -1,6 +1,7 @@
 # HybridShapeLoft (Object)
 
 **_Represents the hybrid shape loft surface feature object._**
+
 **Role** : To access the data of the hybrid shape loft surface feature object.
 This data includes:
 
@@ -19,19 +20,20 @@ Use the CATIAHybridShapeFactory to create a HybridShapeLoft object.
 
 ## Properties
 
-### Property **BooleanOperation**( ) As long
+### Property **BooleanOperation**(| ) As long
 
-Gets or sets the boolean operation for closed lofted surface. TO BE USED ONLY for Part Loft (closed loft). BooleanOperation = 1 : No boolean operation. = 2 : Union boolean operation. = 3 : Removal boolean operation. This example retrieves in `BoolOp` the type of boolean operation for the `Loft` hybrid shape feature.
+   Gets or sets the boolean operation for closed lofted surface. TO BE USED ONLY for Part Loft (closed loft). BooleanOperation = 1 : No boolean operation. = 2 : Union boolean operation. = 3 : Removal boolean operation. This example retrieves in `BoolOp` the type of boolean operation for the `Loft` hybrid shape feature.
 
 ```VBScript
-Dim BoolOp
-BoolOp = Loft.BooleanOperation
+     Dim BoolOp
+     BoolOp = Loft.BooleanOperation
 
 ```
 
 ### Property **CanonicalDetection**( ) As long
 
-Returns or sets whether canonical surfaces of the lofted surface are detected.
+   Returns or sets whether canonical surfaces of the lofted surface are detected.
+
 **Legal values** :
 
 0
@@ -43,7 +45,8 @@ Returns or sets whether canonical surfaces of the lofted surface are detected.
 
 ### Property **CompEndSectionTangent**( ) As long
 
-Returns or sets whether the tangent surface to the end section of the lofted surface is computed.
+   Returns or sets whether the tangent surface to the end section of the lofted surface is computed.
+
 **Legal values** :
 
 1
@@ -53,7 +56,8 @@ Returns or sets whether the tangent surface to the end section of the lofted sur
 
 ### Property **CompStartSectionTangent**( ) As long
 
-Returns or sets whether the tangent surface to the start section of the lofted surface is computed.
+   Returns or sets whether the tangent surface to the start section of the lofted surface is computed.
+
 **Legal values** :
 
 1
@@ -63,7 +67,8 @@ Returns or sets whether the tangent surface to the start section of the lofted s
 
 ### Property **Context**( ) As long
 
-Returns or sets the context on Loft feature.
+   Returns or sets the context on Loft feature.
+
 **Legal values** :
 
   * **0** This option creates Lofted surface.
@@ -74,15 +79,16 @@ Note: Setting volume result requires GSO License.
 **Example** :      This example retrieves in `oContext` the context for the `Loft` hybrid shape feature.
 
 ```VBScript
-Dim oContext
-Set oContext = Loft.Context
+     Dim oContext
+     Set oContext = Loft.Context
 
 ```
 
 ### Property **Relimitation**( ) As long
 
-Returns or sets the relimitation type between sections of the loft.
+   Returns or sets the relimitation type between sections of the loft.
 NOT YET IMPLEMENTED.
+
 **Legal values** :
 
 1
@@ -113,7 +119,8 @@ NOT YET IMPLEMENTED.
 
 ### Property **SectionCoupling**( ) As long
 
-Returns or sets the type of coupling between sections of the loft.
+   Returns or sets the type of coupling between sections of the loft.
+
 **Legal values** :
 
 1
@@ -127,10 +134,11 @@ Returns or sets the type of coupling between sections of the loft.
 
 ### Property **SmoothAngleThreshold**( ) As double
 
-Returns or sets the angular threshold under which discontinuities (moving frame, tangency net on reference surface) will be smoothed.  
+   Returns or sets the angular threshold under which discontinuities (moving frame, tangency net on reference surface) will be smoothed.  
 ### Property **SmoothAngleThresholdActivity**( ) As boolean
 
-Returns or sets whether a angular threshold is allowed or not during lofting operation in order to smooth it.
+   Returns or sets whether a angular threshold is allowed or not during lofting operation in order to smooth it.
+
 **Legal values** :
 
 TRUE
@@ -140,10 +148,11 @@ FALSE
 
 ### Property **SmoothDeviation**( ) As double
 
-Returns or sets the deviation value (length) allowed during lofting operation in order to smooth it.  
+   Returns or sets the deviation value (length) allowed during lofting operation in order to smooth it.  
 ### Property **SmoothDeviationActivity**( ) As boolean
 
-Returns or sets whether a deviation is allowed or not during lofting operation in order to smooth it.
+   Returns or sets whether a deviation is allowed or not during lofting operation in order to smooth it.
+
 **Legal values** :
 
 TRUE
@@ -154,7 +163,7 @@ Methods
 
 ### Sub **AddGuide**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`)
 
-Adds a guide curve to the lofted surface.
+   Adds a guide curve to the lofted surface.
 
 **Parameters:**
 
@@ -164,7 +173,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) and [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).  
 ### Sub **AddGuideWithTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iTangent`)
 
-Adds a guide curve and a tangent surface to the lofted surface.
+   Adds a guide curve and a tangent surface to the lofted surface.
 
 **Parameters:**
 
@@ -177,7 +186,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).  
 ### Sub **AddSectionToLoft**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  long  `iOri`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`)
 
-Retrieves a loft section.
+   Retrieves a loft section.
 
 **Parameters:**
 
@@ -187,7 +196,7 @@ Retrieves a loft section.
 
 ### Sub **GetFacesForClosing**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oStartFace`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oEndFace`)
 
-Gets start and end faces if the tangent is a computed tangent surface to the start section or end section, from the lofted surface. The section must have been set as a face.
+   Gets start and end faces if the tangent is a computed tangent surface to the start section or end section, from the lofted surface. The section must have been set as a face.
 
 **Parameters:**
 
@@ -196,7 +205,7 @@ Gets start and end faces if the tangent is a computed tangent surface to the sta
 
 ### Sub **GetGuide**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oGuide`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oGuideTangent`)
 
-Gets informations about the guide at a specified position in the list of the lofted surface.
+   Gets informations about the guide at a specified position in the list of the lofted surface.
 
 **Parameters:**
 
@@ -206,7 +215,7 @@ Gets informations about the guide at a specified position in the list of the lof
 
 ### Func **GetNbOfGuides**( ) As long
 
-Returns the number of guides in the loft object.
+   Returns the number of guides in the loft object.
 
 **Parameters:**
 
@@ -215,14 +224,14 @@ Returns the number of guides in the loft object.
 **Example** :      This example retrieves the number of guides in the `hybShpLoft` hybrid shape Loft.
 
 ```VBScript
-Dim oSize As  long
-oSize = hybShpLoft.GetNbOfGuides
+     Dim oSize As  long
+     oSize = hybShpLoft.GetNbOfGuides
 
 ```
 
 ### Sub **GetSectionFromLoft**( long  `iRank`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oCrv`,  long  `oOri`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oPoint`)
 
-Retrieves a loft section information.
+   Retrieves a loft section information.
 
 **Parameters:**
 
@@ -233,7 +242,7 @@ Retrieves a loft section information.
 
 ### Sub **GetSpine**( long  `oSpineType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oSpine`)
 
-Gets the spine of the lofted surface.
+   Gets the spine of the lofted surface.
 
 **Parameters:**
 
@@ -242,7 +251,7 @@ Gets the spine of the lofted surface.
 
 ### Sub **GetStartAndEndSectionTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oStartSectionTangent`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oEndSectionTangent`)
 
-Gets the start and end section tangents of the lofted surface.
+   Gets the start and end section tangents of the lofted surface.
 
 **Parameters:**
 
@@ -251,7 +260,7 @@ Gets the start and end section tangents of the lofted surface.
 
 ### Sub **InsertCoupling**( long  `iPosition`)
 
-Inserts a coupling to the loft.
+   Inserts a coupling to the loft.
 
 **Parameters:**
 
@@ -260,7 +269,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Vertex](../MecModInterfaces/interface_Vertex_8466.md).  
 ### Sub **InsertCouplingPoint**( long  `iCouplingIndex`,  long  `iPosition`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`)
 
-Inserts a coupling point to a coupling of the lofted surface.
+   Inserts a coupling point to a coupling of the lofted surface.
 
 **Parameters:**
 
@@ -271,7 +280,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): ScVertex.  
 ### Sub **InsertSectionToLoft**( boolean  `iType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iCrv`,  long  `iOri`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSectionRef`)
 
-Inserts a loft section.
+   Inserts a loft section.
 
 **Parameters:**
 
@@ -283,7 +292,7 @@ Inserts a loft section.
 
 ### Sub **ModifyGuideCurve**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iNewGuide`)
 
-Modifies the curve of a guide from the lofted surface.
+   Modifies the curve of a guide from the lofted surface.
 
 **Parameters:**
 
@@ -292,7 +301,7 @@ Modifies the curve of a guide from the lofted surface.
 
 ### Sub **ModifySectionCurve**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iNewSection`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oCurveSection`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oClosingPoint`,  long  `oPtDiag`)
 
-Modifies the curve of section from the lofted surface.
+   Modifies the curve of section from the lofted surface.
 
 **Parameters:**
 
@@ -304,7 +313,7 @@ Modifies the curve of section from the lofted surface.
 
 ### Sub **ModifySectionOrient**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`,  long  `iOrient`)
 
-Modifies the orientation of the curve of a section from the lofted surface.
+   Modifies the orientation of the curve of a section from the lofted surface.
 
 **Parameters:**
 
@@ -313,7 +322,7 @@ Modifies the orientation of the curve of a section from the lofted surface.
 
 ### Sub **RemoveFaceForClosing**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`)
 
-Removes face used to close the lofted surface.
+   Removes face used to close the lofted surface.
 
 **Parameters:**
 
@@ -321,7 +330,7 @@ Removes face used to close the lofted surface.
 
 ### Sub **RemoveGuide**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`)
 
-Removes a guide curve from the lofted surface.
+   Removes a guide curve from the lofted surface.
 
 **Parameters:**
 
@@ -331,7 +340,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) and [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).  
 ### Sub **RemoveGuideTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iGuide`)
 
-Removes a tangent surface of a guide from the lofted surface.
+   Removes a tangent surface of a guide from the lofted surface.
 
 **Parameters:**
 
@@ -339,7 +348,7 @@ Removes a tangent surface of a guide from the lofted surface.
 
 ### Sub **RemoveSection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`)
 
-Removes a loft section from the lofted surface.
+   Removes a loft section from the lofted surface.
 
 **Parameters:**
 
@@ -349,7 +358,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) and [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).  
 ### Sub **RemoveSectionPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`)
 
-Removes a closing point of a section from the lofted surface. The curve section must be closed curve.
+   Removes a closing point of a section from the lofted surface. The curve section must be closed curve.
 
 **Parameters:**
 
@@ -357,7 +366,7 @@ Removes a closing point of a section from the lofted surface. The curve section 
 
 ### Sub **RemoveSectionTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSection`)
 
-Removes the tangent surface of a section from the lofted surface. The section must be the start section or the end section of the loft.
+   Removes the tangent surface of a section from the lofted surface. The section must be the start section or the end section of the loft.
 
 **Parameters:**
 
@@ -365,7 +374,7 @@ Removes the tangent surface of a section from the lofted surface. The section mu
 
 ### Sub **SetEndFaceForClosing**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iFace`)
 
-Sets a face to the end section from the lofted surface.
+   Sets a face to the end section from the lofted surface.
 
 **Parameters:**
 
@@ -374,7 +383,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).  
 ### Sub **SetEndSectionTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iTangentSection`)
 
-Sets a tangent surface to the end section from the lofted surface.
+   Sets a tangent surface to the end section from the lofted surface.
 
 **Parameters:**
 
@@ -383,7 +392,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).  
 ### Sub **SetSpine**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSpine`)
 
-Sets the spine to the lofted surface.
+   Sets the spine to the lofted surface.
 
 **Parameters:**
 
@@ -392,7 +401,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) and [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).  
 ### Sub **SetStartFaceForClosing**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iFace`)
 
-Sets a face to the start section from the lofted surface.
+   Sets a face to the start section from the lofted surface.
 
 **Parameters:**
 
@@ -401,7 +410,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md).  
 ### Sub **SetStartSectionTangent**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iTangentSection`)
 
-Sets a tangent surface to the start section from the lofted surface.
+   Sets a tangent surface to the start section from the lofted surface.
 
 **Parameters:**
 

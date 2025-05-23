@@ -4,12 +4,12 @@
 The following example shows how to create it:
 
 ```VBScript
-Dim CATDocs As Documents
-Set CATDocs = CATIA.Documents
-Dim part1 As Document
-Set part1   = CATDocs.Add("CATPart")
-Dim Width As Length
-Set width   = part1.Part.Parameters.CreateDimension("width", "LENGTH", 20.)
+     Dim CATDocs As Documents
+     Set CATDocs = CATIA.Documents
+     Dim part1 As Document
+     Set part1   = CATDocs.Add("CATPart")
+     Dim Width As Length
+     Set width   = part1.Part.Parameters.CreateDimension("width", "LENGTH", 20.)
 
 ```
 

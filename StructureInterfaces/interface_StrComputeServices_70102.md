@@ -5,9 +5,9 @@ Structure service object extracts properties on structure objects.
 
 ## Methods
 
-### Sub **GetCenterOfGravity**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`,  double  `oX`,  double  `oY`,  double  `oZ`)
+### Sub **GetCenterOfGravity**(| [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) | `iProduct`,| | double | `oX`,| | double | `oY`,| | double | `oZ`)
 
-Retreive the center of gravity for a structure object.
+   Retreive the center of gravity for a structure object.
 
 **Parameters:**
 
@@ -18,7 +18,7 @@ Retreive the center of gravity for a structure object.
 
 ### Func **GetLength**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As double
 
-Returns the length to cut for a member object.
+   Returns the length to cut for a member object.
 
 **Parameters:**
 
@@ -26,7 +26,7 @@ Returns the length to cut for a member object.
 
 ### Func **GetMass**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As double
 
-Returns the mass for a structure object.
+   Returns the mass for a structure object.
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ Returns the mass for a structure object.
 
 ### Func **GetMaterialName**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns the material name for a structure object.
+   Returns the material name for a structure object.
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ Returns the material name for a structure object.
 
 ### Func **GetSurface**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As double
 
-Returns the surface for a structure object.
+   Returns the surface for a structure object.
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Returns the surface for a structure object.
 
 ### Func **GetVolume**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As double
 
-Returns the volume for a structure object.
+   Returns the volume for a structure object.
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ Returns the volume for a structure object.
 
 ### Func **GetWetArea**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As double
 
-Returns the wet area for a structure object.
+   Returns the wet area for a structure object.
 
 **Parameters:**
 

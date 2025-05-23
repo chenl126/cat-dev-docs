@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **Memo**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **Memo**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or records miscellaneous user-added information about the part.
+   Returns or records miscellaneous user-added information about the part.

@@ -4,12 +4,12 @@
 
 ## Properties
 
-### Property **Construction**( ) As boolean
+### Property **Construction**(| ) As boolean
 
-Returns the construction mode of the 2D geometry  
+   Returns the construction mode of the 2D geometry  
 ### Property **ReportName**( ) As long
 
-Returns the report name of the 2D geometry
+   Returns the report name of the 2D geometry
 
 **Parameters:**
 

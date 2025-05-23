@@ -1,6 +1,7 @@
 # HybridShapeSpline (Object)
 
 **_Represents the hybrid shape spline feature object._**
+
 **Role** : To access the data of the hybrid shape spline feature object. This data includes:
 
   * The support surface
@@ -14,9 +15,9 @@ Use the CATIAHybridShapeFactory to create a HybridShapeAffinity object.
 
 ## Methods
 
-### Sub **AddPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`)
+### Sub **AddPoint**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `ipIAPoint`)
 
-Add a new point .
+   Add a new point .
 
 **Parameters:**
 
@@ -24,7 +25,7 @@ Add a new point .
 
 ### Sub **AddPointWithConstraintExplicit**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `ipIADirTangency`,  double  `iTangencyNorm`,  long  `iInverseTangency`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `ipIADirCurvature`,  double  `iCurvatureRadius`)
 
-Add a new point with explicit tangency and curvature.
+   Add a new point with explicit tangency and curvature.
 
 **Parameters:**
 
@@ -37,7 +38,7 @@ Add a new point with explicit tangency and curvature.
 
 ### Sub **AddPointWithConstraintFromCurve**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIACurveCst`,  double  `iTangencyNorm`,  long  `iInvertValue`,  long  `iCrvCstType`)
 
-Add a new point with tangency/curvature from a curve.
+   Add a new point with tangency/curvature from a curve.
 
 **Parameters:**
 
@@ -49,20 +50,20 @@ Add a new point with tangency/curvature from a curve.
 
 ### Func **GetClosure**( ) As long
 
-Gets whether the curve is closed.
+   Gets whether the curve is closed.
 
 **Parameters:**
 
 ` oClosed`      Closing flag
 
 1
-for a closed curve
+   for a closed curve
 0
-for an open curve
+   for an open curve
 
 ### Func **GetConstraintType**( long  `iPos`) As long
 
-Returns the ControlPoint type at the given position.
+   Returns the ControlPoint type at the given position.
 
 **Parameters:**
 
@@ -71,17 +72,18 @@ Returns the ControlPoint type at the given position.
 
 ### Func **GetCurvatureRadius**( long  `iPos`) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)
 
-Returns the curvature radius value for each point of the spline.
+   Returns the curvature radius value for each point of the spline.
 
 **Parameters:**
 
 ` iPos`      The position of the point in the spline.
+
 **Legal values** : first position is 1. The position cannot be 0.
 ` oRadius`      The curvature radius value at this point
 
 ### Func **GetDirectionInversion**( long  `iPos`) As long
 
-Gets the orientation of the tangent direction .
+   Gets the orientation of the tangent direction .
 
 **Parameters:**
 
@@ -90,7 +92,7 @@ Gets the orientation of the tangent direction .
 
 ### Func **GetNbControlPoint**( ) As long
 
-Returns the number of control points.
+   Returns the number of control points.
 
 **Parameters:**
 
@@ -98,7 +100,7 @@ Returns the number of control points.
 
 ### Func **GetPoint**( long  `iPos`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns the Point at the given position.
+   Returns the Point at the given position.
 
 **Parameters:**
 
@@ -107,7 +109,7 @@ Returns the Point at the given position.
 
 ### Sub **GetPointConstraintExplicit**( long  `iPos`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `opIADirTangency`,  double  `oTangencyNorm`,  long  `oInverseTangency`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `opIADirCurvature`,  double  `oCurvatureRadius`)
 
-Returns the Constraint of the point at iPos.
+   Returns the Constraint of the point at iPos.
 Available for Explicit Point Constraint type (CstType =1 from GetContraintType)
 
 **Parameters:**
@@ -121,7 +123,7 @@ Available for Explicit Point Constraint type (CstType =1 from GetContraintType)
 
 ### Sub **GetPointConstraintFromCurve**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIACurveCst`,  double  `oTangencyNorm`,  long  `oInvertValue`,  long  `oCrvCstType`)
 
-Returns the Constraint of the point at iPos.
+   Returns the Constraint of the point at iPos.
 Available for FromCurve Point Constraint type (CstType =2 from GetContraintType)
 
 **Parameters:**
@@ -134,7 +136,7 @@ Available for FromCurve Point Constraint type (CstType =2 from GetContraintType)
 
 ### Func **GetPointPosition**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`) As long
 
-Returns the position of a given point.
+   Returns the position of a given point.
 
 **Parameters:**
 
@@ -143,7 +145,7 @@ Returns the position of a given point.
 
 ### Func **GetSplineType**( ) As long
 
-Gets the spline type.
+   Gets the spline type.
 
 **Parameters:**
 
@@ -151,7 +153,7 @@ Gets the spline type.
 
 ### Func **GetSupport**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Gets the support surface.
+   Gets the support surface.
 
 **Parameters:**
 
@@ -159,18 +161,19 @@ Gets the support surface.
 
 ### Func **GetTangentNorm**( long  `iPos`) As [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md)
 
-Returns the tension for each point of the spline.
+   Returns the tension for each point of the spline.
 The tension is the tangent norm at the given point.
 
 **Parameters:**
 
 ` iPos`      The position of the point in the spline.
+
 **Legal values** : first position is 1. The position cannot be 0.
 ` oTension`      The tension at this point
 
 ### Sub **InvertDirection**( long  `iPos`)
 
-Inverts the orientation of the tangent direction .
+   Inverts the orientation of the tangent direction .
 
 **Parameters:**
 
@@ -178,10 +181,10 @@ Inverts the orientation of the tangent direction .
 
 ### Sub **RemoveAll**( )
 
-Removes all elements in the list of points.  
+   Removes all elements in the list of points.  
 ### Sub **RemoveControlPoint**( long  `iPos`)
 
-Removes a point at the given position.
+   Removes a point at the given position.
 
 **Parameters:**
 
@@ -189,7 +192,7 @@ Removes a point at the given position.
 
 ### Sub **RemoveCurvatureRadiusDirection**( long  `iPos`)
 
-Removes Curvature Radius Direction for the given point of the spline.
+   Removes Curvature Radius Direction for the given point of the spline.
 
 **Parameters:**
 
@@ -197,7 +200,7 @@ Removes Curvature Radius Direction for the given point of the spline.
 
 ### Sub **RemoveCurvatureRadiusValue**( long  `iPos`)
 
-Removes Curvature Radius Value for the given point of the spline.
+   Removes Curvature Radius Value for the given point of the spline.
 
 **Parameters:**
 
@@ -205,10 +208,10 @@ Removes Curvature Radius Value for the given point of the spline.
 
 ### Sub **RemoveSupport**( )
 
-Removes the support surface.  
+   Removes the support surface.  
 ### Sub **RemoveTangentDirection**( long  `iPos`)
 
-Removes tangent Direction for the given point of the spline.
+   Removes tangent Direction for the given point of the spline.
 
 **Parameters:**
 
@@ -216,7 +219,7 @@ Removes tangent Direction for the given point of the spline.
 
 ### Sub **RemoveTension**( long  `iPos`)
 
-Removes the Tension for the given point of the spline.
+   Removes the Tension for the given point of the spline.
 
 **Parameters:**
 
@@ -224,7 +227,7 @@ Removes the Tension for the given point of the spline.
 
 ### Sub **ReplacePointAtPosition**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`)
 
-Replaces a point in the list at the given position.
+   Replaces a point in the list at the given position.
 
 **Parameters:**
 
@@ -233,7 +236,7 @@ Replaces a point in the list at the given position.
 
 ### Sub **SetClosing**( long  `iClosingType`)
 
-Activates the closing option of the spline.
+   Activates the closing option of the spline.
 
 **Parameters:**
 
@@ -241,7 +244,7 @@ Activates the closing option of the spline.
 
 ### Sub **SetPointAfter**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`)
 
-Sets the Point After a given position.
+   Sets the Point After a given position.
 
 **Parameters:**
 
@@ -250,7 +253,7 @@ Sets the Point After a given position.
 
 ### Sub **SetPointBefore**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAPoint`)
 
-Sets the Point Before a given position.
+   Sets the Point Before a given position.
 
 **Parameters:**
 
@@ -259,7 +262,7 @@ Sets the Point Before a given position.
 
 ### Sub **SetPointConstraintExplicit**( long  `iPos`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `ipIADirTangency`,  double  `iTangencyNorm`,  long  `iInverseTangency`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `ipIADirCurvature`,  double  `iCurvatureRadius`)
 
-Sets the Constraint of the point at iPos.
+   Sets the Constraint of the point at iPos.
 Available for Explicit Point Constraint type (CstType =1 from GetContraintType)
 
 **Parameters:**
@@ -273,7 +276,7 @@ Available for Explicit Point Constraint type (CstType =1 from GetContraintType)
 
 ### Sub **SetPointConstraintFromCurve**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIACurveCst`,  double  `iTangencyNorm`,  long  `iInvertValue`,  long  `iCrvCstType`)
 
-Sets the Constraint of the point at iPos.
+   Sets the Constraint of the point at iPos.
 Available for From Curve Point Constraint type (CstType =2 from GetContraintType)
 
 **Parameters:**
@@ -286,16 +289,17 @@ Available for From Curve Point Constraint type (CstType =2 from GetContraintType
 
 ### Sub **SetSplineType**( long  `iSplineType`)
 
-Sets the spline type.
+   Sets the spline type.
 
 **Parameters:**
 
 ` iSplineType`      The spline type
+
 **Legal values** : Cubic spline (0) or WilsonFowler (1)
 
 ### Sub **SetSupport**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`)
 
-Sets the spline support surface.
+   Sets the spline support surface.
 Have your "tangent direction" tangent to this support is recommended.
 
 **Parameters:**

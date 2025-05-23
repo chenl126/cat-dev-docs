@@ -1,6 +1,7 @@
 # CATAnalysisSetType (Enumeration)
 
 **_Update type for analysis sets._**
+
 **Role:** CATAnalysisSetType defines the Category for Set behavior for update.
 
 **Values:**

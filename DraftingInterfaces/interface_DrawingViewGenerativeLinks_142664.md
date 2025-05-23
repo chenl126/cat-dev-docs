@@ -6,70 +6,70 @@ The generative links of a drawing view is an object that manages the way the gen
 
 ## Methods
 
-### Sub **AddLink**( [CATIABase](../System/interface_AnyObject_17321.md)  `iLink`)
+### Sub **AddLink**(| [CATIABase](../System/interface_AnyObject_17321.md) | `iLink`)
 
-Adds a link to the drawing view.
+   Adds a link to the drawing view.
 
 **Example:**      This example adds a link to the Part document `MyPartDocument` to the `MyView` drawing view.
 
 ```VBScript
-Dim viewLinks As DrawingViewGenerativeLinks
-Set viewLinks = MyView.GenerativeLinks
-viewLinks.AddLink(MyPartDocument)
+     Dim viewLinks As DrawingViewGenerativeLinks
+     Set viewLinks = MyView.GenerativeLinks
+     viewLinks.AddLink(MyPartDocument)
 
 ```
 
 ### Sub **CopyLinksTo**( [CATIAGenerativeViewLinks](../DraftingInterfaces/interface_DrawingViewGenerativeLinks_142664.md)  `iLinks`)
 
-Copies the links of the drawing view.
+   Copies the links of the drawing view.
 
 **Example:**      This example copies the links of the `MyView` drawing view to the `MyLinks` object.
 
 ```VBScript
-Dim viewLinks As DrawingViewGenerativeLinks
-Set viewLinks = MyView.GenerativeLinks
-Dim MyLinks As DrawingViewGenerativeLinks
-viewLinks.CopyLinksTo(MyLinks)
+     Dim viewLinks As DrawingViewGenerativeLinks
+     Set viewLinks = MyView.GenerativeLinks
+     Dim MyLinks As DrawingViewGenerativeLinks
+     viewLinks.CopyLinksTo(MyLinks)
 
 ```
 
 ### Func **FirstLink**( ) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Returns the first link of the drawing view.
+   Returns the first link of the drawing view.
 
 **Example:**      This example retrieves the first link of the `MyView` drawing view.
 
 ```VBScript
-Dim viewLinks As DrawingViewGenerativeLinks
-Set viewLinks = MyView.GenerativeLinks
-Dim firstLink As AnyObject
-Set firstLink = MyView.FirstLink()
+     Dim viewLinks As DrawingViewGenerativeLinks
+     Set viewLinks = MyView.GenerativeLinks
+     Dim firstLink As AnyObject
+     Set firstLink = MyView.FirstLink()
 
 ```
 
 ### Func **NextLink**( ) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Returns the next link of the drawing view.
+   Returns the next link of the drawing view.
 
 **Example:**      This example retrieves the next link of the `MyView` drawing view.
 
 ```VBScript
-Dim viewLinks As DrawingViewGenerativeLinks
-Set viewLinks = MyView.GenerativeLinks
-Dim nextLink As AnyObject
-nextLink = viewLinks.NextLink()
+     Dim viewLinks As DrawingViewGenerativeLinks
+     Set viewLinks = MyView.GenerativeLinks
+     Dim nextLink As AnyObject
+     nextLink = viewLinks.NextLink()
 
 ```
 
 ### Sub **RemoveAllLinks**( )
 
-Removes all links of the drawing view.
+   Removes all links of the drawing view.
 
 **Example:**      This example retrieves all links of the `MyView` drawing view.
 
 ```VBScript
-Dim viewLinks As DrawingViewGenerativeLinks
-Set viewLinks = MyView.GenerativeLinks
-viewLinks.RemoveAllLinks()
+     Dim viewLinks As DrawingViewGenerativeLinks
+     Set viewLinks = MyView.GenerativeLinks
+     viewLinks.RemoveAllLinks()
 
 ```

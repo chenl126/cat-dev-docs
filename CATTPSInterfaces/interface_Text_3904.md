@@ -4,10 +4,10 @@
 
 ## Properties
 
-### Property **Text**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **Text**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Get the annotation's text.  Methods
+   Get the annotation's text.  Methods
 
 ### Func **Get2dAnnot**( ) As [CATIADrawingText](../DraftingInterfaces/interface_DrawingText_26559.md)
 
-Retrieves Drafting text.
+   Retrieves Drafting text.

@@ -1,26 +1,25 @@
 # SendToService (Object)
 
 **_This interface allows to use 'Send To' functionalities through an API._**
+
 **Example:** Set Send=CATIA.CreateSendTo()
 This interface requires the installation of CATIA - PPR xPDM Gateway 1 Product (PX1) or the installation of the CATIA-SmarTeam plugin. In case one of these products is not granted, the first invocation to one of CATIASendToService methods will fail.
 
 ## Methods
 
-### Sub **AddFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPath`)
+### Sub **AddFile**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iPath`)
 
-Adds a file to the list of the files 'to be copied'. This method verifies that the given input file is valid (exists and is not a directory), it recursively adds pointed files.
+   Adds a file to the list of the files 'to be copied'. This method verifies that the given input file is valid (exists and is not a directory), it recursively adds pointed files.
 
 **Parameters:**
 
 ` iPath`      : The path of the file to be added to the list of the 'to be copied' files. **Example:**
-```
 
 Send.AddFile(iPath)
-```
 
 ### Sub **GetLastSendToMethodError**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oErrorParam`,  long  `oErrorCode`)
 
-Retreives the diagnosis related to the last call to SendToService interface.
+   Retreives the diagnosis related to the last call to SendToService interface.
 
 **Parameters:**
 
@@ -42,88 +41,76 @@ Retreives the diagnosis related to the last call to SendToService interface.
 13 |  invalid file name | given name
 14 |  file has no read permission | given name
 36 |  allocation failed :-( |
-### Sub **GetListOfDependantFile**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oDependant`)
+### Sub **GetListOfDependantFile**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oDependant`)
 
-Retreives the complete list of the files recursively pointed by the file given in argument to SetInitialFile method. Notice : in case AddFile has also been invoked, the files recursively pointed by the added file also are retreived.
+   Retreives the complete list of the files recursively pointed by the file given in argument to SetInitialFile method. Notice : in case AddFile has also been invoked, the files recursively pointed by the added file also are retreived.
 
 **Parameters:**
 
 ` oDependant`      : The table of dependant files. **Example:**
-```
 
 Send.GetListOfDependantFile(oDependant)
-```
 
 ### Sub **GetListOfToBeCopiedFiles**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oWillBeCopied`)
 
-Retreives the complete list of the files that will be copied. This list matches the list of dependant files, but without the files for which RemoveFile has been invoked.
+   Retreives the complete list of the files that will be copied. This list matches the list of dependant files, but without the files for which RemoveFile has been invoked.
 
 **Parameters:**
 
 ` oWillBeCopied`      : The table of the files that will be copied. **Example:**
-```
 
 Send.GetListOfToBeCopiedFiles(oWillBeCopied)
-```
 
 ### Sub **KeepDirectory**( boolean  `iKeep`)
 
-Controls the directory tree structure in the target directory.
+   Controls the directory tree structure in the target directory.
 
 **Parameters:**
 
 ` iKeep`      =1: to preserve the relative tree structure of the files.
 This option will be effective only if there is a common root directory for all files.
 ` iKeep`      =0: to copy the files directly in the destination directory **Example:**
-```
 
 Send.KeepDirectory(ikeep)
-```
 
 ### Sub **RemoveFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFile`)
 
-Removes a file from the list of the files that will be copied.
+   Removes a file from the list of the files that will be copied.
 
 **Parameters:**
 
 ` iFile`      : The File (With extension) to be removed from the list of the 'to be copied' files. **Example:**
-```
 
 Send.RemoveFile(iFile)
-```
 
 ### Sub **Run**( )
 
-Executes the copy action, according to previously set files and options.
+   Executes the copy action, according to previously set files and options.
 A "report.txt" report file is generated in the specified destination directory.  
 ### Sub **SetDirectoryFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`)
 
-Positions the destination directory. This method verifies that the given directory exists. Be careful, if SetDirectoryOneFile method has been previously called, its action is overriden by this SetDirectoryFile call.
+   Positions the destination directory. This method verifies that the given directory exists. Be careful, if SetDirectoryOneFile method has been previously called, its action is overriden by this SetDirectoryFile call.
 
 **Parameters:**
 
 ` iDirectory`      : The destination directory where the files will be copied. **Example:**
-```
 
 Send.SetDirectoryFile(iDirectory)
-```
 
 ### Sub **SetDirectoryOneFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFile`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDirectory`)
 
-Allows positioning the destination directory for one given file to be copied. The file will be copied in the specified target directory. Be careful that using this method implies that the 'KeepDirectory' variable will be automatically set to 0.
+   Allows positioning the destination directory for one given file to be copied. The file will be copied in the specified target directory. Be careful that using this method implies that the 'KeepDirectory' variable will be automatically set to 0.
 
 **Parameters:**
 
 ` iFile`      : The name (Name With extension) of the given file.
 ` iDirectory`      : The directory where this file will be copied. **Example:**
-```
 
 Send.SetDirectoryOneFile(iFile, iDirectory)
-```
 
 ### Sub **SetInitialFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPath`)
 
-Sets the initial file to be copied. This method verifies that the given input file is valid (exists and is not a directory)
+   Sets the initial file to be copied. This method verifies that the given input file is valid (exists and is not a directory)
 It generates a complete list of the recursively dependent files to be copied. **Example:**      This example positions the file of path `ipath` in the list of 'to be copied' files. All its dependant files will also be added in the list of 'to be copied' files.
 
 **Parameters:**
@@ -131,13 +118,13 @@ It generates a complete list of the recursively dependent files to be copied. **
 ` iPath`      : Full path of the file to be copied.
 
 ```VBScript
-Send.SetInitialFile(iPath)
+     Send.SetInitialFile(iPath)
 
 ```
 
 ### Sub **SetRenameFile**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iOldname`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iNewName`)
 
-Renames one file to be copied. The new name may not have invalid characters
+   Renames one file to be copied. The new name may not have invalid characters
 
 **Parameters:**
 

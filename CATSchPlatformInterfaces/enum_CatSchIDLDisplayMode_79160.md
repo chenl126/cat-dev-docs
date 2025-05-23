@@ -1,6 +1,7 @@
 # CatSchIDLDisplayMode (Enumeration)
 
 **_Schematic visualization display modes._**
+
 **Role** : For visualization control of components and routes.
 
 **Values:**

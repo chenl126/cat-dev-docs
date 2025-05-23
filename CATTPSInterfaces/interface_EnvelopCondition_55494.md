@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **Modifier**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **Modifier**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Retrieves Envelop Condition modifier.
+   Retrieves Envelop Condition modifier.

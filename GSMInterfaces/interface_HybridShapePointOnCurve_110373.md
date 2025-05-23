@@ -1,6 +1,7 @@
 # HybridShapePointOnCurve (Object)
 
 **_Represents the hybrid shape point on a curve._**
+
 **Role** : To access the data of the point object created on a curve. This data includes:
 
   * The curve onto which the point is created
@@ -15,22 +16,23 @@ Use the [HybridShapeFactory](../GSMInterfaces/interface_HybridShapeFactory_68680
 
 ## Properties
 
-### Property **Curve**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **Curve**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the curve onto which the point is or should be created.
+   Returns or sets the curve onto which the point is or should be created.
 Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) or [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).
 
 **Example:**      This example retrieves in `oCurve` the supporting curve for the `pointOnCurve` hybrid shape point.
 
 ```VBScript
-Dim oCurve As CATIAReference
-Set oCurve = pointOnCurve.Curve
+     Dim oCurve As CATIAReference
+     Set oCurve = pointOnCurve.Curve
 
 ```
 
 ### Property **DistanceType**( ) As long
 
-Returns or sets the distance type.
+   Returns or sets the distance type.
+
 **Legal values** : 1 for geodesic, -1 for euclidean.
 Default is geodesic.
 
@@ -40,27 +42,28 @@ Default is geodesic.
 **Example:**      This example retrieves in `oDistanceType` the distance computation type used for the `pointOnCurve` hybrid shape object.
 
 ```VBScript
-Dim oDistanceType As  long
-Set oDistanceType = pointOnCurve.DistanceType
+     Dim oDistanceType As  long
+     Set oDistanceType = pointOnCurve.DistanceType
 
 ```
 
 ### Property **Offset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the distance to the reference point.
+   Returns the distance to the reference point.
 This distance is a distance in a length unit, The distance can be null.In this case, the reference point is the curve end point defined using the Orientation parameter.
 
 **Example:**      This example retrieves in `oOffset` the distance from the reference point on the supporting curve for the `pointOnCurve` hybrid shape object.
 
 ```VBScript
-Dim oOffset As  CATIALength
-Set oOffset = pointOnCurve.Offset
+     Dim oOffset As  CATIALength
+     Set oOffset = pointOnCurve.Offset
 
 ```
 
 ### Property **Orientation**( ) As long
 
-Returns or sets the curve orientation.
+   Returns or sets the curve orientation.
+
 **Legal values** : -1 means that the distance (length or ratio) is measured:
 
   * in the other orientation of the curve, when a reference point has been set
@@ -69,41 +72,42 @@ Returns or sets the curve orientation.
 **Example:**      This example retrieves in `oOrientation` curve Orientation use for the `pointOnCurve` hybrid shape feature.
 
 ```VBScript
-Dim oOrientation As  long
-Set oOrientation = pointOnCurve.Orientation
+     Dim oOrientation As  long
+     Set oOrientation = pointOnCurve.Orientation
 
 ```
 
 ### Property **Point**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the reference point. If the point does not lie on the curve, the point on the curve with the smallest distance to this point is taken. The reference point may not exist. In this case, the extremity of the curve is taken as reference point.
+   Returns or sets the reference point. If the point does not lie on the curve, the point on the curve with the smallest distance to this point is taken. The reference point may not exist. In this case, the extremity of the curve is taken as reference point.
 
 Sub-element(s) supported (see [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Vertex](../MecModInterfaces/interface_Vertex_8466.md).
 
 **Example:**      This example retrieves in `oRefPoint` the reference point on the supporting curve for the `pointOnCurve` hybrid shape object.
 
 ```VBScript
-Dim oRefPoint As  CATIAReference
-Set oRefPoint = pointOnCurve.Point
+     Dim oRefPoint As  CATIAReference
+     Set oRefPoint = pointOnCurve.Point
 
 ```
 
 ### Property **Ratio**( ) As [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md) (Read Only)
 
-Returns the distance ratio to the reference point.
+   Returns the distance ratio to the reference point.
 This is a real parameter which corresponds to the ratio of the distance from the reference point with respect to the length of the supporting curve. The ratio can be null. In this case, the reference point is the curve end point defined using the Orientation parameter.
 
 **Example:**      This example retrieves in `oRatio` the distance ratio from the reference point on the supporting curve for the `pointOnCurve` hybrid shape object.
 
 ```VBScript
-Dim oRatio As  CATIALength
-Set oRatio = PointOnCurve.Ratio
+     Dim oRatio As  CATIALength
+     Set oRatio = PointOnCurve.Ratio
 
 ```
 
 ### Property **Type**( ) As long (Read Only)
 
-Returns the distance stored value type.
+   Returns the distance stored value type.
+
 **Legal values** :
 
   * 1 when the type of measure is the length
@@ -112,7 +116,7 @@ Returns the distance stored value type.
 **Example:**      This example retrieves in `oType` the distance type computation for the `pointOnCurve` hybrid shape object.
 
 ```VBScript
-Dim oType As long
-Set oType = pointOnCurve.Type
+     Dim oType As long
+     Set oType = pointOnCurve.Type
 
 ```

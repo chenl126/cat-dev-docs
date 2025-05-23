@@ -5,49 +5,49 @@ As a base object, it provides properties and methods shared by any other object.
 
 ## Properties
 
-### Property **Application**( ) As [CATIAApplication](../InfInterfaces/interface_Application_26636.md) (Read Only)
+### Property **Application**(| ) As [CATIAApplication](../InfInterfaces/interface_Application_26636.md) (Read Only)
 
-Returns the application. The application is the root object in the object structure and can be retrieved from any object in the object structure using the Application property. The Application property is the way to jump from any object up to the root of the object data structure, allowing then to navigate downwards. For in-process scripting, the application is always referred to as `CATIA`. Note that the Application property of the Application object returns the Application object itself.
+   Returns the application. The application is the root object in the object structure and can be retrieved from any object in the object structure using the Application property. The Application property is the way to jump from any object up to the root of the object data structure, allowing then to navigate downwards. For in-process scripting, the application is always referred to as `CATIA`. Note that the Application property of the Application object returns the Application object itself.
 
 **Example:**      This example retrieves in `CurrentApplication` the application object, root of the object structure, from a given object of this structure: a document refered to using the `MyDocCollecion` variable.
 
 ```VBScript
-Dim CurrentApplication As Application
-Set CurrentApplication = MyDocCollecion.Application
+     Dim CurrentApplication As Application
+     Set CurrentApplication = MyDocCollecion.Application
 
 ```
 
 ### Property **Count**( ) As long (Read Only)
 
-Returns the number of objects in the collection. This is handy to scan all the objects in a collection.
+   Returns the number of objects in the collection. This is handy to scan all the objects in a collection.
 
 **Example:**      This example retrieves in `ObjectNumber` the number of objects currently gathered in `MyCollection`.
 
 ```VBScript
-ObjectNumber = MyCollection.Count
+     ObjectNumber = MyCollection.Count
 
 ```
 
 ### Property **Name**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns or sets the name of the object. The name is a character string you can assign to any object to handle it easier. In the case of an object part of a collection, the name can often be used in place of the object rank to retrieve or remove the object, providing the Item and Remove methods of the collection feature an argument with the Variant type. If the object has no name set, the name returned is the one of its parent.
+   Returns or sets the name of the object. The name is a character string you can assign to any object to handle it easier. In the case of an object part of a collection, the name can often be used in place of the object rank to retrieve or remove the object, providing the Item and Remove methods of the collection feature an argument with the Variant type. If the object has no name set, the name returned is the one of its parent.
 
 **Example:**      This example sets to `MyObject` the name `Nice and Handy Object Name`.
 
 ```VBScript
-MyObject.Name("Nice and Handy Object Name")
+     MyObject.Name("Nice and Handy Object Name")
 
 ```
 
 ### Property **Parent**( ) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md) (Read Only)
 
-Returns the parent object. The parent object of a given object is the object that created this object, usually the object just above in the object tree structure and that aggregates it. In the case of an object part of a collection, the parent object is not the collection object itself, but the object that aggregates the collection object. The Parent property is the way to step upwards in the object data structure. Note that the Parent property of the Application object returns the Application object itself.
+   Returns the parent object. The parent object of a given object is the object that created this object, usually the object just above in the object tree structure and that aggregates it. In the case of an object part of a collection, the parent object is not the collection object itself, but the object that aggregates the collection object. The Parent property is the way to step upwards in the object data structure. Note that the Parent property of the Application object returns the Application object itself.
 
 **Example:**      This example retrieves in `ParentObject` the parent object of the `GivenObject` object.
 
 ```VBScript
-Dim ParentObject As AnyObject
-Set ParentObject = GivenObject.Parent
+     Dim ParentObject As AnyObject
+     Set ParentObject = GivenObject.Parent
 
 ```
 
@@ -55,10 +55,12 @@ Methods
 
 ### Func **GetItem**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `IDName`) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md)
 
-Returns an object from its name.
+   Returns an object from its name.
+
 **Role** : To retrieve an object when only its name is available. **You should not use this method** , but you can find it in the macros generated by the Tools->Macro command.
 
 **Parameters:**
 
 ` IDName`      The searched obect name
+
 **Returns:**      The searched object

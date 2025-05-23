@@ -1,4 +1,5 @@
 # ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex (Object)
 
 **_0-D boundary beeing either an isolated point or the extremity of a feature whose topological result is one dimensional._**
+
 **Role** : This [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object may be, for example, the extremity of a line segment. You will create a ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object using the [Shapes.GetBoundary](../MecModInterfaces/interface_Shapes_8122.htm#GetBoundary) , [HybridShapes.GetBoundary](../MecModInterfaces/interface_HybridShapes_30836.htm#GetBoundary) , [Sketches.GetBoundary](../MecModInterfaces/interface_Sketches_14228.htm#GetBoundary) or [Selection.SelectElement2](../InfInterfaces/interface_Selection_18040.htm#SelectElement2) method. Then, you pass it to the operator. The lifetime of a ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object is limited, see [Boundary](../MecModInterfaces/interface_Boundary_14542.md).

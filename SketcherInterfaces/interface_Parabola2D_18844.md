@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **FocalDistance**( ) As double (Read Only)
+### Property **FocalDistance**(| ) As double (Read Only)
 
-Returns the focal distance of the parabola in 2D space
+   Returns the focal distance of the parabola in 2D space
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Methods
 
 ### Sub **GetAxis**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oAxis`)
 
-Returns the axis vector direction of the parabola in 2D space
+   Returns the axis vector direction of the parabola in 2D space
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Returns the axis vector direction of the parabola in 2D space
 
 ### Sub **GetCenter**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCenter`)
 
-Returns the center of the parabola in 2D space
+   Returns the center of the parabola in 2D space
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Returns the center of the parabola in 2D space
 
 ### Sub **SetData**( double  `iCenterX`,  double  `iCenterY`,  double  `iAxisX`,  double  `iAxisY`,  double  `iFocalDistance`)
 
-Modifies the caracteristics of the parabola
+   Modifies the caracteristics of the parabola
 
 **Parameters:**
 

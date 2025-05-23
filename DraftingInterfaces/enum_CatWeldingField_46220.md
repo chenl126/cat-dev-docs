@@ -12,4 +12,5 @@
 ` catWeldingFieldFive`      The fith welding field
 ` catWeldingFieldSix`      The sixth welding field
 ` catWeldingFieldSeven`      The seventh welding field
+
 **See also:**      [DrawingWelding](../DraftingInterfaces/interface_DrawingWelding_41792.md)

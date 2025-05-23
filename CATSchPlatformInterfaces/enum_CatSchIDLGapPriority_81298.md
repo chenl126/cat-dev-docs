@@ -1,6 +1,7 @@
 # CatSchIDLGapPriority (Enumeration)
 
 **_Schematic route gap priority._**
+
 **Role** : Indicates which route to gap when 2 routes intersect.
 
 **Values:**

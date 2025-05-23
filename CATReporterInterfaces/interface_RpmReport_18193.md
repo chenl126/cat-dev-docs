@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **GenerateReport**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iXMLFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iReportFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iReportType`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iOutDTDFileName`)
+### Sub **GenerateReport**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iXMLFileName`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iReportFileName`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iReportType`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iOutDTDFileName`)
 
-This method generates a report to an output file. The definition of the report content is specified by an input XML file.
+   This method generates a report to an output file. The definition of the report content is specified by an input XML file.
 
 **Parameters:**
 

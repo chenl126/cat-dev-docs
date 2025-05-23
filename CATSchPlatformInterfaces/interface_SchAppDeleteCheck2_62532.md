@@ -4,19 +4,20 @@
 
 ## Methods
 
-### Sub **AppOkToDelete**( boolean  `oOk`)
+### Sub **AppOkToDelete**(| boolean | `oOk`)
 
-Reports if an application object can be deleted.
+   Reports if an application object can be deleted.
 
 **Parameters:**
 
 ` oOK`      Pointer to the CATBoolean to receive the ok.
+
 **Example:**
 
 ```VBScript
-Dim objThisIntf As SchAppDeleteCheck2
-Dim bVar1 As boolean
- ...
-objThisIntf.AppOkToDeletebVar1
+     Dim objThisIntf As SchAppDeleteCheck2
+     Dim bVar1 As boolean
+      ...
+     objThisIntf.AppOkToDeletebVar1
 
 ```

@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAStrAnchorPoint](../StructureInterfaces/interface_StrAnchorPoint_42208.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAStrAnchorPoint](../StructureInterfaces/interface_StrAnchorPoint_42208.md)
 
-Returns an anchor point from its index in the anchor points collection.
+   Returns an anchor point from its index in the anchor points collection.
 
 **Parameters:**
 

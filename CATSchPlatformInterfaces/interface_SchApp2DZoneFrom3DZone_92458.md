@@ -4,20 +4,21 @@
 
 ## Methods
 
-### Func **Create2DAppZone**( ) As [CATIABase](../System/interface_AnyObject_17321.md)
+### Func **Create2DAppZone**(| ) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Create an Application Zone.
+   Create an Application Zone.
 
 **Parameters:**
 
 ` i3DZone`      The Bounded Zone (3D) object
 ` oAppZone`      The new Application zone object created (CATISchAppZone interface pointer).
+
 **Example:**
 
 ```VBScript
-Dim objThisIntf As SchApp2DZoneFrom3DZone
-Dim objArg1 As AnyObject
- ...
-Set objArg1 = objThisIntf.Create2DAppZone
+     Dim objThisIntf As SchApp2DZoneFrom3DZone
+     Dim objArg1 As AnyObject
+      ...
+     Set objArg1 = objThisIntf.Create2DAppZone
 
 ```

@@ -5,9 +5,9 @@ For a [SpecsAndGeomWindow](../InfInterfaces/interface_SpecsAndGeomWindow_67760.m
 
 ## Methods
 
-### Func **Item**( long  `iIndex`) As [CATIAViewer](../InfInterfaces/interface_Viewer_8284.md)
+### Func **Item**(| long | `iIndex`) As [CATIAViewer](../InfInterfaces/interface_Viewer_8284.md)
 
-Returns a viewer using its index from the Viewers collection. The first item has the rank 1 in the collection.
+   Returns a viewer using its index from the Viewers collection. The first item has the rank 1 in the collection.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Returns a viewer using its index from the Viewers collection. The first item has
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved viewer  **Example:**      This example returns in `MyViewer` the second viewer in the collection.
 
 ```VBScript
-Dim MyViewer As Viewer
-Set MyViewer = Viewer.Item(2)
+     Dim MyViewer As Viewer
+     Set MyViewer = Viewer.Item(2)
 
 ```

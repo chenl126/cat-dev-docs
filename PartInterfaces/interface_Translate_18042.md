@@ -13,15 +13,15 @@ Use the CATIAHybridShapeFactory to create HybridShapeFeature object.
 
 ## Properties
 
-### Property **HybridShape**( ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
+### Property **HybridShape**(| ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
 
-Gets the underlying HybridShapeTranslate.
+   Gets the underlying HybridShapeTranslate.
 
 **Example:**     The following example explains how to retrieve the underlying HybridShape Translate
 
 ```VBScript
- Dim oHybridShape as AnyObject
- Set oHybridShape=oTranslate.HybridShape
- oHybridShape.ElemToTranslate = reference1
+      Dim oHybridShape as AnyObject
+      Set oHybridShape=oTranslate.HybridShape
+      oHybridShape.ElemToTranslate = reference1
 
 ```

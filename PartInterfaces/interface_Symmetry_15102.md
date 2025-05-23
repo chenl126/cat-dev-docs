@@ -12,15 +12,15 @@ Use the CATIAShapeFactory to create ShapeFeature object.
 
 ## Properties
 
-### Property **HybridShape**( ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
+### Property **HybridShape**(| ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
 
-Gets the underlying HybridShapeSymmetry.
+   Gets the underlying HybridShapeSymmetry.
 
 **Example:**     The following example explains how to retrieve the underlying HybridShape Symmetry
 
 ```VBScript
- Dim oHybridShape as AnyObject
- Set oHybridShape=oSymmetry.HybridShape
- oHybridShape.SectionCoupling = 2
+      Dim oHybridShape as AnyObject
+      Set oHybridShape=oSymmetry.HybridShape
+      oHybridShape.SectionCoupling = 2
 
 ```

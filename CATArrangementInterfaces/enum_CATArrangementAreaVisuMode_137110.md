@@ -1,6 +1,7 @@
 # CATArrangementAreaVisuMode (Enumeration)
 
 **_ArrangementAreaVisuMode Styles._**
+
 **Role:** The styles defined here can be used to provide the appropriate Visual Mode to the ArrangementArea.
 
 **Values:**

@@ -1,6 +1,7 @@
 # CatBlankingMode (Enumeration)
 
 **_Annotation blanking mode._**
+
 **Role** : Defines the mirror mode of the text.
 
 **Values:**

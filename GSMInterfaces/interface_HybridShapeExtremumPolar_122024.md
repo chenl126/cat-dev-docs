@@ -1,6 +1,7 @@
 # HybridShapeExtremumPolar (Object)
 
 **_Represents the hybrid shape extremum polar feature._**
+
 **Role** : To access the data of the extremum polar feature . This data includes:
 
   * The contour
@@ -12,24 +13,24 @@ Use the [HybridShapeFactory.AddNewExtremumPolarto](../GSMInterfaces/interface_Hy
 
 ## Properties
 
-### Property **Angle**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
+### Property **Angle**(| ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-returns the resulting angle of extremum.  
+   returns the resulting angle of extremum.  
 ### Property **Contour**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-returns or sets the input contour.  
+   returns or sets the input contour.  
 ### Property **Dir**( ) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-returns or sets the direction of computation.  
+   returns or sets the direction of computation.  
 ### Property **ExtremumType**( ) As short
 
-returns or sets the type of extremum.  
+   returns or sets the type of extremum.  
 ### Property **Origin**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-returns or sets the origin of the polar axis.  
+   returns or sets the origin of the polar axis.  
 ### Property **Radius**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-returns the resulting radius of extremum.  
+   returns the resulting radius of extremum.  
 ### Property **Support**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-returns or sets the support (if exist).
+   returns or sets the support (if exist).

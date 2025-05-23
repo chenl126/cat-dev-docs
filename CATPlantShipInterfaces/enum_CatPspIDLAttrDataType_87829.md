@@ -1,6 +1,7 @@
 # CatPspIDLAttrDataType (Enumeration)
 
 **_Attribute type._**
+
 **Role** : Attribute type
 
 **Values:**

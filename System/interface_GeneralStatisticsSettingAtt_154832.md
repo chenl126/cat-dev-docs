@@ -6,13 +6,15 @@
 
 ## Properties
 
-### Property **Activation**( ) As boolean
+### Property **Activation**(| ) As boolean
 
-Returns or sets the activation state of the statistics thematic.
+   Returns or sets the activation state of the statistics thematic.
+
 **Role** : Returns or sets the value of statistics thematic activation.  
 ### Property **CPUS**( ) As boolean
 
-Returns or sets the state ot the cpu time field.
+   Returns or sets the state ot the cpu time field.
+
 **Role** : Returns or sets the state ot the cpu time field.
 
 **Parameters:**
@@ -23,11 +25,13 @@ Returns or sets the state ot the cpu time field.
 
 ### Property **CumulationMode**( ) As boolean
 
-Returns or sets the cumulation state of the statistics thematic.
+   Returns or sets the cumulation state of the statistics thematic.
+
 **Role** : Returns or sets the value of statistics thematic cumulation.  
 ### Property **DateFormat**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the state ot the date format field.
+   Returns or sets the state ot the date format field.
+
 **Role** : Returns or sets the state ot the date format field.
 
 **Parameters:**
@@ -39,7 +43,8 @@ Returns or sets the state ot the date format field.
 
 ### Property **ELPS**( ) As boolean
 
-Returns or sets the state ot the elapsed time field.
+   Returns or sets the state ot the elapsed time field.
+
 **Role** : Returns or sets the state ot the elapsed time field.
 
 **Parameters:**
@@ -50,7 +55,8 @@ Returns or sets the state ot the elapsed time field.
 
 ### Property **HOST**( ) As boolean
 
-Returns or sets the state ot the host name field.
+   Returns or sets the state ot the host name field.
+
 **Role** : Returns or sets the state ot the host name field.
 
 **Parameters:**
@@ -61,7 +67,8 @@ Returns or sets the state ot the host name field.
 
 ### Property **Output**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the output format of the statistics thematic.
+   Returns or sets the output format of the statistics thematic.
+
 **Role** : Returns or sets the output format of the statistics thematic.
 
 **Parameters:**
@@ -72,11 +79,13 @@ Returns or sets the output format of the statistics thematic.
 
 ### Property **OutputFile**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the path of the statistics thematic file.
+   Returns or sets the path of the statistics thematic file.
+
 **Role** : Returns or sets the path of the statistics thematic file.  
 ### Property **OutputFormat**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the state ot the output format field.
+   Returns or sets the state ot the output format field.
+
 **Role** : Returns or sets the state ot the output format field.
 
 **Parameters:**
@@ -87,7 +96,8 @@ Returns or sets the state ot the output format field.
 
 ### Property **RTIM**( ) As boolean
 
-Returns or sets the state ot the response time field.
+   Returns or sets the state ot the response time field.
+
 **Role** : Returns or sets the state ot the response time field.
 
 **Parameters:**
@@ -98,7 +108,8 @@ Returns or sets the state ot the response time field.
 
 ### Property **THEM**( ) As boolean
 
-Returns or sets the state ot the thematic field.
+   Returns or sets the state ot the thematic field.
+
 **Role** : Returns or sets the state ot the thematic field.
 
 **Parameters:**
@@ -109,7 +120,8 @@ Returns or sets the state ot the thematic field.
 
 ### Property **TIME**( ) As boolean
 
-Returns or sets the state ot the time and date field.
+   Returns or sets the state ot the time and date field.
+
 **Role** : Returns or sets the state ot the time and date field.
 
 **Parameters:**
@@ -120,7 +132,8 @@ Returns or sets the state ot the time and date field.
 
 ### Property **TimeUnit**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the state ot the time unit field.
+   Returns or sets the state ot the time unit field.
+
 **Role** : Returns or sets the state ot the time unit field.
 
 **Parameters:**
@@ -131,7 +144,8 @@ Returns or sets the state ot the time unit field.
 
 ### Property **UPID**( ) As boolean
 
-Returns or sets the state ot the user pid field.
+   Returns or sets the state ot the user pid field.
+
 **Role** : Returns or sets the state ot the user pid field.
 
 **Parameters:**
@@ -142,7 +156,8 @@ Returns or sets the state ot the user pid field.
 
 ### Property **USER**( ) As boolean
 
-Returns or sets the state ot the user name field.
+   Returns or sets the state ot the user name field.
+
 **Role** : Returns or sets the state ot the user name field.
 
 **Parameters:**
@@ -154,7 +169,8 @@ Methods
 
 ### Func **GetFormatMode**( long  `flag`) As boolean
 
-Returns the format mode of the statistics thematic.
+   Returns the format mode of the statistics thematic.
+
 **Role** : Returns or sets the format mode of the statistics thematic.
 
 **Parameters:**
@@ -165,11 +181,12 @@ Returns the format mode of the statistics thematic.
 
 ### Func **GetThematicsParameterInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `AdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oLocked`) As boolean
 
-Retrieves environment informations for the general statistics parameters.
+   Retrieves environment informations for the general statistics parameters.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailled description.  
 ### Sub **SetFormatMode**( boolean  `iFormatMode`,  long  `flag`)
 
-Sets the format mode of the statistics thematic.
+   Sets the format mode of the statistics thematic.
+
 **Role** : Returns or sets the format mode of the statistics thematic.
 
 **Parameters:**
@@ -180,7 +197,8 @@ Sets the format mode of the statistics thematic.
 
 ### Sub **SetThematicsParameterLock**( boolean  `iLocked`)
 
-Locks or unlocks the general statistics parameters.
+   Locks or unlocks the general statistics parameters.
+
 **Role** :Locks or unlocks the statistics parameters.
 
 **Parameters:**
@@ -188,6 +206,7 @@ Locks or unlocks the general statistics parameters.
 ` iLocked`      the locking operation to be performed **Legal values** :
 `TRUE :` to lock the parameter.
 `FALSE:` to unlock the parameter.
+
 **Returns:**      **Legal values** :
 `S_OK :` on Success
 `E_FAIL:` on Failure

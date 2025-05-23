@@ -4,14 +4,15 @@
 
 ## Properties
 
-### Property **AnalysisImages**( ) As [CATIAAnalysisImages](../CATAnalysisInterfaces/interface_AnalysisImages_41938.md) (Read Only)
+### Property **AnalysisImages**(| ) As [CATIAAnalysisImages](../CATAnalysisInterfaces/interface_AnalysisImages_41938.md) (Read Only)
 
-Returns the analysis images collection associated with an analysis image.  Methods
+   Returns the analysis images collection associated with an analysis image.  Methods
 
 ### Sub **ExportData**( [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)  `iFolder`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iExtensionType`)
 
-Extracts image results.
+   Extracts image results.
 The export is done related to an existing image and will be stored in a CATIA Folder as a Text file or as an Excel file.
+
 **Limitations** :
 
   * The allowed output positions are: node, element, center of element, and node of element
@@ -25,6 +26,7 @@ To export data with mesh-part identification use ExportDataWithMeshPartId
 ` iFolder`      The folder to store the file to create
 ` iFileName`      The name of the file to create
 ` iExtensionType`      The extension of the file
+
 **Legal values** :
 
   * "xls" for a Microsoft Excel workbook
@@ -32,8 +34,9 @@ To export data with mesh-part identification use ExportDataWithMeshPartId
 
 ### Sub **ExportDataInGlobalAxis**( [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)  `iFolder`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iExtensionType`,  [CATAxisOrientationType](../CATAnalysisInterfaces/enum_CATAxisOrientationType_101718.md)  `iAxisOrientationType`,  boolean  `iExportMeshPartID`)
 
-Extracts image results.
+   Extracts image results.
 The export is done related to an existing image and will be stored in a CATIA Folder as a Text file or as an Excel file.
+
 **Limitations** :
 
   * The allowed output positions are: node, element, center of element, and node of element
@@ -45,6 +48,7 @@ The export is done related to an existing image and will be stored in a CATIA Fo
 ` iFolder`      The folder to store the file to create
 ` iFileName`      The name of the file to create
 ` iExtensionType`      The extension of the file
+
 **Legal values** :
 
   * "xls" for a Microsoft Excel workbook
@@ -55,8 +59,9 @@ The export is done related to an existing image and will be stored in a CATIA Fo
 
 ### Sub **ExportDataInManualAxis**( [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)  `iFolder`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iExtensionType`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iOrigin`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iXDirection`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iYDirection`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iZDirection`,  [CATAxisOrientationType](../CATAnalysisInterfaces/enum_CATAxisOrientationType_101718.md)  `iAxisOrientationType`,  boolean  `iExportMeshPartID`)
 
-Extracts image results.
+   Extracts image results.
 The export is done related to an existing image and will be stored in a CATIA Folder as a Text file or as an Excel file.
+
 **Limitations** :
 
   * The allowed output positions are: node, element, center of element, and node of element
@@ -68,6 +73,7 @@ The export is done related to an existing image and will be stored in a CATIA Fo
 ` iFolder`      The folder to store the file to create
 ` iFileName`      The name of the file to create
 ` iExtensionType`      The extension of the file
+
 **Legal values** :
 
   * "xls" for a Microsoft Excel workbook
@@ -82,8 +88,9 @@ The export is done related to an existing image and will be stored in a CATIA Fo
 
 ### Sub **ExportDataInUserAxis**( [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)  `iFolder`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iExtensionType`,  [CATIAAxisSystem](../MecModInterfaces/interface_AxisSystem_22406.md)  `iAxisSystem`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`,  [CATAxisOrientationType](../CATAnalysisInterfaces/enum_CATAxisOrientationType_101718.md)  `iAxisOrientationType`,  boolean  `iExportMeshPartID`)
 
-Extracts image results.
+   Extracts image results.
 The export is done related to an existing image and will be stored in a CATIA Folder as a Text file or as an Excel file.
+
 **Limitations** :
 
   * The allowed output positions are: node, element, center of element, and node of element
@@ -97,6 +104,7 @@ To export data with mesh-part identification use ExportDataWithMeshPartId
 ` iFolder`      The folder to store the file to create
 ` iFileName`      The name of the file to create
 ` iExtensionType`      The extension of the file
+
 **Legal values** :
 
   * "xls" for a Microsoft Excel workbook
@@ -109,8 +117,9 @@ To export data with mesh-part identification use ExportDataWithMeshPartId
 
 ### Sub **ExportDataWithMeshPartId**( [CATIAFolder](../InfInterfaces/interface_Folder_8034.md)  `iFolder`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iExtensionType`)
 
-Extracts image results and location with mesh part name (as identifier).
+   Extracts image results and location with mesh part name (as identifier).
 The export is done related to an existing image and will be stored in a CATIA Folder as a Text file or as an Excel file.
+
 **Limitations** :
 
   * The allowed output positions are: element, center of element, and node of element
@@ -124,6 +133,7 @@ To export data with mesh-part identification use ExportData
 ` iFolder`      The folder to store the file to create
 ` iFileName`      The name of the file to create
 ` iExtensionType`      The extension of the file
+
 **Legal values** :
 
   * "xls" for a Microsoft Excel workbook
@@ -131,11 +141,11 @@ To export data with mesh-part identification use ExportData
 
 ### Sub **ResetSelection**( )
 
-Resets all selections in an image.
+   Resets all selections in an image.
 This is done related to an existing image  
 ### Sub **SetActivationStatus**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iActivationStatus`)
 
-Activates oe deactivates an image.
+   Activates oe deactivates an image.
 This is done related to an existing image
 
 **Parameters:**
@@ -144,17 +154,18 @@ This is done related to an existing image
 
 ### Sub **SetCurrentOccurrence**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iOccurrenceNumber`)
 
-Sets occurrence number for an image.
+   Sets occurrence number for an image.
 This is done related to an existing image
 
 **Parameters:**
 
 ` iOccurrenceNumber`      The number to select
+
 **Legal value** : 1 ≤ iOccurrenceNumber ≤ nbOccurrence
 
 ### Sub **SetSelection**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReference`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iReplaceMode`)
 
-Adds a selection to an image.
+   Adds a selection to an image.
 This is done related to an existing image
 
 **Parameters:**
@@ -164,5 +175,5 @@ This is done related to an existing image
 
 ### Sub **Update**( )
 
-Updates an image.
+   Updates an image.
 This is done related to an existing image

@@ -6,16 +6,16 @@ A Product object aggregates zero or one Foundations collection. This collection 
 **Example:**      The following example retrieves the Foundation collection from the `oProduct` Product.
 
 ```VBScript
-Dim oFoundations as AnyObject
-Set oFoundations = oProduct.GetTechnologicalObject("StructureFoundations")
+     Dim oFoundations as AnyObject
+     Set oFoundations = oProduct.GetTechnologicalObject("StructureFoundations")
 
 ```
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAStrFoundation](../StructureInterfaces/interface_StrFoundation_37108.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAStrFoundation](../StructureInterfaces/interface_StrFoundation_37108.md)
 
-Returns a Foundation from its index in the Foundations collection.
+   Returns a Foundation from its index in the Foundations collection.
 
 **Parameters:**
 
@@ -23,9 +23,9 @@ Returns a Foundation from its index in the Foundations collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property  **Returns:**      The retrieved Foundation  **Example:**      The following example returns in `ThisFoundation` the third Foundation, and in `ThatFoundation` the Foundation named `Column_1` in the `Assembly_1` Foundation collection.
 
 ```VBScript
-Dim ThisFoundation As Foundation
-Set ThisFoundation = Assembly_1.Item(3)
-Dim ThatFoundation As Foundation
-Set ThatFoundation = Assembly.Item("Column_1")
+     Dim ThisFoundation As Foundation
+     Set ThisFoundation = Assembly_1.Item(3)
+     Dim ThatFoundation As Foundation
+     Set ThatFoundation = Assembly.Item("Column_1")
 
 ```

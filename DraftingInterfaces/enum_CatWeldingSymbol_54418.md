@@ -1,6 +1,7 @@
 # CatWeldingSymbol (Enumeration)
 
 **_Drawing welding symbol._**
+
 **Role** : The symbol represents the weld type.
 
 **Values:**
@@ -20,4 +21,5 @@
 ` catHVFlareWelding`      xx welding symbol
 ` catSpotWelding`      xx welding symbol
 ` catBackWelding`      xx welding symbol
+
 **See also:**      [DrawingWelding](../DraftingInterfaces/interface_DrawingWelding_41792.md)

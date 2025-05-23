@@ -7,25 +7,25 @@ The specification viewer is located in the left part of the window and displays 
 
 ## Properties
 
-### Property **Layout**( ) As [CatSpecsAndGeomWindowLayout](../InfInterfaces/enum_CatSpecsAndGeomWindowLayout_152411.md)
+### Property **Layout**(| ) As [CatSpecsAndGeomWindowLayout](../InfInterfaces/enum_CatSpecsAndGeomWindowLayout_152411.md)
 
-Returns or sets the specification and geometry window layout.
+   Returns or sets the specification and geometry window layout.
 
 **Example:**      This example sets the specification and geometry window layout for the `MyCADWindow` window to `catWindowGeomOnly`.
 
 ```VBScript
-MyCADWindow.Layout = catWindowGeomOnly
+     MyCADWindow.Layout = catWindowGeomOnly
 
 ```
 
 ### Property **SpecsViewer**( ) As [CATIASpecsViewer](../InfInterfaces/interface_SpecsViewer_26446.md) (Read Only)
 
-Returns the specifications viewer.
+   Returns the specifications viewer.
 
 **Example:**      This example retrieves the specification viewer for the `MyCADWindow` window.
 
 ```VBScript
-Dim MyViewer As Viewer
-Set MyViewer = MyCADWindow.SpecsViewer
+     Dim MyViewer As Viewer
+     Set MyViewer = MyCADWindow.SpecsViewer
 
 ```

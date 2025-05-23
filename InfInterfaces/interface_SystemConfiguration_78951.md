@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **OperatingSystem**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **OperatingSystem**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns a string which identifies the operating system on which the application is currently running. Examples of identifiers include: `intel_a`, `solaris_a`, `aix_a`, `win_a` and `hpux_a`.
+   Returns a string which identifies the operating system on which the application is currently running. Examples of identifiers include: `intel_a`, `solaris_a`, `aix_a`, `win_a` and `hpux_a`.
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Returns a string which identifies the operating system on which the application 
 
 ### Property **ProductCount**( ) As long (Read Only)
 
-Returns the number of product names names currently known to the system.
+   Returns the number of product names names currently known to the system.
 
 **Parameters:**
 
@@ -22,7 +22,7 @@ Returns the number of product names names currently known to the system.
 
 ### Property **Release**( ) As long (Read Only)
 
-Returns the CATIA release number.
+   Returns the CATIA release number.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Returns the CATIA release number.
 
 ### Property **ServicePack**( ) As long (Read Only)
 
-Returns the CATIA service pack number.
+   Returns the CATIA service pack number.
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ Returns the CATIA service pack number.
 
 ### Property **Version**( ) As long (Read Only)
 
-Returns the CATIA version number (usually version 5).
+   Returns the CATIA version number (usually version 5).
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Methods
 
 ### Sub **GetProductNames**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `ioProductNames`)
 
-Returns the product names of all the licenses currently known to the system.
+   Returns the product names of all the licenses currently known to the system.
 
 **Parameters:**
 
@@ -56,17 +56,17 @@ Returns the product names of all the licenses currently known to the system.
 **Example:**      This example determines if the first product in the list of known product names is authorized.
 
 ```VBScript
-Dim SystemConfiguration1 As SystemConfiguration
-Set SystemConfiguration1 = CATIA.SystemConfiguration
-ReDim NameArray(SystemConfiguration1.ProductNamesCount)
-SystemConfiguration1.GetProductNames NameArray
-MsgBox "IsProductAuthorized for product " & NameArray(0) & "  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
+     Dim SystemConfiguration1 As SystemConfiguration
+     Set SystemConfiguration1 = CATIA.SystemConfiguration
+     ReDim NameArray(SystemConfiguration1.ProductNamesCount)
+     SystemConfiguration1.GetProductNames NameArray
+     MsgBox "IsProductAuthorized for product " & NameArray(0) & "  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
 
 ```
 
 ### Func **IsProductAuthorized**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iProductName`) As boolean
 
-Returns `True` if the specified product is authorized, `False` otherwise.
+   Returns `True` if the specified product is authorized, `False` otherwise.
 
 **Parameters:**
 

@@ -1,15 +1,16 @@
 # CatalogDocument (Object)
 
 **_Represents the Document object for catalog._**
+
 **Role** : A catalog document references data (documents: CATPart..., features, etc) organized as a tree: the nodes are called chapters and the leaves are called descriptions. Each description may reference a document (CATPart...) and couples of keyword + value. The keywords are defined at the parent chapter level.
 A catalog may reference parametric Parts. In that case, the Part is associated with a Design Table. A Design Table is a file (text file, Excel document) that contains named columns and rows. Each row corresponds to a description, and each column may correspond to a keyword.
 Refer to CATIA V5 Documentation, Component Catalog Editor and to CAA V5 Encyclopedia, Document, Catalog.
 
 ## Methods
 
-### Sub **CreateCatalogFromLibrary**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iLibraryPath`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iProjectPath`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iCatalogPath`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iTablePath`,  short  `iConvFormat`,  short  `iBatchMode`)
+### Sub **CreateCatalogFromLibrary**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iLibraryPath`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iProjectPath`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iCatalogPath`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iTablePath`,| | short | `iConvFormat`,| | short | `iBatchMode`)
 
-Creates a catalog from a V4 library.
+   Creates a catalog from a V4 library.
 
 **Parameters:**
 
@@ -27,7 +28,7 @@ Creates a catalog from a V4 library.
 
 ### Sub **CreateCatalogFromcsv**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iInitData`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iNewCatalog`)
 
-Creates a catalog from a csv file.
+   Creates a catalog from a csv file.
 Refer to CATIA V5 Documentation, Component Catalog Editor, Creating a Catalog in Batch Mode.
 
 **Parameters:**
@@ -38,17 +39,17 @@ Refer to CATIA V5 Documentation, Component Catalog Editor, Creating a Catalog in
 **Example:**      This example creates a catalog from a csv file.
 
 ```VBScript
-  InputFile ="E:\users\Catalogs\BatchCatalog.csv"
-  OutputFile ="E:\users\Catalogs\Catalog_Result.catalog"
-  Dim Catalog As Document
-  Set Catalog=CATIA.Documents.Add("CatalogDocument")
-  Catalog.CreateCatalogFromcsv InputFile, OutputFile
+       InputFile ="E:\users\Catalogs\BatchCatalog.csv"
+       OutputFile ="E:\users\Catalogs\Catalog_Result.catalog"
+       Dim Catalog As Document
+       Set Catalog=CATIA.Documents.Add("CatalogDocument")
+       Catalog.CreateCatalogFromcsv InputFile, OutputFile
 
 ```
 
 ### Sub **CreateChapterFromDesignTable**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iChapterName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDocumentContainingDT`)
 
-Creates a chapter in the current catalog document where keywords correspond to parameters of the Design Table and add the descriptions corresponding to whole configurations of the Design Table.
+   Creates a chapter in the current catalog document where keywords correspond to parameters of the Design Table and add the descriptions corresponding to whole configurations of the Design Table.
 Refer to CATIA V5 Documentation, Component Catalog Editor, Creating a Catalog in Batch Mode.
 
 **Parameters:**
@@ -59,10 +60,10 @@ Refer to CATIA V5 Documentation, Component Catalog Editor, Creating a Catalog in
 **Example:**      This example creates a catalog and a chapter is added from a Design Table.
 
 ```VBScript
-  Chapter = "NewChapter"
-  DTFile ="E:\users\Catalogs\DesignTable.xls"
-  Dim Catalog As Document
-  Set Catalog=CATIA.Documents.Add("CatalogDocument")
-  Catalog.CreateChapterFromDesignTable Chapter, DTFile
+       Chapter = "NewChapter"
+       DTFile ="E:\users\Catalogs\DesignTable.xls"
+       Dim Catalog As Document
+       Set Catalog=CATIA.Documents.Add("CatalogDocument")
+       Catalog.CreateChapterFromDesignTable Chapter, DTFile
 
 ```

@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **CenterPoint**( ) As [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)
+### Property **CenterPoint**(| ) As [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)
 
-Returns the center point of the circle.
+   Returns the center point of the circle.
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Returns the center point of the circle.
 
 ### Property **Radius**( ) As double (Read Only)
 
-Returns the radius of the circle
+   Returns the radius of the circle
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Methods
 
 ### Sub **GetCenter**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oData`)
 
-Returns the center of the circle
+   Returns the center of the circle
 
 **Parameters:**
 
@@ -35,15 +35,15 @@ of the circle `myCircle`: double center(1) myCircle.GetCenter center
 
 ### Sub **SetData**( double  iCenterX,  double  iCenterY,  double  iRadius)
 
-      Modifies the caracteristics of the circle
+           Modifies the caracteristics of the circle
 
-  **Parameters:**
+       **Parameters:**
 
-    iCenterX
-                           The X Coordinate of the circle center
+         iCenterX
+                                The X Coordinate of the circle center
 
-    iCenterY
-             The Y Coordinate of the circle center
+         iCenterY
+                  The Y Coordinate of the circle center
 
-    iRadius
-             The radius of the circle
+         iRadius
+                  The radius of the circle

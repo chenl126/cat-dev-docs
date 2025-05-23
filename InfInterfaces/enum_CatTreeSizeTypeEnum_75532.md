@@ -1,6 +1,7 @@
 # CatTreeSizeTypeEnum (Enumeration)
 
 **_Types for the size of the text in the specification tree._**
+
 **Role** : This enum is used in the [TreeVizManipSettingAtt](../InfInterfaces/interface_TreeVizManipSettingAtt_101630.md) interface.
 
 **Values:**

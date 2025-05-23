@@ -1,6 +1,7 @@
 # CATAxisOrientationType (Enumeration)
 
 **_Orientation of coordinate system._**
+
 **Role:** CATAxisOrientationType defines the orientation type
 
 **Values:**

@@ -5,17 +5,18 @@ An anchor point is a point used to place the section on the support in the desig
 
 ## Methods
 
-### Sub **GetCoordinates**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCoord`)
+### Sub **GetCoordinates**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oCoord`)
 
-Retrieves the coordinates of the anchor point. These coordinates are expressed in the section local coordinate system.
+   Retrieves the coordinates of the anchor point. These coordinates are expressed in the section local coordinate system.
 
 **Parameters:**
 
 ` oCoord`      The 2D coordinates of the anchor point.
+
 **Example:**
 
 ```VBScript
-Dim coord(1)
-anchor_1.GetCoordinates(coord)
+     Dim coord(1)
+     anchor_1.GetCoordinates(coord)
 
 ```

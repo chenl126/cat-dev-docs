@@ -5,12 +5,12 @@
 
 ## Properties
 
-### Property **BoxCount**( ) As double (Read Only)
+### Property **BoxCount**(| ) As double (Read Only)
 
-Retrieves datum count.  
+   Retrieves datum count.  
 ### Property **Value**( ) As double (Read Only)
 
-Retrieves value (in millimeters).
+   Retrieves value (in millimeters).
 
 **Parameters:**
 

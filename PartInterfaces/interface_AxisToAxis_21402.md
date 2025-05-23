@@ -18,15 +18,15 @@ Use the CATIAHybridShapeFactory to create HybridShapeFeature object.
 
 ## Properties
 
-### Property **HybridShape**( ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
+### Property **HybridShape**(| ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
 
-Gets the underlying HybridShapeAxisToAxis.
+   Gets the underlying HybridShapeAxisToAxis.
 
 **Example:**     The following example explains how to retrieve the underlying HybridShape AxisToAxis
 
 ```VBScript
- Dim oHybridShape as AnyObject
- Set oHybridShape=oAxisToAxis.HybridShape
- oHybridShape.ElemToAxisToAxis = reference1
+      Dim oHybridShape as AnyObject
+      Set oHybridShape=oAxisToAxis.HybridShape
+      oHybridShape.ElemToAxisToAxis = reference1
 
 ```

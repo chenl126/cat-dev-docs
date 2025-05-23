@@ -4,69 +4,69 @@
 
 ## Properties
 
-### Property **AllAround**( ) As boolean
+### Property **AllAround**(| ) As boolean
 
-Returns or sets the status of all around.
+   Returns or sets the status of all around.
 
 **Example:**      This example retrieves the status of all around on `MyLeader` drawing leader.
 
 ```VBScript
-oSymbol = MyLeader.AllAround
+     oSymbol = MyLeader.AllAround
 
 ```
 
 ### Property **AnchorPoint**( ) As long
 
-Returns or sets anchor point.
+   Returns or sets anchor point.
 
 **Example:**      This example retrieves the anchor point on `MyLeader` drawing leader.
 
 ```VBScript
-oAnchorPoint = MyLeader.AnchorPoint
+     oAnchorPoint = MyLeader.AnchorPoint
 
 ```
 
 ### Property **HeadSymbol**( ) As [CatSymbolType](../DraftingInterfaces/enum_CatSymbolType_36412.md)
 
-Returns or sets symbol type of head side.
+   Returns or sets symbol type of head side.
 
 **Example:**      This example retrieves the symbol type of head side on `MyLeader` drawing leader.
 
 ```VBScript
-oSymbol = MyLeader.HeadSymbol
+     oSymbol = MyLeader.HeadSymbol
 
 ```
 
 ### Property **HeadTarget**( ) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md)
 
-Returns or sets target element of head side.
+   Returns or sets target element of head side.
 
 **Example:**      This example retrieves the target element of head side on `MyLeader` drawing leader.
 
 ```VBScript
-oTarget = MyLeader.HeadTarget
+     oTarget = MyLeader.HeadTarget
 
 ```
 
 ### Property **NbInterruption**( ) As long (Read Only)
 
-Returns the number of interruptions of leader path.
+   Returns the number of interruptions of leader path.
 
 **Example:**      This example retrieves the number of interruptions on `MyLeader` drawing leader.
 
 ```VBScript
-oNbInterruption = MyLeader.NbInterruption
+     oNbInterruption = MyLeader.NbInterruption
 
 ```
 
 ### Property **NbPoint**( ) As long (Read Only)
 
-Returns the number of points of leader path.
+   Returns the number of points of leader path.
 
 **Example:**      This example retrieves the number of points on `MyLeader` drawing leader.
 
 ```VBScript
-oNbPoint = MyLeader.NbPoint
+     oNbPoint = MyLeader.NbPoint
 
 ```
 
@@ -74,7 +74,7 @@ Methods
 
 ### Sub **AddInterruption**( double  `iFirstPointX`,  double  `iFirstPointY`,  double  `iSecondPointX`,  double  `iSecondPointY`)
 
-Add an interruption to an leader.
+   Add an interruption to an leader.
 
 **Parameters:**
 
@@ -84,17 +84,17 @@ Add an interruption to an leader.
 ` iSecondPointY`      Y coordinates of second point.  **Example:**      This example adds an interruption to `MyLeader`.
 
 ```VBScript
-iFirstPointX = 10.
-iFirstPointY = 20.
-iSecondPointX = 20.
-iSecondPointY = 20.
-MyLeader.AddInterruption iFirstPointX, iFirstPointY, iSecondPointX, iSecondPointY
+     iFirstPointX = 10.
+     iFirstPointY = 20.
+     iSecondPointX = 20.
+     iSecondPointY = 20.
+     MyLeader.AddInterruption iFirstPointX, iFirstPointY, iSecondPointX, iSecondPointY
 
 ```
 
 ### Sub **AddPoint**( long  `iNum`,  double  `iX`,  double  `iY`)
 
-Add a point to an leader.
+   Add a point to an leader.
 
 **Parameters:**
 
@@ -103,30 +103,31 @@ Add a point to an leader.
 ` iY`      Y coordinates of point to add.  **Example:**      This example adds a point to `MyLeader`.
 
 ```VBScript
-iNum = 1
-iX = 10.
-iY = 20.
-MyLeader.AddPoint iNum, iX, iY
+     iNum = 1
+     iX = 10.
+     iY = 20.
+     MyLeader.AddPoint iNum, iX, iY
 
 ```
 
 ### Func **GetInterruptions**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oInterruptions`) As long
 
-Get leader path.
+   Get leader path.
 
 **Parameters:**
 
 ` oInterruptions`      List of interruptions coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
+
 **Returns:**      oNbInterruptions Number of interruptions.  **Example:**      This example gets interruptions of `MyLeader` path.
 
 ```VBScript
-oNbInterruptions = MyLeader.GetInterruptions(oInterruptions)
+     oNbInterruptions = MyLeader.GetInterruptions(oInterruptions)
 
 ```
 
 ### Sub **GetPoint**( long  `iNum`,  double  `oX`,  double  `oY`)
 
-Get leader point coordinates.
+   Get leader point coordinates.
 
 **Parameters:**
 
@@ -135,28 +136,29 @@ Get leader point coordinates.
 ` oY`      Y coordinates of point.  **Example:**      This example gets a point to `MyLeader`.
 
 ```VBScript
-iNum = 1
-MyLeader.GetPoint(iNum, oX, oY)
+     iNum = 1
+     MyLeader.GetPoint(iNum, oX, oY)
 
 ```
 
 ### Func **GetPoints**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oPoints`) As long
 
-Get leader path.
+   Get leader path.
 
 **Parameters:**
 
 ` oPoints`      List of points coordinates (X1,Y1,X2,Y2,.....Xn,Yn).
+
 **Returns:**      oNbPoints Number of points.  **Example:**      This example gets points of `MyLeader` path.
 
 ```VBScript
-oNbPoints = MyLeader.GetPoints(oPoints)
+     oNbPoints = MyLeader.GetPoints(oPoints)
 
 ```
 
 ### Sub **ModifyPoint**( long  `iNum`,  double  `iX`,  double  `iY`)
 
-Modify a point of an leader.
+   Modify a point of an leader.
 
 **Parameters:**
 
@@ -165,37 +167,37 @@ Modify a point of an leader.
 ` iY`      Y coordinates of new point.  **Example:**      This example modifys a point to `MyLeader`.
 
 ```VBScript
-iNum = 1
-iX = -10.
-iY = -20.
-MyLeader.ModifyPoint iNum, iX, iY
+     iNum = 1
+     iX = -10.
+     iY = -20.
+     MyLeader.ModifyPoint iNum, iX, iY
 
 ```
 
 ### Sub **RemoveInterruption**( long  `iNum`)
 
-Remove an interruption to an leader.
+   Remove an interruption to an leader.
 
 **Parameters:**
 
 ` iNum`      Interruption number to delete.       \- If iNum equals to 0, all interruptions will be removed.  **Example:**      This example removes an interruption from `MyLeader`.
 
 ```VBScript
-iNum = 2
-MyLeader.RemoveInterruption iNum
+     iNum = 2
+     MyLeader.RemoveInterruption iNum
 
 ```
 
 ### Sub **RemovePoint**( long  `iNum`)
 
-Remove a point from an leader.
+   Remove a point from an leader.
 
 **Parameters:**
 
 ` iNum`      Point number to delete.  **Example:**      This example removes a point from `MyLeader`.
 
 ```VBScript
-iNum = 2
-MyLeader.RemovePoint iNum
+     iNum = 2
+     MyLeader.RemovePoint iNum
 
 ```

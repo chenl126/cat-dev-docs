@@ -4,20 +4,20 @@
 
 ## Methods
 
-### Func **Add**( ) As [CATIAHybridBody](../MecModInterfaces/interface_HybridBody_21378.md)
+### Func **Add**(| ) As [CATIAHybridBody](../MecModInterfaces/interface_HybridBody_21378.md)
 
-Creates a new hybrid body and adds it to the HybridBodies collection. This body becomes the current one
+   Creates a new hybrid body and adds it to the HybridBodies collection. This body becomes the current one
 
 **Returns:**      The created body  **Example:**      The following example creates a body named `newHybridBody` in the hybrid body collection of the `rootPart` part in the `partDoc` part document. `NewPartBody` becomes the current body in `partDoc`.
 
 ```VBScript
-Set NewPartBody = rootPart.Bodies.AddPartBody()
+     Set NewPartBody = rootPart.Bodies.AddPartBody()
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAHybridBody](../MecModInterfaces/interface_HybridBody_21378.md)
 
-Returns a body using its index or its name from the Bodies collection.
+   Returns a body using its index or its name from the Bodies collection.
 
 **Parameters:**
 
@@ -25,8 +25,8 @@ Returns a body using its index or its name from the Bodies collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved hybrid body **Example:**      This example retrieves in `ThisHybridBody` the fifth hybrid body in the collection and in `ThatHybridBody` the hybrid body named `MyHybridBody` in the hybrid body collection of the `partDoc` part document.
 
 ```VBScript
-Set hybridBodyColl = partDoc.Part.HybridBodies
-Set ThisHybridBody = hybridBodyColl.Item(5)
-Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
+     Set hybridBodyColl = partDoc.Part.HybridBodies
+     Set ThisHybridBody = hybridBodyColl.Item(5)
+     Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
 
 ```

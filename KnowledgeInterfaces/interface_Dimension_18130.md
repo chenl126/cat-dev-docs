@@ -7,13 +7,13 @@ It is an abstract object which is not intended to be created as such, but from w
 
 ## Properties
 
-### Property **Unit**( ) As [CATIAUnit](../KnowledgeInterfaces/interface_Unit_3832.md) (Read Only)
+### Property **Unit**(| ) As [CATIAUnit](../KnowledgeInterfaces/interface_Unit_3832.md) (Read Only)
 
-Returns the unit used for this dimension object.  Methods
+   Returns the unit used for this dimension object.  Methods
 
 ### Func **ValueAsString2**( long  `iNbDecimals`,  boolean  `iShowTrailingZeros`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Gets the value of the parameter as a string, with a given precision.
+   Gets the value of the parameter as a string, with a given precision.
 
 **Parameters:**
 
@@ -21,8 +21,8 @@ Gets the value of the parameter as a string, with a given precision.
 ` iShowTrailingZeros`      this argument says if trailing zeros have to be shown  **Example:**      This example gets the value of the existing `dimension` parameter and shows it in a message box
 
 ```VBScript
-Dim str
-str = dimension.ValueAsString;
-MessageBox str
+     Dim str
+     str = dimension.ValueAsString;
+     MessageBox str
 
 ```

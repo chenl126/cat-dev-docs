@@ -5,9 +5,9 @@ Ther is two kinds of default annotation : \- with a manual selection \- with a s
 
 ## Properties
 
-### Property **LinkWiGeomType**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **LinkWiGeomType**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Get the type of link between the default annotation and the geometry. Return E_FAIL if the annotation is not a default one.
+   Get the type of link between the default annotation and the geometry. Return E_FAIL if the annotation is not a default one.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Get the type of link between the default annotation and the geometry. Return E_F
 
 ### Property **SearchAlgoType**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Get the type of search algo to find geometry on which the annotation apply to. Return E_FAIL if the annotation is not a default one.
+   Get the type of search algo to find geometry on which the annotation apply to. Return E_FAIL if the annotation is not a default one.
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Methods
 
 ### Func **IsInAutomaticSearchMode**( ) As boolean
 
-Get the type of search algo Return E_FAIL if the annotation is not a default one.
+   Get the type of search algo Return E_FAIL if the annotation is not a default one.
 
 **Parameters:**
 

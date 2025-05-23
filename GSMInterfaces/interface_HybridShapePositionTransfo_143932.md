@@ -1,6 +1,7 @@
 # HybridShapePositionTransfo (Object)
 
 **_Represents the hybrid shape position transformation feature object._**
+
 **Role** : To access the data of the hybrid shape position transformation feature object. This data includes:
 
   * The positioning mode
@@ -13,9 +14,9 @@ Use the CATIAHybridShapeFactory to create a HybridShapePositionTransfo object.
 
 ## Properties
 
-### Property **InitialDirectionComputationMode**( ) As long
+### Property **InitialDirectionComputationMode**(| ) As long
 
-Gets or sets the computation mode of the X axis (or direction) of the initial axis system.
+   Gets or sets the computation mode of the X axis (or direction) of the initial axis system.
 
 **Parameters:**
 
@@ -23,7 +24,8 @@ Gets or sets the computation mode of the X axis (or direction) of the initial ax
 
 ### Property **Mode**( ) As long
 
-Returns or sets the positioning mode.
+   Returns or sets the positioning mode.
+
 **Legal values** :
 
 CATGSMPositionMode_NoneOrPositioned
@@ -35,11 +37,11 @@ CATGSMPositionMode_Develop
 
 ### Property **Profile**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the profile to be positioned.  Methods
+   Returns or sets the profile to be positioned.  Methods
 
 ### Func **GetNbPosAngle**( ) As long
 
-Gets the number of numerical positioning parameters : first axis direction angles.
+   Gets the number of numerical positioning parameters : first axis direction angles.
 
 **Parameters:**
 
@@ -47,7 +49,7 @@ Gets the number of numerical positioning parameters : first axis direction angle
 
 ### Func **GetNbPosCoord**( ) As long
 
-Gets the number of numerical positioning parameters : origin planar coordinates.
+   Gets the number of numerical positioning parameters : origin planar coordinates.
 
 **Parameters:**
 
@@ -55,7 +57,7 @@ Gets the number of numerical positioning parameters : origin planar coordinates.
 
 ### Func **GetPosAngle**( long  `iI`) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)
 
-Returns angles of both initial and target coordinate systems from default positions.
+   Returns angles of both initial and target coordinate systems from default positions.
 
 **Parameters:**
 
@@ -64,7 +66,7 @@ Returns angles of both initial and target coordinate systems from default positi
 
 ### Func **GetPosCoord**( long  `ii`) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)
 
-Returns translation coordinates if both initial and target coordinate systems from default positions.
+   Returns translation coordinates if both initial and target coordinate systems from default positions.
 
 **Parameters:**
 
@@ -73,7 +75,7 @@ Returns translation coordinates if both initial and target coordinate systems fr
 
 ### Func **GetPosPoint**( long  `ii`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns the points designated as the origins of the initial and target planes.
+   Returns the points designated as the origins of the initial and target planes.
 
 **Parameters:**
 
@@ -82,7 +84,7 @@ Returns the points designated as the origins of the initial and target planes.
 
 ### Func **GetPosSwapAxes**( long  `ii`) As long
 
-Returns axis inversion from previous definitions for both initial and target planes.
+   Returns axis inversion from previous definitions for both initial and target planes.
 
 **Parameters:**
 
@@ -100,7 +102,7 @@ CATGSMAxisInversionMode_Both
 
 ### Func **GetPositionDirection**( long  `iI`) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-Returns the positioning directions.
+   Returns the positioning directions.
 The positioning direction can be initial or target plane X-axis direction.
 
 **Parameters:**
@@ -110,13 +112,13 @@ The positioning direction can be initial or target plane X-axis direction.
 
 ### Sub **RemoveAllPosAngle**( )
 
-Removes all numerical positioning parameters : first axis direction angles.  
+   Removes all numerical positioning parameters : first axis direction angles.  
 ### Sub **RemoveAllPosCoord**( )
 
-Removes all numerical positioning parameters : origin planar coordinates.  
+   Removes all numerical positioning parameters : origin planar coordinates.  
 ### Sub **SetPosAngle**( long  `iI`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `iAngle`)
 
-Sets angles of both initial and target coordinate systems.
+   Sets angles of both initial and target coordinate systems.
 
 **Parameters:**
 
@@ -125,7 +127,7 @@ Sets angles of both initial and target coordinate systems.
 
 ### Sub **SetPosCoord**( long  `iI`,  [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `iCoordinate`)
 
-Sets translation coordinates of both initial and target coordinate systems.
+   Sets translation coordinates of both initial and target coordinate systems.
 
 **Parameters:**
 
@@ -134,7 +136,7 @@ Sets translation coordinates of both initial and target coordinate systems.
 
 ### Sub **SetPosPoint**( long  `iI`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`)
 
-Sets the points designated as the origins of the initial and target planes.
+   Sets the points designated as the origins of the initial and target planes.
 
 **Parameters:**
 
@@ -143,7 +145,7 @@ Sets the points designated as the origins of the initial and target planes.
 
 ### Sub **SetPosSwapAxes**( long  `ii`,  long  `iInversion`)
 
-Sets axis inversion from previous definitions for both initial and target planes.
+   Sets axis inversion from previous definitions for both initial and target planes.
 
 **Parameters:**
 
@@ -161,7 +163,7 @@ CATGSMAxisInversionMode_Both
 
 ### Sub **SetPositionDirection**( long  `iI`,  [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)  `iElem`)
 
-Sets the positioning directions.
+   Sets the positioning directions.
 The positioning direction can be initial or target plane X-axis direction.
 
 **Parameters:**

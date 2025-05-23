@@ -7,14 +7,14 @@ It is the base object for prisms, holes, revolutions, stiffeners, and sweeps.
 
 ## Properties
 
-### Property **Sketch**( ) As [CATIASketch](../SketcherInterfaces/interface_Sketch_8026.md) (Read Only)
+### Property **Sketch**(| ) As [CATIASketch](../SketcherInterfaces/interface_Sketch_8026.md) (Read Only)
 
-Returns the sketch the shape is based on.
+   Returns the sketch the shape is based on.
 
 **Example:**     The following example returns the sketch a pad named `firstPad` is based on:
 
 ```VBScript
-Set sketchPad = firstPad.Sketch
+     Set sketchPad = firstPad.Sketch
 
 ```
 
@@ -22,4 +22,4 @@ Methods
 
 ### Sub **SetProfileElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iProfileElement`)
 
-Returns or sets a profile element.
+   Returns or sets a profile element.

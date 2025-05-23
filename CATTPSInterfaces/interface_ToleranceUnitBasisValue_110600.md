@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **SetValues**( double  `iValue1`,  double  `iValue2`)
+### Sub **SetValues**(| double | `iValue1`,| | double | `iValue2`)
 
-Set tolerance unit basis values (in millimeters).
+   Set tolerance unit basis values (in millimeters).
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Set tolerance unit basis values (in millimeters).
 
 ### Sub **Values**( double  `oValue1`,  double  `oValue2`)
 
-Retrieves tolerance unit basis values (in millimeters).
+   Retrieves tolerance unit basis values (in millimeters).
 
 **Parameters:**
 

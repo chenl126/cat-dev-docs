@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Relay**( [CATIAPublication](../ProductStructureInterfaces/interface_Publication_26668.md)  `iPub`) (Write Only)
+### Property **Relay**(| [CATIAPublication](../ProductStructureInterfaces/interface_Publication_26668.md) | `iPub`) (Write Only)
 
-Valuates a publication object with another publication object. **Role:** This method allows to valuate a publication with an intermediate one.
+   Valuates a publication object with another publication object. **Role:** This method allows to valuate a publication with an intermediate one.
 
 **Parameters:**
 
@@ -15,13 +15,13 @@ Valuates a publication object with another publication object. **Role:** This me
 **Example:** The following example valuates the publication object `Pub1` with the publication object `Pub2`
 
 ```VBScript
-Pub1.Relay(Pub2)
+     Pub1.Relay(Pub2)
 
 ```
 
 ### Property **Valuation**( ) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md)
 
-Returns published object. **Role:** This method gives access to the finally published object.
+   Returns published object. **Role:** This method gives access to the finally published object.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Returns published object. **Role:** This method gives access to the finally publ
 **Example:** This example returns the final reference `Ref` of the publication object `Pub1`.
 
 ```VBScript
-Dim Ref As Reference
-Ref = Pub1.Valuation
+     Dim Ref As Reference
+     Ref = Pub1.Valuation
 
 ```

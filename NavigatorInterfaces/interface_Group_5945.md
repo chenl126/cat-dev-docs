@@ -15,20 +15,21 @@ To perform these treatments one may use `YyyyExtract` or `ZzzzInvert` methods.
 
 ## Properties
 
-### Property **ExtractMode**( ) As long
+### Property **ExtractMode**(| ) As long
 
-Returns or sets the mode for the extraction methods.
+   Returns or sets the mode for the extraction methods.
 
 **Returns:**      The extraction mode
 
   * 0: the extraction provides the products from the group (intermediate of terminal nodes).
   * 1: the extraction provides terminal nodes of the products from the group.
+
 **Example:**      This example retrieves the extraction mode of the `NewGroup` Group and sets it to 1.
 
 ```VBScript
-   Dim Mode As Integer
-   Mode = NewGroup.ExtractMode
-   NewGroup.ExtractMode = 1
+        Dim Mode As Integer
+        Mode = NewGroup.ExtractMode
+        NewGroup.ExtractMode = 1
 
 ```
 
@@ -36,33 +37,34 @@ Methods
 
 ### Sub **AddExplicit**( [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md)  `iProduct`)
 
-Adds a product to the group.
+   Adds a product to the group.
 
 **Parameters:**
 
 ` iProduct`      The product to add
+
 **Example:**      This example adds the product `MyProduct` to the group `NewGroup`.
 
 ```VBScript
-   NewGroup.AddExplicit MyProduct
+        NewGroup.AddExplicit MyProduct
 
 ```
 
 ### Func **CountExplicit**( ) As long
 
-Returns the number of products in the group.
+   Returns the number of products in the group.
 
 **Example:**      This example retrieves the number of products in the group `NewGroup`.
 
 ```VBScript
-   Dim number As Integer
-   number = NewGroup.CountExplicit
+        Dim number As Integer
+        number = NewGroup.CountExplicit
 
 ```
 
 ### Func **CountExtract**( ) As long
 
-Returns the number of products which can be extracted from the group. Depending on the extraction mode, the extracted products can be:
+   Returns the number of products which can be extracted from the group. Depending on the extraction mode, the extracted products can be:
 
   * Mode = 0: the products from the group (intermediate or terminal nodes).
   * Mode = 1: the terminal nodes of the products from the group.
@@ -70,100 +72,104 @@ Returns the number of products which can be extracted from the group. Depending 
 **Returns:**      The number of products  **Example:**      This example reads the number of products in the group `NewGroup`.
 
 ```VBScript
-   Dim number As Integer
-   number = NewGroup.CountExtract
+        Dim number As Integer
+        number = NewGroup.CountExtract
 
 ```
 
 ### Func **CountInvert**( ) As long
 
-Returns the number of terminal node products which cannot be extracted from the group.
+   Returns the number of terminal node products which cannot be extracted from the group.
 
 **Example:**      This example retrieves the number of terminal node products which cannot be extracted from the group `NewGroup`.
 
 ```VBScript
-   Dim number As Integer
-   number = NewGroup.CountInvert
+        Dim number As Integer
+        number = NewGroup.CountInvert
 
 ```
 
 ### Sub **FillSelWithExtract**( )
 
-Fills the selection with all products which can be extracted from the group.
+   Fills the selection with all products which can be extracted from the group.
 
 **Example:**      This example fills the selection with products which can be extracted from the `NewGroup` group.
 
 ```VBScript
-   NewGroup.FillSelWithExtract
+        NewGroup.FillSelWithExtract
 
 ```
 
 ### Sub **FillSelWithInvert**( )
 
-Fills the selection with all terminal node products which cannot be extracted from the group.
+   Fills the selection with all terminal node products which cannot be extracted from the group.
 
 **Example:**      This example fills the selection with all products which cannnot be extracted from the `NewGroup` group.
 
 ```VBScript
-   NewGroup.FillSelWithInvert
+        NewGroup.FillSelWithInvert
 
 ```
 
 ### Func **ItemExplicit**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md)
 
-Returns a product using its index in the group.
+   Returns a product using its index in the group.
 
 **Parameters:**
 
 ` iIndex`      The index of the product in the group. The index of the first product is 1, and the index of the last product is CountExplicit.
+
 **Returns:**      The retrieved product  **Example:**      This example retrieves in `ThisProduct` the ninth product from the `NewGroup` group.
 
 ```VBScript
-   Dim ThisProduct As Product
-   Set ThisProduct = NewGroup.ItemExplicit(9)
+        Dim ThisProduct As Product
+        Set ThisProduct = NewGroup.ItemExplicit(9)
 
 ```
 
 ### Func **ItemExtract**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Returns a product which can be extracted from the group using its index.
+   Returns a product which can be extracted from the group using its index.
 
 **Parameters:**
 
 ` iIndex`      The index of the product in the group. The index of the first product is 1, and the index of the last product is CountExtract.
+
 **Returns:**      The retrieved product  **Example:**      This example retrieves in `ThisProduct` the ninth product from the `NewGroup` group.
 
 ```VBScript
-   Dim ThisProduct As Group
-   Set ThisProduct = NewGroup.ItemExtract(9)
+        Dim ThisProduct As Group
+        Set ThisProduct = NewGroup.ItemExtract(9)
 
 ```
 
 ### Func **ItemInvert**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Returns a terminal node product which cannot be extracted from the group using its index.
+   Returns a terminal node product which cannot be extracted from the group using its index.
 
 **Parameters:**
 
 ` iIndex`      The index of the product in the group. The index of the first product is 1, and the index of the last product is CountExtract.
+
 **Returns:**      The retrieved product  **Example:**      This example retrieves in `ThisProduct` the ninth product which cannot be extracted from the `NewGroup` group.
 
 ```VBScript
-   Dim ThisProduct As Group
-   Set ThisProduct = NewGroup.ItemInvert(9)
+        Dim ThisProduct As Group
+        Set ThisProduct = NewGroup.ItemInvert(9)
 
 ```
 
 ### Sub **RemoveExplicit**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a product from the group using its index.
+   Removes a product from the group using its index.
 
 **Parameters:**
 
 ` iIndex`      The index of the product in the group. The index of the first product is 1, and the index of the last product is CountExplicit.
+
 **Example:**      The following example removes the tenth product from the `NewGroup` group.
 
 ```VBScript
-   NewGroup.RemoveExplicit 10
+        NewGroup.RemoveExplicit 10
 
 ```

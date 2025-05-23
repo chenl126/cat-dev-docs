@@ -4,67 +4,71 @@
 
 ## Methods
 
-### Sub **Compute3DCut**( [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md)  `GroupOfSelectedProducts`,  [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `ThreeDCutDocument`)
+### Sub **Compute3DCut**(| [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md) | `GroupOfSelectedProducts`,| | [CATIADocument](../InfInterfaces/interface_Document_14456.md) | `ThreeDCutDocument`)
 
-Computes the 3DCut on the selected products.
+   Computes the 3DCut on the selected products.
 
 **Parameters:**
 
 ` GroupOfSelectedProducts`      The selected products on which you want to perform the 3D cut.
+
 **Returns:**      ThreeDCutDocument: Document containing the result.  
 ### Sub **Compute3DCutWithAReference**( [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md)  `GroupOfSelectedProducts`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iReferenceProduct`,  [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `ThreeDCutDocument`)
 
-Computes the 3DCut on the selected products, according to a reference product.
+   Computes the 3DCut on the selected products, according to a reference product.
 
 **Parameters:**
 
 ` GroupOfSelectedProducts`      The selected products on which you want to perform the 3D cut.
 ` iReferenceProduct`      Product taken as a reference.
+
 **Returns:**      ThreeDCutDocument: Document containing the result.  
 ### Func **GetCompute3DCut**( [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md)  `GroupOfSelectedProducts`) As [CATIADocument](../InfInterfaces/interface_Document_14456.md)
 
-Computes the 3DCut on the selected products (better signature).
+   Computes the 3DCut on the selected products (better signature).
 
 **Parameters:**
 
 ` GroupOfSelectedProducts`      The selected products on which you want to perform the 3D cut.
+
 **Returns:**      ThreeDCutDocument: Document containing the result.  
 ### Func **GetCompute3DCutWithAReference**( [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md)  `GroupOfSelectedProducts`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iReferenceProduct`) As [CATIADocument](../InfInterfaces/interface_Document_14456.md)
 
-Computes the 3DCut on the selected products, according to a reference product (better signature).
+   Computes the 3DCut on the selected products, according to a reference product (better signature).
 
 **Parameters:**
 
 ` GroupOfSelectedProducts`      The selected products on which you want to perform the 3D cut.
 ` iReferenceProduct`      Product taken as a reference.
+
 **Returns:**      ThreeDCutDocument: Document containing the result.  
 ### Sub **SetBox**( double  `OriginX`,  double  `OriginY`,  double  `OriginZ`,  double  `VX`,  double  `VY`,  double  `VZ`)
 
-Sets the RELATIVE box used for the 3D cut computation.
+   Sets the RELATIVE box used for the 3D cut computation.
 Be aware of the behavior:
 
 ```VBScript
-       Vz
-      ^_________________
-     /|               /|
-    /                / |
-   /  |             /  |
-  /                /   |
- /----+-----------/    |
- |                |    |
- |    |       *   |    |
- |            O   |    |
- |    |           |    |
- |                |    |
- |    |           |    |
- |    * - - - - - + - -|> Vy
- |    Origin      |   /
- |  /             |  /
- |                | /
- |/               |/
- /----------------/
-<
- Vx
+            Vz
+           ^_________________
+          /|               /|
+         /                / |
+        /  |             /  |
+       /                /   |
+      /----+-----------/    |
+      |                |    |
+      |    |       *   |    |
+      |            O   |    |
+      |    |           |    |
+      |                |    |
+      |    |           |    |
+      |    * - - - - - + - -|> Vy
+      |    Origin      |   /
+      |  /             |  /
+      |                | /
+      |/               |/
+      /----------------/
+     <
+      Vx
 
 ```
 
@@ -85,7 +89,7 @@ Can have unexpected results if you don't use it properly.
 
 ### Sub **SetMatrix**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iComponents`)
 
-Sets the rotation AND translation matrix.
+   Sets the rotation AND translation matrix.
 Beware : After a SetBox, the matrix is not changed.
 
 **Parameters:**
@@ -94,7 +98,7 @@ Beware : After a SetBox, the matrix is not changed.
 
 ### Sub **SetOnBorders**( long  `OnBorders`)
 
-Sets the behavior on borders.
+   Sets the behavior on borders.
 
 **Parameters:**
 
@@ -103,7 +107,7 @@ Sets the behavior on borders.
 
 ### Sub **SetType**( long  `Type`)
 
-Sets the type of cut we're doing.
+   Sets the type of cut we're doing.
 
 **Parameters:**
 
@@ -112,4 +116,4 @@ Sets the type of cut we're doing.
 
 ### Sub **ThreeDCutShapeName**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `Name`)
 
-Returns the name of the associated shape.
+   Returns the name of the associated shape.

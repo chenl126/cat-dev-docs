@@ -6,16 +6,16 @@ A Product object aggregates zero or one Members collection. This collection is r
 **Example:**      The following example retrieves the member collection from the `oProduct` Product.
 
 ```VBScript
-Dim oMembers as AnyObject
-Set oMembers = oProduct.GetTechnologicalObject("StructureMembers")
+     Dim oMembers as AnyObject
+     Set oMembers = oProduct.GetTechnologicalObject("StructureMembers")
 
 ```
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Returns a member from its index in the Members collection.
+   Returns a member from its index in the Members collection.
 
 **Parameters:**
 
@@ -23,16 +23,16 @@ Returns a member from its index in the Members collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property  **Returns:**      The retrieved member  **Example:**      The following example returns in `ThisMember` the third member, and in `ThatMember` the member named `Column_1` in the `Assembly_1` member collection.
 
 ```VBScript
-Dim ThisMember As Member
-Set ThisMember = Assembly_1.Item(3)
-Dim ThatMember As Member
-Set ThatMember = Assembly.Item("Column_1")
+     Dim ThisMember As Member
+     Set ThisMember = Assembly_1.Item(3)
+     Dim ThatMember As Member
+     Set ThatMember = Assembly.Item("Column_1")
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a member from the Members collection.
+   Removes a member from the Members collection.
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ Removes a member from the Members collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property  **Example:**      The following example removes the sixth member and the member named `Column_1` from the `Assembly_1` member collection.
 
 ```VBScript
-Assembly_1.Remove(6)
-Assembly_1.Remove("Column_1")
+     Assembly_1.Remove(6)
+     Assembly_1.Remove("Column_1")
 
 ```

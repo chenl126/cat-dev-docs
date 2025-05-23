@@ -5,9 +5,9 @@ These components are agregated by another basic component, an entity or a set.
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iVariant`) As [CATIABasicComponent](../CATAnalysisInterfaces/interface_BasicComponent_42336.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iVariant`) As [CATIABasicComponent](../CATAnalysisInterfaces/interface_BasicComponent_42336.md)
 
-Returns an Basic Component using its index or its name from the Basic Components collection.
+   Returns an Basic Component using its index or its name from the Basic Components collection.
 
 **Parameters:**
 

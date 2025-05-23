@@ -1,6 +1,7 @@
 # CatPartElementsNamingMode (Enumeration)
 
 **_Naming mode parameter's possible values._**
+
 **Role** : This enumeration is used in the [PartInfrastructureSettingAtt](../MecModInterfaces/interface_PartInfrastructureSettingAtt_168320.md) interface.
 
 **Values:**

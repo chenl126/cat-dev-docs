@@ -6,15 +6,15 @@ It is managed on a Functional Element, thru the MultiRep Facet Manager (MRM).
 
 ## Methods
 
-### Func **Create**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`) As [CATIAFunctAssociation](../CATFunctSystemItf/interface_FunctAssociation_55448.md)
+### Func **Create**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`) As [CATIAFunctAssociation](../CATFunctSystemItf/interface_FunctAssociation_55448.md)
 
-Create a FunctAssociation.  
+   Create a FunctAssociation.  
 ### Sub **Delete**( [CATIAFunctAssociation](../CATFunctSystemItf/interface_FunctAssociation_55448.md)  `iAssociation`)
 
-Delete a FunctAssociation.  
+   Delete a FunctAssociation.  
 ### Func **Elem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFunctAssociation](../CATFunctSystemItf/interface_FunctAssociation_55448.md)
 
-Returns an association using its index or its name from the associations collection.
+   Returns an association using its index or its name from the associations collection.
 
 **Parameters:**
 
@@ -22,13 +22,13 @@ Returns an association using its index or its name from the associations collect
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved association **Example:**      This example retrieves in `Act1` the fifth association in the collection and in `Act2` the association named `Moves`.
 
 ```VBScript
-Dim FunctElem As FunctionalObject
-Set FunctElem = FunctDoc.CurrentDescription.Objects.Elem("Valve")
-Dim FacetMRM As FunctionalMultiRepMgr
-Set FacetMRM = FunctElem.GetFacetByName("MRM")
-Dim Assoc1 As FunctAssociation
-Set Assoc1 = FacetMRM.Associations.Elem(5)
-Dim Assoc2 As FunctAssociation
-Set Assoc2 = FacetMRM.Associations.Elem("Skeleton 2D")
+     Dim FunctElem As FunctionalObject
+     Set FunctElem = FunctDoc.CurrentDescription.Objects.Elem("Valve")
+     Dim FacetMRM As FunctionalMultiRepMgr
+     Set FacetMRM = FunctElem.GetFacetByName("MRM")
+     Dim Assoc1 As FunctAssociation
+     Set Assoc1 = FacetMRM.Associations.Elem(5)
+     Dim Assoc2 As FunctAssociation
+     Set Assoc2 = FacetMRM.Associations.Elem("Skeleton 2D")
 
 ```

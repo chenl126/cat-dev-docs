@@ -5,9 +5,9 @@ This factory is implemented on the Set object. All the created specifications ar
 
 ## Methods
 
-### Func **CreateDatum**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
+### Func **CreateDatum**(| [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md) | `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Datum Feature.
+   Create a Datum Feature.
 
 **Parameters:**
 
@@ -16,10 +16,10 @@ Create a Datum Feature.
 
 ### Func **CreateDatumReferenceFrame**( ) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position  
+   Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position  
 ### Func **CreateDatumTarget**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)  `iDatum`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Datum Target.
+   Create a Datum Target.
 
 **Parameters:**
 
@@ -29,7 +29,7 @@ Create a Datum Target.
 
 ### Func **CreateEvoluateDatum**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  double  `iX`,  double  `iY`,  double  `iZ`,  boolean  `iWithLeader`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Datum Feature.
+   Create a Datum Feature.
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ Create a Datum Feature.
 
 ### Func **CreateEvoluateText**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  double  `iX`,  double  `iY`,  double  `iZ`,  boolean  `iWithLeader`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Text.
+   Create a Text.
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Create a Text.
 
 ### Func **CreateFlagNote**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a FlagNote.
+   Create a FlagNote.
 
 **Parameters:**
 
@@ -64,7 +64,7 @@ Create a FlagNote.
 
 ### Func **CreateNonSemanticDimension**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iDimensionType`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iLinearDimSubType`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Creates a non semantic Dimension specification.
+   Creates a non semantic Dimension specification.
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Creates a non semantic Dimension specification.
 
 ### Func **CreateRoughness**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Roughness.
+   Create a Roughness.
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ Create a Roughness.
 
 ### Func **CreateSemanticDimension**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iType`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iSubType`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Creates a semantic Dimension specification.
+   Creates a semantic Dimension specification.
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ Creates a semantic Dimension specification.
 
 ### Func **CreateText**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Text.
+   Create a Text.
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ Create a Text.
 
 ### Func **CreateTextNOA**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIANoa](../CATTPSInterfaces/interface_Noa_2040.md)
 
-Create a "Text" NOA
+   Create a "Text" NOA
 
 **Parameters:**
 
@@ -110,7 +110,7 @@ Create a "Text" NOA
 
 ### Func **CreateTextOnAnnot**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iText`,  [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)  `iAnnot`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Text grouped to an annotation.
+   Create a Text grouped to an annotation.
 
 **Parameters:**
 
@@ -120,13 +120,13 @@ Create a Text grouped to an annotation.
 
 ### Func **CreateToleranceWithDRF**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`,  [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`,  [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)  `iDRF`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity  
+   Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity  
 ### Func **CreateToleranceWithoutDRF**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`,  [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position  
+   Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position  
 ### Func **InstanciateNOA**( [CATIANoa](../CATTPSInterfaces/interface_Noa_2040.md)  `iNoa`,  [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iSurf`) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md)
 
-Instanciate an NOA from a Reference NOA.
+   Instanciate an NOA from a Reference NOA.
 
 **Parameters:**
 

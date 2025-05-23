@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIADraftDomain](../PartInterfaces/interface_DraftDomain_25597.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIADraftDomain](../PartInterfaces/interface_DraftDomain_25597.md)
 
-Returns a draft domain using its index or its name from the DraftDomains collection.
+   Returns a draft domain using its index or its name from the DraftDomains collection.
 
 **Parameters:**
 
@@ -16,6 +16,6 @@ Returns a draft domain using its index or its name from the DraftDomains collect
 **Example:**     The following example returns in `domain` the third draft domain of the `firstDraftDomains` collection:
 
 ```VBScript
-Set domain = firstDraftDomains.Item(3)
+     Set domain = firstDraftDomains.Item(3)
 
 ```

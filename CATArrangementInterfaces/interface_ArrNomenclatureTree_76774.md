@@ -5,10 +5,10 @@ The user dictionary defines a hierarchy of user object type names used for dynam
 
 ## Properties
 
-### Property **BaseNomenclatures**( ) As [CATIAArrNomenclatures](../CATArrangementInterfaces/interface_ArrNomenclatures_55994.md) (Read Only)
+### Property **BaseNomenclatures**(| ) As [CATIAArrNomenclatures](../CATArrangementInterfaces/interface_ArrNomenclatures_55994.md) (Read Only)
 
-Returns the collection of BaseNomenclatures within this UserDictionary.  Methods
+   Returns the collection of BaseNomenclatures within this UserDictionary.  Methods
 
 ### Func **GetNomenclature**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iTypeName`) As [CATIAArrNomenclature](../CATArrangementInterfaces/interface_ArrNomenclature_48920.md)
 
-Finds a UserNomenclature by Name from this UserDictionary.
+   Finds a UserNomenclature by Name from this UserDictionary.

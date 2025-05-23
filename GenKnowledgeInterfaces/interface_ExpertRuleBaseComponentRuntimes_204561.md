@@ -7,9 +7,9 @@ Be careful : the flattened view can be misleading. For instance, if there are tw
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAExpertRuleBaseComponentRuntime](../GenKnowledgeInterfaces/interface_ExpertRuleBaseComponentRuntime_190760.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAExpertRuleBaseComponentRuntime](../GenKnowledgeInterfaces/interface_ExpertRuleBaseComponentRuntime_190760.md)
 
-Returns a RuleBase component using its index or its name from the entire RuleBase collection.  If several Expert components have the same name, the use of name is **unpredicted**.
+   Returns a RuleBase component using its index or its name from the entire RuleBase collection.  If several Expert components have the same name, the use of name is **unpredicted**.
 
 **Parameters:**
 
@@ -17,14 +17,14 @@ Returns a RuleBase component using its index or its name from the entire RuleBas
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the component.  **Returns:**      The retrieved Rule base component.  **Example:**      This example retrieves the last component in a `RuleSet` collection.
 
 ```VBScript
- Dim lastRuleBaseComponent as ExpertRuleBaseComponentRuntime
- Set lastRuleBaseComponent = RuleSet.Item(RuleCollection.Count)
+      Dim lastRuleBaseComponent as ExpertRuleBaseComponentRuntime
+      Set lastRuleBaseComponent = RuleSet.Item(RuleCollection.Count)
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes an Expert component from the Rule Base collection. If the expert component is a RuleSet all the rules, checks and rulesets embedded in the Ruleset will be also removed.  If several Expert components have the same name, the use of name is **unpredicted**.
+   Removes an Expert component from the Rule Base collection. If the expert component is a RuleSet all the rules, checks and rulesets embedded in the Ruleset will be also removed.  If several Expert components have the same name, the use of name is **unpredicted**.
 
 **Parameters:**
 
@@ -32,30 +32,30 @@ Removes an Expert component from the Rule Base collection. If the expert compone
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the Expert component.  **Example:**      This example removes the Expert component named `density` from the `relations` collection.
 
 ```VBScript
-Dim CATDocs As Document
-Set CATDocs   = CATIA.Documents
-Dim partdoc As PartDocument
-Set partdoc   = CATDocs.Add("CATPart")
-Dim part As Part
-Set part      = partdoc.Part
-Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Remove("density")
+     Dim CATDocs As Document
+     Set CATDocs   = CATIA.Documents
+     Dim partdoc As PartDocument
+     Set partdoc   = CATDocs.Add("CATPart")
+     Dim part As Part
+     Set part      = partdoc.Part
+     Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Remove("density")
 
 ```
 
 ### Func **ShallowCount**( ) As long
 
-Returns the number of **first-level-depth** objects in the collection. This is handy to scan the objects in a collection.
+   Returns the number of **first-level-depth** objects in the collection. This is handy to scan the objects in a collection.
 
 **Example:**      This example retrieves in `ObjectNumber` the number of objects currently gathered in `MyCollection`.
 
 ```VBScript
-ObjectNumber = MyCollection.ShallowCount
+     ObjectNumber = MyCollection.ShallowCount
 
 ```
 
 ### Func **ShallowItem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAExpertRuleBaseComponentRuntime](../GenKnowledgeInterfaces/interface_ExpertRuleBaseComponentRuntime_190760.md)
 
-Returns a **first-level-depth** RuleBase component using its index or its name from the RuleBase collection.
+   Returns a **first-level-depth** RuleBase component using its index or its name from the RuleBase collection.
 
 **Parameters:**
 
@@ -63,14 +63,14 @@ Returns a **first-level-depth** RuleBase component using its index or its name f
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the component.  **Returns:**      The retrieved Rule base component.  **Example:**      This example retrieves the last component in a `RuleSet` collection.
 
 ```VBScript
- Dim lastRuleBaseComponent as ExpertRuleBaseComponentRuntime
- Set lastRuleBaseComponent = RuleSet.ShallowItem(RuleCollection.ShallowCount)
+      Dim lastRuleBaseComponent as ExpertRuleBaseComponentRuntime
+      Set lastRuleBaseComponent = RuleSet.ShallowItem(RuleCollection.ShallowCount)
 
 ```
 
 ### Sub **ShallowRemove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes an **first-level-depth** Expert component from the Rule Base collection. If the expert component is a RuleSet all the rules, checks and rulesets embedded in the Ruleset will be also removed.
+   Removes an **first-level-depth** Expert component from the Rule Base collection. If the expert component is a RuleSet all the rules, checks and rulesets embedded in the Ruleset will be also removed.
 
 **Parameters:**
 
@@ -78,12 +78,12 @@ Removes an **first-level-depth** Expert component from the Rule Base collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when creating the Expert component.  **Example:**      This example removes the Expert component named `density` from the `relations` collection.
 
 ```VBScript
-Dim CATDocs As Document
-Set CATDocs   = CATIA.Documents
-Dim partdoc As PartDocument
-Set partdoc   = CATDocs.Add("CATPart")
-Dim part As Part
-Set part      = partdoc.Part
-Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.ShallowRemove("density")
+     Dim CATDocs As Document
+     Set CATDocs   = CATIA.Documents
+     Dim partdoc As PartDocument
+     Set partdoc   = CATDocs.Add("CATPart")
+     Dim part As Part
+     Set part      = partdoc.Part
+     Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.ShallowRemove("density")
 
 ```

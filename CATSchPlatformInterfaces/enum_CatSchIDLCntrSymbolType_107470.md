@@ -1,6 +1,7 @@
 # CatSchIDLCntrSymbolType (Enumeration)
 
 **_Schematic connector symbol types._**
+
 **Role** : Connector symbol or graphic.
 
 **Values:**

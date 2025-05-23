@@ -6,9 +6,9 @@
 
 ## Methods
 
-### Func **CreateConstraintsSatisfaction**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iComment`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFormulaBody`) As [CATIASetOfEquation](../KnowledgeInterfaces/interface_SetOfEquation_36247.md)
+### Func **CreateConstraintsSatisfaction**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iComment`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iFormulaBody`) As [CATIASetOfEquation](../KnowledgeInterfaces/interface_SetOfEquation_36247.md)
 
-Returns a set of equations.
+   Returns a set of equations.
 
 **Parameters:**
 
@@ -18,11 +18,11 @@ Returns a set of equations.
 
 ### Func **CreateOptimization**( ) As [CATIAOptimization](../KnowledgeInterfaces/interface_Optimization_32466.md)
 
-Creates an empty optimization.
+   Creates an empty optimization.
 This optimization cannot be used while its properties have not been set.  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Retrieves an optimization using its index or its name from the Optimizations collection.
+   Retrieves an optimization using its index or its name from the Optimizations collection.
 
 **Parameters:**
 
@@ -30,6 +30,6 @@ Retrieves an optimization using its index or its name from the Optimizations col
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when changing the item name by the property panel.  **Returns:**      either the retrieved optimization or the retreived constraintSatisfaction  **Example:**      This example retrieves the last item (optimization or constraintSatisfaction) in the `optimizations` collection.
 
 ```VBScript
-Set lastItem = optimizations.Item(optimizations.Count)
+     Set lastItem = optimizations.Item(optimizations.Count)
 
 ```

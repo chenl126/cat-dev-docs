@@ -1,6 +1,7 @@
 # HybridShapeCircleExplicit (Object)
 
 **_Represents the hybrid shape circle object explicitely defined._**
+
 **Role** : To access the data of the hybrid shape circle object.
 
 This data includes:

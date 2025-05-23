@@ -5,24 +5,25 @@ A Product object can aggregate one or zero Products collection.
 
 ## Methods
 
-### Func **AddComponent**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iReferenceProduct`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
+### Func **AddComponent**(| [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) | `iReferenceProduct`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a component and adds it to the Products collection. A component is a Product object created from another Product object used as reference.
+   Creates a component and adds it to the Products collection. A component is a Product object created from another Product object used as reference.
 
 **Parameters:**
 
 ` iReferenceProduct`      The product used as reference
+
 **Example:**      The following example creates the `SpareWheel` component from the reference product `FrontRightWheel` and adds the component to the `ToolKits` collection.
 
 ```VBScript
-Dim SpareWheel As Product
-Set SpareWheel = ToolKits.AddComponent(FrontRightWheel)
+     Dim SpareWheel As Product
+     Set SpareWheel = ToolKits.AddComponent(FrontRightWheel)
 
 ```
 
 ### Sub **AddComponentsFromFiles**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iFilesList`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iMethod`)
 
-Creates a component for each file. The components are added to the Products collection.
+   Creates a component for each file. The components are added to the Products collection.
 
 **Parameters:**
 
@@ -31,52 +32,55 @@ Creates a component for each file. The components are added to the Products coll
 
 ### Func **AddExternalComponent**( [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `iProductDocument`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a component from the root product of another ProductDocument object. This root product is used as a reference to create the component. The component is added to the Products collection.
+   Creates a component from the root product of another ProductDocument object. This root product is used as a reference to create the component. The component is added to the Products collection.
 
 **Parameters:**
 
 ` iProductDocument`      The product document whose root object is to be used as reference to create the component
+
 **Example:**      The following example creates the `GearBox` component by referencing the `GearBoxDocument` and adds it to the `PowerTrains` collection.
 
 ```VBScript
-Dim GearBox As Product
-Set GearBox = PowerTrains.AddExternalComponent(GearBoxDocument)
+     Dim GearBox As Product
+     Set GearBox = PowerTrains.AddExternalComponent(GearBoxDocument)
 
 ```
 
 ### Func **AddNewComponent**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iDocumenType`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPartNumber`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a component from the root product of a new ProductDocument object. This root product is used as a reference to create the component. The component is added to the Products collection.
+   Creates a component from the root product of a new ProductDocument object. This root product is used as a reference to create the component. The component is added to the Products collection.
 
 **Parameters:**
 
 ` iProductDocument`      The product document whose root object is to be used as reference to create the component
+
 **Example:**      The following example creates the `GearBox` component by referencing the `GearBoxDocument` and adds it to the `PowerTrains` collection.
 
 ```VBScript
-Dim GearBox As Product
-Set GearBox = PowerTrains.AddNewComponent(GearBoxDocument, "A120-253X-7")
+     Dim GearBox As Product
+     Set GearBox = PowerTrains.AddNewComponent(GearBoxDocument, "A120-253X-7")
 
 ```
 
 ### Func **AddNewProduct**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iPartNumber`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a Product reference object. This creates a Product reference object and the associated component by specifying its type and adds it to the Products collection.
+   Creates a Product reference object. This creates a Product reference object and the associated component by specifying its type and adds it to the Products collection.
 
 **Parameters:**
 
 ` iPartNumber`      The part number of the product to be created and added to the to the collection
+
 **Example:**      The following example creates the `Engine` product and adds the created component to the `PowerTrains` collection.
 
 ```VBScript
-Dim Engine As Product
-Set Engine = PowerTrains.AddNewProduct(V6Engine)
+     Dim Engine As Product
+     Set Engine = PowerTrains.AddNewProduct(V6Engine)
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Returns a product from its index in the Products collection.
+   Returns a product from its index in the Products collection.
 
 **Parameters:**
 
@@ -84,16 +88,16 @@ Returns a product from its index in the Products collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property  **Returns:**      The retrieved product  **Example:**      The following example returns in `ThisProduct` the third product, and in `ThatProduct` the product named `Wheel` in the `CarParts` product collection.
 
 ```VBScript
-Dim ThisProduct As Product
-Set ThisProduct = CarParts.Item(3)
-Dim ThatProduct As Product
-Set ThatProduct = CarParts.Item("Wheel")
+     Dim ThisProduct As Product
+     Set ThisProduct = CarParts.Item(3)
+     Dim ThatProduct As Product
+     Set ThatProduct = CarParts.Item("Wheel")
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a product from the Products collection.
+   Removes a product from the Products collection.
 
 **Parameters:**
 
@@ -101,14 +105,14 @@ Removes a product from the Products collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property  **Example:**      The following example removes the sixth product and the product named `LeftRearDisc` from the `Brakes` product collection.
 
 ```VBScript
-Brakes.Remove(6)
-Brakes.Remove("LeftRearDisc")
+     Brakes.Remove(6)
+     Brakes.Remove("LeftRearDisc")
 
 ```
 
 ### Func **ReplaceComponent**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iOldComponent`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFilePath`,  boolean  `iMultiInstances`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a component which replace the given one.
+   Creates a component which replace the given one.
 
 **Parameters:**
 
@@ -118,7 +122,7 @@ Creates a component which replace the given one.
 
 ### Func **ReplaceProduct**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iOldComponent`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iNewReference`,  boolean  `iMultiInstances`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Creates a component which replace the given one.
+   Creates a component which replace the given one.
 
 **Parameters:**
 

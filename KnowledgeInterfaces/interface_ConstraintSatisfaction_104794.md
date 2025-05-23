@@ -4,6 +4,6 @@
 
 ## Methods
 
-### Sub **Solve**( )
+### Sub **Solve**(| )
 
-Solves the constraint satisfaction problem.
+   Solves the constraint satisfaction problem.

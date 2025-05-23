@@ -6,16 +6,16 @@ The factory is retrieved using the [Product.GetTechnologicalObject](../ProductSt
 **Example:**      The following example retrieves the structure factory object from the `oProduct` Product.
 
 ```VBScript
-Dim oFactory as AnyObject
-Set oFactory = oProduct.GetTechnologicalObject("StructureObjectFactory")
+     Dim oFactory as AnyObject
+     Set oFactory = oProduct.GetTechnologicalObject("StructureObjectFactory")
 
 ```
 
 ## Methods
 
-### Func **AddDefExtFromCoordinates**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iCoord`,  double  `iOffset`) As [CATIABase](../System/interface_AnyObject_17321.md)
+### Func **AddDefExtFromCoordinates**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `iCoord`,| | double | `iOffset`) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Creates a member extremity definition object from coordinates and an offset value.
+   Creates a member extremity definition object from coordinates and an offset value.
 
 **Parameters:**
 
@@ -24,7 +24,7 @@ Creates a member extremity definition object from coordinates and an offset valu
 
 ### Func **AddDefExtFromReference**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iReference`,  double  `iOffset`) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Creates a member extremity definition object from an existing object in the model and an offset value.
+   Creates a member extremity definition object from an existing object in the model and an offset value.
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Creates a member extremity definition object from an existing object in the mode
 
 ### Func **AddDefExtOnMember**( [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)  `iMember`,  [CatStrMemberExtremity](../StructureInterfaces/enum_CatStrMemberExtremity_94780.md)  `iSide`,  double  `iDistance`,  double  `iOffset`) As [CATIABase](../System/interface_AnyObject_17321.md)
 
-Creates a member extremity definition object from another member object, its side, a distance on it and an offset.
+   Creates a member extremity definition object from another member object, its side, a distance on it and an offset.
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Creates a member extremity definition object from another member object, its sid
 
 ### Func **AddDimMember**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iMathDirection`,  double  `iLength`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a dimension member object from a point and a mathematical definition of a direction.
+   Creates a dimension member object from a point and a mathematical definition of a direction.
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Creates a dimension member object from a point and a mathematical definition of 
 
 ### Func **AddDimMemberOnPlane**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iDirection`,  [CatStrPlaneMode](../StructureInterfaces/enum_CatStrPlaneMode_46160.md)  `iMode`,  double  `iLength`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a dimension member object on a plane following a mathematical definition of a plane.
+   Creates a dimension member object on a plane following a mathematical definition of a plane.
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Creates a dimension member object on a plane following a mathematical definition
 
 ### Func **AddDimMemberPtPt**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  double  `iLength`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a dimension member object from two given points.
+   Creates a dimension member object from two given points.
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ Creates a dimension member object from two given points.
 
 ### Func **AddDimMemberWithSupport**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iDirection`,  [CatStrPlaneMode](../StructureInterfaces/enum_CatStrPlaneMode_46160.md)  `iMode`,  [CatStrMaterialOrientation](../StructureInterfaces/enum_CatStrMaterialOrientation_132902.md)  `iOrientation`,  double  `iLength`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a dimension member object using a support object.
+   Creates a dimension member object using a support object.
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ Creates a dimension member object using a support object.
 
 ### Func **AddMember**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object.
+   Creates a member object.
 
 **Parameters:**
 
@@ -119,7 +119,7 @@ Creates a member object.
 
 ### Func **AddMemberFromDir**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iDirection`,  [CatStrPlaneMode](../StructureInterfaces/enum_CatStrPlaneMode_46160.md)  `iMode`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object using a direction object as a line or a plane.
+   Creates a member object using a direction object as a line or a plane.
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ Creates a member object using a direction object as a line or a plane.
 
 ### Func **AddMemberFromMathDir**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iDirection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object using a mathematical definition of the direction.
+   Creates a member object using a mathematical definition of the direction.
 
 **Parameters:**
 
@@ -148,7 +148,7 @@ Creates a member object using a mathematical definition of the direction.
 
 ### Func **AddMemberFromMathPlane**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iPlane`,  [CatStrPlaneMode](../StructureInterfaces/enum_CatStrPlaneMode_46160.md)  `iPlaneMode`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object from a mathematical definition of a plane.
+   Creates a member object from a mathematical definition of a plane.
 
 **Parameters:**
 
@@ -163,7 +163,7 @@ Creates a member object from a mathematical definition of a plane.
 
 ### Func **AddMemberOnSupport**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  double  `iAngle`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object on a given support.
+   Creates a member object on a given support.
 
 **Parameters:**
 
@@ -177,7 +177,7 @@ Creates a member object on a given support.
 
 ### Func **AddMemberOnSupportWithRef**( [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)  `iSection`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iAnchorName`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSurfRef`,  double  `iAngle`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr1`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iDefExtr2`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)
 
-Creates a member object on a given support object and a surface used to define the orientation of the section. The surface reference defines the relative orientation on which you add an angle.
+   Creates a member object on a given support object and a surface used to define the orientation of the section. The surface reference defines the relative orientation on which you add an angle.
 
 **Parameters:**
 
@@ -192,7 +192,7 @@ Creates a member object on a given support object and a surface used to define t
 
 ### Func **AddPlate**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`,  double  `iThickness`,  [CatStrMaterialOrientation](../StructureInterfaces/enum_CatStrMaterialOrientation_132902.md)  `iOrientation`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iContour`,  double  `iOffset`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrPlate](../StructureInterfaces/interface_StrPlate_13958.md)
 
-Creates a plate from a contour defined by coordinates.
+   Creates a plate from a contour defined by coordinates.
 
 **Parameters:**
 
@@ -205,7 +205,7 @@ Creates a plate from a contour defined by coordinates.
 
 ### Func **AddRectangularEndPlate**( [CATIAStrMember](../StructureInterfaces/interface_StrMember_17505.md)  `iMember`,  [CatStrMemberExtremity](../StructureInterfaces/enum_CatStrMemberExtremity_94780.md)  `iSide`,  double  `iThickness`,  double  `iHeight`,  double  `iWidth`,  [CatStrMaterialOrientation](../StructureInterfaces/enum_CatStrMaterialOrientation_132902.md)  `iOrientation`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAStrPlate](../StructureInterfaces/interface_StrPlate_13958.md)
 
-Creates a rectangular end plate on an extremity of a given member.
+   Creates a rectangular end plate on an extremity of a given member.
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ Creates a rectangular end plate on an extremity of a given member.
 
 ### Func **AddSection**( [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `iPart`) As [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)
 
-Creates a section object from part document. This part must aggregate a sketch object defining the contour of the section. The contour of the section have to be closed and may contain several domains.
+   Creates a section object from part document. This part must aggregate a sketch object defining the contour of the section. The contour of the section have to be closed and may contain several domains.
 
 **Parameters:**
 
@@ -227,7 +227,7 @@ Creates a section object from part document. This part must aggregate a sketch o
 
 ### Func **AddSectionFromCatalog**( [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `iPart`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iCatalogName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFamilyName`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iSectionName`) As [CATIAStrSection](../StructureInterfaces/interface_StrSection_22058.md)
 
-Creates a section object from part document. This part must aggregate a sketch object defining the contour of the section. This service gives you to define where the resolved part comes from to allow a replace mechanism. The contour of the section have to be closed and may contain several domains.
+   Creates a section object from part document. This part must aggregate a sketch object defining the contour of the section. This service gives you to define where the resolved part comes from to allow a replace mechanism. The contour of the section have to be closed and may contain several domains.
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ Creates a section object from part document. This part must aggregate a sketch o
 
 ### Func **ExtendProductAsFoundation**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iClass`) As [CATIAStrFoundation](../StructureInterfaces/interface_StrFoundation_37108.md)
 
-Extend an assembly as a structure foundation assembly.
+   Extend an assembly as a structure foundation assembly.
 
 **Parameters:**
 

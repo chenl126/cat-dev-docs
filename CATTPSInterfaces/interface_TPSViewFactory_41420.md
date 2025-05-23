@@ -5,14 +5,15 @@ All the created views are added to the annotation set object from which this int
 
 ## Methods
 
-### Func **CreateView**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPlane`,  [CATVariant](../System/typedef_CATVariant_20656.md)  `iViewType`) As [CATIATPSView](../CATTPSInterfaces/interface_TPSView_10208.md)
+### Func **CreateView**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iPlane`,| | [CATVariant](../System/typedef_CATVariant_20656.md) | `iViewType`) As [CATIATPSView](../CATTPSInterfaces/interface_TPSView_10208.md)
 
-Creates a view.
+   Creates a view.
 
 **Parameters:**
 
 ` iPlane`      The plane onto which the view will be created
 ` iViewType`      The view type
+
 **Legal values** :
 
   * 1: Front View

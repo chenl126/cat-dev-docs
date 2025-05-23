@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **AddReference**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`)
+### Sub **AddReference**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iSupport`)
 
-Add a surface in a User Surface Support
+   Add a surface in a User Surface Support
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Add a surface in a User Surface Support
 
 ### Sub **AddReferenceInAProductCtx**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProdInst`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSupport`)
 
-Add a surface in a User Surface Support
+   Add a surface in a User Surface Support
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Add a surface in a User Surface Support
 
 ### Sub **AddUserSurface**( [CATIAUserSurface](../CATTPSInterfaces/interface_UserSurface_25966.md)  `iUserSurf`)
 
-Add a User Surface Support in a User Surface Node
+   Add a User Surface Support in a User Surface Node
 
 **Parameters:**
 

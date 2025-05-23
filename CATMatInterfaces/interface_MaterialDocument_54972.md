@@ -5,6 +5,6 @@ When a MaterialDocument object is created, a MaterialFamily object is created. A
 
 ## Properties
 
-### Property **Families**( ) As [CATIAMaterialFamilies](../CATMatInterfaces/interface_MaterialFamilies_54108.md) (Read Only)
+### Property **Families**(| ) As [CATIAMaterialFamilies](../CATMatInterfaces/interface_MaterialFamilies_54108.md) (Read Only)
 
-Returns the Family collection object from the current material document.
+   Returns the Family collection object from the current material document.

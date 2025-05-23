@@ -18,5 +18,6 @@
 ` catFontName`      The name of the font used.
 ` catBorder`      The text is
 ` catAlignment`      Alignment of the piece of text.
+
 **See also:**      [CatJustification](../DraftingInterfaces/enum_CatJustification_55344.md) ` catRatio`      Ratio between character height and width. The value is a percentage of the font size and corresponds to the ratio height by width.
 ` catCharSpacing`      Space between each character. The value is a percentage of the font size (may be a negative value).

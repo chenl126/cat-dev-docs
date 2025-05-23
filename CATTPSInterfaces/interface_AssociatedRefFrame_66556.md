@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **ReferenceFrame**( ) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md) (Read Only)
+### Property **ReferenceFrame**(| ) As [CATIAAnnotation](../CATTPSInterfaces/interface_Annotation_22454.md) (Read Only)
 
-Retrieves the Datum Reference Frame associated to a TPS.
+   Retrieves the Datum Reference Frame associated to a TPS.

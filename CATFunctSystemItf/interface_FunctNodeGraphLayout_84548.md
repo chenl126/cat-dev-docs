@@ -4,16 +4,16 @@
 
 ## Properties
 
-### Property **Height**( ) As double (Read Only)
+### Property **Height**(| ) As double (Read Only)
 
-Returns the Height coordinate.  
+   Returns the Height coordinate.  
 ### Property **Width**( ) As double (Read Only)
 
-Returns the Width coordinate.  Methods
+   Returns the Width coordinate.  Methods
 
 ### Sub **SetHeightAndWidth**( double  `iHeight`,  double  `iWidth`)
 
-Sets the height and width.
+   Sets the height and width.
 
 **Parameters:**
 

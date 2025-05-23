@@ -6,47 +6,47 @@ This interface is obtained from [DrawingDimension.GetExtLine](../DraftingInterfa
 
 ## Properties
 
-### Property **Color**( ) As long
+### Property **Color**(| ) As long
 
-Returns or sets color of extension line.
+   Returns or sets color of extension line.
 
 **Example:**      This example retrieves color of extension line `MyExtLine` drawing dimension.
 
 ```VBScript
-oColorExtLine = MyExtLine.Color
+     oColorExtLine = MyExtLine.Color
 
 ```
 
 ### Property **ExtLineSlant**( ) As double
 
-Returns or sets slant angle of extension line.
+   Returns or sets slant angle of extension line.
 
 **Example:**      This example retrieves slant angle of extension line `MyExtLine` drawing dimension.
 
 ```VBScript
-oExtLineSlant = MyExtLine.ExtLineSlant
+     oExtLineSlant = MyExtLine.ExtLineSlant
 
 ```
 
 ### Property **ExtLineType**( ) As long (Read Only)
 
-Returns extension line type of dimension.
+   Returns extension line type of dimension.
 
 **Example:**      This example retrieves extension line type of dimension `MyExtLine` drawing dimension.
 
 ```VBScript
-oExtLineType = MyExtLine.ExtLineType
+     oExtLineType = MyExtLine.ExtLineType
 
 ```
 
 ### Property **Thickness**( ) As double
 
-Returns or sets thickness of extension line.
+   Returns or sets thickness of extension line.
 
 **Example:**      This example retrieves thickness of extension line `MyExtLine` drawing dimension.
 
 ```VBScript
-oThickExtLine = MyExtLine.Thickness
+     oThickExtLine = MyExtLine.Thickness
 
 ```
 
@@ -54,7 +54,7 @@ Methods
 
 ### Sub **AddInterrupt**( long  `iIndex`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iTwoPoints`)
 
-Add an interrupt to an extension line.
+   Add an interrupt to an extension line.
 
 **Parameters:**
 
@@ -62,13 +62,13 @@ Add an interrupt to an extension line.
 ` iTwoPoints`      Defines the first and second point of the gap to create.  **Example:**      This example adds an interrupt to `MyExtLine` path.
 
 ```VBScript
-MyExtLine.AddInterrupt(iIndex, iTwoPoints)
+     MyExtLine.AddInterrupt(iIndex, iTwoPoints)
 
 ```
 
 ### Sub **GetFunnel**( long  `iIndex`,  long  `oMode`,  double  `oAngle`,  double  `oHeight`,  double  `oWidth`)
 
-Get funnel infomation of dimension extension line.
+   Get funnel infomation of dimension extension line.
 
 **Parameters:**
 
@@ -79,13 +79,13 @@ Get funnel infomation of dimension extension line.
 ` oWidth`      funnel width.  **Example:**      This example gets funnel infomation of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.GetFunnel(iIndex, oMode, oAngle, oHeight, oWidth)
+     MyExtLine.GetFunnel(iIndex, oMode, oAngle, oHeight, oWidth)
 
 ```
 
 ### Func **GetGap**( long  `iIndex`) As double
 
-Get gap of dimension extension line.
+   Get gap of dimension extension line.
 
 **Parameters:**
 
@@ -93,13 +93,13 @@ Get gap of dimension extension line.
 ` oGap`      Gap.  **Example:**      This example gets gap of `MyExtLine` path.
 
 ```VBScript
-Gap = MyExtLine.GetGap(iIndex)
+     Gap = MyExtLine.GetGap(iIndex)
 
 ```
 
 ### Sub **GetGeomInfo**( long  `iIndex`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oGeomInfos`)
 
-Get geometrical infomation of dimension extension line.
+   Get geometrical infomation of dimension extension line.
 
 **Parameters:**
 
@@ -107,13 +107,13 @@ Get geometrical infomation of dimension extension line.
 ` oGeomInfos`      List of geometric coordinates (X1,Y1,X2,Y2,X3,Y3).  **Example:**      This example gets geometrical infomation of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.GetGeomInfo(iIndex, oGeomInfos)
+     MyExtLine.GetGeomInfo(iIndex, oGeomInfos)
 
 ```
 
 ### Func **GetInterrupt**( long  `iIndex`) As long
 
-Get the number of interruptions stored in each extension lines.
+   Get the number of interruptions stored in each extension lines.
 
 **Parameters:**
 
@@ -121,13 +121,13 @@ Get the number of interruptions stored in each extension lines.
 ` oNbIntOnExtLine`      The number of interruptions.  **Example:**      This example gets the number of interruptions of `MyExtLine` path.
 
 ```VBScript
-NbIntOnExtLine = MyExtLine.GetInterrupt(iIndex)
+     NbIntOnExtLine = MyExtLine.GetInterrupt(iIndex)
 
 ```
 
 ### Func **GetOverrun**( long  `iIndex`) As double
 
-Get overrun of dimension extension line.
+   Get overrun of dimension extension line.
 
 **Parameters:**
 
@@ -135,13 +135,13 @@ Get overrun of dimension extension line.
 ` oOverrun`      Overrun  **Example:**      This example gets overrun of `MyExtLine` path.
 
 ```VBScript
-Overrun = MyExtLine.GetOverrun(iIndex)
+     Overrun = MyExtLine.GetOverrun(iIndex)
 
 ```
 
 ### Func **GetVisibility**( long  `iIndex`) As long
 
-Get visivility of dimension extension line.
+   Get visivility of dimension extension line.
 
 **Parameters:**
 
@@ -149,26 +149,26 @@ Get visivility of dimension extension line.
 ` oGap`      Gap.  **Example:**      This example gets visivility of `MyExtLine` path.
 
 ```VBScript
-ExtlineVisibility = MyExtLine.GetVisibility(iIndex)
+     ExtlineVisibility = MyExtLine.GetVisibility(iIndex)
 
 ```
 
 ### Sub **RemoveInterrupt**( long  `iIndex`)
 
-Remove interruption on extension lines.
+   Remove interruption on extension lines.
 
 **Parameters:**
 
 ` iIndex`      1: first extension line 2: second extension line  **Example:**      This example Remove interruption on `MyExtLine` path.
 
 ```VBScript
-MyExtLine.RemoveInterrupt(iIndex)
+     MyExtLine.RemoveInterrupt(iIndex)
 
 ```
 
 ### Sub **SetFunnel**( long  `iIndex`,  long  `iMode`,  double  `iAngle`,  double  `iHeight`,  double  `iWidth`)
 
-Set funnel infomation of dimension extension line.
+   Set funnel infomation of dimension extension line.
 
 **Parameters:**
 
@@ -179,13 +179,13 @@ Set funnel infomation of dimension extension line.
 ` iWidth`      funnel width.  **Example:**      This example sets funnel infomation of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.SetFunnel(iIndex, iMode, iAngle, iHeight, iWidth)
+     MyExtLine.SetFunnel(iIndex, iMode, iAngle, iHeight, iWidth)
 
 ```
 
 ### Sub **SetGap**( long  `iIndex`,  double  `iGap`)
 
-Set gap of dimension extension line.
+   Set gap of dimension extension line.
 
 **Parameters:**
 
@@ -193,13 +193,13 @@ Set gap of dimension extension line.
 ` iGap`      gap  **Example:**      This example sets gap of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.SetGap(iIndex, iGap)
+     MyExtLine.SetGap(iIndex, iGap)
 
 ```
 
 ### Sub **SetOverrun**( long  `iIndex`,  double  `iOverrun`)
 
-Set overrun of dimension extension line.
+   Set overrun of dimension extension line.
 
 **Parameters:**
 
@@ -207,13 +207,13 @@ Set overrun of dimension extension line.
 ` iOverrun`      Overrun  **Example:**      This example sets overrun of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.SetOverrun(iIndex, iOverrun)
+     MyExtLine.SetOverrun(iIndex, iOverrun)
 
 ```
 
 ### Sub **SetVisibility**( long  `iIndex`,  long  `iExtlineVisibility`)
 
-Set visivility of dimension extension line.
+   Set visivility of dimension extension line.
 
 **Parameters:**
 
@@ -221,6 +221,6 @@ Set visivility of dimension extension line.
 ` iExtlineVisibility`      visivility  **Example:**      This example sets visivility of `MyExtLine` path.
 
 ```VBScript
-MyExtLine.SetVisibility(iIndex, iExtlineVisibility)
+     MyExtLine.SetVisibility(iIndex, iExtlineVisibility)
 
 ```

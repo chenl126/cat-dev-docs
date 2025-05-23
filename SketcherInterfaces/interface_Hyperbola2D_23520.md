@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **ImaginaryRadius**( ) As double (Read Only)
+### Property **ImaginaryRadius**(| ) As double (Read Only)
 
-Returns the minor radius of the hyperbola in 2D space
+   Returns the minor radius of the hyperbola in 2D space
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Returns the minor radius of the hyperbola in 2D space
 
 ### Property **Radius**( ) As double (Read Only)
 
-Returns the major radius of the hyperbola in 2D space
+   Returns the major radius of the hyperbola in 2D space
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Methods
 
 ### Sub **GetAxis**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oAxis`)
 
-Returns the axis vector direction of the hyperbola in 2D space
+   Returns the axis vector direction of the hyperbola in 2D space
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ Returns the axis vector direction of the hyperbola in 2D space
 
 ### Sub **GetCenter**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCenter`)
 
-Returns the center point of the hyperbola in 2D space
+   Returns the center point of the hyperbola in 2D space
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ Returns the center point of the hyperbola in 2D space
 
 ### Sub **SetData**( double  `iCenterX`,  double  `iCenterY`,  double  `iAxisX`,  double  `iAxisY`,  double  `iMajorRadius`,  double  `iMinorRadius`)
 
-Modifies the caracteristics of the hyperbola
+   Modifies the caracteristics of the hyperbola
 
 **Parameters:**
 

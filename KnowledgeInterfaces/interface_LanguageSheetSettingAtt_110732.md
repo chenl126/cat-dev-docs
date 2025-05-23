@@ -4,9 +4,10 @@
 
 ## Properties
 
-### Property **KnowledgeBuildPathDirectory**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **KnowledgeBuildPathDirectory**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the CATKnowledgeBuildPath setting parameter.
+   Returns or sets the CATKnowledgeBuildPath setting parameter.
+
 **Role** :Return or Set the CATKnowledgeBuildPath parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -15,7 +16,8 @@ Returns or sets the CATKnowledgeBuildPath setting parameter.
 
 ### Property **ListOfPackagesToLoad**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the ListOfPackagesToLoad parameter.
+   Returns or sets the ListOfPackagesToLoad parameter.
+
 **Role** :Return or Set the ListOfPackagesToLoad parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -24,7 +26,8 @@ Returns or sets the ListOfPackagesToLoad parameter.
 
 ### Property **LoadAllPackages**( ) As short
 
-Returns or sets the LoadAllPackages parameter.
+   Returns or sets the LoadAllPackages parameter.
+
 **Role** :Return or Set the LoadAllPackages parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -35,7 +38,8 @@ Returns or sets the LoadAllPackages parameter.
 
 ### Property **LoadExtendedLanguageLib**( ) As short
 
-Returns or sets the LoadExtendedLanguageLib parameter.
+   Returns or sets the LoadExtendedLanguageLib parameter.
+
 **Role** :Return or Set the LoadExtendedLanguageLib parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -46,7 +50,8 @@ Returns or sets the LoadExtendedLanguageLib parameter.
 
 ### Property **ReferenceDirectoryForTypes**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the ReferenceDirectoryForTypes parameter.
+   Returns or sets the ReferenceDirectoryForTypes parameter.
+
 **Role** :Return or Set the ReferenceDirectoryForTypes parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -56,41 +61,41 @@ Methods
 
 ### Func **GetKnowledgeBuildPathDirectoryInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves information about the CATKnowledgeBuildPath setting parameter.
+   Retrieves information about the CATKnowledgeBuildPath setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Func **GetListOfPackagesToLoadInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves information about the ListOfPackagesToLoad setting parameter.
+   Retrieves information about the ListOfPackagesToLoad setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Func **GetLoadAllPackagesInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves information about the LoadAllPackages setting parameter.
+   Retrieves information about the LoadAllPackages setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Func **GetLoadExtendedLanguageLibInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves information about the LoadExtendedLanguageLib setting parameter.
+   Retrieves information about the LoadExtendedLanguageLib setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Func **GetReferenceDirectoryForTypesInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves information about the ReferenceDirectoryForTypes setting parameter.
+   Retrieves information about the ReferenceDirectoryForTypes setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Sub **SetKnowledgeBuildPathDirectoryLock**( boolean  `iLocked`)
 
-Locks or unlocks the CATKnowledgeBuildPath setting parameter.
+   Locks or unlocks the CATKnowledgeBuildPath setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Sub **SetListOfPackagesToLoadLock**( boolean  `iLocked`)
 
-Locks or unlocks the ListOfPackagesToLoad setting parameter.
+   Locks or unlocks the ListOfPackagesToLoad setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Sub **SetLoadAllPackagesLock**( boolean  `iLocked`)
 
-Locks or unlocks the LoadAllPackages setting parameter.
+   Locks or unlocks the LoadAllPackages setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Sub **SetLoadExtendedLanguageLibLock**( boolean  `iLocked`)
 
-Locks or unlocks the LoadExtendedLanguageLib setting parameter.
+   Locks or unlocks the LoadExtendedLanguageLib setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.  
 ### Sub **SetReferenceDirectoryForTypesLock**( boolean  `iLocked`)
 
-Locks or unlocks the ReferenceDirectoryForTypes setting parameter.
+   Locks or unlocks the ReferenceDirectoryForTypes setting parameter.
 Refer to [SettingController](../System/interface_SettingController_63320.md) for a detailed description.

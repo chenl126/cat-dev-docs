@@ -8,11 +8,12 @@ Do not use the CATIAResourceCollection interface for such and such ClassReferenc
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAResource](../DMAPSInterfaces/interface_Resource_14406.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAResource](../DMAPSInterfaces/interface_Resource_14406.md)
 
-This method gets the specified resource from the given resource collection management.
+   This method gets the specified resource from the given resource collection management.
 
 **Parameters:**
 
 ` iIndex`      The resource identifier
+
 **Returns:**      oResource The resource

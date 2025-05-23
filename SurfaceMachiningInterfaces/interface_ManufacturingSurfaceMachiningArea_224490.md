@@ -1,13 +1,14 @@
 # ManufacturingSurfaceMachiningArea (Object)
 
 **_Represents the Manufacturing Surface Machining Area._**
+
 **Role** : Allows you to associate NCGeometries with a Machining Area.
 
 ## Methods
 
-### Sub **RemoveNCGeometry**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iGeometryType`)
+### Sub **RemoveNCGeometry**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iGeometryType`)
 
-Removes all the NCGeometry of a specified type linked to a Manufacturing Surface Machining Area.
+   Removes all the NCGeometry of a specified type linked to a Manufacturing Surface Machining Area.
 
 **Parameters:**
 
@@ -18,13 +19,13 @@ Removes all the NCGeometry of a specified type linked to a Manufacturing Surface
 **Example:** The following example removes the part of the manufacturing surface machining area `CurrentSMA`
 
 ```VBScript
-Call CurrentSMA.RemoveNCGeometry("Parts")
+     Call CurrentSMA.RemoveNCGeometry("Parts")
 
 ```
 
 ### Sub **SetNCGeometry**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iGeometryType`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iNCGeometry`)
 
-Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area.
+   Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area.
 
 **Parameters:**
 
@@ -36,6 +37,6 @@ Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area.
 **Example:** The following example sets the NCGeometry `NCGeomPart` to the manufacturing surface machining area `CurrentSMA`
 
 ```VBScript
-Call CurrentSMA.SetNCGeometry("Parts",NCGeomPart)
+     Call CurrentSMA.SetNCGeometry("Parts",NCGeomPart)
 
 ```

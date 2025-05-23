@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **AnchorPoint**( ) As [CatTablePosition](../DraftingInterfaces/enum_CatTablePosition_54616.md)
+### Property **AnchorPoint**(| ) As [CatTablePosition](../DraftingInterfaces/enum_CatTablePosition_54616.md)
 
-Returns or sets the anchor point of a drawing table.
+   Returns or sets the anchor point of a drawing table.
 
 **Parameters:**
 
@@ -15,87 +15,87 @@ Returns or sets the anchor point of a drawing table.
 **Example:**      This example sets the anchor point of the drawing table `MyTable` to bottom left.
 
 ```VBScript
-MyTable.AnchorPoint = CatTableBottomLeft
+     MyTable.AnchorPoint = CatTableBottomLeft
 
 ```
 
 ### Property **Angle**( ) As double
 
-Returns or sets the angle orientation of a drawing table.
+   Returns or sets the angle orientation of a drawing table.
 
 **Example:**      This example sets the orientation of the table `MyTable` to vertical.
 
 ```VBScript
-PI = 3.1415926535
-X = MyTable.Angle = PI/2
+     PI = 3.1415926535
+     X = MyTable.Angle = PI/2
 
 ```
 
 ### Property **ComputeMode**( ) As [CatTableComputeMode](../DraftingInterfaces/enum_CatTableComputeMode_74582.md)
 
-Returns or sets the compute mode of a drawing table. If the compute mode is set to OFF, no display of the modifications applied to a table will be computed. This allows to save much time when executing a macro. To displayed the table, set the compute mode back to ON.
+   Returns or sets the compute mode of a drawing table. If the compute mode is set to OFF, no display of the modifications applied to a table will be computed. This allows to save much time when executing a macro. To displayed the table, set the compute mode back to ON.
 
 **Example:**      This example sets the compute mode of the drawing table `MyTable` to OFF.
 
 ```VBScript
-MyTable.ComputeMode = CatTableOFF
+     MyTable.ComputeMode = CatTableOFF
 
 ```
 
 ### Property **Leaders**( ) As [CATIADrawingLeaders](../DraftingInterfaces/interface_DrawingLeaders_41600.md) (Read Only)
 
-Returns the drawing leader collection of the drawing table.
+   Returns the drawing leader collection of the drawing table.
 
 **Example:**      This example retrieves in `LeaderCollection` the collection of leaders of the `MyTable` drawing table.
 
 ```VBScript
-Dim LeaderCollection As DrawingLeaders
-Set LeaderCollection = MyTable.Leaders
+     Dim LeaderCollection As DrawingLeaders
+     Set LeaderCollection = MyTable.Leaders
 
 ```
 
 ### Property **NumberOfColumns**( ) As long (Read Only)
 
-Returns the number of columns of a drawing table.
+   Returns the number of columns of a drawing table.
 
 **Example:**      This example returns the number of columns of the drawing table `MyTable`.
 
 ```VBScript
-oNbCol = MyTable.NumberOfColumns
+     oNbCol = MyTable.NumberOfColumns
 
 ```
 
 ### Property **NumberOfRows**( ) As long (Read Only)
 
-Returns the number of rows of a drawing table.
+   Returns the number of rows of a drawing table.
 
 **Example:**      This example returns the number of rows of the drawing table `MyTable`.
 
 ```VBScript
-oNbRow = MyTable.NumberOfRows
+     oNbRow = MyTable.NumberOfRows
 
 ```
 
 ### Property **x**( ) As double
 
-Returns or sets the x coordinate of the table. It is expressed with respect to the current view coordinate system. This coordinate, like any length, is measured in mm.
+   Returns or sets the x coordinate of the table. It is expressed with respect to the current view coordinate system. This coordinate, like any length, is measured in mm.
 
 **Example:**      This example retrieves the x coordinate of the table `MyTable` drawing table.
 
 ```VBScript
-X = MyTable.x
+     X = MyTable.x
 
 ```
 
 ### Property **y**( ) As double
 
-Returns or sets the y coordinate of the table. It is expressed with respect to the view coordinate system. This coordinate, like any length, is measured in mm.
+   Returns or sets the y coordinate of the table. It is expressed with respect to the view coordinate system. This coordinate, like any length, is measured in mm.
 
 **Example:**      This example sets the y coordinate of the table `MyTable` drawing table to 5 inches. You need first to convert the 5 inches into mm.
 
 ```VBScript
-NewYCoordinate = 100
-MyTable.y =  NewYCoordinate
+     NewYCoordinate = 100
+     MyTable.y =  NewYCoordinate
 
 ```
 
@@ -103,7 +103,7 @@ Methods
 
 ### Sub **AddColumn**( long  `iCol`)
 
-Adds a column before the indicated column.
+   Adds a column before the indicated column.
 
 **Parameters:**
 
@@ -112,14 +112,14 @@ Adds a column before the indicated column.
 **Example:**      This example adds a column after the last one of the drawing table `MyTable`.
 
 ```VBScript
-iCol = 0
-MyTable.AddColumn iCol
+     iCol = 0
+     MyTable.AddColumn iCol
 
 ```
 
 ### Sub **AddRow**( long  `iRow`)
 
-Adds a row before the indicated row.
+   Adds a row before the indicated row.
 
 **Parameters:**
 
@@ -128,14 +128,14 @@ Adds a row before the indicated row.
 **Example:**      This example adds a row beetween the first row and the second row of the drawing table `MyTable`.
 
 ```VBScript
-iRow = 2
-MyTable.AddRow iRow
+     iRow = 2
+     MyTable.AddRow iRow
 
 ```
 
 ### Func **GetCellAlignment**( long  `iRow`,  long  `iCol`) As [CatTablePosition](../DraftingInterfaces/enum_CatTablePosition_54616.md)
 
-Retrieves the alignment of the pointed cell of a drawing table.
+   Retrieves the alignment of the pointed cell of a drawing table.
 
 **Parameters:**
 
@@ -146,15 +146,15 @@ Retrieves the alignment of the pointed cell of a drawing table.
 **Example:**      This example retrieves the alignment of the cell (1,3) of the table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 3
-oAlign = MyTable.GetCellAlignment(iRow, iCol)
+     iRow = 1
+     iCol = 3
+     oAlign = MyTable.GetCellAlignment(iRow, iCol)
 
 ```
 
 ### Func **GetCellBorderType**( long  `iRow`,  long  `iCol`) As [CatTableBorderType](../DraftingInterfaces/enum_CatTableBorderType_67390.md)
 
-Retrieves the drawing text contained in the cell of a drawing table.
+   Retrieves the drawing text contained in the cell of a drawing table.
 
 **Parameters:**
 
@@ -165,15 +165,15 @@ Retrieves the drawing text contained in the cell of a drawing table.
 **Example:**      This example retrieves the border type of the cell (1, 3) of the drawing table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 3
-oType = MyTable.GetCellBorderType(iRow, iCol)
+     iRow = 1
+     iCol = 3
+     oType = MyTable.GetCellBorderType(iRow, iCol)
 
 ```
 
 ### Func **GetCellName**( long  `iRow`,  long  `iCol`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns the name of a table cell.
+   Returns the name of a table cell.
 
 **Parameters:**
 
@@ -184,15 +184,15 @@ Returns the name of a table cell.
 **Example:**      This example returns the name of the cell (1,2) of the table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 2
-oName = MyTable.GetCellName(iRow, iCol)
+     iRow = 1
+     iCol = 2
+     oName = MyTable.GetCellName(iRow, iCol)
 
 ```
 
 ### Func **GetCellObject**( long  `iRow`,  long  `iCol`) As [CATIADrawingText](../DraftingInterfaces/interface_DrawingText_26559.md)
 
-Retrieves the object contained in the cell of a drawing table.
+   Retrieves the object contained in the cell of a drawing table.
 
 **Parameters:**
 
@@ -203,15 +203,15 @@ Retrieves the object contained in the cell of a drawing table.
 **Example:**      This example retrieves the drawing text `MyText` of the cell (1,3) of the table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 3
-Set MyText = MyTable.GetCellObject(iRow, iCol)
+     iRow = 1
+     iCol = 3
+     Set MyText = MyTable.GetCellObject(iRow, iCol)
 
 ```
 
 ### Func **GetCellString**( long  `iRow`,  long  `iCol`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns the string contained in the cell of a drawing table.
+   Returns the string contained in the cell of a drawing table.
 
 **Parameters:**
 
@@ -222,15 +222,15 @@ Returns the string contained in the cell of a drawing table.
 **Example:**      This example returns the string contained in the cell (1,4) of the table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 4
-oString = MyTable.GetCellString(iRow, iCol)
+     iRow = 1
+     iCol = 4
+     oString = MyTable.GetCellString(iRow, iCol)
 
 ```
 
 ### Sub **GetCellsMerge**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oListOfMergeCells`)
 
-Returns the merge cells.
+   Returns the merge cells.
 
 **Parameters:**
 
@@ -239,17 +239,17 @@ Returns the merge cells.
 **Example:**      This example returns the merge cells of the drawing table `MyTable`.
 
 ```VBScript
-nbrow = MyTable.NumberOfRows
-nbcol = MyTable.NumberOfColumns
-sizetab = nbrow*nbcol
-ReDim infoMerge (sizetab-1)
-MyTable.GetCellsMerge(oListOfmergeCells)
+     nbrow = MyTable.NumberOfRows
+     nbcol = MyTable.NumberOfColumns
+     sizetab = nbrow*nbcol
+     ReDim infoMerge (sizetab-1)
+     MyTable.GetCellsMerge(oListOfmergeCells)
 
 ```
 
 ### Func **GetColumnSize**( long  `iCol`) As double
 
-Returns the width of a column of a drawing table.
+   Returns the width of a column of a drawing table.
 
 **Parameters:**
 
@@ -259,14 +259,14 @@ Returns the width of a column of a drawing table.
 **Example:**      This example returns the width of the column (1) of the drawing table `MyTable`.
 
 ```VBScript
-iCol = 1
-oColSize = MyTable.GetColumnSize(iCol)
+     iCol = 1
+     oColSize = MyTable.GetColumnSize(iCol)
 
 ```
 
 ### Sub **GetMergeInfos**( long  `iRow`,  long  `iCol`,  long  `oFirstRow`,  long  `oFirstCol`,  long  `oNbRow`,  long  `oNbCol`)
 
-Returns informations about a group of merge cells from a cell.
+   Returns informations about a group of merge cells from a cell.
 
 **Parameters:**
 
@@ -278,13 +278,13 @@ Returns informations about a group of merge cells from a cell.
 **Example:**      This example returns informations of a group of merge cells from cell (2, 3) of the drawing table `MyTable`.
 
 ```VBScript
-MyTable.GetMergeInfos 2, 3, oFirstRow, oFirstCol, oNbRow, oNbCol
+     MyTable.GetMergeInfos 2, 3, oFirstRow, oFirstCol, oNbRow, oNbCol
 
 ```
 
 ### Func **GetRowSize**( long  `iRow`) As double
 
-Returns the height of a row of a drawing table.
+   Returns the height of a row of a drawing table.
 
 **Parameters:**
 
@@ -294,25 +294,25 @@ Returns the height of a row of a drawing table.
 **Example:**      This example returns the height of the row (1) of the drawing table `MyTable`.
 
 ```VBScript
-iRow = 1
-oRowSize = MyTable.GetRowSize(iRow)
+     iRow = 1
+     oRowSize = MyTable.GetRowSize(iRow)
 
 ```
 
 ### Sub **InvertMode**( [CatTableInvertMode](../DraftingInterfaces/enum_CatTableInvertMode_67010.md)  `iMode`)
 
-Sets a mode of table inversion.
+   Sets a mode of table inversion.
 
 **Example:**      This example swaps the columns of the drawing table `MyTable`.
 
 ```VBScript
-MyTable.InvertMode CatInvertColumn
+     MyTable.InvertMode CatInvertColumn
 
 ```
 
 ### Sub **MergeCells**( long  `iFirstRow`,  long  `iFirstCol`,  long  `iNbRowMerge`,  long  `iNbColMerge`)
 
-Merges a group of cells.
+   Merges a group of cells.
 
 **Parameters:**
 
@@ -323,13 +323,13 @@ Merges a group of cells.
 **Example:**      This example merges cells from cell (2, 3) to cell (4, 5) of the drawing table `MyTable`.
 
 ```VBScript
-MyTable.MergeCells 2, 3, 3, 3
+     MyTable.MergeCells 2, 3, 3, 3
 
 ```
 
 ### Sub **Move**( double  `iDeltaX`,  double  `iDeltaY`)
 
-Moves the table relatively to its original position.
+   Moves the table relatively to its original position.
 
 **Parameters:**
 
@@ -339,15 +339,15 @@ Moves the table relatively to its original position.
 **Example:**      This example moves the table `MyTable` to 20mm in X.
 
 ```VBScript
-DeltaX = 20.0
-DeltaY =  0.0
-MyTable.Move DeltaX, DeltaY
+     DeltaX = 20.0
+     DeltaY =  0.0
+     MyTable.Move DeltaX, DeltaY
 
 ```
 
 ### Sub **RemoveColumn**( long  `iCol`)
 
-Removes the indicated column.
+   Removes the indicated column.
 
 **Parameters:**
 
@@ -356,14 +356,14 @@ Removes the indicated column.
 **Example:**      This example removes the first column of the drawing table `MyTable`.
 
 ```VBScript
-iCol = 1
-MyTable.RemoveColumn iCol
+     iCol = 1
+     MyTable.RemoveColumn iCol
 
 ```
 
 ### Sub **RemoveRow**( long  `iRow`)
 
-Removes the indicated row.
+   Removes the indicated row.
 
 **Parameters:**
 
@@ -372,14 +372,14 @@ Removes the indicated row.
 **Example:**      This example removes the third row of the drawing table `MyTable`.
 
 ```VBScript
-iRow = 3
-MyTable.RemoveRow iRow
+     iRow = 3
+     MyTable.RemoveRow iRow
 
 ```
 
 ### Sub **Rotate**( double  `iDeltaAngle`)
 
-Rotates the table relatively to its original position.
+   Rotates the table relatively to its original position.
 
 **Parameters:**
 
@@ -388,14 +388,14 @@ Rotates the table relatively to its original position.
 **Example:**      This example rotates the table `MyTable` to 45 degrees.
 
 ```VBScript
-PI = 3.1415926535
-MyTable.Rotate PI/4
+     PI = 3.1415926535
+     MyTable.Rotate PI/4
 
 ```
 
 ### Sub **SetCellAlignment**( long  `iRow`,  long  `iCol`,  [CatTablePosition](../DraftingInterfaces/enum_CatTablePosition_54616.md)  `iAlign`)
 
-Sets the pointed cell alignment of a drawing table.
+   Sets the pointed cell alignment of a drawing table.
 
 **Parameters:**
 
@@ -406,15 +406,15 @@ Sets the pointed cell alignment of a drawing table.
 **Example:**      This example sets the cell (3,2) alignment of the table `MyTable` to bottom left.
 
 ```VBScript
-iRow = 3
-iCol = 2
-MyTable.SetCellAlignment iRow, iCol, CatTableBottomLeft
+     iRow = 3
+     iCol = 2
+     MyTable.SetCellAlignment iRow, iCol, CatTableBottomLeft
 
 ```
 
 ### Sub **SetCellBorderType**( long  `iRow`,  long  `iCol`,  long  `iType`)
 
-Sets the pointed cell border type of a drawing table.
+   Sets the pointed cell border type of a drawing table.
 
 **Parameters:**
 
@@ -425,15 +425,15 @@ Sets the pointed cell border type of a drawing table.
 **Example:**      This example sets the cell (3,2) border type of the table `MyTable` to right.
 
 ```VBScript
-iRow = 3
-iCol = 2
-MyTable.SetCellBorderType iRow, iCol, CatTableRight
+     iRow = 3
+     iCol = 2
+     MyTable.SetCellBorderType iRow, iCol, CatTableRight
 
 ```
 
 ### Sub **SetCellName**( long  `iRow`,  long  `iCol`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`)
 
-Sets the name of a table cell.
+   Sets the name of a table cell.
 
 **Parameters:**
 
@@ -444,16 +444,16 @@ Sets the name of a table cell.
 **Example:**      This example sets the name of the cell (1,2) of the table `MyTable` to "Cell 2".
 
 ```VBScript
-iRow = 1
-iCol = 2
-iName = "Cell 2"
-MyTable.SetCellName iRow, iCol, iName
+     iRow = 1
+     iCol = 2
+     iName = "Cell 2"
+     MyTable.SetCellName iRow, iCol, iName
 
 ```
 
 ### Sub **SetCellObject**( long  `iRow`,  long  `iCol`,  [CATIADrawingText](../DraftingInterfaces/interface_DrawingText_26559.md)  `iText`)
 
-Sets an object in a cell of a drawing table.
+   Sets an object in a cell of a drawing table.
 
 **Parameters:**
 
@@ -464,15 +464,15 @@ Sets an object in a cell of a drawing table.
 **Example:**      This example puts the drawing text `iText` in the cell (1,3) of the table `MyTable`.
 
 ```VBScript
-iRow = 1
-iCol = 3
-MyTable.SetCellObject iRow, iCol, iText
+     iRow = 1
+     iCol = 3
+     MyTable.SetCellObject iRow, iCol, iText
 
 ```
 
 ### Sub **SetCellString**( long  `iRow`,  long  `iCol`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iString`)
 
-Fills in a table cell with a string.
+   Fills in a table cell with a string.
 
 **Parameters:**
 
@@ -483,16 +483,16 @@ Fills in a table cell with a string.
 **Example:**      This example fills in the cell (3,2) of the table `MyTable` with "Title".
 
 ```VBScript
-iRow = 3
-iCol = 2
-iString = "Title"
-MyTable.SetCellString iRow, iCol, iString
+     iRow = 3
+     iCol = 2
+     iString = "Title"
+     MyTable.SetCellString iRow, iCol, iString
 
 ```
 
 ### Sub **SetColumnSize**( long  `iCol`,  double  `iColSize`)
 
-Sets the width of a column of a drawing table.
+   Sets the width of a column of a drawing table.
 
 **Parameters:**
 
@@ -502,15 +502,15 @@ Sets the width of a column of a drawing table.
 **Example:**      This example sets the width of the column (1) of the drawing table `MyTable` to 20.
 
 ```VBScript
-iCol = 1
-iColSize = 20
-MyTable.SetColumnSize iCol, iColSize
+     iCol = 1
+     iColSize = 20
+     MyTable.SetColumnSize iCol, iColSize
 
 ```
 
 ### Sub **SetRowSize**( long  `iRow`,  double  `iRowSize`)
 
-Sets the height of a row of a drawing table.
+   Sets the height of a row of a drawing table.
 
 **Parameters:**
 
@@ -520,15 +520,15 @@ Sets the height of a row of a drawing table.
 **Example:**      This example sets the height of the row (1) of the drawing table `MyTable` to 20.
 
 ```VBScript
-iRow = 1
-iRowSize = 20
-MyTable.SetRowSize iRow, iRowSize
+     iRow = 1
+     iRowSize = 20
+     MyTable.SetRowSize iRow, iRowSize
 
 ```
 
 ### Sub **UnMergeCells**( long  `iRow`,  long  `iCol`)
 
-Unmerges a group of cells.
+   Unmerges a group of cells.
 
 **Parameters:**
 
@@ -537,6 +537,6 @@ Unmerges a group of cells.
 **Example:**      This example unmerges a group of cells of the drawing table `MyTable` from the cell (3, 5).
 
 ```VBScript
-MyTable.UnMergeCells 3, 5
+     MyTable.UnMergeCells 3, 5
 
 ```

@@ -5,9 +5,9 @@ Leaf entity in the Design Pattern Composite. TPS modeler enables definition of s
 
 ## Properties
 
-### Property **SuperType**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **SuperType**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Get the Super Type.
+   Get the Super Type.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Get the Super Type.
 
 ### Property **TPSStatus**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Get the TPS Status.
+   Get the TPS Status.
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Get the TPS Status.
 
 ### Property **Type**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Get the Type.
+   Get the Type.
 
 **Parameters:**
 
@@ -31,7 +31,7 @@ Get the Type.
 
 ### Property **Z**( double  `iZ`) (Write Only)
 
-method get_Z will never be exposed Set the offset of the annotation
+   method get_Z will never be exposed Set the offset of the annotation
 
 **Parameters:**
 
@@ -40,34 +40,34 @@ Methods
 
 ### Sub **AddLeader**( )
 
-Add a leader.  
+   Add a leader.  
 ### Sub **ApplyReferencedGeomColor**( long  `iReleatedR`,  long  `iReleatedG`,  long  `iReleatedB`)
 
-Apply a color to referenced geometry.  
+   Apply a color to referenced geometry.  
 ### Sub **ApplyReferencedInitColor**( )
 
-Apply the initial color to referenced geometry.  
+   Apply the initial color to referenced geometry.  
 ### Func **AssociatedRefFrame**( ) As [CATIAAssociatedRefFrame](../CATTPSInterfaces/interface_AssociatedRefFrame_66556.md)
 
-Get the annotation on the AssociatedRefFrame interface.  
+   Get the annotation on the AssociatedRefFrame interface.  
 ### Func **CompositeTolerance**( ) As [CATIACompositeTolerance](../CATTPSInterfaces/interface_CompositeTolerance_69422.md)
 
-Get the annotation on the CompositeTolerance interface.  
+   Get the annotation on the CompositeTolerance interface.  
 ### Func **ControledRadius**( ) As [CATIAControledRadius](../CATTPSInterfaces/interface_ControledRadius_48506.md)
 
-Get the annotation on the ControledRadius interface.  
+   Get the annotation on the ControledRadius interface.  
 ### Func **DatumSimple**( ) As [CATIADatumSimple](../CATTPSInterfaces/interface_DatumSimple_26229.md)
 
-Get the annotation on the DatumSimple interface.  
+   Get the annotation on the DatumSimple interface.  
 ### Func **DatumTarget**( ) As [CATIADatumTarget](../CATTPSInterfaces/interface_DatumTarget_26204.md)
 
-Get the annotation on the DatumTarget interface.  
+   Get the annotation on the DatumTarget interface.  
 ### Func **DefaultAnnotation**( ) As [CATIADefaultAnnotation](../CATTPSInterfaces/interface_DefaultAnnotation_62596.md)
 
-Get the annotation on the DefaultAnnotation interface.  
+   Get the annotation on the DefaultAnnotation interface.  
 ### Func **Dimension3D**( ) As [CATIADimension3D](../CATTPSInterfaces/interface_Dimension3D_23823.md)
 
-Get the 3D Dimension on the 3D Dimension interface.
+   Get the 3D Dimension on the 3D Dimension interface.
 
 **Parameters:**
 
@@ -75,16 +75,16 @@ Get the 3D Dimension on the 3D Dimension interface.
 
 ### Func **DimensionLimit**( ) As [CATIADimensionLimit](../CATTPSInterfaces/interface_DimensionLimit_42378.md)
 
-Get the annotation on the DimensionLimit interface.  
+   Get the annotation on the DimensionLimit interface.  
 ### Func **DimensionPattern**( ) As [CATIADimensionPattern](../CATTPSInterfaces/interface_DimensionPattern_55714.md)
 
-Get the annotation on the DimensionPattern interface.  
+   Get the annotation on the DimensionPattern interface.  
 ### Func **EnvelopCondition**( ) As [CATIAEnvelopCondition](../CATTPSInterfaces/interface_EnvelopCondition_55494.md)
 
-Get the annotation on the EnvelopCondition interface.  
+   Get the annotation on the EnvelopCondition interface.  
 ### Func **FlagNote**( ) As [CATIAFlagNote](../CATTPSInterfaces/interface_FlagNote_13602.md)
 
-Get the annotation on the FlagNote interface.
+   Get the annotation on the FlagNote interface.
 
 **Parameters:**
 
@@ -92,85 +92,85 @@ Get the annotation on the FlagNote interface.
 
 ### Func **FreeState**( ) As [CATIAFreeState](../CATTPSInterfaces/interface_FreeState_17355.md)
 
-Get the annotation on the FreeState interface.  
+   Get the annotation on the FreeState interface.  
 ### Sub **GetSurfaces**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oSafeArray`)
 
-Get the geometry on which the Annotation is applied to.  
+   Get the geometry on which the Annotation is applied to.  
 ### Func **GetSurfacesCount**( ) As double
 
-Count the geometry on which the Annotation is applied to.  
+   Count the geometry on which the Annotation is applied to.  
 ### Func **HasAControledRadius**( ) As boolean
 
-To know if the Annotation has a Controled Radius.  
+   To know if the Annotation has a Controled Radius.  
 ### Func **HasAFreeState**( ) As boolean
 
-To know if the Annotation has a Free State.  
+   To know if the Annotation has a Free State.  
 ### Func **HasAMaterialCondition**( ) As boolean
 
-To know if the Annotation has a Material Condition.  
+   To know if the Annotation has a Material Condition.  
 ### Func **HasAParticularTolElem**( ) As boolean
 
-To know if the Annotation has a Particuler Element.  
+   To know if the Annotation has a Particuler Element.  
 ### Func **HasATolerancePerUnitBasisRestrictiveValue**( ) As boolean
 
-To know if the Annotation has a Tolerance Per Unit Basis Restricted Value.  
+   To know if the Annotation has a Tolerance Per Unit Basis Restricted Value.  
 ### Func **HasAnEnvelopCondition**( ) As boolean
 
-To know if the Annotation has an Envelop Condition.  
+   To know if the Annotation has an Envelop Condition.  
 ### Func **HasDimensionLimit**( ) As boolean
 
-To know if the Annotation has a Dimension Limit.  
+   To know if the Annotation has a Dimension Limit.  
 ### Func **IsACompositeTolerance**( ) As boolean
 
-To know if the Annotation is a composite Tolerance.  
+   To know if the Annotation is a composite Tolerance.  
 ### Func **IsADefaultAnnotation**( ) As boolean
 
-To know if the Annotation is a Default Annotation.  
+   To know if the Annotation is a Default Annotation.  
 ### Func **IsADimensionPattern**( ) As boolean
 
-To know if the Annotation is a Dimension Pattern.  
+   To know if the Annotation is a Dimension Pattern.  
 ### Func **IsAProjectedToleranceZone**( ) As boolean
 
-To know if the Annotation is a Projected Zone.  
+   To know if the Annotation is a Projected Zone.  
 ### Func **IsAShiftedProfileTolerance**( ) As boolean
 
-To know if the Annotation is a Shifted Profile Tolerance.  
+   To know if the Annotation is a Shifted Profile Tolerance.  
 ### Func **IsATangentPlane**( ) As boolean
 
-To know if the Annotation is a Tangent Plane.  
+   To know if the Annotation is a Tangent Plane.  
 ### Func **IsAToleranceUnitBasisValue**( ) As boolean
 
-To know if the Annotation is a Tolerance Unit Basis Value.  
+   To know if the Annotation is a Tolerance Unit Basis Value.  
 ### Func **IsAToleranceZone**( ) As boolean
 
-Is the a Tolerance Zone.  
+   Is the a Tolerance Zone.  
 ### Func **IsAnAssociatedRefFrame**( ) As boolean
 
-To know if the Annotation is an Associated Reference Frame.  
+   To know if the Annotation is an Associated Reference Frame.  
 ### Func **MaterialCondition**( ) As [CATIAMaterialCondition](../CATTPSInterfaces/interface_MaterialCondition_61948.md)
 
-Get the annotation on the MaterialCondition interface.  
+   Get the annotation on the MaterialCondition interface.  
 ### Sub **ModifyVisu**( )
 
-To refresh the 3D visualization.  
+   To refresh the 3D visualization.  
 ### Func **Noa**( ) As [CATIANoa](../CATTPSInterfaces/interface_Noa_2040.md)
 
-Get the annotation on the Noa interface.  
+   Get the annotation on the Noa interface.  
 ### Func **ParticularTolElem**( ) As [CATIAParticularTolElem](../CATTPSInterfaces/interface_ParticularTolElem_60749.md)
 
-Get the annotation on the ParticularTolElem interface.  
+   Get the annotation on the ParticularTolElem interface.  
 ### Func **ProjectedToleranceZone**( ) As [CATIAProjectedToleranceZone](../CATTPSInterfaces/interface_ProjectedToleranceZone_102086.md)
 
-Get the annotation on the ProjectedToleranceZone interface.  
+   Get the annotation on the ProjectedToleranceZone interface.  
 ### Func **ReferenceFrame**( ) As [CATIAReferenceFrame](../CATTPSInterfaces/interface_ReferenceFrame_40808.md)
 
-Get the annotation on the ReferenceFrame interface.  
+   Get the annotation on the ReferenceFrame interface.  
 ### Func **Roughness**( ) As [CATIARoughness](../CATTPSInterfaces/interface_Roughness_18440.md)
 
-Get the annotation on the Roughness interface.  
+   Get the annotation on the Roughness interface.  
 ### Sub **SetXY**( double  `iX`,  double  `iY`)
 
-method GetXY will never be exposed Set TPS coordinates in the view
+   method GetXY will never be exposed Set TPS coordinates in the view
 
 **Parameters:**
 
@@ -179,13 +179,13 @@ method GetXY will never be exposed Set TPS coordinates in the view
 
 ### Func **ShiftedProfileTolerance**( ) As [CATIAShiftedProfileTolerance](../CATTPSInterfaces/interface_ShiftedProfileTolerance_111177.md)
 
-Get the annotation on the ShiftedProfileTolerance interface.  
+   Get the annotation on the ShiftedProfileTolerance interface.  
 ### Func **TangentPlane**( ) As [CATIATangentPlane](../CATTPSInterfaces/interface_TangentPlane_30606.md)
 
-Get the annotation on the TangentPlane interface.  
+   Get the annotation on the TangentPlane interface.  
 ### Func **Text**( ) As [CATIAText](../CATTPSInterfaces/interface_Text_3904.md)
 
-Get the annotation on the Text interface.
+   Get the annotation on the Text interface.
 
 **Parameters:**
 
@@ -193,16 +193,16 @@ Get the annotation on the Text interface.
 
 ### Func **TolerancePerUnitBasisRestrictiveValue**( ) As [CATIATolerancePerUnitBasisRestrictiveValue](../CATTPSInterfaces/interface_TolerancePerUnitBasisRestrictiveValue_287569.md)
 
-Get the annotation on the TolerancePerUnitBasisRestrictiveValue interface.  
+   Get the annotation on the TolerancePerUnitBasisRestrictiveValue interface.  
 ### Func **ToleranceUnitBasisValue**( ) As [CATIAToleranceUnitBasisValue](../CATTPSInterfaces/interface_ToleranceUnitBasisValue_110600.md)
 
-Get the annotation on the ToleranceUnitBasisValue interface.  
+   Get the annotation on the ToleranceUnitBasisValue interface.  
 ### Func **ToleranceZone**( ) As [CATIAToleranceZone](../CATTPSInterfaces/interface_ToleranceZone_36203.md)
 
-Get the annotation on the ToleranceZone interface.  
+   Get the annotation on the ToleranceZone interface.  
 ### Sub **TransfertToView**( [CATIATPSView](../CATTPSInterfaces/interface_TPSView_10208.md)  `iView`)
 
-Move the annotation in another view.
+   Move the annotation in another view.
 
 **Parameters:**
 

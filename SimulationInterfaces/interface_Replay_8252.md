@@ -6,9 +6,9 @@ Use this interface to customize the Replay object_**
 
 ## Methods
 
-### Func **AddProductMotion**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`) As long
+### Func **AddProductMotion**(| [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) | `iProduct`) As long
 
-Adds a product to be taken into account in the Replay object.
+   Adds a product to be taken into account in the Replay object.
 
 **Parameters:**
 
@@ -17,7 +17,7 @@ Adds a product to be taken into account in the Replay object.
 
 ### Sub **AddSample**( long  `iChannel`,  double  `iCurrentTime`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iPosition`)
 
-Adds a sample(set of values) for a channel at a specific time
+   Adds a sample(set of values) for a channel at a specific time
 
 **Parameters:**
 
@@ -27,7 +27,7 @@ Adds a sample(set of values) for a channel at a specific time
 
 ### Func **GetNbProductMotion**( ) As long
 
-Get the number of channel related to products.
+   Get the number of channel related to products.
 
 **Parameters:**
 
@@ -35,7 +35,7 @@ Get the number of channel related to products.
 
 ### Func **GetNbSample**( long  `iChannel`) As long
 
-Get the number of samples for a channel number.
+   Get the number of samples for a channel number.
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Get the number of samples for a channel number.
 
 ### Func **GetProduct**( long  `iChannel`) As [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)
 
-Get the product for a channel.
+   Get the product for a channel.
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Get the product for a channel.
 
 ### Sub **GetSamplePosition**( long  `iChannel`,  long  `iSample`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oPosition`)
 
-Get the sample values.
+   Get the sample values.
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Get the sample values.
 
 ### Func **GetSampleTime**( long  `iChannel`,  long  `iSample`) As double
 
-Get the sample time.
+   Get the sample time.
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ Get the sample time.
 
 ### Sub **RemoveSample**( long  `iChannel`,  long  `iSample`)
 
-Remove a specific sample.
+   Remove a specific sample.
 
 **Parameters:**
 

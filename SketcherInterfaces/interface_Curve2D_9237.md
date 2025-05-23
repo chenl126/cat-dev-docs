@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Continuity**( ) As short (Read Only)
+### Property **Continuity**(| ) As short (Read Only)
 
-Returns the highest level of geometric continuity the curve possesses.
+   Returns the highest level of geometric continuity the curve possesses.
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Returns the highest level of geometric continuity the curve possesses.
 
 ### Property **EndPoint**( ) As [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)
 
-Returns the end point of the curve. The end point is decided with respect to the logical flow imposed on the curve by the object.
+   Returns the end point of the curve. The end point is decided with respect to the logical flow imposed on the curve by the object.
 
 **Parameters:**
 
@@ -22,7 +22,7 @@ Returns the end point of the curve. The end point is decided with respect to the
 
 ### Property **Period**( ) As double (Read Only)
 
-Returns the period of a periodic curve.
+   Returns the period of a periodic curve.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Returns the period of a periodic curve.
 
 ### Property **StartPoint**( ) As [CATIAPoint2D](../SketcherInterfaces/interface_Point2D_9306.md)
 
-Returns the start point of the curve. The start point is decided with respect to the logical flow imposed on the curve by the object.
+   Returns the start point of the curve. The start point is decided with respect to the logical flow imposed on the curve by the object.
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ Methods
 
 ### Sub **GetCurvature**( double  `iParam`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCurvature`)
 
-Returns the curvature and curvature direction at the parameter specified.
+   Returns the curvature and curvature direction at the parameter specified.
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ Returns the curvature and curvature direction at the parameter specified.
 
 ### Sub **GetDerivatives**( double  `iParam`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oDerivative`)
 
-Returns the first, second and third derivatives at the parameter specified.
+   Returns the first, second and third derivatives at the parameter specified.
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ Returns the first, second and third derivatives at the parameter specified.
 
 ### Sub **GetEndPoints**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oEndPoints`)
 
-Returns the end-points of the curve. The start point and the end point are decided with respect to the logical flow imposed on the curve by the object.
+   Returns the end-points of the curve. The start point and the end point are decided with respect to the logical flow imposed on the curve by the object.
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ Returns the end-points of the curve. The start point and the end point are decid
 
 ### Func **GetLengthAtParam**( double  `iFromParam`,  double  `iToParam`) As double
 
-Returns the length, measured along the curve, from a given parameter to a given parameter.
+   Returns the length, measured along the curve, from a given parameter to a given parameter.
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ Returns the length, measured along the curve, from a given parameter to a given 
 
 ### Func **GetParamAtLength**( double  `iFromParam`,  double  `iLength`) As double
 
-Returns the parameter at a given length, measured along the curve, starting from a given parameter. The direction of measurement is always in the direction of the logical flow of the curve. If no inherent logical flow can be assigned the direction is the direction of increasing parameterization.
+   Returns the parameter at a given length, measured along the curve, starting from a given parameter. The direction of measurement is always in the direction of the logical flow of the curve. If no inherent logical flow can be assigned the direction is the direction of increasing parameterization.
 
 **Parameters:**
 
@@ -91,7 +91,7 @@ Returns the parameter at a given length, measured along the curve, starting from
 
 ### Sub **GetParamExtents**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oParams`)
 
-Returns the parametric extents of the curve. This is the parametric equivalent of the end-points.
+   Returns the parametric extents of the curve. This is the parametric equivalent of the end-points.
 
 **Parameters:**
 
@@ -100,7 +100,7 @@ Returns the parametric extents of the curve. This is the parametric equivalent o
 
 ### Sub **GetPointAtParam**( double  `iParam`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oPoint`)
 
-Returns a point on the curve computed from an input parameter.
+   Returns a point on the curve computed from an input parameter.
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ Returns a point on the curve computed from an input parameter.
 
 ### Sub **GetRangeBox**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oBoundPoint`)
 
-Returns the range box (or bounding box) of the object
+   Returns the range box (or bounding box) of the object
 The box is axially aligned within the local coordinate system of the server.
 
 **Parameters:**
@@ -121,7 +121,7 @@ The box is axially aligned within the local coordinate system of the server.
 
 ### Sub **GetTangent**( double  `iParam`,  [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oTangency`)
 
-Returns the unit-vector tangent at the parameter specified.
+   Returns the unit-vector tangent at the parameter specified.
 
 **Parameters:**
 
@@ -130,7 +130,7 @@ Returns the unit-vector tangent at the parameter specified.
 
 ### Func **IsPeriodic**( ) As boolean
 
-Specifies whether a curve is periodic or not.
+   Specifies whether a curve is periodic or not.
 
 **Parameters:**
 

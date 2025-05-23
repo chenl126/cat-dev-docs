@@ -1,6 +1,7 @@
 # HybridShapeDirection (Object)
 
 **_Represents the hybrid shape direction feature object._**
+
 **Role** : To access the data of the hybrid shape direction feature object. A direction can be specified using:
 
   * A line: the direction is tangent to the line
@@ -13,9 +14,9 @@ Use the CATIAHybridShapeFactory to create a HybridShapeDirection object.
 
 ## Properties
 
-### Property **Object**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **Object**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the object that specifies the direction.
+   Returns or sets the object that specifies the direction.
 This object can be a line or a plane.
 
 **Parameters:**
@@ -26,20 +27,21 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [RectilinearTriDimFeatEdge](../MecModInterfaces/interface_RectilinearTriDimFeatEdge_125698.md), [RectilinearBiDimFeatEdge](../MecModInterfaces/interface_RectilinearBiDimFeatEdge_114366.md) or [RectilinearMonoDimFeatEdge](../MecModInterfaces/interface_RectilinearMonoDimFeatEdge_136236.md).  
 ### Property **RefAxisSystem**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or Sets the reference Axis System for Direction feature.
+   Returns or Sets the reference Axis System for Direction feature.
 This data is not mandatory, if element is null, the absolute axis system is taken.
 When an element is given, X, Y and Z are considered in this Axis system. Example
 :      This example retrieves in `oRefAxis` the reference Axis System for `Direction` feature.
 
 ```VBScript
-Dim oRefAxis As CATIAReference
-Set oRefAxis  = Direction.RefAxisSystem
+     Dim oRefAxis As CATIAReference
+     Set oRefAxis  = Direction.RefAxisSystem
 
 ```
 
 ### Property **Type**( ) As long (Read Only)
 
-Returns the direction type.
+   Returns the direction type.
+
 **Legal value** : The direction type can be:
 
 0
@@ -50,7 +52,7 @@ Methods
 
 ### Func **DirectionSpecification**( ) As long
 
-Queries the direction specification status.
+   Queries the direction specification status.
 
 **Parameters:**
 
@@ -58,7 +60,7 @@ Queries the direction specification status.
 
 ### Func **GetX**( ) As [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md)
 
-Returns the direction X component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetXVal method instead.
+   Returns the direction X component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetXVal method instead.
 
 **Parameters:**
 
@@ -66,7 +68,7 @@ Returns the direction X component. This method succeeds only when direction is s
 
 ### Func **GetXVal**( ) As double
 
-Returns the direction X component as Double. This method succeeds irrespective of the way direction is specified.
+   Returns the direction X component as Double. This method succeeds irrespective of the way direction is specified.
 
 **Parameters:**
 
@@ -74,7 +76,7 @@ Returns the direction X component as Double. This method succeeds irrespective o
 
 ### Func **GetY**( ) As [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md)
 
-Returns the direction Y component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetYVal method instead.
+   Returns the direction Y component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetYVal method instead.
 
 **Parameters:**
 
@@ -82,7 +84,7 @@ Returns the direction Y component. This method succeeds only when direction is s
 
 ### Func **GetYVal**( ) As double
 
-Returns the direction Y component as Double.This method succeeds irrespective of the way direction is specified.
+   Returns the direction Y component as Double.This method succeeds irrespective of the way direction is specified.
 
 **Parameters:**
 
@@ -90,7 +92,7 @@ Returns the direction Y component as Double.This method succeeds irrespective of
 
 ### Func **GetZ**( ) As [CATIARealParam](../KnowledgeInterfaces/interface_RealParam_17053.md)
 
-Returns the direction Z component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetZVal method instead.
+   Returns the direction Z component. This method succeeds only when direction is specified using components. It fails when direction is specified using a geometrical element i.e Line, Plane. In such cases use GetZVal method instead.
 
 **Parameters:**
 
@@ -98,7 +100,7 @@ Returns the direction Z component. This method succeeds only when direction is s
 
 ### Func **GetZVal**( ) As double
 
-Returns the direction Z component as Double.This method succeeds irrespective of the way direction is specified.
+   Returns the direction Z component as Double.This method succeeds irrespective of the way direction is specified.
 
 **Parameters:**
 

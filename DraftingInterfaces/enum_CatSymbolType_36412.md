@@ -1,6 +1,7 @@
 # CatSymbolType (Enumeration)
 
 **_Symbol type._**
+
 **Role** : The symbol represents the symbol type of arrow, leader.
 
 **Values:**
@@ -22,4 +23,5 @@
 ` catFilledTriangle`      Filled triangle symbol
 ` catDoubleOpenArrow`      Double open arrow symbol
 ` catWave`      Wave symbol
+
 **See also:**      [DrawingArrow](../DraftingInterfaces/interface_DrawingArrow_31476.md)

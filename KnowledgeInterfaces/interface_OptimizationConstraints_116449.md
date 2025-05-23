@@ -4,12 +4,12 @@
 
 ## Methods
 
-### Func **AddConstraint**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `constraintExpression`) As [CATIAOptimizationConstraint](../KnowledgeInterfaces/interface_OptimizationConstraint_106166.md)
+### Func **AddConstraint**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `constraintExpression`) As [CATIAOptimizationConstraint](../KnowledgeInterfaces/interface_OptimizationConstraint_106166.md)
 
-Adds a optimization constraint. This parameter must not be read only.  
+   Adds a optimization constraint. This parameter must not be read only.  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAOptimizationConstraint](../KnowledgeInterfaces/interface_OptimizationConstraint_106166.md)
 
-Returns an optimization constraint using its index or its name from the optimization constraints collection.
+   Returns an optimization constraint using its index or its name from the optimization constraints collection.
 
 **Parameters:**
 
@@ -17,13 +17,13 @@ Returns an optimization constraint using its index or its name from the optimiza
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property or when changing the optimization constraint name by the property panel.  **Returns:**      The retrieved optimization constraint  **Example:**      This example retrieves the last optimization constraint in the `optimization constraints` collection.
 
 ```VBScript
-Set lastConstraint = constraints.Item(constraints.Count)
+     Set lastConstraint = constraints.Item(constraints.Count)
 
 ```
 
 ### Sub **RemoveConstraint**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a given optimization constraint using its index or its name from the optimization constraints collection.
+   Removes a given optimization constraint using its index or its name from the optimization constraints collection.
 
 **Parameters:**
 

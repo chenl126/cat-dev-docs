@@ -6,16 +6,16 @@ A Product object can aggregate one or zero Plates collection. This collection is
 **Example:**      The following example retrieves the plate collection from the `oProduct` Product.
 
 ```VBScript
-Dim oPlates as AnyObject
-Set oPlates = oProduct.GetTechnologicalObject("StructurePlates")
+     Dim oPlates as AnyObject
+     Set oPlates = oProduct.GetTechnologicalObject("StructurePlates")
 
 ```
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAStrPlate](../StructureInterfaces/interface_StrPlate_13958.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAStrPlate](../StructureInterfaces/interface_StrPlate_13958.md)
 
-Returns a plate from its index in the Plates collection.
+   Returns a plate from its index in the Plates collection.
 
 **Parameters:**
 
@@ -25,16 +25,16 @@ Returns a plate from its index in the Plates collection.
 **Example:**      The following example returns in `ThisPlate` the third plate, and in `ThatPlate` the plate named `EndPlate_1` in the `Assembly_1` plate collection.
 
 ```VBScript
-Dim ThisPlate As Plate
-Set ThisPlate = Assembly_1.Item(3)
-Dim ThatPlate As Plate
-Set ThatPlate = Assembly.Item("EndPlate_1")
+     Dim ThisPlate As Plate
+     Set ThisPlate = Assembly_1.Item(3)
+     Dim ThatPlate As Plate
+     Set ThatPlate = Assembly.Item("EndPlate_1")
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a plate from the Plates collection.
+   Removes a plate from the Plates collection.
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Removes a plate from the Plates collection.
 **Example:**      The following example removes the sixth plate and the plate named `EndPlate_1` from the `Assembly_1` plate collection.
 
 ```VBScript
-Assembly_1.Remove(6)
-Assembly_1.Remove("EndPlate_1")
+     Assembly_1.Remove(6)
+     Assembly_1.Remove("EndPlate_1")
 
 ```

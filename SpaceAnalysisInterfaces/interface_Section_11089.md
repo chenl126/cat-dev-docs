@@ -5,161 +5,161 @@ The Section object is a specification of a sectioning display and computationwit
 
 ## Properties
 
-### Property **AnnotatedViews**( ) As [CATIAAnnotatedViews](../NavigatorInterfaces/interface_AnnotatedViews_42578.md) (Read Only)
+### Property **AnnotatedViews**(| ) As [CATIAAnnotatedViews](../NavigatorInterfaces/interface_AnnotatedViews_42578.md) (Read Only)
 
-Returns the AnnotatedViews collection of the section.
+   Returns the AnnotatedViews collection of the section.
 
 **Example:**      This example retrieves the AnnotatedViews collection of `NewSection` Section.
 
 ```VBScript
-   Dim TheAnnotatedViewsList As AnnotatedViews
-   Set TheAnnotatedViewsList = NewSection.AnnotatedViews
+        Dim TheAnnotatedViewsList As AnnotatedViews
+        Set TheAnnotatedViewsList = NewSection.AnnotatedViews
 
 ```
 
 ### Property **Behavior**( ) As [CatSectionBehavior](../SpaceAnalysisInterfaces/enum_CatSectionBehavior_68434.md)
 
-Returns or sets the general behavior of the section: Freeze, Automatic update, manual update The behavior value are defined in [CatSectionBehavior](../SpaceAnalysisInterfaces/enum_CatSectionBehavior_68434.md).
+   Returns or sets the general behavior of the section: Freeze, Automatic update, manual update The behavior value are defined in [CatSectionBehavior](../SpaceAnalysisInterfaces/enum_CatSectionBehavior_68434.md).
 
 **Example:**      The first example retrieves the behavior of `NewSection` Section.
 
 ```VBScript
-   Dim SectionBehavior As CatSectionBehavior
-   Behavior = NewSection.Behavior
+        Dim SectionBehavior As CatSectionBehavior
+        Behavior = NewSection.Behavior
 
 ```
 
-The second example sets the behavior of `NewSection` Section.
+   The second example sets the behavior of `NewSection` Section.
 
 ```VBScript
-   NewSection.Behavior = catSectionBehaviorAutomatic
+        NewSection.Behavior = catSectionBehaviorAutomatic
 
 ```
 
 ### Property **CutMode**( ) As long
 
-Returns or sets the cutting mode of the section. The cutting mode value is 1 for clipping or 0 without clipping.
+   Returns or sets the cutting mode of the section. The cutting mode value is 1 for clipping or 0 without clipping.
 
 **Example:**      The first example retrieves the cutting mode of `NewSection` Section.
 
 ```VBScript
-   Dim SectionMode As Integer
-   SectionMode = NewSection.CutMode
+        Dim SectionMode As Integer
+        SectionMode = NewSection.CutMode
 
 ```
 
-The second example sets the cutting mode of `NewSection` Section.
+   The second example sets the cutting mode of `NewSection` Section.
 
 ```VBScript
-   NewSection.CutMode = 1
+        NewSection.CutMode = 1
 
 ```
 
 ### Property **Group**( ) As [CATIAGroup](../NavigatorInterfaces/interface_Group_5945.md)
 
-Returns or sets the sectionned group. By default, it is the all leaves group.
+   Returns or sets the sectionned group. By default, it is the all leaves group.
 
 **Example:**      The first example retrieves the group of `NewSection` Section.
 
 ```VBScript
-   Dim AGroup As Group
-   AGroup = NewSection.Group
+        Dim AGroup As Group
+        AGroup = NewSection.Group
 
 ```
 
-The second example sets the group of `NewSection` Section.
+   The second example sets the group of `NewSection` Section.
 
 ```VBScript
-   Dim AGroup As Group
-   NewSection.Group = AGroup
+        Dim AGroup As Group
+        NewSection.Group = AGroup
 
 ```
 
 ### Property **Height**( ) As double
 
-Returns or sets the height of the section. The height value must be greater than 0.
+   Returns or sets the height of the section. The height value must be greater than 0.
 
 **Example:**      The first example retrieves the height of `NewSection` Section.
 
 ```VBScript
-   Dim SectionHeight As double
-   SectionHeight = NewSection.Height
+        Dim SectionHeight As double
+        SectionHeight = NewSection.Height
 
 ```
 
-The second example sets the height value of `NewSection` Section.
+   The second example sets the height value of `NewSection` Section.
 
 ```VBScript
-   NewSection.Height = 100.
+        NewSection.Height = 100.
 
 ```
 
 ### Property **Marker3Ds**( ) As [CATIAMarker3Ds](../NavigatorInterfaces/interface_Marker3Ds_15928.md) (Read Only)
 
-Returns the Marker3Ds collection of the section.
+   Returns the Marker3Ds collection of the section.
 
 **Example:**      This example retrieves the Marker3Ds collection of `NewSection` Section.
 
 ```VBScript
-   Dim TheMarker3DsList As Marker3Ds
-   Set TheMarker3DsList = NewSection.Marker3Ds
+        Dim TheMarker3DsList As Marker3Ds
+        Set TheMarker3DsList = NewSection.Marker3Ds
 
 ```
 
 ### Property **Thickness**( ) As double
 
-Returns or sets the thickness of the section. The thickness value must be greater than 0.
+   Returns or sets the thickness of the section. The thickness value must be greater than 0.
 
 **Example:**      The first example retrieves the thickness of `NewSection` Section.
 
 ```VBScript
-   Dim SectionThickness As double
-   SectionThickness = NewSection.Thickness
+        Dim SectionThickness As double
+        SectionThickness = NewSection.Thickness
 
 ```
 
-The second example sets the thickness value of `NewSection` Section.
+   The second example sets the thickness value of `NewSection` Section.
 
 ```VBScript
-   NewSection.Thickness = 100.
+        NewSection.Thickness = 100.
 
 ```
 
 ### Property **Type**( ) As [CatSectionType](../SpaceAnalysisInterfaces/enum_CatSectionType_41996.md)
 
-Returns or sets the type of the section. The type value are defined in [CatSectionType](../SpaceAnalysisInterfaces/enum_CatSectionType_41996.md).
+   Returns or sets the type of the section. The type value are defined in [CatSectionType](../SpaceAnalysisInterfaces/enum_CatSectionType_41996.md).
 
 **Example:**      The first example retrieves the type of `NewSection` Section.
 
 ```VBScript
-   Dim SectionType As CatSectionType
-   SectionType = NewSection.Type
+        Dim SectionType As CatSectionType
+        SectionType = NewSection.Type
 
 ```
 
-The second example sets the type of `NewSection` Section.
+   The second example sets the type of `NewSection` Section.
 
 ```VBScript
-   NewSection.Type = catSectionTypeSlice
+        NewSection.Type = catSectionTypeSlice
 
 ```
 
 ### Property **Width**( ) As double
 
-Returns or sets the width of the section. The width value must be greater than 0.
+   Returns or sets the width of the section. The width value must be greater than 0.
 
 **Example:**      The first example retrieves the width of `NewSection` Section.
 
 ```VBScript
-   Dim SectionWidth As double
-   SectionWidth = NewSection.Width
+        Dim SectionWidth As double
+        SectionWidth = NewSection.Width
 
 ```
 
-The second example sets the width value of `NewSection` Section.
+   The second example sets the width value of `NewSection` Section.
 
 ```VBScript
-   NewSection.Width = 100.
+        NewSection.Width = 100.
 
 ```
 
@@ -167,19 +167,19 @@ Methods
 
 ### Func **Export**( ) As [CATIADocument](../InfInterfaces/interface_Document_14456.md)
 
-Exports the sections curves of the section in a document.
+   Exports the sections curves of the section in a document.
 
 **Returns:**      The document  **Example:**      This example exports the section curves of `NewSection` Section in `PartDoc` document.
 
 ```VBScript
-   Dim PartDoc As Document
-   PartDoc = NewSection.Export
+        Dim PartDoc As Document
+        PartDoc = NewSection.Export
 
 ```
 
 ### Sub **GetPosition**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oComponents`)
 
-Retrieves the position of the section. The position of the section is made of a coordinate system whose origin is the center of the section, and X and Y axes lie on the section. It is retrieved in an array of the X, Y, Z axes components and the origin components with respect to the absolute coordinate system.
+   Retrieves the position of the section. The position of the section is made of a coordinate system whose origin is the center of the section, and X and Y axes lie on the section. It is retrieved in an array of the X, Y, Z axes components and the origin components with respect to the absolute coordinate system.
 
 **Parameters:**
 
@@ -201,26 +201,26 @@ Retrieves the position of the section. The position of the section is made of a 
 **Example:**      This example retrieves the position of `NewSection` Section.
 
 ```VBScript
-   Dim Components (11)
-   NewSection.GetPosition Components
+        Dim Components (11)
+        NewSection.GetPosition Components
 
 ```
 
 ### Func **IsEmpty**( ) As long
 
-Indicates whether the section is empty. The indicator value is 0 if the section is empty or 1 if the section comprise at least one segment.
+   Indicates whether the section is empty. The indicator value is 0 if the section is empty or 1 if the section comprise at least one segment.
 
 **Example:**      This example retrieves the information on `NewSection` Section.
 
 ```VBScript
-   Dim Indicator
-   Indicator = NewSection.IsEmpty
+        Dim Indicator
+        Indicator = NewSection.IsEmpty
 
 ```
 
 ### Sub **SetPosition**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iComponents`)
 
-Sets the position of the section.
+   Sets the position of the section.
 
 **Parameters:**
 
@@ -242,19 +242,19 @@ Sets the position of the section.
 **Example:**      This example sets the position of `NewSection` Section.
 
 ```VBScript
-   Dim MatrixPos (11) As Double
-   MatrixPos( 0) = 1.0
-   MatrixPos( 1) = 0.0
-   MatrixPos( 2) = 0.0
-   MatrixPos( 3) = 0.0
-   MatrixPos( 4) = 1.0
-   MatrixPos( 5) = 0.0
-   MatrixPos( 6) = 0.0
-   MatrixPos( 7) = 0.0
-   MatrixPos( 8) = 1.0
-   MatrixPos( 9) = 1000.0
-   MatrixPos(10) = 0.0
-   MatrixPos(11) = 0.0
-   NewSection.SetPosition MatrixPos
+        Dim MatrixPos (11) As Double
+        MatrixPos( 0) = 1.0
+        MatrixPos( 1) = 0.0
+        MatrixPos( 2) = 0.0
+        MatrixPos( 3) = 0.0
+        MatrixPos( 4) = 1.0
+        MatrixPos( 5) = 0.0
+        MatrixPos( 6) = 0.0
+        MatrixPos( 7) = 0.0
+        MatrixPos( 8) = 1.0
+        MatrixPos( 9) = 1000.0
+        MatrixPos(10) = 0.0
+        MatrixPos(11) = 0.0
+        NewSection.SetPosition MatrixPos
 
 ```

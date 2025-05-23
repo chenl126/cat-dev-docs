@@ -1,6 +1,7 @@
 # CatDimFramedGroup (Enumeration)
 
 **_Dimension framed group._**
+
 **Role** : Define the framed group.
 
 **Values:**

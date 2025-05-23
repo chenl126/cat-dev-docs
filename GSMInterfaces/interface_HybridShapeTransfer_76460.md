@@ -1,6 +1,7 @@
 # HybridShapeTransfer (Object)
 
 **_Represents the hybrid shape Transfer feature object._**
+
 **Role** : To access the data of the hybrid shape Transfer feature object. This data includes:
 
   * The element to transfer
@@ -13,15 +14,15 @@ Use the CATIAHybridShapeFactory to create a HybridShapeTransfer object.
 
 ## Properties
 
-### Property **ElementToTransfer**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **ElementToTransfer**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the element to transfer.  
+   Returns or sets the element to transfer.  
 ### Property **SurfaceToUnfold**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the surface to unfold.  
+   Returns or sets the surface to unfold.  
 ### Property **TypeOfTransfer**( ) As long
 
-Returns or sets the type of transfer.
+   Returns or sets the type of transfer.
 
   * 0= The type of surface is not defined
   * 1= The type of transfer is folded to unfolded
@@ -29,7 +30,7 @@ Returns or sets the type of transfer.
 
 ### Property **UnfoldType**( ) As long
 
-Returns or sets the type of unfold to take into account during transfer.
+   Returns or sets the type of unfold to take into account during transfer.
 
   * 0= The type is undefined
   * 1= The surface to unfold is ruled,
@@ -37,4 +38,4 @@ Returns or sets the type of unfold to take into account during transfer.
 
 ### Property **UnfoldedSurface**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the unfolded surface.
+   Returns or sets the unfolded surface.

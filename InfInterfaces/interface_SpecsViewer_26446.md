@@ -7,13 +7,13 @@ This viewer displays the document's specification tree according to the chosen l
 
 ## Properties
 
-### Property **Layout**( ) As [CatSpecsLayout](../InfInterfaces/enum_CatSpecsLayout_42356.md)
+### Property **Layout**(| ) As [CatSpecsLayout](../InfInterfaces/enum_CatSpecsLayout_42356.md)
 
-Returns or sets the specification tree layout.
+   Returns or sets the specification tree layout.
 
 **Example:**      This example sets the specification tree layout for the `SpecsTreeViewer` specification tree viewer to `catSpecsViewerHorizontalCentered`.
 
 ```VBScript
-SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
+     SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
 ```

@@ -1,6 +1,7 @@
 # HybridShapeHelix (Object)
 
 **_Represents the hybrid shape helix feature object._**
+
 **Role** : Allows to access data of the Helix feature. This data includes:
 
   * axis
@@ -13,9 +14,9 @@
 
 ## Properties
 
-### Property **Axis**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **Axis**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Reads / Changes the Helix axis.
+   Reads / Changes the Helix axis.
 
 **Parameters:**
 
@@ -24,7 +25,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): CATIARectlinearTriDimFeatEdge or [RectilinearBiDimFeatEdge](../MecModInterfaces/interface_RectilinearBiDimFeatEdge_114366.md).  
 ### Property **ClockwiseRevolution**( ) As boolean
 
-Reads / Modifies the sense of revolutions .
+   Reads / Modifies the sense of revolutions .
 
 **Parameters:**
 
@@ -32,7 +33,7 @@ Reads / Modifies the sense of revolutions .
 
 ### Property **Height**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Reads the height of the Helix.
+   Reads the height of the Helix.
 
 **Parameters:**
 
@@ -40,7 +41,7 @@ Reads the height of the Helix.
 
 ### Property **InvertAxis**( ) As boolean
 
-Reads / Modifies the orientation .
+   Reads / Modifies the orientation .
 
 **Parameters:**
 
@@ -48,7 +49,7 @@ Reads / Modifies the orientation .
 
 ### Property **Pitch**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Reads the pitch of the Helix.
+   Reads the pitch of the Helix.
 
 **Parameters:**
 
@@ -56,7 +57,7 @@ Reads the pitch of the Helix.
 
 ### Property **Pitch2**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Reads the Helix pitch2.
+   Reads the Helix pitch2.
 
 **Parameters:**
 
@@ -64,7 +65,7 @@ Reads the Helix pitch2.
 
 ### Property **PitchLawType**( ) As long
 
-Reads / Changes the Helix pitch law type.
+   Reads / Changes the Helix pitch law type.
 
 **Parameters:**
 
@@ -72,7 +73,7 @@ Reads / Changes the Helix pitch law type.
 
 ### Property **Profile**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Reads / Changes the Helix profile.
+   Reads / Changes the Helix profile.
 
 **Parameters:**
 
@@ -80,7 +81,7 @@ Reads / Changes the Helix profile.
 
 ### Property **StartingAngle**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-Reads the helix starting angle.
+   Reads the helix starting angle.
 
 **Parameters:**
 
@@ -88,7 +89,7 @@ Reads the helix starting angle.
 
 ### Property **StartingPoint**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Reads / Changes the starting point of the Helix. The starting point must not be on the Helix axis.
+   Reads / Changes the starting point of the Helix. The starting point must not be on the Helix axis.
 
 **Parameters:**
 
@@ -97,7 +98,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Vertex](../MecModInterfaces/interface_Vertex_8466.md).  
 ### Property **TaperAngle**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-Reads the helix taper angle.
+   Reads the helix taper angle.
 
 **Parameters:**
 
@@ -105,7 +106,7 @@ Reads the helix taper angle.
 
 ### Property **TaperOutward**( ) As boolean
 
-Reads / Modifies the taper angle sense of variation.
+   Reads / Modifies the taper angle sense of variation.
 
 **Parameters:**
 
@@ -114,7 +115,7 @@ Methods
 
 ### Sub **SetHeight**( double  `iHeight`)
 
-Sets the helix height.
+   Sets the helix height.
 
 **Parameters:**
 
@@ -122,7 +123,7 @@ Sets the helix height.
 
 ### Sub **SetPitch**( double  `iPitch`)
 
-Sets the helix pitch.
+   Sets the helix pitch.
 
 **Parameters:**
 
@@ -130,7 +131,7 @@ Sets the helix pitch.
 
 ### Sub **SetPitch2**( double  `iPitch2`)
 
-Changes the Helix pitch2 .
+   Changes the Helix pitch2 .
 
 **Parameters:**
 
@@ -138,7 +139,7 @@ Changes the Helix pitch2 .
 
 ### Sub **SetRevolutionNumber**( double  `iNbRevol`)
 
-Changes the Revolution Numbers.
+   Changes the Revolution Numbers.
 
 **Parameters:**
 
@@ -146,7 +147,7 @@ Changes the Revolution Numbers.
 
 ### Sub **SetStartingAngle**( double  `iStartingAngle`)
 
-Sets the helix starting angle.
+   Sets the helix starting angle.
 
 **Parameters:**
 
@@ -154,7 +155,7 @@ Sets the helix starting angle.
 
 ### Sub **SetTaperAngle**( double  `iTaperAngle`)
 
-Sets the helix taper angle.
+   Sets the helix taper angle.
 
 **Parameters:**
 

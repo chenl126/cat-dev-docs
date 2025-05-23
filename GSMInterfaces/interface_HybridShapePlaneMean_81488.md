@@ -1,6 +1,7 @@
 # HybridShapePlaneMean (Object)
 
 **_Represents the hybrid shape mean plane feature object._**
+
 **Role** : To access the data of the hybrid shape mean plane feature object. This data includes:
 
   * The list of points
@@ -11,9 +12,9 @@ Use the CATIAHybridShapeFactory to create a HybridShapePlaneMean object.
 
 ## Methods
 
-### Sub **AddPoint**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPassingPoint`)
+### Sub **AddPoint**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iPassingPoint`)
 
-Adds a point to the mean plane.
+   Adds a point to the mean plane.
 
 **Parameters:**
 
@@ -23,7 +24,7 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Vertex](../MecModInterfaces/interface_Vertex_8466.md).  
 ### Sub **GetPoint**( long  `iRank`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `oPassingPoint`)
 
-Retrieves the point at a given position.
+   Retrieves the point at a given position.
 
 **Parameters:**
 
@@ -32,7 +33,7 @@ Retrieves the point at a given position.
 
 ### Func **GetPos**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`) As long
 
-Gets the position of an element in the list.
+   Gets the position of an element in the list.
 
 **Parameters:**
 
@@ -41,7 +42,7 @@ Gets the position of an element in the list.
 
 ### Func **GetSize**( ) As long
 
-Gets the size of the list (number of points).
+   Gets the size of the list (number of points).
 
 **Parameters:**
 
@@ -49,10 +50,10 @@ Gets the size of the list (number of points).
 
 ### Sub **RemoveAll**( )
 
-Removes all elements in the list of points.  
+   Removes all elements in the list of points.  
 ### Sub **RemoveElement**( long  `iRank`)
 
-Removes a point in the list.
+   Removes a point in the list.
 
 **Parameters:**
 
@@ -60,7 +61,7 @@ Removes a point in the list.
 
 ### Sub **ReplacePointAtPosition**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iPoint`,  long  `iPos`)
 
-Replaces a point in the list at the given position.
+   Replaces a point in the list at the given position.
 
 **Parameters:**
 

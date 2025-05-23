@@ -4,6 +4,6 @@
 
 ## Methods
 
-### Sub **Run**( )
+### Sub **Run**(| )
 
-Run the adaptivity process.
+   Run the adaptivity process.

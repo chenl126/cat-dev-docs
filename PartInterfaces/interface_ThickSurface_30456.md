@@ -5,36 +5,36 @@ It thicks surface using an offset element (such as a surface or a skin) and two 
 
 ## Properties
 
-### Property **BotOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
+### Property **BotOffset**(| ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the value of the bottom offset.
+   Returns the value of the bottom offset.
 
 **Example:**     The following example returns in `botoffset` the bottom offset of the thicksurface `firstThickSurface`:
 
 ```VBScript
-Set botoffset = firstThickSurface.BotOffset
+     Set botoffset = firstThickSurface.BotOffset
 
 ```
 
 ### Property **OffsetSide**( ) As long (Read Only)
 
-Returns the offset direction (defines in regards of the normal direction) .
+   Returns the offset direction (defines in regards of the normal direction) .
 
 **Example:**     The following example returns in `offsetside` the side of the ThickSurface `firstThickSurface`:
 
 ```VBScript
-Set offsetside = firstThickSurface.OffsetSide
+     Set offsetside = firstThickSurface.OffsetSide
 
 ```
 
 ### Property **TopOffset**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the value of the top offset.
+   Returns the value of the top offset.
 
 **Example:**     The following example returns in `topoffset` the top offset of the ThickSurface `firstThickSurface`:
 
 ```VBScript
-Set topoffset = firstThickSurface.TopOffset
+     Set topoffset = firstThickSurface.TopOffset
 
 ```
 
@@ -42,9 +42,9 @@ Methods
 
 ### Sub **swap_OffsetSide**( )
 
-Swap the side of the offset.  **Example:**     The following example changes the side of the ThickSurface `firstThickSurface`:
+   Swap the side of the offset.  **Example:**     The following example changes the side of the ThickSurface `firstThickSurface`:
 
 ```VBScript
-call firstThickSurface.swap_OffsetSide()
+     call firstThickSurface.swap_OffsetSide()
 
 ```

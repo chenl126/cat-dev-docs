@@ -1,6 +1,7 @@
 # CatThreadLinkedTo (Enumeration)
 
 **_Specifies the kind of link the thread has._**
+
 **Role** : Define the thread link to.
 
 **Values:**

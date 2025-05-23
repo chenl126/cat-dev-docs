@@ -4,15 +4,15 @@
 
 ## Properties
 
-### Property **PPRDocument**( ) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md) (Read Only)
+### Property **PPRDocument**(| ) As [CATBaseDispatch](../System/interface_CATBaseDispatch_45333.md) (Read Only)
 
-Retrieves the interface which manages the PPRDocument.
+   Retrieves the interface which manages the PPRDocument.
 
 **Returns:**      The PPRDocument corresponding to the current Process document.  Methods
 
 ### Sub **AddLibrary**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileName`)
 
-Adds a new library to the current Process document.
+   Adds a new library to the current Process document.
 
 **Parameters:**
 

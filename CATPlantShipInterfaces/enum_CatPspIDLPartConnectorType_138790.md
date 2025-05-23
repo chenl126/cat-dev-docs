@@ -1,6 +1,7 @@
 # CatPspIDLPartConnectorType (Enumeration)
 
 **_Part Connector types._**
+
 **Role** : Types of part connector.
 
 **Values:**

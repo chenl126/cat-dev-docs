@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **Form**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **Form**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Retrieves tolerance zone form.  
+   Retrieves tolerance zone form.  
 ### Property **Value**( ) As double
 
-Retrieves tolerance zone value (in millimeters).
+   Retrieves tolerance zone value (in millimeters).

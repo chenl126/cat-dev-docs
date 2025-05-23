@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **ApplicationMode**( ) As short (Read Only)
+### Property **ApplicationMode**(| ) As short (Read Only)
 
-Returns the application mode of the material.
+   Returns the application mode of the material.
 
 Possible mode values are:
   * 0: Material has been applied as a copy on the geometrical object
@@ -14,7 +14,7 @@ Possible mode values are:
 
 ### Property **InheritanceMode**( ) As short
 
-Returns or sets the inheritance mode of an applied material.
+   Returns or sets the inheritance mode of an applied material.
 
 Possible inheritance mode values are:
   * 0: The material is propagated towards its children
@@ -23,4 +23,4 @@ Possible inheritance mode values are:
 
 ### Property **Material**( ) As [CATIAMaterial](../CATMatInterfaces/interface_Material_14052.md) (Read Only)
 
-Returns the material object from the current positioned material.
+   Returns the material object from the current positioned material.

@@ -1,6 +1,7 @@
 # HybridShapeAssemble (Object)
 
 **_Represents the hybrid shape assemble feature object._**
+
 **Role** : To access the data of the hybrid shape assemble feature object. This data includes:
 
   * A list of the assembled elements
@@ -12,15 +13,16 @@ Use the CATIAHybridShapeFactory to create a HybridShapeAssemble object.
 
 ## Properties
 
-### Property **Invert**( ) As boolean
+### Property **Invert**(| ) As boolean
 
-Returns or sets the invert mode.
+   Returns or sets the invert mode.
+
 **Legal values** : **True** the result is inverted. **False** the result is not inverted.
 
 **Example:**      This example sets the invert mode of the `HybShpAssemble` hybrid shape assemble feature to True.
 
 ```VBScript
-HybShpAssemble.Invert = True
+     HybShpAssemble.Invert = True
 
 ```
 
@@ -28,7 +30,7 @@ Methods
 
 ### Sub **AddElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`)
 
-Adds an element to the hybrid shape assemble feature object.
+   Adds an element to the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -37,13 +39,13 @@ Sub-element(s) supported (see
 [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object): [Face](../MecModInterfaces/interface_Face_3398.md), [TriDimFeatEdge](../MecModInterfaces/interface_TriDimFeatEdge_39030.md) and [BiDimFeatEdge](../MecModInterfaces/interface_BiDimFeatEdge_33192.md).  **Examples** :      The following example adds the `iElement` feature object to the `HybridShapeAssemble` object.
 
 ```VBScript
-HybridShapeAssemble.AddElement iElement
+     HybridShapeAssemble.AddElement iElement
 
 ```
 
 ### Sub **AddSubElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iSubElement`)
 
-Adds a sub element to the hybrid shape assemble feature object.
+   Adds a sub element to the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -51,15 +53,16 @@ Adds a sub element to the hybrid shape assemble feature object.
 
 ### Sub **AppendFederatedElement**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`)
 
-Appends an init to the list of elements to federate.
+   Appends an init to the list of elements to federate.
 
 **Parameters:**
 
 ` iElement`      Element to append.
+
 **See also:**      [Reference](../InfInterfaces/interface_Reference_17481.md) 
 ### Func **GetAngularTolerance**( ) As double
 
-Get the anglular tolerance.
+   Get the anglular tolerance.
 
 **Parameters:**
 
@@ -67,7 +70,7 @@ Get the anglular tolerance.
 
 ### Func **GetAngularToleranceMode**( ) As boolean
 
-Get the anglular tolerance mode.
+   Get the anglular tolerance mode.
 
 **Parameters:**
 
@@ -75,7 +78,7 @@ Get the anglular tolerance mode.
 
 ### Func **GetConnex**( ) As boolean
 
-Get the connex checker flag.
+   Get the connex checker flag.
 
 **Parameters:**
 
@@ -83,7 +86,7 @@ Get the connex checker flag.
 
 ### Func **GetDeviation**( ) As double
 
-Get the deviation value.
+   Get the deviation value.
 
 **Parameters:**
 
@@ -91,21 +94,21 @@ Get the deviation value.
 
 ### Func **GetElement**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Retrieves an element used by the hybrid shape assemble feature object.
+   Retrieves an element used by the hybrid shape assemble feature object.
 
 **Parameters:**
 
 ` iRank`      The rank of the element to read.  **Examples** :      The following example gets the `oElement` feature object of the `HybridShapeAssemble` object at the position `iRank`.
 
 ```VBScript
-Dim oElement As Reference
-Set oElement = HybridShapeAssemble.GetElement (iRank).
+     Dim oElement As Reference
+     Set oElement = HybridShapeAssemble.GetElement (iRank).
 
 ```
 
 ### Func **GetElementsSize**( ) As long
 
-Returns the size of the list of elements to assemble in the hybrid shape assemble feature object.
+   Returns the size of the list of elements to assemble in the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -114,23 +117,24 @@ Returns the size of the list of elements to assemble in the hybrid shape assembl
 **Example** :      This example retrieves the number of elements in the `HybShpAssemble` hybrid shape assemble.
 
 ```VBScript
-Dim oSize As  long
-oSize = HybShpAssemble.GetElementsSize
+     Dim oSize As  long
+     oSize = HybShpAssemble.GetElementsSize
 
 ```
 
 ### Func **GetFederatedElement**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Retrieves an federated inits used by the hybrid shape assemble feature object.
+   Retrieves an federated inits used by the hybrid shape assemble feature object.
 
 **Parameters:**
 
 ` iRank`      The rank of the element to read.
 ` oElement`      The federated element.
+
 **See also:**      [Reference](../InfInterfaces/interface_Reference_17481.md) 
 ### Func **GetFederatedElementsSize**( ) As long
 
-Gets the number of federated inits.
+   Gets the number of federated inits.
 
 **Parameters:**
 
@@ -138,7 +142,7 @@ Gets the number of federated inits.
 
 ### Func **GetFederationPropagation**( ) As long
 
-Gets the propagation mode of the federation.
+   Gets the propagation mode of the federation.
 
 **Parameters:**
 
@@ -146,7 +150,7 @@ Gets the propagation mode of the federation.
 
 ### Func **GetManifold**( ) As boolean
 
-Get the manifold checker flag.
+   Get the manifold checker flag.
 
 **Parameters:**
 
@@ -154,7 +158,7 @@ Get the manifold checker flag.
 
 ### Func **GetSimplify**( ) As boolean
 
-Get the simplify flag.
+   Get the simplify flag.
 
 **Parameters:**
 
@@ -162,7 +166,7 @@ Get the simplify flag.
 
 ### Func **GetSubElement**( long  `iRank`) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Retrieves a sub element used by the hybrid shape assemble feature object.
+   Retrieves a sub element used by the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -170,7 +174,7 @@ Retrieves a sub element used by the hybrid shape assemble feature object.
 
 ### Func **GetSubElementsSize**( ) As long
 
-Returns the size of the list of sub-elements to remove in the hybrid shape assemble feature object.
+   Returns the size of the list of sub-elements to remove in the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -179,14 +183,14 @@ Returns the size of the list of sub-elements to remove in the hybrid shape assem
 **Example** :      This example retrieves the number of sub elements in the `HybShpAssemble` hybrid shape assemble.
 
 ```VBScript
-Dim oSize As  long
-oSize = HybShpAssemble.GetSubElementsSize
+     Dim oSize As  long
+     oSize = HybShpAssemble.GetSubElementsSize
 
 ```
 
 ### Func **GetSuppressMode**( ) As boolean
 
-Get the SuppressMode flag.
+   Get the SuppressMode flag.
 
 **Parameters:**
 
@@ -194,7 +198,7 @@ Get the SuppressMode flag.
 
 ### Func **GetTangencyContinuity**( ) As boolean
 
-Get the tangency continuity checker flag.
+   Get the tangency continuity checker flag.
 
 **Parameters:**
 
@@ -202,20 +206,20 @@ Get the tangency continuity checker flag.
 
 ### Sub **RemoveElement**( long  `iRank`)
 
-Removes an element used by the hybrid shape assemble feature object.
+   Removes an element used by the hybrid shape assemble feature object.
 
 **Parameters:**
 
 ` iRank`      The rank of the element to remove.  **Examples** :      The following example removes the feature object from the `HybridShapeAssemble` object at the position `iRank`.
 
 ```VBScript
-HybridShapeAssemble.RemoveElement iRank.
+     HybridShapeAssemble.RemoveElement iRank.
 
 ```
 
 ### Sub **RemoveFederatedElement**( long  `iRank`)
 
-Removes an element to the list of elements to federate.
+   Removes an element to the list of elements to federate.
 
 **Parameters:**
 
@@ -223,7 +227,7 @@ Removes an element to the list of elements to federate.
 
 ### Sub **RemoveSubElement**( long  `iRank`)
 
-Removes a sub element used by the hybrid shape assemble feature object.
+   Removes a sub element used by the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -231,7 +235,7 @@ Removes a sub element used by the hybrid shape assemble feature object.
 
 ### Sub **ReplaceElement**( long  `iPos`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElement`)
 
-Replaces the element at specified position in the hybrid shape assemble feature object.
+   Replaces the element at specified position in the hybrid shape assemble feature object.
 
 **Parameters:**
 
@@ -241,13 +245,13 @@ Replaces the element at specified position in the hybrid shape assemble feature 
 **Example** :      This example replaces the element in the `HybShpAssemble` assemble feature at specified position `iPos`
 
 ```VBScript
-HybShpAssemble.ReplaceElement iPos,iElement
+     HybShpAssemble.ReplaceElement iPos,iElement
 
 ```
 
 ### Sub **SetAngularTolerance**( double  `iValue`)
 
-Set the anglular tolerance.
+   Set the anglular tolerance.
 
 **Parameters:**
 
@@ -255,7 +259,7 @@ Set the anglular tolerance.
 
 ### Sub **SetAngularToleranceMode**( boolean  `iValue`)
 
-Set the anglular tolerance mode.
+   Set the anglular tolerance mode.
 
 **Parameters:**
 
@@ -263,7 +267,7 @@ Set the anglular tolerance mode.
 
 ### Sub **SetConnex**( boolean  `iConnex`)
 
-Set the connex checker flag.
+   Set the connex checker flag.
 
 **Parameters:**
 
@@ -271,7 +275,7 @@ Set the connex checker flag.
 
 ### Sub **SetDeviation**( double  `ideviation`)
 
-Set the deviation value.
+   Set the deviation value.
 
 **Parameters:**
 
@@ -279,7 +283,7 @@ Set the deviation value.
 
 ### Sub **SetFederationPropagation**( long  `iMode`)
 
-Sets the propagation mode of federation.
+   Sets the propagation mode of federation.
 
 **Parameters:**
 
@@ -287,7 +291,7 @@ Sets the propagation mode of federation.
 
 ### Sub **SetManifold**( boolean  `iManifold`)
 
-Set the manifold checker flag.
+   Set the manifold checker flag.
 
 **Parameters:**
 
@@ -295,7 +299,7 @@ Set the manifold checker flag.
 
 ### Sub **SetSimplify**( boolean  `iSimplify`)
 
-Set the simplify flag.
+   Set the simplify flag.
 
 **Parameters:**
 
@@ -303,7 +307,7 @@ Set the simplify flag.
 
 ### Sub **SetSuppressMode**( boolean  `iSuppressMode`)
 
-Set the SuppressMode flag.
+   Set the SuppressMode flag.
 
 **Parameters:**
 
@@ -311,7 +315,7 @@ Set the SuppressMode flag.
 
 ### Sub **SetTangencyContinuity**( boolean  `iTangencyContinuity`)
 
-Set the tangency continuity checker flag.
+   Set the tangency continuity checker flag.
 
 **Parameters:**
 

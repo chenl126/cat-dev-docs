@@ -1,6 +1,7 @@
 # CatSchIDLCntrFlowReality (Enumeration)
 
 **_Schematic connector flow directions._**
+
 **Role** : Actual flow directions of a connector.
 
 **Values:**

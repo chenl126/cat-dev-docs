@@ -5,15 +5,15 @@ An object can be moved only if it is independent from other objects. For example
 
 ## Properties
 
-### Property **MovableObject**( ) As [CATIAMove](../InfInterfaces/interface_Move_3742.md) (Read Only)
+### Property **MovableObject**(| ) As [CATIAMove](../InfInterfaces/interface_Move_3742.md) (Read Only)
 
-Returns the movable object associated with the used object.
+   Returns the movable object associated with the used object.
 
 **Example:**      This example retrieves the `myMovableObject` from `Move` object associated with `MyObject`.
 
 ```VBScript
-Dim myMovableObject As Move
-Set myMovableObject = MyObject.Move.MovableObject
+     Dim myMovableObject As Move
+     Set myMovableObject = MyObject.Move.MovableObject
 
 ```
 
@@ -21,29 +21,30 @@ Methods
 
 ### Sub **Apply**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `iTransformationArray`)
 
-Applies a move transformation to a movable object.
+   Applies a move transformation to a movable object.
 
 **Parameters:**
 
 ` TransformationArray`      The linear transformation array initialized successively by the four columns of the transformation matrix. The first nine components represent the rotation matrix. The last three components represent the translation vector.
+
 **Example:**      This example applies the transformation (45 degrees-rotation around the x axis and a translation) stored in `TransformationArray` to the `Move` object associated with `myMovableObject`:
 
 ```VBScript
-Dim TransformationArray( 11 )
-'Rotation( 45 degrees around the x axis) components
-TransformationArray( 0 )  = 1.000
-TransformationArray( 1 )  = 0
-TransformationArray( 2 )  = 0
-TransformationArray( 3 )  = 0
-TransformationArray( 4 )  = 0.707
-TransformationArray( 5 )  = 0.707
-TransformationArray( 6 )  = 0
-TransformationArray( 7 )  = -0.707
-TransformationArray( 8 )  = 0.707
-'Translation Vector (10,20,30)
-TransformationArray( 9 )  = 10.000
-TransformationArray( 10 ) = 20.000
-TransformationArray( 11 ) = 30.000
-MyMovableObject.Move.Apply TransformationArray
+     Dim TransformationArray( 11 )
+     'Rotation( 45 degrees around the x axis) components
+     TransformationArray( 0 )  = 1.000
+     TransformationArray( 1 )  = 0
+     TransformationArray( 2 )  = 0
+     TransformationArray( 3 )  = 0
+     TransformationArray( 4 )  = 0.707
+     TransformationArray( 5 )  = 0.707
+     TransformationArray( 6 )  = 0
+     TransformationArray( 7 )  = -0.707
+     TransformationArray( 8 )  = 0.707
+     'Translation Vector (10,20,30)
+     TransformationArray( 9 )  = 10.000
+     TransformationArray( 10 ) = 20.000
+     TransformationArray( 11 ) = 30.000
+     MyMovableObject.Move.Apply TransformationArray
 
 ```

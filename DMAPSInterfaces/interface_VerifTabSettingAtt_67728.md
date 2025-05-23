@@ -4,22 +4,26 @@
 
 ## Properties
 
-### Property **AllResourceFilter**( ) As long
+### Property **AllResourceFilter**(| ) As long
 
-Returns or sets the value to signify Whether all the resources will appear during Process Navigation
+   Returns or sets the value to signify Whether all the resources will appear during Process Navigation
+
 **Role** : Returns or sets the value to signify Whether all the resources will appear during Process Navigation  
 ### Property **AutoReframeFilter**( ) As long
 
-Returns or sets the value to signify Whether the 'Auto Reframe' will happen during Process navigation
+   Returns or sets the value to signify Whether the 'Auto Reframe' will happen during Process navigation
+
 **Role** : Returns or sets the value to signify Whether all the items/resources will be reframed during Process Navigation  
 ### Property **ImpliedResourceFilter**( ) As long
 
-Returns or sets the value to signify Whether the Assigned resource will appear during Process Navigation
+   Returns or sets the value to signify Whether the Assigned resource will appear during Process Navigation
+
 **Role** : Returns or sets the value to signify Whether all the Assigned resource will appear during Process Navigation  Methods
 
 ### Func **GetAllResourceFilterInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the "View All Resources" parameter.
+   Retrieves environment informations for the "View All Resources" parameter.
+
 **Role** :Retrieves the state of the "View All Resources" parameter in the current environment.
 
 **Parameters:**
@@ -28,10 +32,12 @@ Retrieves environment informations for the "View All Resources" parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetAutoReframeFilterInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the "Auto Reframe" parameter.
+   Retrieves environment informations for the "Auto Reframe" parameter.
+
 **Role** :Retrieves the state of the "Auto Reframe" parameter in the current environment.
 
 **Parameters:**
@@ -40,10 +46,12 @@ Retrieves environment informations for the "Auto Reframe" parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetImpliedResourceFilterInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the "View Implied Resource" parameter.
+   Retrieves environment informations for the "View Implied Resource" parameter.
+
 **Role** :Retrieves the state of the "View Implied Resource" parameter in the current environment.
 
 **Parameters:**
@@ -52,10 +60,12 @@ Retrieves environment informations for the "View Implied Resource" parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **SetAllResourceFilterLock**( boolean  `iLocked`)
 
-Locks or unlocks the "View All Resources" parameter.
+   Locks or unlocks the "View All Resources" parameter.
+
 **Role** :Locks or unlocks the "View All Resources" parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -66,7 +76,8 @@ Locks or unlocks the "View All Resources" parameter.
 
 ### Sub **SetAutoReframeFilterLock**( boolean  `iLocked`)
 
-Locks or unlocks the "Auto Reframe" parameter.
+   Locks or unlocks the "Auto Reframe" parameter.
+
 **Role** :Locks or unlocks the "Auto Reframe" parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -77,7 +88,8 @@ Locks or unlocks the "Auto Reframe" parameter.
 
 ### Sub **SetImpliedResourceFilterLock**( boolean  `iLocked`)
 
-Locks or unlocks the Xxx parameter.
+   Locks or unlocks the Xxx parameter.
+
 **Role** :Locks or unlocks the "View Implied Resource" parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**

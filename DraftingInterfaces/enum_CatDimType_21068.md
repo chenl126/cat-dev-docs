@@ -1,6 +1,7 @@
 # CatDimType (Enumeration)
 
 **_Dimension type._**
+
 **Role** : CatDimType is used to specify dimension type.
 
 **Values:**

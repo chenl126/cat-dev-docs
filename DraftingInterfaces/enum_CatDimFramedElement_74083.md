@@ -1,6 +1,7 @@
 # CatDimFramedElement (Enumeration)
 
 **_Dimension framed element._**
+
 **Role** : Define the framed element.
 
 **Values:**

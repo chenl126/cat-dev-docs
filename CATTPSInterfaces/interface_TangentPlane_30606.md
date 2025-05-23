@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **Modifier**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **Modifier**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Retrieves Tangent Plane modifier.
+   Retrieves Tangent Plane modifier.

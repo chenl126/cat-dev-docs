@@ -4,15 +4,15 @@
 
 ## Methods
 
-### Func **Create**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`,  double  `iInputX`,  double  `iInputY`,  double  `iOutputX`,  double  `iOutputY`) As [CATIAFunctActionsGroup](../CATFunctSystemItf/interface_FunctActionsGroup_62338.md)
+### Func **Create**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`,| | double | `iInputX`,| | double | `iInputY`,| | double | `iOutputX`,| | double | `iOutputY`) As [CATIAFunctActionsGroup](../CATFunctSystemItf/interface_FunctActionsGroup_62338.md)
 
-Create a Group of Actions.  
+   Create a Group of Actions.  
 ### Sub **Delete**( [CATIAFunctActionsGroup](../CATFunctSystemItf/interface_FunctActionsGroup_62338.md)  `iActGrp`)
 
-Delete a Group of Actions.  
+   Delete a Group of Actions.  
 ### Func **Elem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFunctActionsGroup](../CATFunctSystemItf/interface_FunctActionsGroup_62338.md)
 
-Returns an actions'group using its index or its name from the actions' groups collection.
+   Returns an actions'group using its index or its name from the actions' groups collection.
 
 **Parameters:**
 
@@ -20,9 +20,9 @@ Returns an actions'group using its index or its name from the actions' groups co
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved action **Example:**      This example retrieves in `AG1` the fifth actions' group in the collection and in `AG2` the actions' group named `Transmission`.
 
 ```VBScript
-Dim AG1 As FunctActionsGroup
-Set AG1 = ActionsGroups.Elem(5)
-Dim AG2 As FunctActionsGroup
-Set AG2 = ActionsGroups.Elem("Transmission")
+     Dim AG1 As FunctActionsGroup
+     Set AG1 = ActionsGroups.Elem(5)
+     Dim AG2 As FunctActionsGroup
+     Set AG2 = ActionsGroups.Elem("Transmission")
 
 ```

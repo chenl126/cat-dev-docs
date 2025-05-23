@@ -6,9 +6,9 @@ It respectively manages the children hierarchy, the downstream control flow, the
 
 ## Methods
 
-### Sub **Add**( [CATIAActivity](../DMAPSInterfaces/interface_Activity_14822.md)  `iActivity`)
+### Sub **Add**(| [CATIAActivity](../DMAPSInterfaces/interface_Activity_14822.md) | `iActivity`)
 
-This method adds the specified activity as a precedence constraint
+   This method adds the specified activity as a precedence constraint
 
 **Parameters:**
 
@@ -16,15 +16,16 @@ This method adds the specified activity as a precedence constraint
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAActivity](../DMAPSInterfaces/interface_Activity_14822.md)
 
-This method gets the specified activity on the current activities management.
+   This method gets the specified activity on the current activities management.
 
 **Parameters:**
 
 ` iIndex`      The activity identifier
+
 **Returns:**      oActivity The activity  
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-This method removes the specified activity on the current activities management.
+   This method removes the specified activity on the current activities management.
 
 **Parameters:**
 

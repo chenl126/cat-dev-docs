@@ -5,35 +5,35 @@ The page setup is the object that stores data which defines how your documents a
 
 ## Properties
 
-### Property **ChooseBestOrientation**( ) As boolean
+### Property **ChooseBestOrientation**(| ) As boolean
 
-Activates or deactivates the choice of the best orientation.
+   Activates or deactivates the choice of the best orientation.
 
 **Example:**      This example requests the best orientation to be chosen for `MySheet`.
 
 ```VBScript
-MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
+     MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
 
 ```
 
 ### Property **FitToPrinterFormat**( ) As boolean
 
-Fits the format of the print to the printer format.
+   Fits the format of the print to the printer format.
 
 **Example:**      This example turns this calculation on.
 
 ```VBScript
-MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
+     MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
 
 ```
 
 ### Property **FitToSheetFormat**( ) As boolean
 
-Fits the format of the print to the sheet format.
+   Fits the format of the print to the sheet format.
 
 **Example:**      This example turns this calculation on.
 
 ```VBScript
-MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
+     MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
 
 ```

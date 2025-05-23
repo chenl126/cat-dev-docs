@@ -7,6 +7,6 @@ It is the base object for Split , SewSurface , CloseSurface and ThickSurface sha
 
 ## Properties
 
-### Property **Surface**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **Surface**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the surface.
+   Returns or sets the surface.

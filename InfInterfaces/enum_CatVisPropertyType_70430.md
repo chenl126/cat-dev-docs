@@ -1,6 +1,7 @@
 # CatVisPropertyType (Enumeration)
 
 **_Types of graphic properties._**
+
 **Role** : This enum is used in the [VisPropertySet](../InfInterfaces/interface_VisPropertySet_43128.md) interface.
 
 **Values:**

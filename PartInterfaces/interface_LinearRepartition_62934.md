@@ -7,13 +7,13 @@ It is used by the rectangular and circular patterns. It is made up of a number o
 
 ## Properties
 
-### Property **Spacing**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
+### Property **Spacing**(| ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the distance between two consecutive shapes along the repartition direction.
+   Returns the distance between two consecutive shapes along the repartition direction.
 
 **Example:**     The following example returns in `space1` the spacing distance of the linear repartition `firstRepartition`:
 
 ```VBScript
-Set space1 = firstRepartition.Spacing
+     Set space1 = firstRepartition.Spacing
 
 ```

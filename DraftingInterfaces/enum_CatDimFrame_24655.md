@@ -1,6 +1,7 @@
 # CatDimFrame (Enumeration)
 
 **_Dimension value frame._**
+
 **Role** : CatDimFrame is used to specify dimension value frame.
 
 **Values:**

@@ -4,22 +4,22 @@
 
 ## Properties
 
-### Property **AddedMaterialPercentage**( ) As double (Read Only)
+### Property **AddedMaterialPercentage**(| ) As double (Read Only)
 
-Returns the added material percentage.  
+   Returns the added material percentage.  
 ### Property **AddedMaterialVolume**( ) As double (Read Only)
 
-Returns the added material volume.  
+   Returns the added material volume.  
 ### Property **RemovedMaterialPercentage**( ) As double (Read Only)
 
-Returns the removed material percentage.  
+   Returns the removed material percentage.  
 ### Property **RemovedMaterialVolume**( ) As double (Read Only)
 
-Returns the removed material volume.  Methods
+   Returns the removed material volume.  Methods
 
 ### Func **Add**( [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct1`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct2`,  double  `iCompAccuracy`,  double  `iDispAccuracy`,  long  `iComputationType`) As [CATIAPartComp](../SMTInterfaces/interface_PartComp_13928.md)
 
-Computes a new comparison between products. Documents created are added to the documents in the session. Document containing the added material is called **AddedMaterial.3dmap**. Document containing the removed material is called **RemovedMaterial.3dmap**. Document containing the changed material is called **ChangedMaterial.3dmap**. If the document are meant to be kept they must be renamed, otherwise they should be deleted. Document lifecyle must be managed either with SaveAs or Close.
+   Computes a new comparison between products. Documents created are added to the documents in the session. Document containing the added material is called **AddedMaterial.3dmap**. Document containing the removed material is called **RemovedMaterial.3dmap**. Document containing the changed material is called **ChangedMaterial.3dmap**. If the document are meant to be kept they must be renamed, otherwise they should be deleted. Document lifecyle must be managed either with SaveAs or Close.
 
 **Parameters:**
 
@@ -35,11 +35,11 @@ Computes a new comparison between products. Documents created are added to the d
 **Returns:**      Created PartComp  **Example:**      The following example computes a comparison between two products:
 
 ```VBScript
-Dim newPartComp As PartComp
-Set newPartComp = PartComps.Add(product1, product2, 5.0, 5.0, 2)
-Dim documents1 As Documents
-Set documents1 = CATIA.Documents
-Dim document1 As Document
-Set document1 = documents1.Item("AddedMaterial.3dmap")
+     Dim newPartComp As PartComp
+     Set newPartComp = PartComps.Add(product1, product2, 5.0, 5.0, 2)
+     Dim documents1 As Documents
+     Set documents1 = CATIA.Documents
+     Dim document1 As Document
+     Set document1 = documents1.Item("AddedMaterial.3dmap")
 
 ```

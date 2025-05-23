@@ -1,6 +1,7 @@
 # CatSchIDLExtensionType (Enumeration)
 
 **_Schematic extension types._**
+
 **Role** : For creation and modification of schematic base objects.
 
 **Values:**

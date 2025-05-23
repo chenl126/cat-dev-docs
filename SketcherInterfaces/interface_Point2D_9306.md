@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **GetCoordinates**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oPoint`)
+### Sub **GetCoordinates**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oPoint`)
 
-Returns the coordinates of the point
+   Returns the coordinates of the point
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ Returns the coordinates of the point
 
 ### Sub **SetData**( double  `iX`,  double  `iY`)
 
-Modifies the coordinates of the point
+   Modifies the coordinates of the point
 
 **Parameters:**
 

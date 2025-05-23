@@ -4,12 +4,12 @@
 
 ## Properties
 
-### Property **FlagText**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **FlagText**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Retrieves Flag Text.  
+   Retrieves Flag Text.  
 ### Property **Text**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Retrieves or sets Text Representation.
+   Retrieves or sets Text Representation.
 
 **Parameters:**
 
@@ -18,7 +18,7 @@ Methods
 
 ### Func **URL**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Retrieves url.
+   Retrieves url.
 
 **Parameters:**
 

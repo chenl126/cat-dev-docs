@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **ActiveView**( ) As [CATIATPSView](../CATTPSInterfaces/interface_TPSView_10208.md)
+### Property **ActiveView**(| ) As [CATIATPSView](../CATTPSInterfaces/interface_TPSView_10208.md)
 
-Gets or Sets Annotation Set ActiveView.
+   Gets or Sets Annotation Set ActiveView.
 
 **Parameters:**
 
@@ -14,7 +14,7 @@ Gets or Sets Annotation Set ActiveView.
 
 ### Property **AnEmptyAnnotationsList**( ) As [CATIAAnnotations](../CATTPSInterfaces/interface_Annotations_27300.md) (Read Only)
 
-Retrieves an empty Annotations'Collection.
+   Retrieves an empty Annotations'Collection.
 
 **Parameters:**
 
@@ -22,7 +22,7 @@ Retrieves an empty Annotations'Collection.
 
 ### Property **AnnotationFactory**( ) As [CATIAAnnotationFactory](../CATTPSInterfaces/interface_AnnotationFactory_62969.md) (Read Only)
 
-Obtain the factory to create annotations.
+   Obtain the factory to create annotations.
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Obtain the factory to create annotations.
 
 ### Property **Annotations**( ) As [CATIAAnnotations](../CATTPSInterfaces/interface_Annotations_27300.md) (Read Only)
 
-Retrieves the TPS components of the set.
+   Retrieves the TPS components of the set.
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ Retrieves the TPS components of the set.
 
 ### Property **CaptureFactory**( ) As [CATIACaptureFactory](../CATTPSInterfaces/interface_CaptureFactory_42816.md) (Read Only)
 
-Obtain the factory to create Capture.
+   Obtain the factory to create Capture.
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Obtain the factory to create Capture.
 
 ### Property **Captures**( ) As [CATIACaptures](../CATTPSInterfaces/interface_Captures_14626.md) (Read Only)
 
-Retrieves all the Captures that belong to the set.
+   Retrieves all the Captures that belong to the set.
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ Retrieves all the Captures that belong to the set.
 
 ### Property **KindOfSet**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Give the kind of set (Part, Product...).
+   Give the kind of set (Part, Product...).
 
 **Parameters:**
 
@@ -62,7 +62,7 @@ Give the kind of set (Part, Product...).
 
 ### Property **Standard**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Retrieves the Parent Standard defined at set creation.
+   Retrieves the Parent Standard defined at set creation.
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ Retrieves the Parent Standard defined at set creation.
 
 ### Property **SwitchOn**( ) As boolean
 
-Gets or Sets Annotation Set Visualization.
+   Gets or Sets Annotation Set Visualization.
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Gets or Sets Annotation Set Visualization.
 
 ### Property **TPSViewFactory**( ) As [CATIATPSViewFactory](../CATTPSInterfaces/interface_TPSViewFactory_41420.md) (Read Only)
 
-Obtain the factory to create TPS Views.
+   Obtain the factory to create TPS Views.
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ Obtain the factory to create TPS Views.
 
 ### Property **TPSViews**( ) As [CATIATPSViews](../CATTPSInterfaces/interface_TPSViews_13626.md) (Read Only)
 
-Retrieves all the TPSViews that belong to the set.
+   Retrieves all the TPSViews that belong to the set.
 
 **Parameters:**
 

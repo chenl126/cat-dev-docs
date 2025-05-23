@@ -5,9 +5,9 @@ The AssemblyConvertor is the object that allows saving an assembly to a specifie
 
 ## Methods
 
-### Sub **Print**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFileType`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFile`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProduct`)
+### Sub **Print**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iFileType`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iFile`,| | [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) | `iProduct`)
 
-Extracts the product's contents as a specified format. Saves it in a txt, html or xls file (depends of the object).
+   Extracts the product's contents as a specified format. Saves it in a txt, html or xls file (depends of the object).
 
 **Parameters:**
 
@@ -17,7 +17,7 @@ Extracts the product's contents as a specified format. Saves it in a txt, html o
 
 ### Sub **SetCurrentFormat**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `ilistProps`)
 
-Defines the properties that will be used in the print method.
+   Defines the properties that will be used in the print method.
 
 **Parameters:**
 
@@ -25,9 +25,8 @@ Defines the properties that will be used in the print method.
 
 ### Sub **SetSecondaryFormat**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `ilistProps`)
 
-Defines the secondary properties that will be used in the print method.
+   Defines the secondary properties that will be used in the print method.
 
 **Parameters:**
 
 ` ilistProps`      secondary list of properties to display
-```

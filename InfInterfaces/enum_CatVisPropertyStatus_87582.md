@@ -1,6 +1,7 @@
 # CatVisPropertyStatus (Enumeration)
 
 **_Types of result of a query on graphic properties for the current selection._**
+
 **Role** : This enum is used in the [VisPropertySet](../InfInterfaces/interface_VisPropertySet_43128.md) interface.
 
 **Values:**

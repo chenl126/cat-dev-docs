@@ -1,6 +1,7 @@
 # HybridShapeSweepCircle (Object)
 
 **_Represents the hybrid shape sweep circle feature object._**
+
 **Role** : To access the data of the hybrid shape sweep circle feature object.
 
 LICENSING INFORMATION: Creation of volume result requires GSO License
@@ -10,19 +11,20 @@ if GSO License is not granted , settting of Volume context has not effect
 
 ## Properties
 
-### Property **CanonicalDetection**( ) As long
+### Property **CanonicalDetection**(| ) As long
 
-Returns or sets whether canonical surfaces of the swept surface are detected.
+   Returns or sets whether canonical surfaces of the swept surface are detected.
+
 **Legal values** :  | 0 | No detection of canonical surface is performed.
 ---|---
 2 | Detection of canonical surfaces is performed.
-### Property **ChoiceNo**( ) As long
+### Property **ChoiceNo**(| ) As long
 
-Returns or sets the choice number, which corresponds to each solution of a given circular sweep case.
+   Returns or sets the choice number, which corresponds to each solution of a given circular sweep case.
 For example: a circular sweep with two guide curves and a radius leads to four possible solutions.  
 ### Property **Context**( ) As long
 
-Returns or sets the context on Sweep feature.
+   Returns or sets the context on Sweep feature.
 
   * **0** This option creates Swept surface.
   * **1** This option creates Swept volume.
@@ -32,31 +34,31 @@ Note: Setting volume result requires GSO License.
 **Example** :      This example retrieves in `oContext` the context for the `Sweep` hybrid shape feature.
 
 ```VBScript
-Dim oContext
-Set oContext = Sweep.Context
+     Dim oContext
+     Set oContext = Sweep.Context
 
 ```
 
 ### Property **FirstAngleLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the first angle law useful in some circular sweep types.  
+   Returns or sets the first angle law useful in some circular sweep types.  
 ### Property **FirstAngleLawInversion**( ) As long
 
-Returns or sets the first angle law inversion information.  
+   Returns or sets the first angle law inversion information.  
 ### Property **FirstGuideCrv**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation first guide curve.  
+   Returns or sets the sweep operation first guide curve.  
 ### Property **GuideDeviation**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the deviation value (length) from guide curves allowed during a sweeping operation in order to smooth it.  
+   Returns the deviation value (length) from guide curves allowed during a sweeping operation in order to smooth it.  
 ### Property **GuideDeviationActivity**( ) As boolean
 
-Returns or sets information whether a deviation from guide curves is allowed or not.
+   Returns or sets information whether a deviation from guide curves is allowed or not.
 Gives the information on performing smoothing during sweeping operation.
 TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE if not specified).  
 ### Property **Mode**( ) As long
 
-Returns or sets the circular sweep mode.
+   Returns or sets the circular sweep mode.
 Legal mode values are:  | 0 | Undefined circular profile swept surface (CATGSMCircularSweep_None)
 ---|---
 2 | Circular profile swept surface defined by three guide curves (4 solutions) (CATGSMCircularSweep_ThreeGuides)
@@ -65,58 +67,59 @@ Legal mode values are:  | 0 | Undefined circular profile swept surface (CATGSMCi
 6 | Circular profile swept surface defined by a center curve and a radius (CATGSMCircularSweep_CenterAndRadius)
 7 | Circular profile swept surface defined by two guide curves with a tangency condition on the second one (with reference surface) (CATGSMCircularSweep_TwoGuidesAndTangency)
 8 | Circular profile swept surface defined by a guide curve, a radius and a tangency surface (CATGSMCircularSweep_GuideAndTangencyAndRadius)
-### Property **RadiusLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **RadiusLaw**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the radius law feature.  
+   Returns or sets the radius law feature.  
 ### Property **RadiusLawInversion**( ) As long
 
-Returns or sets the radius law inversion information.  
+   Returns or sets the radius law inversion information.  
 ### Property **RadiusLawType**( ) As long
 
-Returns or sets the radius law type.  
+   Returns or sets the radius law type.  
 ### Property **Reference**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the reference (functional curve or guide surface).  
+   Returns or sets the reference (functional curve or guide surface).  
 ### Property **SecondAngleLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the second angle law useful in some circular sweep types.  
+   Returns or sets the second angle law useful in some circular sweep types.  
 ### Property **SecondAngleLawInversion**( ) As long
 
-Returns or sets the second angle law inversion information.  
+   Returns or sets the second angle law inversion information.  
 ### Property **SecondGuideCrv**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation second guide curve.  
+   Returns or sets the sweep operation second guide curve.  
 ### Property **SmoothActivity**( ) As boolean
 
-Returns or sets information whether a sweeping operation is smoothed or not.
+   Returns or sets information whether a sweeping operation is smoothed or not.
 TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if not specified).  
 ### Property **SmoothAngleThreshold**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-Returns the angular threshold.  
+   Returns the angular threshold.  
 ### Property **Spine**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation spine (optional).  
+   Returns or sets the sweep operation spine (optional).  
 ### Property **ThirdGuideCrv**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation third guide curve.  
+   Returns or sets the sweep operation third guide curve.  
 ### Property **TrimOption**( ) As long
 
-Returns or sets the trim option status.
+   Returns or sets the trim option status.
 The trim option status legal values are:  | 0 | No trim computed or undefined (CATGSMSweepTrimMode_None)
 ---|---
 1 | Trim computed (CATGSMSweepTrimMode_On)
 Methods
-### Func **GetAngle**( long  `iI`) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)
+### Func **GetAngle**(| long | `iI`) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)
 
-Returns the angle values useful in some circular sweep types.
+   Returns the angle values useful in some circular sweep types.
 
 **Parameters:**
 
 ` iI`      The angle value index
+
 **Returns:**      The angle value  
 ### Sub **GetAngleLawTypes**( long  `oFirstType`,  long  `oSecondType`)
 
-Retrieves angle law types.
+   Retrieves angle law types.
 
 **Parameters:**
 
@@ -128,9 +131,9 @@ Retrieves angle law types.
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
 ` oSecondType`      The second type of law (from CATGSMBasicLawType enumeration).
 Same legal values as `oFirstType`
-### Sub **GetFirstAngleLaw**( [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `oElem1`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `oElem2`,  long  `olLawType`)
+### Sub **GetFirstAngleLaw**(| [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) | `oElem1`,| | [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) | `oElem2`,| | long | `olLawType`)
 
-Retrieves the first angle law useful in some circular sweep types.
+   Retrieves the first angle law useful in some circular sweep types.
 
 **Parameters:**
 
@@ -147,7 +150,7 @@ Retrieves the first angle law useful in some circular sweep types.
 
 ### Sub **GetNbAngle**( long  `oAng`)
 
-Retrieves the number of angles.
+   Retrieves the number of angles.
 
 **Parameters:**
 
@@ -155,7 +158,7 @@ Retrieves the number of angles.
 
 ### Sub **GetNbGuide**( long  `oNum`)
 
-Retrieves the number of guide curves.
+   Retrieves the number of guide curves.
 
 **Parameters:**
 
@@ -163,7 +166,7 @@ Retrieves the number of guide curves.
 
 ### Sub **GetNbRadius**( long  `oRad`)
 
-Retrieves the number of radii.
+   Retrieves the number of radii.
 
 **Parameters:**
 
@@ -171,15 +174,16 @@ Retrieves the number of radii.
 
 ### Func **GetRadius**( long  `iI`) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)
 
-Returns the radius value useful in some circular sweep types.
+   Returns the radius value useful in some circular sweep types.
 
 **Parameters:**
 
 ` iI`      The radius value index (1: start value, 2: end value)
+
 **Returns:**      The radius value  
 ### Sub **GetRelimiters**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem1`,  long  `opOrient1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem2`,  long  `opOrient2`)
 
-Retrieves the elements relimiting the spine (or the default spine).
+   Retrieves the elements relimiting the spine (or the default spine).
 
 **Parameters:**
 
@@ -191,7 +195,7 @@ Retrieves the elements relimiting the spine (or the default spine).
 
 ### Sub **GetSecondAngleLaw**( [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `oElem1`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `oElem2`,  long  `olLawType`)
 
-Retrieves the second angle law useful in some circular sweep types.
+   Retrieves the second angle law useful in some circular sweep types.
 
 **Parameters:**
 
@@ -201,7 +205,7 @@ Retrieves the second angle law useful in some circular sweep types.
 
 ### Sub **GetTangencyChoiceNo**( long  `oNo`,  long  `oShellOri`,  long  `oGuideOri`)
 
-Retrieves a sequence which identifies a solution among all possibilities of a circular profile sweep tangent to a surface. (case CATGSMCircularSweep_GuideAndTangencyAndRadius).
+   Retrieves a sequence which identifies a solution among all possibilities of a circular profile sweep tangent to a surface. (case CATGSMCircularSweep_GuideAndTangencyAndRadius).
 
 **Parameters:**
 
@@ -214,18 +218,18 @@ Retrieves a sequence which identifies a solution among all possibilities of a ci
 ---|---
 -1 | The result is on the "right" side
 0 | No orientation is specified
-### Sub **RemoveAngle**( )
+### Sub **RemoveAngle**(| )
 
-Removes an angle.  
+   Removes an angle.  
 ### Sub **RemoveGuide**( )
 
-Removes a guide curve.  
+   Removes a guide curve.  
 ### Sub **RemoveRadius**( )
 
-Removes a radius.  
+   Removes a radius.  
 ### Sub **SetAngle**( long  `iI`,  double  `iElem`)
 
-Sets the angle values useful in some circular sweep types.
+   Sets the angle values useful in some circular sweep types.
 
 **Parameters:**
 
@@ -234,11 +238,12 @@ Sets the angle values useful in some circular sweep types.
 
 ### Sub **SetAngleLawTypes**( long  `iFirstType`,  long  `iSecondType`)
 
-Sets angle law types.
+   Sets angle law types.
 
 **Parameters:**
 
 ` iFirstType`      The first type of law (from CATGSMBasicLawType enumeration).
+
 **Legal values** :  | 0 | Undefined law type (CATGSMBasicLawType_None)
 ---|---
 1 | Constant law type (CATGSMBasicLawType_Constant)
@@ -247,9 +252,9 @@ Sets angle law types.
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
 ` iSecondType`      The second type of law (from CATGSMBasicLawType enumeration).
 Same legal values as `iFirstType`
-### Sub **SetFirstAngleLaw**( double  `iElem1`,  double  `iElem2`,  long  `ilLawType`)
+### Sub **SetFirstAngleLaw**(| double | `iElem1`,| | double | `iElem2`,| | long | `ilLawType`)
 
-Sets the first angle law useful in some circular sweep types.
+   Sets the first angle law useful in some circular sweep types.
 
 **Parameters:**
 
@@ -259,7 +264,7 @@ Sets the first angle law useful in some circular sweep types.
 
 ### Sub **SetGuideDeviation**( double  `iLength`)
 
-Sets the deviation value (length) from guide curves allowed during sweeping operation in order to smooth it.
+   Sets the deviation value (length) from guide curves allowed during sweeping operation in order to smooth it.
 
 **Parameters:**
 
@@ -274,7 +279,7 @@ Sets the deviation value (length) from guide curves allowed during sweeping oper
 
 ### Sub **SetRadius**( long  `iI`,  double  `iRadius`)
 
-Sets the radius value useful in some circular sweep types.
+   Sets the radius value useful in some circular sweep types.
 
 **Parameters:**
 
@@ -283,7 +288,7 @@ Sets the radius value useful in some circular sweep types.
 
 ### Sub **SetRelimiters**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem1`,  long  `ipOrient1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem2`,  long  `ipOrient2`)
 
-Sets the elements relimiting the spine (or the default spine).
+   Sets the elements relimiting the spine (or the default spine).
 
 **Parameters:**
 
@@ -295,7 +300,7 @@ Sets the elements relimiting the spine (or the default spine).
 
 ### Sub **SetSecondAngleLaw**( double  `iElem1`,  double  `iElem2`,  long  `ilLawType`)
 
-Sets the second angle law useful in some circular sweep types.
+   Sets the second angle law useful in some circular sweep types.
 
 **Parameters:**
 
@@ -305,7 +310,7 @@ Sets the second angle law useful in some circular sweep types.
 
 ### Sub **SetSmoothAngleThreshold**( double  `iAngle`)
 
-Sets the angular threshold.
+   Sets the angular threshold.
 
 **Parameters:**
 
@@ -313,7 +318,7 @@ Sets the angular threshold.
 
 ### Sub **SetTangencyChoiceNo**( long  `iShellOri`,  long  `iGuideOri`,  long  `iNo`)
 
-Sets a sequence which identifies a solutionamong all possibilities of a circular profile sweep tangent to a surface.
+   Sets a sequence which identifies a solutionamong all possibilities of a circular profile sweep tangent to a surface.
 
 **Parameters:**
 

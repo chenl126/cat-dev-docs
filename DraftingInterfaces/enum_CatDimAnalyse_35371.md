@@ -1,6 +1,7 @@
 # CatDimAnalyse (Enumeration)
 
 **_Dimension analyse._**
+
 **Role** : CatDimAnalyse is used to specify dimension analyse.
 
 **Values:**

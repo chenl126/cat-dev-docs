@@ -1,6 +1,7 @@
 # CatSchIDLInternalFlowType (Enumeration)
 
 **_Schematic internal flow types._**
+
 **Role** : For inserting a component into a route.
 
 **Values:**

@@ -5,15 +5,15 @@ If an object A has objects B and C as precedence constraints, it means that B an
 
 ## Methods
 
-### Sub **AddOperation**( [CATIAManufacturingActivity](../ManufacturingInterfaces/interface_ManufacturingActivity_95999.md)  `iObject`,  [CatManufacturingPrecedenceType](../ManufacturingInterfaces/enum_CatManufacturingPrecedenceType_188280.md)  `iType`)
+### Sub **AddOperation**(| [CATIAManufacturingActivity](../ManufacturingInterfaces/interface_ManufacturingActivity_95999.md) | `iObject`,| | [CatManufacturingPrecedenceType](../ManufacturingInterfaces/enum_CatManufacturingPrecedenceType_188280.md) | `iType`)
 
-Adds a new precedence in the collection of precedences. The type of added object is a CATIAManufacturingActivity.  
+   Adds a new precedence in the collection of precedences. The type of added object is a CATIAManufacturingActivity.  
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAManufacturingPrecedence](../ManufacturingInterfaces/interface_ManufacturingPrecedence_111444.md)
 
-Returns a precedence object from the precedence collection.  
+   Returns a precedence object from the precedence collection.  
 ### Sub **Remove**( long  `iIndex`)
 
-Removes an object from the precedences collection. The removed precedence will be deleted, but not the referenced object attach to this precedence.  
+   Removes an object from the precedences collection. The removed precedence will be deleted, but not the referenced object attach to this precedence.  
 ### Sub **RemoveAll**( )
 
-Removes all objects from the precedences collection.
+   Removes all objects from the precedences collection.

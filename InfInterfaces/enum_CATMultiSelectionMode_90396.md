@@ -1,6 +1,7 @@
 # CATMultiSelectionMode (Enumeration)
 
 **_Types of multi-selection._**
+
 **Role** : This enum is used by the [Selection.SelectElement3](../InfInterfaces/interface_Selection_18040.htm#SelectElement3) method.
 
 **Values:**

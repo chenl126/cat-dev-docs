@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **CurrentValue**( ) As double (Read Only)
+### Property **CurrentValue**(| ) As double (Read Only)
 
-Returns the current value for a command.
+   Returns the current value for a command.
 
 **Parameters:**
 
@@ -20,9 +20,10 @@ Returns the current value for a command.
 
 ### Property **Type**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns the command type.
+   Returns the command type.
 
 **Parameters:**
 
 ` oType`      The type of the command
+
 **See also:**      [Mechanism](../KinematicsInterfaces/interface_Mechanism_17799.md)

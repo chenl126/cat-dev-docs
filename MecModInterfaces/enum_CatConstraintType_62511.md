@@ -13,11 +13,13 @@ These combinations plus usage notes are detailed in tables on a per-type basis b
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt |  Point, Line, Circle or Arc, Ellipse or Arc, parabola, Hyperbola, Polynomial curve, Spline
 _Possible configurations (2D)_
 _1rst elt type_ | _Definition_ | _Notes_
 All types |  The element support is not modifiable  | \--
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Point, Line, Plane, Cylinder, Sphere, Cone
 _Possible configurations (3D)_
@@ -27,6 +29,7 @@ All types |  The element cannot move with respect to the bloc that contains it  
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Line, Circle or Arc, Ellipse or Arc, Parabola, Hyperbola, Polynomial curve, Spline
 Valid types for 2nd elt | Same as 1rst elt
@@ -35,6 +38,7 @@ _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 Point | Point |  Distance between points is equal to constraint value  | \--
 Point | Curve |  Constraint is measured between point and its closest projection onto curve. Constraint value is equal to that distance.  | "Curve" means every possible type except point
 Curve | Curve |  Constraint is measured at points on curves that mutually project onto the other curve, and such as their distance is minimum. Constraint value is this distance.  | "Curve" means every possible type except point
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst Elt | Point, Line, Plane, Cylinder, Sphere, Cone
 Valid types for 2nd Elt | Same as 1rst elt
@@ -66,6 +70,7 @@ Sphere | Cone |  Similar to a Point/Cone distance constraint applied between sph
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **3**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | same as catCstTypeDistance
 Valid types for 2nd elt | same as catCstTypeDistance
@@ -73,6 +78,7 @@ Valid types for 3rd elt | Line
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _3rd elt type_ | _Definition_ | _Notes_
 Same as catCstTypeDistance | Same as catCstTypeDistance | Line |  The difference with the distance between 2 elements is that the third element is a projection direction. The distance is measured after projection on the third element.  | \--
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | same as catCstTypeDistance
 Valid types for 2nd elt | same as catCstTypeDistance
@@ -84,12 +90,14 @@ Same as catCstTypeDistance | Same as catCstTypeDistance | Line or plane |  The d
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Line, Circle or Arc, Ellipse or Arc
 Valid types for 2nd elt | Same as 1rst elt
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 All Types | All Types |  Constrained elements supports are identical.  |  Support mean the element considered without limitation (e.g. the underlying infinite line for a line segment).
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Point, Line, Plane, Cylinder, Sphere, Cone, Circle
 Valid types for 2nd elt | Same as 1rst elt
@@ -114,6 +122,7 @@ Cone | Circle |  The circle lies on the cone.  |  See [CatConstraintOrientation]
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Circle or Arc, Ellipse or Arc
 Valid types for 2nd elt | Same as 1rst elt
@@ -124,6 +133,7 @@ Circle | Circle |  Circle centers lie on each other.  | \--
 Point | Ellipse |  Ellipse center lies on point.  | \--
 Ellipse | Circle |  Ellipse center lies on circle center.  | \--
 Ellipse | Ellipse |  Ellipse center lies on ellipse center.  | \--
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Sphere
 Valid types for 2nd elt | Sphere
@@ -134,12 +144,14 @@ Sphere | Sphere |  Both spheres centers are the same.  | \--
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Line, Circle or Arc, Ellipse or Arc, Parabola, Hyperbola, Polynomial curve, Spline
 Valid types for 2nd elt | Same as 1rst elt
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 All types | All types |  A point exists, where both elements supports are tangent.  |  This constraint type cannot be defined between two lines.
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line, Plane, Cylinder, Sphere, Cone
 Valid types for 2nd elt | Cylinder, Sphere, Cone
@@ -158,6 +170,7 @@ Cone | Cone |  Both cones are tangent through on of their gererating lines.  |  
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 _Possible combinations(2D)_
@@ -167,12 +180,14 @@ Line |  Line length is equal to constraint value.  | \--
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 Line | Line |  Angle between lines supports is equal to constraint value.  |  The angle is measured in degrees, within the 0-360 range.
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line, Plane
 Valid types for 2nd elt | Line, Plane
@@ -185,6 +200,7 @@ Plane | Plane |  Constraint value is equal to the angular difference between the
 ---
 Constraint valid in | **3D**
 # of needed elements | **3**
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Plane
 Valid types for 2nd elt | Plane
@@ -196,6 +212,7 @@ Plane | Plane | Line |  Line lies at the intersection of both planes. Angle is m
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line
@@ -203,6 +220,7 @@ _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 Line | Line |  Both lines supports are parallel.  |  See
 [CatConstraintOrientation](../MecModInterfaces/enum_CatConstraintOrientation_124280.md) for managing the relative orientation of lines.
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line, Plane
 Valid types for 2nd elt | Line, Plan
@@ -215,6 +233,7 @@ Plane | Plane |  Planes are parallel.  |  See [CatConstraintSide](../MecModInter
 ---
 Constraint valid in | **3D**
 # of needed elements | **1**
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line, Plane, Cylinder
 _Possible combinations(3D)_
@@ -225,6 +244,7 @@ All types |  Element is parallel to one of the 3D space axes.  |  See
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 _Possible combinations(2D)_
@@ -234,12 +254,14 @@ Line |  Line is parallel to the horizontal component of the reference axis.  | \
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _Definition_ | _Notes_
 Line | Line |  Lines support are perpendicular.  | \--
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line, Plane, Cylinder
@@ -254,6 +276,7 @@ Line | Cylinder |  Lines support is perpendicular to cylinder axis.  | \--
 ---
 Constraint valid in | **3D**
 # of needed elements | **1**
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Line, Plane, Cylinder
 _Possible combinations(3D)_
@@ -264,6 +287,7 @@ All types |  Element is perpendicular to one of the 3D space axes.  |  See
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 _Possible combinations(2D)_
@@ -273,6 +297,7 @@ Line |  Line is parallel to the vertical component of the reference axis.  | \--
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Circle or Arc
 _Possible combinations(2D)_
@@ -282,6 +307,7 @@ Circle/Arc |  Circle or arc radius is equal to constraint value.  | \--
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **3**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Line, Circle or Arc, Ellipse or Arc
 Valid types for 2nd elt | Same as 1rst elt
@@ -289,6 +315,7 @@ Valid types for 3rd elt | Line
 _Possible combinations (3D)_
 _1rst elt type_ | _2nd elt type_ | _3rd elt type_ | _Definition_ | _Notes_
 All types | All types | Line |  First element is symmetric to second one with respect to line.  |  Types of first and second elements are the same.
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Point, Line, Plane, Cylinder, Sphere, Cone
 Valid types for 2nd elt | Same as 1rst elt
@@ -301,6 +328,7 @@ All types | All types | Plane |  First element is symmetric to second one with r
 ---
 Constraint valid in | **2D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point
 Valid types for 2nd elt | Line
@@ -311,6 +339,7 @@ Point | Line |  Point is equally distant from both line extremities.  | \--
 ---
 Constraint valid in | **2D**
 # of needed elements | **3**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Point, Line
 Valid types for 2nd elt | Same as 1rst elt
@@ -323,6 +352,7 @@ Line | Line | Point |  Third point is equally distant from each of its projectio
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Ellipse or Arc
 _Possible combinations(2D)_
@@ -332,6 +362,7 @@ Ellipse or Arc |  The length of ellipse major axis is equal to constraint value.
 ---
 Constraint valid in | **2D**
 # of needed elements | **1**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Ellipse or Arc
 _Possible combinations(2D)_
@@ -341,6 +372,7 @@ Ellipse or Arc |  The length of ellipse minor axis is equal to constraint value.
 ---
 Constraint valid in | **2D & 3D**
 # of needed elements | **3**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line
@@ -348,6 +380,7 @@ Valid types for 3rd elt | Line
 _Possible combinations (2D)_
 _1rst elt type_ | _2nd elt type_ | _3rd elt type_ | _Definition_ | _Notes_
 Line | Line | Line |  The chamfer is defined by two lengths and two angles.  |  The first line is between the second and the third lines. The first and second lines intersect in one of their extremities. Idem with the first and third lines.
+
 **_Constraint definition in 3D space**_
 Valid types for 1rst elt | Plane, Cone
 Valid types for 2nd elt | Plane
@@ -360,6 +393,7 @@ Cone | Plane | Cylinder |  The chamfer is defined by two lengths and two angles.
 ---
 Constraint valid in | **2D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line
@@ -370,6 +404,7 @@ Line | Line |  Chamfer is defined by one length and one angle. The mode of the c
 ---
 Constraint valid in | **2D**
 # of needed elements | **2**
+
 **_Constraint definition in 2D space**_
 Valid types for 1rst elt | Line
 Valid types for 2nd elt | Line

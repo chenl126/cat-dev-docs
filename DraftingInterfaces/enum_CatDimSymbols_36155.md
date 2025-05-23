@@ -1,6 +1,7 @@
 # CatDimSymbols (Enumeration)
 
 **_Dimension line symbols._**
+
 **Role** : CatDimSymbols is used to specify dimension line symbols.
 
 **Values:**

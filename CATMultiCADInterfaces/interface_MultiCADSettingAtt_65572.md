@@ -4,88 +4,89 @@
 
 ## Properties
 
-### Property **Annotation3DMode**( ) As boolean
+### Property **Annotation3DMode**(| ) As boolean
 
-Returns or sets the Annotation 3D mode R18sp3 on env. variable  
+   Returns or sets the Annotation 3D mode R18sp3 on env. variable  
 ### Property **ConversionTechnology**( ) As long
 
-Returns or sets the Conversion Technology  
+   Returns or sets the Conversion Technology  
 ### Property **IdeasComponentName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the IdeasComponentName  
+   Returns or sets the IdeasComponentName  
 ### Property **IdeasComponentType**( ) As long
 
-Returns or sets the IdeasComponentType  
+   Returns or sets the IdeasComponentType  
 ### Property **IdeasLibraryName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the IdeasLibraryName  
+   Returns or sets the IdeasLibraryName  
 ### Property **IdeasPartNumber**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the IdeasPartNumber  
+   Returns or sets the IdeasPartNumber  
 ### Property **IdeasProjectName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the IdeasProjectName  
+   Returns or sets the IdeasProjectName  
 ### Property **IdeasRevNumber**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the IdeasRevNumber  
+   Returns or sets the IdeasRevNumber  
 ### Property **IdeasTessParam**( ) As float
 
-Returns or sets the Ideas Tessellation Parameter  
+   Returns or sets the Ideas Tessellation Parameter  
 ### Property **Idi3dAnnotationMode**( ) As long
 
-Returns or sets the IDI 3D Annotation Mode  
+   Returns or sets the IDI 3D Annotation Mode  
 ### Property **LinkMode**( ) As long
 
-Returns or sets the Link Mode  
+   Returns or sets the Link Mode  
 ### Property **OutputPath**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the Output Path  
+   Returns or sets the Output Path  
 ### Property **PartsParameterMode**( ) As long
 
-Returns or sets the parts parameterization mode  
+   Returns or sets the parts parameterization mode  
 ### Property **ProEInstanceMode**( ) As boolean
 
-Returns or sets the ProEInstanceMode  
+   Returns or sets the ProEInstanceMode  
 ### Property **ProEInstanceName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the ProEInstanceName  
+   Returns or sets the ProEInstanceName  
 ### Property **ProEQuiltsRead**( ) As boolean
 
-Returns or sets the ProEQuiltsRead  
+   Returns or sets the ProEQuiltsRead  
 ### Property **ProESimpRepMode**( ) As boolean
 
-Returns or sets the ProESimpRepMode  
+   Returns or sets the ProESimpRepMode  
 ### Property **ProESimpRepName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the ProESimpRepName  
+   Returns or sets the ProESimpRepName  
 ### Property **SaveCoorsysInCgr**( ) As boolean
 
-Returns or sets the Save Coordinate Systems in CGR  
+   Returns or sets the Save Coordinate Systems in CGR  
 ### Property **TranslatorMode**( ) As long
 
-Returns or sets the Translator mode  
+   Returns or sets the Translator mode  
 ### Property **UGActiveLayersOnly**( ) As boolean
 
-Returns or sets the UGActiveLayersOnly  
+   Returns or sets the UGActiveLayersOnly  
 ### Property **UGDrawingName**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the UGDrawingName  
+   Returns or sets the UGDrawingName  
 ### Property **UGLayerNumbers**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the UGLayerNumbers  
+   Returns or sets the UGLayerNumbers  
 ### Property **UGOpenSurfaces**( ) As boolean
 
-Returns or sets the UGOpenSurfaces  
+   Returns or sets the UGOpenSurfaces  
 ### Property **UgReferenceSet**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the UgReferenceSet  
+   Returns or sets the UgReferenceSet  
 ### Property **VisuFormatUnit**( ) As float
 
-Returns or sets the Unit for Visu Format (number of milimeters per unit of the file)  Methods
+   Returns or sets the Unit for Visu Format (number of milimeters per unit of the file)  Methods
 
 ### Func **GetAnnotation3DModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the Annotation3DMode parameter.
+   Retrieves environment informations for the Annotation3DMode parameter.
+
 **Role** :Retrieves the state of the Annotation3DMode parameter in the current environment.
 
 **Parameters:**
@@ -94,10 +95,12 @@ Retrieves environment informations for the Annotation3DMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetConversionTechnologyInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ConversionTechnology parameter.
+   Retrieves environment informations for the ConversionTechnology parameter.
+
 **Role** :Retrieves the state of the ConversionTechnology parameter in the current environment.
 
 **Parameters:**
@@ -106,10 +109,12 @@ Retrieves environment informations for the ConversionTechnology parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasComponentNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasComponentName parameter.
+   Retrieves environment informations for the IdeasComponentName parameter.
+
 **Role** :Retrieves the state of the IdeasComponentName parameter in the current environment.
 
 **Parameters:**
@@ -118,10 +123,12 @@ Retrieves environment informations for the IdeasComponentName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasComponentTypeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasComponentType parameter.
+   Retrieves environment informations for the IdeasComponentType parameter.
+
 **Role** :Retrieves the state of the IdeasComponentType parameter in the current environment.
 
 **Parameters:**
@@ -130,10 +137,12 @@ Retrieves environment informations for the IdeasComponentType parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasLibraryNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasLibraryName parameter.
+   Retrieves environment informations for the IdeasLibraryName parameter.
+
 **Role** :Retrieves the state of the IdeasLibraryName parameter in the current environment.
 
 **Parameters:**
@@ -142,10 +151,12 @@ Retrieves environment informations for the IdeasLibraryName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasPartNumberInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasPartNumber parameter.
+   Retrieves environment informations for the IdeasPartNumber parameter.
+
 **Role** :Retrieves the state of the IdeasPartNumber parameter in the current environment.
 
 **Parameters:**
@@ -154,10 +165,12 @@ Retrieves environment informations for the IdeasPartNumber parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasProjectNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasProjectName parameter.
+   Retrieves environment informations for the IdeasProjectName parameter.
+
 **Role** :Retrieves the state of the IdeasProjectName parameter in the current environment.
 
 **Parameters:**
@@ -166,10 +179,12 @@ Retrieves environment informations for the IdeasProjectName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasRevNumberInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasRevNumber parameter.
+   Retrieves environment informations for the IdeasRevNumber parameter.
+
 **Role** :Retrieves the state of the IdeasRevNumber parameter in the current environment.
 
 **Parameters:**
@@ -178,10 +193,12 @@ Retrieves environment informations for the IdeasRevNumber parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdeasTessParamInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the IdeasTessParam parameter.
+   Retrieves environment informations for the IdeasTessParam parameter.
+
 **Role** :Retrieves the state of the IdeasTessParam parameter in the current environment.
 
 **Parameters:**
@@ -190,10 +207,12 @@ Retrieves environment informations for the IdeasTessParam parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetIdi3dAnnotationModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the Idi3dAnnotationMode parameter.
+   Retrieves environment informations for the Idi3dAnnotationMode parameter.
+
 **Role** :Retrieves the state of the Idi3dAnnotationMode parameter in the current environment.
 
 **Parameters:**
@@ -202,10 +221,12 @@ Retrieves environment informations for the Idi3dAnnotationMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetLinkModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the LinkMode parameter.
+   Retrieves environment informations for the LinkMode parameter.
+
 **Role** :Retrieves the state of the LinkMode parameter in the current environment.
 
 **Parameters:**
@@ -214,10 +235,12 @@ Retrieves environment informations for the LinkMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetOutputPathInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the OutputPath parameter.
+   Retrieves environment informations for the OutputPath parameter.
+
 **Role** :Retrieves the state of the OutputPath parameter in the current environment.
 
 **Parameters:**
@@ -226,10 +249,12 @@ Retrieves environment informations for the OutputPath parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPartsParameterModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PartsParameterMode parameter.
+   Retrieves environment informations for the PartsParameterMode parameter.
+
 **Role** :Retrieves the state of the PartsParameterMode parameter in the current environment.
 
 **Parameters:**
@@ -238,10 +263,12 @@ Retrieves environment informations for the PartsParameterMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetProEInstanceModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ProEInstanceMode parameter.
+   Retrieves environment informations for the ProEInstanceMode parameter.
+
 **Role** :Retrieves the state of the ProEInstanceMode parameter in the current environment.
 
 **Parameters:**
@@ -250,10 +277,12 @@ Retrieves environment informations for the ProEInstanceMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetProEInstanceNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ProEInstanceName parameter.
+   Retrieves environment informations for the ProEInstanceName parameter.
+
 **Role** :Retrieves the state of the ProEInstanceName parameter in the current environment.
 
 **Parameters:**
@@ -262,10 +291,12 @@ Retrieves environment informations for the ProEInstanceName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetProEQuiltsReadInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ProEQuiltsRead parameter.
+   Retrieves environment informations for the ProEQuiltsRead parameter.
+
 **Role** :Retrieves the state of the ProEQuiltsRead parameter in the current environment.
 
 **Parameters:**
@@ -274,10 +305,12 @@ Retrieves environment informations for the ProEQuiltsRead parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetProESimpRepModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ProESimpRepMode parameter.
+   Retrieves environment informations for the ProESimpRepMode parameter.
+
 **Role** :Retrieves the state of the ProESimpRepMode parameter in the current environment.
 
 **Parameters:**
@@ -286,10 +319,12 @@ Retrieves environment informations for the ProESimpRepMode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetProESimpRepNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the ProESimpRepName parameter.
+   Retrieves environment informations for the ProESimpRepName parameter.
+
 **Role** :Retrieves the state of the ProESimpRepName parameter in the current environment.
 
 **Parameters:**
@@ -298,10 +333,12 @@ Retrieves environment informations for the ProESimpRepName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetSaveCoorsysInCgrInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the SaveCoorsysInCgr parameter.
+   Retrieves environment informations for the SaveCoorsysInCgr parameter.
+
 **Role** :Retrieves the state of the SaveCoorsysInCgr parameter in the current environment.
 
 **Parameters:**
@@ -310,10 +347,12 @@ Retrieves environment informations for the SaveCoorsysInCgr parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetTranslatorModeInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the Translator mode parameter.
+   Retrieves environment informations for the Translator mode parameter.
+
 **Role** :Retrieves the state of the Translator mode parameter in the current environment.
 
 **Parameters:**
@@ -322,10 +361,12 @@ Retrieves environment informations for the Translator mode parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUGActiveLayersOnlyInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UGActiveLayersOnly parameter.
+   Retrieves environment informations for the UGActiveLayersOnly parameter.
+
 **Role** :Retrieves the state of the UGActiveLayersOnly parameter in the current environment.
 
 **Parameters:**
@@ -334,10 +375,12 @@ Retrieves environment informations for the UGActiveLayersOnly parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUGDrawingNameInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UGDrawingName parameter.
+   Retrieves environment informations for the UGDrawingName parameter.
+
 **Role** :Retrieves the state of the UGDrawingName parameter in the current environment.
 
 **Parameters:**
@@ -346,10 +389,12 @@ Retrieves environment informations for the UGDrawingName parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUGLayerNumbersInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UGLayerNumbers parameter.
+   Retrieves environment informations for the UGLayerNumbers parameter.
+
 **Role** :Retrieves the state of the UGLayerNumbers parameter in the current environment.
 
 **Parameters:**
@@ -358,10 +403,12 @@ Retrieves environment informations for the UGLayerNumbers parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUGOpenSurfacesInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UGOpenSurfaces parameter.
+   Retrieves environment informations for the UGOpenSurfaces parameter.
+
 **Role** :Retrieves the state of the UGOpenSurfaces parameter in the current environment.
 
 **Parameters:**
@@ -370,10 +417,12 @@ Retrieves environment informations for the UGOpenSurfaces parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUgReferenceSetInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UgReferenceSet parameter.
+   Retrieves environment informations for the UgReferenceSet parameter.
+
 **Role** :Retrieves the state of the UgReferenceSet parameter in the current environment.
 
 **Parameters:**
@@ -382,10 +431,12 @@ Retrieves environment informations for the UgReferenceSet parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetVisuFormatUnitInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the VisuFormatUnit parameter.
+   Retrieves environment informations for the VisuFormatUnit parameter.
+
 **Role** :Retrieves the state of the VisuFormatUnit parameter in the current environment.
 
 **Parameters:**
@@ -394,10 +445,12 @@ Retrieves environment informations for the VisuFormatUnit parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **SetAnnotation3DModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the Annotation3DMode parameter.
+   Locks or unlocks the Annotation3DMode parameter.
+
 **Role** :Locks or unlocks the Annotation3DMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -408,7 +461,8 @@ Locks or unlocks the Annotation3DMode parameter.
 
 ### Sub **SetConversionTechnologyLock**( boolean  `iLocked`)
 
-Locks or unlocks the ConversionTechnology parameter.
+   Locks or unlocks the ConversionTechnology parameter.
+
 **Role** :Locks or unlocks the ConversionTechnology parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -419,7 +473,8 @@ Locks or unlocks the ConversionTechnology parameter.
 
 ### Sub **SetIdeasComponentNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasComponentName parameter.
+   Locks or unlocks the IdeasComponentName parameter.
+
 **Role** :Locks or unlocks the IdeasComponentName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -430,7 +485,8 @@ Locks or unlocks the IdeasComponentName parameter.
 
 ### Sub **SetIdeasComponentTypeLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasComponentType parameter.
+   Locks or unlocks the IdeasComponentType parameter.
+
 **Role** :Locks or unlocks the IdeasComponentType parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -441,7 +497,8 @@ Locks or unlocks the IdeasComponentType parameter.
 
 ### Sub **SetIdeasLibraryNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasLibraryName parameter.
+   Locks or unlocks the IdeasLibraryName parameter.
+
 **Role** :Locks or unlocks the IdeasLibraryName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -452,7 +509,8 @@ Locks or unlocks the IdeasLibraryName parameter.
 
 ### Sub **SetIdeasPartNumberLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasPartNumber parameter.
+   Locks or unlocks the IdeasPartNumber parameter.
+
 **Role** :Locks or unlocks the IdeasPartNumber parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -463,7 +521,8 @@ Locks or unlocks the IdeasPartNumber parameter.
 
 ### Sub **SetIdeasProjectNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasProjectName parameter.
+   Locks or unlocks the IdeasProjectName parameter.
+
 **Role** :Locks or unlocks the IdeasProjectName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -474,7 +533,8 @@ Locks or unlocks the IdeasProjectName parameter.
 
 ### Sub **SetIdeasRevNumberLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasRevNumber parameter.
+   Locks or unlocks the IdeasRevNumber parameter.
+
 **Role** :Locks or unlocks the IdeasRevNumber parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -485,7 +545,8 @@ Locks or unlocks the IdeasRevNumber parameter.
 
 ### Sub **SetIdeasTessParamLock**( boolean  `iLocked`)
 
-Locks or unlocks the IdeasTessParam parameter.
+   Locks or unlocks the IdeasTessParam parameter.
+
 **Role** :Locks or unlocks the IdeasTessParam parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -496,7 +557,8 @@ Locks or unlocks the IdeasTessParam parameter.
 
 ### Sub **SetIdi3dAnnotationModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the Idi3dAnnotationMode parameter.
+   Locks or unlocks the Idi3dAnnotationMode parameter.
+
 **Role** :Locks or unlocks the Idi3dAnnotationMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -507,7 +569,8 @@ Locks or unlocks the Idi3dAnnotationMode parameter.
 
 ### Sub **SetLinkModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the LinkMode parameter.
+   Locks or unlocks the LinkMode parameter.
+
 **Role** :Locks or unlocks the LinkMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -518,7 +581,8 @@ Locks or unlocks the LinkMode parameter.
 
 ### Sub **SetOutputPathLock**( boolean  `iLocked`)
 
-Locks or unlocks the OutputPath parameter.
+   Locks or unlocks the OutputPath parameter.
+
 **Role** :Locks or unlocks the OutputPath parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -529,7 +593,8 @@ Locks or unlocks the OutputPath parameter.
 
 ### Sub **SetPartsParameterModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the PartsParameterMode parameter.
+   Locks or unlocks the PartsParameterMode parameter.
+
 **Role** :Locks or unlocks the PartsParameterMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -540,7 +605,8 @@ Locks or unlocks the PartsParameterMode parameter.
 
 ### Sub **SetProEInstanceModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the ProEInstanceMode parameter.
+   Locks or unlocks the ProEInstanceMode parameter.
+
 **Role** :Locks or unlocks the ProEInstanceMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -551,7 +617,8 @@ Locks or unlocks the ProEInstanceMode parameter.
 
 ### Sub **SetProEInstanceNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the ProEInstanceName parameter.
+   Locks or unlocks the ProEInstanceName parameter.
+
 **Role** :Locks or unlocks the ProEInstanceName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -562,7 +629,8 @@ Locks or unlocks the ProEInstanceName parameter.
 
 ### Sub **SetProEQuiltsReadLock**( boolean  `iLocked`)
 
-Locks or unlocks the ProEQuiltsRead parameter.
+   Locks or unlocks the ProEQuiltsRead parameter.
+
 **Role** :Locks or unlocks the ProEQuiltsRead parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -573,7 +641,8 @@ Locks or unlocks the ProEQuiltsRead parameter.
 
 ### Sub **SetProESimpRepModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the ProESimpRepMode parameter.
+   Locks or unlocks the ProESimpRepMode parameter.
+
 **Role** :Locks or unlocks the ProESimpRepMode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -584,7 +653,8 @@ Locks or unlocks the ProESimpRepMode parameter.
 
 ### Sub **SetProESimpRepNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the ProESimpRepName parameter.
+   Locks or unlocks the ProESimpRepName parameter.
+
 **Role** :Locks or unlocks the ProESimpRepName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -595,7 +665,8 @@ Locks or unlocks the ProESimpRepName parameter.
 
 ### Sub **SetSaveCoorsysInCgrLock**( boolean  `iLocked`)
 
-Locks or unlocks the SaveCoorsysInCgr parameter.
+   Locks or unlocks the SaveCoorsysInCgr parameter.
+
 **Role** :Locks or unlocks the SaveCoorsysInCgr parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -606,7 +677,8 @@ Locks or unlocks the SaveCoorsysInCgr parameter.
 
 ### Sub **SetTranslatorModeLock**( boolean  `iLocked`)
 
-Locks or unlocks the Translator mode parameter.
+   Locks or unlocks the Translator mode parameter.
+
 **Role** :Locks or unlocks the Translator mode parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -617,7 +689,8 @@ Locks or unlocks the Translator mode parameter.
 
 ### Sub **SetUGActiveLayersOnlyLock**( boolean  `iLocked`)
 
-Locks or unlocks the UGActiveLayersOnly parameter.
+   Locks or unlocks the UGActiveLayersOnly parameter.
+
 **Role** :Locks or unlocks the UGActiveLayersOnly parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -628,7 +701,8 @@ Locks or unlocks the UGActiveLayersOnly parameter.
 
 ### Sub **SetUGDrawingNameLock**( boolean  `iLocked`)
 
-Locks or unlocks the UGDrawingName parameter.
+   Locks or unlocks the UGDrawingName parameter.
+
 **Role** :Locks or unlocks the UGDrawingName parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -639,7 +713,8 @@ Locks or unlocks the UGDrawingName parameter.
 
 ### Sub **SetUGLayerNumbersLock**( boolean  `iLocked`)
 
-Locks or unlocks the UGLayerNumbers parameter.
+   Locks or unlocks the UGLayerNumbers parameter.
+
 **Role** :Locks or unlocks the UGLayerNumbers parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -650,7 +725,8 @@ Locks or unlocks the UGLayerNumbers parameter.
 
 ### Sub **SetUGOpenSurfacesLock**( boolean  `iLocked`)
 
-Locks or unlocks the UGOpenSurfaces parameter.
+   Locks or unlocks the UGOpenSurfaces parameter.
+
 **Role** :Locks or unlocks the UGOpenSurfaces parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -661,7 +737,8 @@ Locks or unlocks the UGOpenSurfaces parameter.
 
 ### Sub **SetUgReferenceSetLock**( boolean  `iLocked`)
 
-Locks or unlocks the UgReferenceSet parameter.
+   Locks or unlocks the UgReferenceSet parameter.
+
 **Role** :Locks or unlocks the UgReferenceSet parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -672,7 +749,8 @@ Locks or unlocks the UgReferenceSet parameter.
 
 ### Sub **SetVisuFormatUnitLock**( boolean  `iLocked`)
 
-Locks or unlocks the VisuFormatUnit parameter.
+   Locks or unlocks the VisuFormatUnit parameter.
+
 **Role** :Locks or unlocks the VisuFormatUnit parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**

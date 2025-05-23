@@ -5,25 +5,25 @@ The light source is the object that stores lighting data used by a viewer to dis
 
 ## Methods
 
-### Sub **GetDirection**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oDirection`)
+### Sub **GetDirection**(| [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md) | `oDirection`)
 
-Returns the lighting direction as an array of 3 variants. This value is available with an infinite light source only.
+   Returns the lighting direction as an array of 3 variants. This value is available with an infinite light source only.
 
 **Example:**      This example gets the lighting direction of the `LightSource` light source to the direction with components (5,8,-2).
 
 ```VBScript
-Dim direction(2)
-LightSource.GetDirection direction
+     Dim direction(2)
+     LightSource.GetDirection direction
 
 ```
 
 ### Sub **PutDirection**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oDirection`)
 
-Defines the lighting direction as an array of 3 variants. This value can be set with an infinite light source only.
+   Defines the lighting direction as an array of 3 variants. This value can be set with an infinite light source only.
 
 **Example:**      This example defines the lighting direction of the `LightSource` light source to the direction with components (5,8,-2).
 
 ```VBScript
-LightSource.PutDirection Array(5,8,-2)
+     LightSource.PutDirection Array(5,8,-2)
 
 ```

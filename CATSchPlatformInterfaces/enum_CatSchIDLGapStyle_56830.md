@@ -1,6 +1,7 @@
 # CatSchIDLGapStyle (Enumeration)
 
 **_Schematic route gap style._**
+
 **Role** : Indicates which gap style to display at route intersections.
 
 **Values:**

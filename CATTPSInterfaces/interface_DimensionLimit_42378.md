@@ -4,9 +4,10 @@
 
 ## Properties
 
-### Property **DimensionLimitType**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
+### Property **DimensionLimitType**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the dimension limit type.
+   Returns or sets the dimension limit type.
+
 **Legal values** : Valid dimension limit type values are:
 
   * CATTPSDLNotDefined
@@ -16,23 +17,23 @@ Returns or sets the dimension limit type.
 
 ### Property **Modifier**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the dimension single limit modifier.  
+   Returns or sets the dimension single limit modifier.  
 ### Property **Nominalvalue**( ) As double (Read Only)
 
-Returns the dimension limit nominal value.
+   Returns the dimension limit nominal value.
 This value is expressed in millimeters.  
 ### Property **SymetricValue**( ) As boolean
 
-Returns or sets whether the dimension limit is symmetric.
+   Returns or sets whether the dimension limit is symmetric.
 TRUE if it is symmetric.  
 ### Property **TabulatedLimit**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the dimension tabulated limit.
+   Returns or sets the dimension tabulated limit.
 This tabulated limit is expressed as a string.  Methods
 
 ### Sub **Limits**( double  `oBottom`,  double  `oUp`)
 
-Retrieves dimension limit values.
+   Retrieves dimension limit values.
 These values are expressed in millimeters.
 
 **Parameters:**
@@ -42,7 +43,7 @@ These values are expressed in millimeters.
 
 ### Sub **PutLimits**( double  `iBottom`,  double  `iUp`)
 
-Sets dimension limit values.
+   Sets dimension limit values.
 These values are expressed in millimeters.
 
 **Parameters:**

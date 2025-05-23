@@ -4,33 +4,34 @@
 
 ## Properties
 
-### Property **AngleLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **AngleLaw**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the angular law.  
+   Returns or sets the angular law.  
 ### Property **AngleLawInversion**( ) As long
 
-Returns or sets whether the angular law has to be inverted.
+   Returns or sets whether the angular law has to be inverted.
 Legal angular law inversion values are:  | 0 | The angular law has NOT to be inverted
 ---|---
 1 | The angular law has to be inverted
-### Property **AngleLawType**( ) As long
+### Property **AngleLawType**(| ) As long
 
-Returns or sets the angular law type.
+   Returns or sets the angular law type.
 Legal angular law type values are:  | 0 | Undefined law type (CATGSMBasicLawType_None)
 ---|---
 1 | Constant law type (CATGSMBasicLawType_Constant)
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Property **CanonicalDetection**( ) As long
+### Property **CanonicalDetection**(| ) As long
 
-Returns or sets whether canonical surfaces of the swept surface are detected.
+   Returns or sets whether canonical surfaces of the swept surface are detected.
+
 **Legal values** :  | 0 | No detection of canonical surface is performed.
 ---|---
 2 | Detection of canonical surfaces is performed.
-### Property **Context**( ) As long
+### Property **Context**(| ) As long
 
-Returns or sets the context on Sweep feature.
+   Returns or sets the context on Sweep feature.
 
   * **0** This option creates Swept surface.
   * **1** This option creates Swept volume.
@@ -40,53 +41,53 @@ Note: Setting volume result requires GSO License.
 **Example** :      This example retrieves in `oContext` the context for the `Sweep` hybrid shape feature.
 
 ```VBScript
-Dim oContext
-Set oContext = Sweep.Context
+     Dim oContext
+     Set oContext = Sweep.Context
 
 ```
 
 ### Property **DraftComputationMode**( ) As long
 
-Returns or sets the draft computation mode.  
+   Returns or sets the draft computation mode.  
 ### Property **DraftDirection**( ) As [CATIAHybridShapeDirection](../GSMInterfaces/interface_HybridShapeDirection_84226.md)
 
-Returns or sets the draft direction.
+   Returns or sets the draft direction.
 
 Example
 :      This example retrieves in `oDirection` the direction of the `LinearSweep` feature.
 
 ```VBScript
-Dim oDirection As CATIAHybridShapeDirection
-Set oDirection = LinearSweep.DraftDirection
+     Dim oDirection As CATIAHybridShapeDirection
+     Set oDirection = LinearSweep.DraftDirection
 
 ```
 
 ### Property **FirstGuideCrv**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation first guide curve.  
+   Returns or sets the sweep operation first guide curve.  
 ### Property **FirstGuideSurf**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation first guide surface.  
+   Returns or sets the sweep operation first guide surface.  
 ### Property **FirstLengthLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the first length law useful in some linear sweep types.  
+   Returns or sets the first length law useful in some linear sweep types.  
 ### Property **FirstLengthLawInversion**( ) As long
 
-Returns or sets whether the first length law has to be inverted.
+   Returns or sets whether the first length law has to be inverted.
 Legal length law inversion values are:  | 0 | The length law has NOT to be inverted
 ---|---
 1 | The length law has to be inverted
-### Property **GuideDeviation**( ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
+### Property **GuideDeviation**(| ) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) (Read Only)
 
-Returns the deviation value (length) from guide curves allowed during a sweeping operation in order to smooth it.  
+   Returns the deviation value (length) from guide curves allowed during a sweeping operation in order to smooth it.  
 ### Property **GuideDeviationActivity**( ) As boolean
 
-Returns or sets whether a deviation from guide curves is allowed.
+   Returns or sets whether a deviation from guide curves is allowed.
 This property gives the information on performing smoothing during sweeping operation.
 TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE if not specified).  
 ### Property **Mode**( ) As long
 
-Returns or sets the linear sweep mode.
+   Returns or sets the linear sweep mode.
 Legal mode values are:  | 0 | Undefined linear profile swept surface (CATGSMLinearSweep_None)
 ---|---
 1 | Linear profile swept surface defined by two guide curves (CATGSMLinearSweep_TwoGuides)
@@ -96,53 +97,53 @@ Legal mode values are:  | 0 | Undefined linear profile swept surface (CATGSMLine
 5 | Linear profile swept surface defined by a guide curve and a tangency surface (CATGSMLinearSweep_GuideAndTangencySurface)
 6 | Linear profile swept surface defined by a guide curve and a draft directio (CATGSMLinearSweep_GuideAndDraftDirection)
 7 | Linear profile swept surface defined by two tangency surfaces (CATGSMLinearSweep_TwoTangencySurfaces)
-### Property **SecondGuideCrv**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **SecondGuideCrv**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation second guide curve.  
+   Returns or sets the sweep operation second guide curve.  
 ### Property **SecondGuideSurf**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation second guide surface.  
+   Returns or sets the sweep operation second guide surface.  
 ### Property **SecondLengthLaw**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets second length law useful in some linear sweep types.  
+   Returns or sets second length law useful in some linear sweep types.  
 ### Property **SecondLengthLawInversion**( ) As long
 
-Returns or sets whether the second length law has to be inverted.
+   Returns or sets whether the second length law has to be inverted.
 Legal length law inversion values are:  | 0 | The length law has NOT to be inverted
 ---|---
 1 | The length law has to be inverted
-### Property **SecondTrimOption**( ) As long
+### Property **SecondTrimOption**(| ) As long
 
-Returns or sets the trim option for the second tangency surface.
+   Returns or sets the trim option for the second tangency surface.
 
 Legal trim option values are:  | 0 | No trim computed or trim undefined (CATGSMSweepTrimMode_None)
 ---|---
 1 | Trim computed (CATGSMSweepTrimMode_On)
-### Property **SmoothActivity**( ) As boolean
+### Property **SmoothActivity**(| ) As boolean
 
-Returns whether the sweeping operation is smoothed.
+   Returns whether the sweeping operation is smoothed.
 TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if not specified).  
 ### Property **SmoothAngleThreshold**( ) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) (Read Only)
 
-Returns the angular threshold.  
+   Returns the angular threshold.  
 ### Property **SolutionNo**( ) As long
 
-Returns or sets the choice number, which corresponds to each solution of a given linear sweep case.
+   Returns or sets the choice number, which corresponds to each solution of a given linear sweep case.
 For example: a linear sweep with reference surface leads to four possible solutions.  
 ### Property **Spine**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns or sets the sweep operation spine (optional).  
+   Returns or sets the sweep operation spine (optional).  
 ### Property **TrimOption**( ) As long
 
-Returns or sets the trim option.
+   Returns or sets the trim option.
 
 Legal trim option values are:  | 0 | No trim computed or trim undefined (CATGSMSweepTrimMode_None)
 ---|---
 1 | Trim computed (CATGSMSweepTrimMode_On)
 Methods
-### Sub **AddDraftAngleDefinitionLocation**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIALocElem`,  double  `iAng`)
+### Sub **AddDraftAngleDefinitionLocation**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `ipIALocElem`,| | double | `iAng`)
 
-Adds a draft angle location.
+   Adds a draft angle location.
 
 **Parameters:**
 
@@ -151,15 +152,16 @@ Adds a draft angle location.
 
 ### Func **GetAngle**( long  `iI`) As [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)
 
-Returns the angle values useful in some linear sweep types.
+   Returns the angle values useful in some linear sweep types.
 
 **Parameters:**
 
 ` iI`      The angle value index
+
 **Returns:**      The angle value  
 ### Sub **GetAngularLaw**( [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `opStartAng`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `opEndAng`,  long  `oLawType`)
 
-Retrieves the angular law useful in some linear sweep types.
+   Retrieves the angular law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -172,9 +174,9 @@ Legal angular law type values are:  | 0 | Undefined law type (CATGSMBasicLawType
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Sub **GetChoiceNbSurfaces**( long  `oSurfOri1`,  long  `oSurfOri2`,  long  `oSurfCouplOri1`,  long  `oSurfCouplOri2`,  long  `oNo`)
+### Sub **GetChoiceNbSurfaces**(| long | `oSurfOri1`,| | long | `oSurfOri2`,| | long | `oSurfCouplOri1`,| | long | `oSurfCouplOri2`,| | long | `oNo`)
 
-Gets a sequence which identifies a solution amongst all possibilities of a line-profile swept surface, case CATGSMLinearSweep_TwoTangencySurfaces.
+   Gets a sequence which identifies a solution amongst all possibilities of a line-profile swept surface, case CATGSMLinearSweep_TwoTangencySurfaces.
 
 **Parameters:**
 
@@ -195,7 +197,7 @@ Gets a sequence which identifies a solution amongst all possibilities of a line-
 
 ### Sub **GetChoiceNo**( long  `oVal1`,  long  `oVal2`,  long  `oVal3`)
 
-Retrieves the choice number associated with each solution of a given linear sweep case.
+   Retrieves the choice number associated with each solution of a given linear sweep case.
 Example: a linear sweep with one guide curve and a tangency surface may lead to several possible solutions.
 
 **Parameters:**
@@ -206,7 +208,7 @@ Example: a linear sweep with one guide curve and a tangency surface may lead to 
 
 ### Sub **GetDraftAngleDefinitionLocation**( long  `iLoc`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElement`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `oAngle`)
 
-Retrieves the draft angle location element.
+   Retrieves the draft angle location element.
 
 **Parameters:**
 
@@ -216,7 +218,7 @@ Retrieves the draft angle location element.
 
 ### Sub **GetDraftAngleDefinitionLocationsNb**( long  `oCount`)
 
-Retrieves the draft angle location list size.
+   Retrieves the draft angle location list size.
 
 **Parameters:**
 
@@ -224,7 +226,7 @@ Retrieves the draft angle location list size.
 
 ### Sub **GetFirstLengthDefinitionType**( long  `oFirstType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem`)
 
-Retrieves the first length definition type.
+   Retrieves the first length definition type.
 
 **Parameters:**
 
@@ -237,9 +239,9 @@ Legal length definition types are:  | 0 | Undefined length type (CATGSMLinearSwe
 4 | Only for draft surfaces, the length is computed in the draft direction from an extremum point on the guide curve (CATGSMLinearSweepLengthType_FromExtremum)
 5 | Only for draft surfaces, the length will be used in a way similar to euclidean parallel curve distance on the swept surface (CATGSMLinearSweepLengthType_AlongSurface)
 ` opIAElem`      The geometric element where the first length definition type applies
-### Sub **GetFirstLengthLaw**( [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `oLength1`,  [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `oLength2`,  long  `oLawType`)
+### Sub **GetFirstLengthLaw**(| [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) | `oLength1`,| | [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) | `oLength2`,| | long | `oLawType`)
 
-Retrieves the first length law useful in some linear sweep types.
+   Retrieves the first length law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -252,17 +254,18 @@ Legal length law type values are:  | 0 | Undefined law type (CATGSMBasicLawType_
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Func **GetLength**( long  `iI`) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)
+### Func **GetLength**(| long | `iI`) As [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)
 
-Returns the length values useful in some linear sweep types.
+   Returns the length values useful in some linear sweep types.
 
 **Parameters:**
 
 ` iI`      The length value index
+
 **Returns:**      The length value  
 ### Sub **GetLengthLawTypes**( long  `oFirstType`,  long  `oSecondType`)
 
-Gets length law types.
+   Gets length law types.
 
 **Parameters:**
 
@@ -278,7 +281,7 @@ Gets length law types.
 
 ### Sub **GetNbAngle**( long  `oAng`)
 
-Retrieves the number of angles.
+   Retrieves the number of angles.
 
 **Parameters:**
 
@@ -286,7 +289,7 @@ Retrieves the number of angles.
 
 ### Sub **GetNbGuideCrv**( long  `oNum`)
 
-Retrieves the number of guides curves.
+   Retrieves the number of guides curves.
 
 **Parameters:**
 
@@ -294,7 +297,7 @@ Retrieves the number of guides curves.
 
 ### Sub **GetNbGuideSur**( long  `oNum`)
 
-Retrieves the number of guide surfaces.
+   Retrieves the number of guide surfaces.
 
 **Parameters:**
 
@@ -302,7 +305,7 @@ Retrieves the number of guide surfaces.
 
 ### Sub **GetNbLength**( long  `oLen`)
 
-Retrieves the number of lengths.
+   Retrieves the number of lengths.
 
 **Parameters:**
 
@@ -310,7 +313,7 @@ Retrieves the number of lengths.
 
 ### Sub **GetRelimiters**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem1`,  long  `opOrient1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem2`,  long  `opOrient2`)
 
-Retrieves the elements relimiting the spine (or the default spine).
+   Retrieves the elements relimiting the spine (or the default spine).
 
 **Parameters:**
 
@@ -322,7 +325,7 @@ Retrieves the elements relimiting the spine (or the default spine).
 
 ### Sub **GetSecondLengthDefinitionType**( long  `oSecondType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `opIAElem`)
 
-Retrieves the second length definition type.
+   Retrieves the second length definition type.
 
 **Parameters:**
 
@@ -335,9 +338,9 @@ Legal length definition types are:  | 0 | Undefined length type (CATGSMLinearSwe
 4 | Only for draft surfaces, the length is computed in the draft direction from an extremum point on the guide curve (CATGSMLinearSweepLengthType_FromExtremum)
 5 | Only for draft surfaces, the length will be used in a way similar to euclidean parallel curve distance on the swept surface (CATGSMLinearSweepLengthType_AlongSurface)
 ` opIAElem`      The geometric element where the second length definition type applies
-### Sub **GetSecondLengthLaw**( [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `oLength1`,  [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md)  `oLength2`,  long  `oLawType`)
+### Sub **GetSecondLengthLaw**(| [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) | `oLength1`,| | [CATIALength](../KnowledgeInterfaces/interface_Length_8108.md) | `oLength2`,| | long | `oLawType`)
 
-Retrieves the second length law useful in some linear sweep types.
+   Retrieves the second length law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -350,9 +353,9 @@ Legal length law type values are:  | 0 | Undefined law type (CATGSMBasicLawType_
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Sub **InsertDraftAngleDefinitionLocation**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `iElem`,  [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md)  `iAngle`,  long  `iPos`)
+### Sub **InsertDraftAngleDefinitionLocation**(| [CATIAReference](../InfInterfaces/interface_Reference_17481.md) | `iElem`,| | [CATIAAngle](../KnowledgeInterfaces/interface_Angle_5497.md) | `iAngle`,| | long | `iPos`)
 
-Inserts a geometrical element and a value necessary for draft angle definition after a given position in the lists.
+   Inserts a geometrical element and a value necessary for draft angle definition after a given position in the lists.
 
 **Parameters:**
 
@@ -362,13 +365,13 @@ Inserts a geometrical element and a value necessary for draft angle definition a
 
 ### Sub **RemoveAllDraftAngleDefinitionLocations**( )
 
-Removes all geometrical elements and values necessary for draft angle definition.  
+   Removes all geometrical elements and values necessary for draft angle definition.  
 ### Sub **RemoveAngle**( )
 
-Removes an angle.  
+   Removes an angle.  
 ### Sub **RemoveDraftAngleDefinitionLocationPosition**( long  `iPos`)
 
-Removes a draft angle location.
+   Removes a draft angle location.
 
 **Parameters:**
 
@@ -376,16 +379,16 @@ Removes a draft angle location.
 
 ### Sub **RemoveGuideCrv**( )
 
-Removes a guide curve.  
+   Removes a guide curve.  
 ### Sub **RemoveGuideSur**( )
 
-Removes a guide surface.  
+   Removes a guide surface.  
 ### Sub **RemoveLength**( )
 
-Removes a length.  
+   Removes a length.  
 ### Sub **SetAngle**( long  `iI`,  double  `iElem`)
 
-Sets the angle values useful in some linear sweep types.
+   Sets the angle values useful in some linear sweep types.
 
 **Parameters:**
 
@@ -394,7 +397,7 @@ Sets the angle values useful in some linear sweep types.
 
 ### Sub **SetAngularLaw**( double  `iStartAng`,  double  `iEndAng`,  long  `iLawType`)
 
-Sets the angular law useful in some linear sweep types.
+   Sets the angular law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -407,9 +410,9 @@ Legal angular law type values are:  | 0 | Undefined law type (CATGSMBasicLawType
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Sub **SetChoiceNbSurfaces**( long  `iSurfOri1`,  long  `iSurfOri2`,  long  `iSurfCouplOri1`,  long  `iSurfCouplOri2`,  long  `iNo`)
+### Sub **SetChoiceNbSurfaces**(| long | `iSurfOri1`,| | long | `iSurfOri2`,| | long | `iSurfCouplOri1`,| | long | `iSurfCouplOri2`,| | long | `iNo`)
 
-Sets a sequence which identifies a solution amongst all possibilities of a line-profile swept surface, case CATGSMLinearSweep_TwoTangencySurfaces.
+   Sets a sequence which identifies a solution amongst all possibilities of a line-profile swept surface, case CATGSMLinearSweep_TwoTangencySurfaces.
 
 **Parameters:**
 
@@ -430,7 +433,7 @@ Sets a sequence which identifies a solution amongst all possibilities of a line-
 
 ### Sub **SetChoiceNo**( long  `iVal1`,  long  `iVal2`,  long  `iVal3`)
 
-Sets the choice number associated with each solution of a given linear sweep case.
+   Sets the choice number associated with each solution of a given linear sweep case.
 Example: a linear sweep with one guide curve and a tangency surface may lead to several possible solutions.
 
 **Parameters:**
@@ -441,7 +444,7 @@ Example: a linear sweep with one guide curve and a tangency surface may lead to 
 
 ### Sub **SetFirstLengthDefinitionType**( long  `iFirstType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem`)
 
-Sets the first length definition type.
+   Sets the first length definition type.
 
 **Parameters:**
 
@@ -454,9 +457,9 @@ Legal length definition types are:  | 0 | Undefined length type (CATGSMLinearSwe
 4 | Only for draft surfaces, the length is computed in the draft direction from an extremum point on the guide curve (CATGSMLinearSweepLengthType_FromExtremum)
 5 | Only for draft surfaces, the length will be used in a way similar to euclidean parallel curve distance on the swept surface (CATGSMLinearSweepLengthType_AlongSurface)
 ` ipIAElem`      The geometric element where the first length definition type applies
-### Sub **SetFirstLengthLaw**( double  `iLength1`,  double  `iLength2`,  long  `iLawType`)
+### Sub **SetFirstLengthLaw**(| double | `iLength1`,| | double | `iLength2`,| | long | `iLawType`)
 
-Sets the first length law useful in some linear sweep types.
+   Sets the first length law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -469,9 +472,9 @@ Legal length law type values are:  | 0 | Undefined law type (CATGSMBasicLawType_
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Sub **SetGuideDeviation**( double  `iLength`)
+### Sub **SetGuideDeviation**(| double | `iLength`)
 
-Sets the deviation value (length) from guide curves allowed during sweeping operation in order to smooth it.
+   Sets the deviation value (length) from guide curves allowed during sweeping operation in order to smooth it.
 
 **Parameters:**
 
@@ -479,7 +482,7 @@ Sets the deviation value (length) from guide curves allowed during sweeping oper
 
 ### Sub **SetLength**( long  `iI`,  double  `iElem`)
 
-Sets the linear values useful in some linear sweep types.
+   Sets the linear values useful in some linear sweep types.
 
 **Parameters:**
 
@@ -488,7 +491,7 @@ Sets the linear values useful in some linear sweep types.
 
 ### Sub **SetLengthLawTypes**( long  `iFirstType`,  long  `iSecondType`)
 
-Sets length law types.
+   Sets length law types.
 
 **Parameters:**
 
@@ -504,7 +507,7 @@ Sets length law types.
 
 ### Sub **SetRelimiters**( [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem1`,  long  `ipOrient1`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem2`,  long  `ipOrient2`)
 
-Sets the elements relimiting the spine (or the default spine).
+   Sets the elements relimiting the spine (or the default spine).
 
 **Parameters:**
 
@@ -516,7 +519,7 @@ Sets the elements relimiting the spine (or the default spine).
 
 ### Sub **SetSecondLengthDefinitionType**( long  `iSecondType`,  [CATIAReference](../InfInterfaces/interface_Reference_17481.md)  `ipIAElem`)
 
-Sets the second length definition type.
+   Sets the second length definition type.
 
 **Parameters:**
 
@@ -529,9 +532,9 @@ Legal length definition types are:  | 0 | Undefined length type (CATGSMLinearSwe
 4 | Only for draft surfaces, the length is computed in the draft direction from an extremum point on the guide curve (CATGSMLinearSweepLengthType_FromExtremum)
 5 | Only for draft surfaces, the length will be used in a way similar to euclidean parallel curve distance on the swept surface (CATGSMLinearSweepLengthType_AlongSurface)
 ` ipIAElem`      The geometric element where the second length definition type applies
-### Sub **SetSecondLengthLaw**( double  `iLength1`,  double  `iLength2`,  long  `iLawType`)
+### Sub **SetSecondLengthLaw**(| double | `iLength1`,| | double | `iLength2`,| | long | `iLawType`)
 
-Sets the second length law useful in some linear sweep types.
+   Sets the second length law useful in some linear sweep types.
 
 **Parameters:**
 
@@ -544,9 +547,9 @@ Legal length law type values are:  | 0 | Undefined law type (CATGSMBasicLawType_
 2 | Linear law type (CATGSMBasicLawType_Linear)
 3 | S law type (CATGSMBasicLawType_SType)
 4 | Law specified by a GSD law feature (CATGSMBasicLawType_Advanced)
-### Sub **SetSmoothAngleThreshold**( double  `iAngle`)
+### Sub **SetSmoothAngleThreshold**(| double | `iAngle`)
 
-Sets the angular threshold.
+   Sets the angular threshold.
 
 **Parameters:**
 

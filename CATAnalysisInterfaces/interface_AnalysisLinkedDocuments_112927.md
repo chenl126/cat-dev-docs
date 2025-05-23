@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIADocument](../InfInterfaces/interface_Document_14456.md)
+### Func **Item**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIADocument](../InfInterfaces/interface_Document_14456.md)
 
-Returns a Document by its index or its name from the linked Documents collection.
+   Returns a Document by its index or its name from the linked Documents collection.
 
 **Parameters:**
 

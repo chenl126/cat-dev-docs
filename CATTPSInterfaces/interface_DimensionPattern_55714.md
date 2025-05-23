@@ -4,6 +4,6 @@
 
 ## Properties
 
-### Property **InstanceCount**( ) As double (Read Only)
+### Property **InstanceCount**(| ) As double (Read Only)
 
-Get count of instances.
+   Get count of instances.

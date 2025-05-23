@@ -26,9 +26,9 @@ The method `GetTechnologicalObject("Inertia")` on the product to analyze, allows
 
 ## Properties
 
-### Property **Density**( ) As double
+### Property **Density**(| ) As double
 
-Returns or sets the density for the computation. The density value is set to:
+   Returns or sets the density for the computation. The density value is set to:
 
   * 0: the computation must use densities attached to each object.
   * any positive value: the computation has to use this value.
@@ -41,27 +41,27 @@ The density value is returned as:
 **Example:**      The first example gets the density of `NewInertia` inertia.
 
 ```VBScript
-   Dim ADensity As double
-   ADensity = NewInertia.Density
+        Dim ADensity As double
+        ADensity = NewInertia.Density
 
 ```
 
-The second example sets the density of `NewInertia` inertia.
+   The second example sets the density of `NewInertia` inertia.
 
 ```VBScript
-   NewInertia.Density = 10.
+        NewInertia.Density = 10.
 
 ```
 
 ### Property **Mass**( ) As double (Read Only)
 
-Returns the mass.
+   Returns the mass.
 
 **Example:**      This example retrieves the mass of `NewInertia` inertia.
 
 ```VBScript
-   Dim AMass As double
-   AMass = NewInertia.Mass
+        Dim AMass As double
+        AMass = NewInertia.Mass
 
 ```
 
@@ -69,7 +69,7 @@ Methods
 
 ### Sub **GetCOGPosition**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oCoordinates`)
 
-Retrieves the position of the center of gravity.
+   Retrieves the position of the center of gravity.
 
 **Parameters:**
 
@@ -82,14 +82,14 @@ Retrieves the position of the center of gravity.
 **Example:**      This example retrieves the position of the center of gravity of `NewInertia` inertia.
 
 ```VBScript
-   Dim Coordinates (2)
-   NewInertia.GetCOGPosition Coordinates
+        Dim Coordinates (2)
+        NewInertia.GetCOGPosition Coordinates
 
 ```
 
 ### Sub **GetInertiaMatrix**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oMatrix`)
 
-Retrieves the matrix of inertia.
+   Retrieves the matrix of inertia.
 
 **Parameters:**
 
@@ -108,14 +108,14 @@ Retrieves the matrix of inertia.
 **Example:**      This example retrieves the matrix of inertia of `NewInertia` inertia.
 
 ```VBScript
-   Dim Matrix (8)
-   NewInertia.GetInertiaMatrix Matrix
+        Dim Matrix (8)
+        NewInertia.GetInertiaMatrix Matrix
 
 ```
 
 ### Sub **GetPrincipalAxes**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oComponents`)
 
-Retrieves the the principal axes of inertia.
+   Retrieves the the principal axes of inertia.
 
 **Parameters:**
 
@@ -134,14 +134,14 @@ Retrieves the the principal axes of inertia.
 **Example:**      This example retrieves the principal axes of inertia of `NewInertia` inertia.
 
 ```VBScript
-   Dim Components (8)
-   NewInertia.GetPrincipalAxes Components
+        Dim Components (8)
+        NewInertia.GetPrincipalAxes Components
 
 ```
 
 ### Sub **GetPrincipalMoments**( [CATSafeArrayVariant](../System/typedef_CATSafeArrayVariant_73843.md)  `oValues`)
 
-Retrieves the principal moments of inertia.
+   Retrieves the principal moments of inertia.
 
 **Parameters:**
 
@@ -154,7 +154,7 @@ Retrieves the principal moments of inertia.
 **Example:**      This example retrieves principal moments of inertia of `NewInertia` inertia.
 
 ```VBScript
-   Dim Values (2)
-   NewInertia.GetPrincipalMoments Values
+        Dim Values (2)
+        NewInertia.GetPrincipalMoments Values
 
 ```

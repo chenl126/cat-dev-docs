@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **Item**( long  `iIndex`,  [CATIABase](../System/interface_AnyObject_17321.md)  `oPositionning`,  [CATIABase](../System/interface_AnyObject_17321.md)  `oPointed`)
+### Sub **Item**(| long | `iIndex`,| | [CATIABase](../System/interface_AnyObject_17321.md) | `oPositionning`,| | [CATIABase](../System/interface_AnyObject_17321.md) | `oPointed`)
 
-Returns analysis support object information using its index in the collection.
+   Returns analysis support object information using its index in the collection.
 
 **Parameters:**
 

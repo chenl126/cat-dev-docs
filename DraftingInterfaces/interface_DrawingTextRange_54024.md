@@ -6,38 +6,38 @@ A range is a contiguous area in a drawing text defined by the position of a star
 
 ## Properties
 
-### Property **Length**( ) As long (Read Only)
+### Property **Length**(| ) As long (Read Only)
 
-Returns the number of characters of the drawing text range.
+   Returns the number of characters of the drawing text range.
 
 **Example:**      This example retrieves in `NbChar` the number of characters of the `MyTextRange` drawing text range.
 
 ```VBScript
-NbChar = MyTextRange.Length
+     NbChar = MyTextRange.Length
 
 ```
 
 ### Property **Start**( ) As long (Read Only)
 
-Returns the starting character position of the drawing text range.
+   Returns the starting character position of the drawing text range.
 
 **Example:**      This example retrieves in `StartCharPos`the starting character position of the `MyTextRange` drawing text range.
 
 ```VBScript
-StartCharPos = MyTextRange.Start
+     StartCharPos = MyTextRange.Start
 
 ```
 
 ### Property **Text**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md)
 
-Returns or sets the character string making up the drawing text range.
+   Returns or sets the character string making up the drawing text range.
 
 **Example:**      This example sets in `text` the character string that makes up the `MyTextRange` drawing text range.
 
 ```VBScript
-MyTextRange.Text = text
-Set MyTextProperties = MyTextRange.TextProperties
-MyTextProperties.Update
+     MyTextRange.Text = text
+     Set MyTextProperties = MyTextRange.TextProperties
+     MyTextProperties.Update
 
 ```
 
@@ -49,8 +49,8 @@ MyTextProperties.Update
 **Example:**      This example returns in `Prop` the text properties of the `MyTextRange` drawing text range.
 
 ```VBScript
-Dim Prop As CATIADrawingTextProperties
-Set Prop = MyTextRange.TextProperties(String)
+     Dim Prop As CATIADrawingTextProperties
+     Set Prop = MyTextRange.TextProperties(String)
 
 ```
 
@@ -58,7 +58,7 @@ Methods
 
 ### Func **GetTextRange**( long  `iStart`,  long  `iEnd`) As [CATIADrawingTextRange](../DraftingInterfaces/interface_DrawingTextRange_54024.md)
 
-Returns a drawing text range within another drawing text range. The text range is retrieved using its starting and ending character positions.
+   Returns a drawing text range within another drawing text range. The text range is retrieved using its starting and ending character positions.
 
 **Parameters:**
 
@@ -66,43 +66,43 @@ Returns a drawing text range within another drawing text range. The text range i
 ` iEnd`      The position of the drawing text range ending character  **Example:**      This example retrieves in `extractedTextRange` the drawing text range that begins at the eighth character and end at the fifteenth character of the `MyTextRange` drawing text range.
 
 ```VBScript
-Dim extractedTextRange As DrawingTextRange
-start = 8
-end = 15
-extractedTextRange = MyTextRange.GetTextRange(start, end)
+     Dim extractedTextRange As DrawingTextRange
+     start = 8
+     end = 15
+     extractedTextRange = MyTextRange.GetTextRange(start, end)
 
 ```
 
 ### Sub **InsertAfter**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iString`)
 
-Inserts a character string at the end of the drawing text range.
+   Inserts a character string at the end of the drawing text range.
 
 **Parameters:**
 
 ` iString`      The character string to be added  **Example:**      This example inserts the `String` character string at the end of the `MyTextRange` drawing text range.
 
 ```VBScript
-String = "String to insert after"
-MyTextRange.InsertAfter(String)
-Set MyTextProperties = MyTextRange.TextProperties
-MyTextProperties.Update
+     String = "String to insert after"
+     MyTextRange.InsertAfter(String)
+     Set MyTextProperties = MyTextRange.TextProperties
+     MyTextProperties.Update
 
 ```
 
 **See also:**      [DrawingTextProperties.Update](../DraftingInterfaces/interface_DrawingTextProperties_95874.htm#Update) 
 ### Sub **InsertBefore**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iString`)
 
-Inserts a character string at the beginning of the drawing text range.
+   Inserts a character string at the beginning of the drawing text range.
 
 **Parameters:**
 
 ` iString`      The character string to be added  **Example:**      This example inserts the `String` character string at the beginning of the `MyTextRange` drawing text range.
 
 ```VBScript
-String = "String to insert before"
-MyTextRange.InsertBefore(String)
-Set MyTextProperties = MyTextRange.TextProperties
-MyTextProperties.Update
+     String = "String to insert before"
+     MyTextRange.InsertBefore(String)
+     Set MyTextProperties = MyTextRange.TextProperties
+     MyTextProperties.Update
 
 ```
 

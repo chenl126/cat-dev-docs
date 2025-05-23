@@ -7,15 +7,15 @@ Manipulation of solid Loft feature. Allows to access data of the Loft feature cr
 
 ## Properties
 
-### Property **HybridShape**( ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
+### Property **HybridShape**(| ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
 
-Gets the underlying HybridShapeLoft.
+   Gets the underlying HybridShapeLoft.
 
 **Example:**     The following example explains how to retrieve the underlying HybridShape Loft
 
 ```VBScript
- Dim oHybridShape as AnyObject
- Set oHybridShape=oLoft.HybridShape
- oHybridShape.SectionCoupling = 2
+      Dim oHybridShape as AnyObject
+      Set oHybridShape=oLoft.HybridShape
+      oHybridShape.SectionCoupling = 2
 
 ```

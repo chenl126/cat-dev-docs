@@ -5,37 +5,38 @@ This collection is currently managed by a CATIAMaterialDocument object.
 
 ## Methods
 
-### Func **Add**( ) As [CATIAMaterialFamily](../CATMatInterfaces/interface_MaterialFamily_41796.md)
+### Func **Add**(| ) As [CATIAMaterialFamily](../CATMatInterfaces/interface_MaterialFamily_41796.md)
 
-Adds a new material family to the MaterialFamilies collection.  **Example:**      The following adds a material family to the collection attached to a document. This document must be a [MaterialDocument](../CATMatInterfaces/interface_MaterialDocument_54972.md) object.
+   Adds a new material family to the MaterialFamilies collection.  **Example:**      The following adds a material family to the collection attached to a document. This document must be a [MaterialDocument](../CATMatInterfaces/interface_MaterialDocument_54972.md) object.
 
 ```VBScript
-FileToOpen = "e:\users\ast\materials\Catalog.CATMaterial"
-Dim MyDocument As MaterialDocument
-Set MyDocument = Documents.Open(FileToOpen)
-Dim MyMaterialFamily As MaterialFamily
-Set MyMaterialFamily = MyDocument.MaterialFamilies.Add
+     FileToOpen = "e:\users\ast\materials\Catalog.CATMaterial"
+     Dim MyDocument As MaterialDocument
+     Set MyDocument = Documents.Open(FileToOpen)
+     Dim MyMaterialFamily As MaterialFamily
+     Set MyMaterialFamily = MyDocument.MaterialFamilies.Add
 
 ```
 
 ### Func **Item**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAMaterialFamily](../CATMatInterfaces/interface_MaterialFamily_41796.md)
 
-Returns a material family from its index in the MaterialFamilies collection.
+   Returns a material family from its index in the MaterialFamilies collection.
 
 **Parameters:**
 
 ` iIndex`      The index of the material family to retrieve in the collection of material families. Compared with other collections, you cannot use the name of the material family as argument.
+
 **Returns:**      The retrieved material family  **Example:**      The following example returns in `MyMaterialFamily` the sixth material family in the collection.
 
 ```VBScript
-Dim MyMaterialFamily As MaterialFamily
-Set MyMaterialFamily = MaterialFamilies.Item(6)
+     Dim MyMaterialFamily As MaterialFamily
+     Set MyMaterialFamily = MaterialFamilies.Item(6)
 
 ```
 
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a material family from the MaterialFamilies collection.
+   Removes a material family from the MaterialFamilies collection.
 
 **Parameters:**
 
@@ -43,9 +44,9 @@ Removes a material family from the MaterialFamilies collection.
 [MaterialDocument](../CATMatInterfaces/interface_MaterialDocument_54972.md) object.
 
 ```VBScript
-FileToOpen = "e:\users\ast\materials\Catalog.CATMaterial"
-Dim MyDocument As MaterialDocument
-Set MyDocument = Documents.Open(FileToOpen)
-MyDocument.MaterialFamilies.Remove(2)
+     FileToOpen = "e:\users\ast\materials\Catalog.CATMaterial"
+     Dim MyDocument As MaterialDocument
+     Set MyDocument = Documents.Open(FileToOpen)
+     MyDocument.MaterialFamilies.Remove(2)
 
 ```

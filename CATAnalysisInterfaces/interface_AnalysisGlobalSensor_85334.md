@@ -6,9 +6,9 @@ This object is a kind of AnalysisSensor based on analysis feature global results
 
 ## Methods
 
-### Sub **GetIdentifier**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oTypeBSTR`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `oSubTypeBSTR`)
+### Sub **GetIdentifier**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `oTypeBSTR`,| | [CATBSTR](../System/typedef_CATBSTR_8129.md) | `oSubTypeBSTR`)
 
-Retreives the Physical type and sub physical type that will be computed by the sensor.
+   Retreives the Physical type and sub physical type that will be computed by the sensor.
 
 **Parameters:**
 
@@ -17,7 +17,7 @@ Retreives the Physical type and sub physical type that will be computed by the s
 
 ### Sub **SetIdentifier**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iTypeBSTR`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iSubTypeBSTR`)
 
-Sets the Physical type and sub physical type that will be computed by the sensor.
+   Sets the Physical type and sub physical type that will be computed by the sensor.
 
 **Parameters:**
 

@@ -1,6 +1,7 @@
 # CatDimMode (Enumeration)
 
 **_Dimension mode._**
+
 **Role** : CatDimMode is used to specify dimension mode.
 
 **Values:**

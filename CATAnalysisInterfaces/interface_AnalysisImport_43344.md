@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Sub **AddSupport**( [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md)  `iManager`,  [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md)  `iProductSupport`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iSupport`)
+### Sub **AddSupport**(| [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md) | `iManager`,| | [CATIAProduct](../ProductStructureInterfaces/interface_Product_11223.md) | `iProductSupport`,| | [CATIABase](../System/interface_AnyObject_17321.md) | `iSupport`)
 
-AddSupport for loads import if needed.
+   AddSupport for loads import if needed.
 )
 
 **Parameters:**
@@ -20,7 +20,7 @@ AddSupport for loads import if needed.
 
 ### Sub **ImportDisp**( [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)  `iFatherCase`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFullPath`,  [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md)  `iManager`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iAxis`)
 
-Import displacements from a CATAnalysisExport file.
+   Import displacements from a CATAnalysisExport file.
 )
 
 **Parameters:**
@@ -36,7 +36,7 @@ Import displacements from a CATAnalysisExport file.
 
 ### Sub **ImportForce**( [CATIAAnalysisCase](../CATAnalysisInterfaces/interface_AnalysisCase_30608.md)  `iFatherCase`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iFullPath`,  [CATIAAnalysisManager](../CATAnalysisInterfaces/interface_AnalysisManager_47941.md)  `iManager`,  [CATIABase](../System/interface_AnyObject_17321.md)  `iAxis`)
 
-Import loads from a CATAnalysisExport file.
+   Import loads from a CATAnalysisExport file.
 )
 
 **Parameters:**

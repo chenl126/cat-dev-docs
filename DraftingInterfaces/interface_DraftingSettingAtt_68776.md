@@ -4,46 +4,47 @@
 
 ## Properties
 
-### Property **CreateNewSheetFrom**( ) As [CatDrwNewSheetFrom](../DraftingInterfaces/enum_CatDrwNewSheetFrom_67056.md)
+### Property **CreateNewSheetFrom**(| ) As [CatDrwNewSheetFrom](../DraftingInterfaces/enum_CatDrwNewSheetFrom_67056.md)
 
-Returns the CreateNewSheetFrom parameter.  
+   Returns the CreateNewSheetFrom parameter.  
 ### Property **DisplayResetButton**( ) As boolean
 
-Returns the DisplayResetButton parameter.  
+   Returns the DisplayResetButton parameter.  
 ### Property **LockUserDefault**( ) As boolean
 
-Returns the LockUserDefault parameter.  
+   Returns the LockUserDefault parameter.  
 ### Property **PreventBackgroundAccess**( ) As boolean
 
-Returns the PreventBackgroundAccess parameter.  
+   Returns the PreventBackgroundAccess parameter.  
 ### Property **PreventDimDriving3DCstr**( ) As boolean
 
-Returns the PreventDimDriving3DCstr parameter.  
+   Returns the PreventDimDriving3DCstr parameter.  
 ### Property **PreventFileNew**( ) As boolean
 
-Returns the PreventFileNew parameter.  
+   Returns the PreventFileNew parameter.  
 ### Property **PreventGenViewStyle**( ) As boolean
 
-Returns the PreventGenViewStyle parameter.  
+   Returns the PreventGenViewStyle parameter.  
 ### Property **PreventSetAsDefault**( ) As boolean
 
-Returns the PreventSetAsDefault parameter.  
+   Returns the PreventSetAsDefault parameter.  
 ### Property **PreventSwitchStandard**( ) As boolean
 
-Returns the PreventSwitchStandard parameter.  
+   Returns the PreventSwitchStandard parameter.  
 ### Property **PreventTrueDimensionCreation**( ) As boolean
 
-Returns the PreventTrueDimensionCreation parameter.  
+   Returns the PreventTrueDimensionCreation parameter.  
 ### Property **PreventUpdateStandard**( ) As boolean
 
-Returns the PreventUpdateStandard parameter.  
+   Returns the PreventUpdateStandard parameter.  
 ### Property **UseStyleCreateObjects**( ) As boolean
 
-Returns the UseStyleCreateObjects parameter.  Methods
+   Returns the UseStyleCreateObjects parameter.  Methods
 
 ### Func **GetCreateNewSheetFromInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the CreateNewSheetFrom parameter.
+   Retrieves environment informations for the CreateNewSheetFrom parameter.
+
 **Role** :Retrieves the state of the CreateNewSheetFrom parameter in the current environment.
 
 **Parameters:**
@@ -52,10 +53,12 @@ Retrieves environment informations for the CreateNewSheetFrom parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetDisplayResetButtonInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the DisplayResetButton parameter.
+   Retrieves environment informations for the DisplayResetButton parameter.
+
 **Role** :Retrieves the state of the DisplayResetButton parameter in the current environment.
 
 **Parameters:**
@@ -64,10 +67,12 @@ Retrieves environment informations for the DisplayResetButton parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetLockUserDefaultInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the LockUserDefault parameter.
+   Retrieves environment informations for the LockUserDefault parameter.
+
 **Role** :Retrieves the state of the LockUserDefault parameter in the current environment.
 
 **Parameters:**
@@ -76,10 +81,12 @@ Retrieves environment informations for the LockUserDefault parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventBackgroundAccessInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventBackgroundAccess parameter.
+   Retrieves environment informations for the PreventBackgroundAccess parameter.
+
 **Role** :Retrieves the state of the PreventBackgroundAccess parameter in the current environment.
 
 **Parameters:**
@@ -88,10 +95,12 @@ Retrieves environment informations for the PreventBackgroundAccess parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventDimDriving3DCstrInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventDimDriving3DCstr parameter.
+   Retrieves environment informations for the PreventDimDriving3DCstr parameter.
+
 **Role** :Retrieves the state of the PreventDimDriving3DCstr parameter in the current environment.
 
 **Parameters:**
@@ -100,10 +109,12 @@ Retrieves environment informations for the PreventDimDriving3DCstr parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **GetPreventFileNewInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`,  boolean  `oModified`)
 
-Retrieves environment informations for the PreventFileNew parameter.
+   Retrieves environment informations for the PreventFileNew parameter.
+
 **Role** :Retrieves the state of the PreventFileNew parameter in the current environment.
 
 **Parameters:**
@@ -112,10 +123,12 @@ Retrieves environment informations for the PreventFileNew parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventGenViewStyleInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventGenViewStyle parameter.
+   Retrieves environment informations for the PreventGenViewStyle parameter.
+
 **Role** :Retrieves the state of the PreventGenViewStyle parameter in the current environment.
 
 **Parameters:**
@@ -124,10 +137,12 @@ Retrieves environment informations for the PreventGenViewStyle parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventSetAsDefaultInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventSetAsDefault parameter.
+   Retrieves environment informations for the PreventSetAsDefault parameter.
+
 **Role** :Retrieves the state of the PreventSetAsDefault parameter in the current environment.
 
 **Parameters:**
@@ -136,10 +151,12 @@ Retrieves environment informations for the PreventSetAsDefault parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventSwitchStandardInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventSwitchStandard parameter.
+   Retrieves environment informations for the PreventSwitchStandard parameter.
+
 **Role** :Retrieves the state of the PreventSwitchStandard parameter in the current environment.
 
 **Parameters:**
@@ -148,10 +165,12 @@ Retrieves environment informations for the PreventSwitchStandard parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventTrueDimensionCreationInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventTrueDimensionCreation parameter.
+   Retrieves environment informations for the PreventTrueDimensionCreation parameter.
+
 **Role** :Retrieves the state of the PreventTrueDimensionCreation parameter in the current environment.
 
 **Parameters:**
@@ -160,10 +179,12 @@ Retrieves environment informations for the PreventTrueDimensionCreation paramete
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetPreventUpdateStandardInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the PreventUpdateStandard parameter.
+   Retrieves environment informations for the PreventUpdateStandard parameter.
+
 **Role** :Retrieves the state of the PreventUpdateStandard parameter in the current environment.
 
 **Parameters:**
@@ -172,10 +193,12 @@ Retrieves environment informations for the PreventUpdateStandard parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Func **GetUseStyleCreateObjectsInfo**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioAdminLevel`,  [CATBSTR](../System/typedef_CATBSTR_8129.md)  `ioLocked`) As boolean
 
-Retrieves environment informations for the UseStyleCreateObjects parameter.
+   Retrieves environment informations for the UseStyleCreateObjects parameter.
+
 **Role** :Retrieves the state of the UseStyleCreateObjects parameter in the current environment.
 
 **Parameters:**
@@ -184,10 +207,12 @@ Retrieves environment informations for the UseStyleCreateObjects parameter.
 If the parameter is locked, AdminLevel gives the administration level that imposes the value of the parameter.
 If the parameter is not locked, AdminLevel gives the administration level that will give the value of the parameter after a reset.
 ` ioLocked`      Indicates if the parameter has been locked.
+
 **Returns:**      Indicates if the parameter has been explicitly modified or remain to the administrated value.  
 ### Sub **SetCreateNewSheetFromLock**( boolean  `iLocked`)
 
-Locks or unlocks the CreateNewSheetFrom parameter.
+   Locks or unlocks the CreateNewSheetFrom parameter.
+
 **Role** :Locks or unlocks the CreateNewSheetFrom parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -198,7 +223,8 @@ Locks or unlocks the CreateNewSheetFrom parameter.
 
 ### Sub **SetDisplayResetButtonLock**( boolean  `iLocked`)
 
-Locks or unlocks the DisplayResetButton parameter.
+   Locks or unlocks the DisplayResetButton parameter.
+
 **Role** :Locks or unlocks the DisplayResetButton parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -209,7 +235,8 @@ Locks or unlocks the DisplayResetButton parameter.
 
 ### Sub **SetLockUserDefaultLock**( boolean  `iLocked`)
 
-Locks or unlocks the LockUserDefault parameter.
+   Locks or unlocks the LockUserDefault parameter.
+
 **Role** :Locks or unlocks the LockUserDefault parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -220,7 +247,8 @@ Locks or unlocks the LockUserDefault parameter.
 
 ### Sub **SetPreventBackgroundAccessLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventBackgroundAccess parameter.
+   Locks or unlocks the PreventBackgroundAccess parameter.
+
 **Role** :Locks or unlocks the PreventBackgroundAccess parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -231,7 +259,8 @@ Locks or unlocks the PreventBackgroundAccess parameter.
 
 ### Sub **SetPreventDimDriving3DCstrLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventDimDriving3DCstr parameter.
+   Locks or unlocks the PreventDimDriving3DCstr parameter.
+
 **Role** :Locks or unlocks the PreventDimDriving3DCstr parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -242,7 +271,8 @@ Locks or unlocks the PreventDimDriving3DCstr parameter.
 
 ### Sub **SetPreventFileNewLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventFileNew parameter.
+   Locks or unlocks the PreventFileNew parameter.
+
 **Role** :Locks or unlocks the PreventFileNew parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -253,7 +283,8 @@ Locks or unlocks the PreventFileNew parameter.
 
 ### Sub **SetPreventGenViewStyleLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventGenViewStyle parameter.
+   Locks or unlocks the PreventGenViewStyle parameter.
+
 **Role** :Locks or unlocks the PreventGenViewStyle parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -264,7 +295,8 @@ Locks or unlocks the PreventGenViewStyle parameter.
 
 ### Sub **SetPreventSetAsDefaultLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventSetAsDefault parameter.
+   Locks or unlocks the PreventSetAsDefault parameter.
+
 **Role** :Locks or unlocks the PreventSetAsDefault parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -275,7 +307,8 @@ Locks or unlocks the PreventSetAsDefault parameter.
 
 ### Sub **SetPreventSwitchStandardLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventSwitchStandard parameter.
+   Locks or unlocks the PreventSwitchStandard parameter.
+
 **Role** :Locks or unlocks the PreventSwitchStandard parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -286,7 +319,8 @@ Locks or unlocks the PreventSwitchStandard parameter.
 
 ### Sub **SetPreventTrueDimensionCreationLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventTrueDimensionCreation parameter.
+   Locks or unlocks the PreventTrueDimensionCreation parameter.
+
 **Role** :Locks or unlocks the PreventTrueDimensionCreation parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -297,7 +331,8 @@ Locks or unlocks the PreventTrueDimensionCreation parameter.
 
 ### Sub **SetPreventUpdateStandardLock**( boolean  `iLocked`)
 
-Locks or unlocks the PreventUpdateStandard parameter.
+   Locks or unlocks the PreventUpdateStandard parameter.
+
 **Role** :Locks or unlocks the PreventUpdateStandard parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**
@@ -308,7 +343,8 @@ Locks or unlocks the PreventUpdateStandard parameter.
 
 ### Sub **SetUseStyleCreateObjectsLock**( boolean  `iLocked`)
 
-Locks or unlocks the UseStyleCreateObjects parameter.
+   Locks or unlocks the UseStyleCreateObjects parameter.
+
 **Role** :Locks or unlocks the UseStyleCreateObjects parameter if it is possible in the current administrative context. In user mode this method will always return E_FAIL.
 
 **Parameters:**

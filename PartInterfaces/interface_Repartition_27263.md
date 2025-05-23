@@ -7,13 +7,13 @@ A repartition is a set of objects used by the pattern shapes. It is the base obj
 
 ## Properties
 
-### Property **InstancesCount**( ) As [CATIAIntParam](../KnowledgeInterfaces/interface_IntParam_13730.md) (Read Only)
+### Property **InstancesCount**(| ) As [CATIAIntParam](../KnowledgeInterfaces/interface_IntParam_13730.md) (Read Only)
 
-Returns the total number of copied shapes.
+   Returns the total number of copied shapes.
 
 **Example:**     The following example returns in `Nb` the number of shapes of the repartition `firstRepartition`:
 
 ```VBScript
-Set Nb = firstRepartition.InstancesCount
+     Set Nb = firstRepartition.InstancesCount
 
 ```

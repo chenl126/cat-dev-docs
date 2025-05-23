@@ -5,6 +5,6 @@ This interface is exposed only by radius linear TPS.
 
 ## Properties
 
-### Property **Modifier**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
+### Property **Modifier**(| ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Retrieves Controled Radius modifier.
+   Retrieves Controled Radius modifier.

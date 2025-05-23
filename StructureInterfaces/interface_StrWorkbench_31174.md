@@ -4,14 +4,14 @@
 
 ## Properties
 
-### Property **StrComputeServices**( ) As [CATIAStrComputeServices](../StructureInterfaces/interface_StrComputeServices_70102.md) (Read Only)
+### Property **StrComputeServices**(| ) As [CATIAStrComputeServices](../StructureInterfaces/interface_StrComputeServices_70102.md) (Read Only)
 
-Returns the compute services object. It allows you to calculate some properties on the structure objects.
+   Returns the compute services object. It allows you to calculate some properties on the structure objects.
 
 **Example:**
 
 ```VBScript
-Dim services As StrComputeServices
-Set services = workbench_1.StrComputeServices
+     Dim services As StrComputeServices
+     Set services = workbench_1.StrComputeServices
 
 ```

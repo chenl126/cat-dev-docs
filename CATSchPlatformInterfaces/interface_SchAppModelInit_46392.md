@@ -4,19 +4,20 @@
 
 ## Methods
 
-### Sub **AppInit**( [CATIADocument](../InfInterfaces/interface_Document_14456.md)  `iDoc`)
+### Sub **AppInit**(| [CATIADocument](../InfInterfaces/interface_Document_14456.md) | `iDoc`)
 
-Initialize application model.
+   Initialize application model.
 
 **Parameters:**
 
 ` iDoc`      Pointer to the document concerned.
+
 **Example:**
 
 ```VBScript
-Dim objThisIntf As SchAppModelInit
-Dim objArg1 As Document
- ...
-objThisIntf.AppInitobjArg1
+     Dim objThisIntf As SchAppModelInit
+     Dim objArg1 As Document
+      ...
+     objThisIntf.AppInitobjArg1
 
 ```

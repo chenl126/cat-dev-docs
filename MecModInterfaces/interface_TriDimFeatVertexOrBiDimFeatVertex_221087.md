@@ -1,4 +1,5 @@
 # TriDimFeatVertexOrBiDimFeatVertex (Object)
 
 **_0-D boundary belonging to a feature whose topological result is three dimensional or two dimentional._**
+
 **Role** : This [Boundary](../MecModInterfaces/interface_Boundary_14542.md) object may be, for example, the corner of a Pad resulting from the extrusion of a square. You will create a TriDimFeatVertexOrBiDimFeatVertex object using the [Shapes.GetBoundary](../MecModInterfaces/interface_Shapes_8122.htm#GetBoundary) , [HybridShapes.GetBoundary](../MecModInterfaces/interface_HybridShapes_30836.htm#GetBoundary) , [Sketches.GetBoundary](../MecModInterfaces/interface_Sketches_14228.htm#GetBoundary) or [Selection.SelectElement2](../InfInterfaces/interface_Selection_18040.htm#SelectElement2) method. Then, you pass it to the operator. The lifetime of a TriDimFeatVertexOrBiDimFeatVertex object is limited, see [Boundary](../MecModInterfaces/interface_Boundary_14542.md).

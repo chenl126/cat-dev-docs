@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **Create2DLayout**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iStandardName`) As [CATIALayout2DLayout](../Drafting2DLInterfaces/interface_Layout2DRoot_29538.md)
+### Func **Create2DLayout**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iStandardName`) As [CATIALayout2DLayout](../Drafting2DLInterfaces/interface_Layout2DRoot_29538.md)
 
-Create the `2DLayout` associated to the 3D mechanical feature tha implement this interface. E.g. a Mechanical Part.
+   Create the `2DLayout` associated to the 3D mechanical feature tha implement this interface. E.g. a Mechanical Part.
 
 **Parameters:**
 
@@ -15,12 +15,12 @@ Create the `2DLayout` associated to the 3D mechanical feature tha implement this
 [AnyObject.GetItem](../System/interface_AnyObject_17321.htm#GetItem) method using `CATLayoutRoot` key parameter to check for `2DLayout` pre-existing feature as follow :
 
 ```VBScript
-Dim MyRoot As Layout2DRoot
-Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayoutRoot")
-if MyRoot Is Nothing then
-  Dim MyRootFact As Layout2DFactory
-  Set MyRootFact = CATIA.ActiveDocument.Part.GetItem("CATLayoutRootFactory")
-  Set MyRoot = MyRootFact.Create2DLayout("ISO_3D")
-end if
+     Dim MyRoot As Layout2DRoot
+     Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayoutRoot")
+     if MyRoot Is Nothing then
+       Dim MyRootFact As Layout2DFactory
+       Set MyRootFact = CATIA.ActiveDocument.Part.GetItem("CATLayoutRootFactory")
+       Set MyRoot = MyRootFact.Create2DLayout("ISO_3D")
+     end if
 
 ```

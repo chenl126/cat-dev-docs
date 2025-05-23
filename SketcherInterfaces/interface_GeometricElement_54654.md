@@ -4,9 +4,9 @@
 
 ## Properties
 
-### Property **GeometricType**( ) As [CatGeometricType](../SketcherInterfaces/enum_CatGeometricType_54488.md) (Read Only)
+### Property **GeometricType**(| ) As [CatGeometricType](../SketcherInterfaces/enum_CatGeometricType_54488.md) (Read Only)
 
-Returns the type of the underlying geometrical element
+   Returns the type of the underlying geometrical element
 
 **Parameters:**
 

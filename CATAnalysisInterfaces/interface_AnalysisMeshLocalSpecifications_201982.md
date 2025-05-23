@@ -4,18 +4,19 @@
 
 ## Methods
 
-### Func **Add**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iType`) As [CATIAAnalysisMeshLocalSpecification](../CATAnalysisInterfaces/interface_AnalysisMeshLocalSpecification_188218.md)
+### Func **Add**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iType`) As [CATIAAnalysisMeshLocalSpecification](../CATAnalysisInterfaces/interface_AnalysisMeshLocalSpecification_188218.md)
 
-Creates a new local specification and adds it to the local specification collection.
+   Creates a new local specification and adds it to the local specification collection.
 The local specification will be created linked to the AnalysisMeshManager object.
 
 **Parameters:**
 
 ` iType`      The type of mesh part to create.
+
 **Returns:**      The created local specification  
 ### Sub **Remove**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`)
 
-Removes a local specification using its index or its name from the local specification collection.
+   Removes a local specification using its index or its name from the local specification collection.
 
 **Parameters:**
 

@@ -4,9 +4,9 @@
 
 ## Methods
 
-### Func **Elem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFunctionalFacetMgr](../CATFunctSystemItf/interface_FunctionalFacetMgr_67280.md)
+### Func **Elem**(| [CATVariant](../System/typedef_CATVariant_20656.md) | `iIndex`) As [CATIAFunctionalFacetMgr](../CATFunctSystemItf/interface_FunctionalFacetMgr_67280.md)
 
-Returns a facet manager using its index or its name from the facet managers collection.
+   Returns a facet manager using its index or its name from the facet managers collection.
 
 **Parameters:**
 
@@ -14,9 +14,9 @@ Returns a facet manager using its index or its name from the facet managers coll
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved action **Example:**      This example retrieves in `Obj1` the fifth facet manager in the collection and in `Obj2` the facet manager named `IMC`.
 
 ```VBScript
-Dim Obj1 As FunctFacetManager
-Set Obj1 = Desc.FacetManagers.Elem(5)
-Dim Obj2 As FunctFacetManager
-Set Obj2 = Desc.FacetManagers.Elem("IMC")
+     Dim Obj1 As FunctFacetManager
+     Set Obj1 = Desc.FacetManagers.Elem(5)
+     Dim Obj2 As FunctFacetManager
+     Set Obj2 = Desc.FacetManagers.Elem("IMC")
 
 ```

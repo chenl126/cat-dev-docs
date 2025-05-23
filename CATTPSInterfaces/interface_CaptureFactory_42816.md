@@ -5,9 +5,9 @@ This factory is implemented on the Set object. All the created Captures are adde
 
 ## Methods
 
-### Func **CreateCapture**( ) As [CATIACapture](../CATTPSInterfaces/interface_Capture_11142.md)
+### Func **CreateCapture**(| ) As [CATIACapture](../CATTPSInterfaces/interface_Capture_11142.md)
 
-Create a Capture.
+   Create a Capture.
 
 **Parameters:**
 

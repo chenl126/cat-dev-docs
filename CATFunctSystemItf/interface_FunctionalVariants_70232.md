@@ -4,15 +4,15 @@
 
 ## Methods
 
-### Func **Create**( [CATBSTR](../System/typedef_CATBSTR_8129.md)  `iName`) As [CATIAFunctionalVariant](../CATFunctSystemItf/interface_FunctionalVariant_62254.md)
+### Func **Create**(| [CATBSTR](../System/typedef_CATBSTR_8129.md) | `iName`) As [CATIAFunctionalVariant](../CATFunctSystemItf/interface_FunctionalVariant_62254.md)
 
-Create a FunctionalVariant.  
+   Create a FunctionalVariant.  
 ### Sub **Delete**( [CATIAFunctionalVariant](../CATFunctSystemItf/interface_FunctionalVariant_62254.md)  `iVariant`)
 
-Delete a FunctionalVariant.  
+   Delete a FunctionalVariant.  
 ### Func **Elem**( [CATVariant](../System/typedef_CATVariant_20656.md)  `iIndex`) As [CATIAFunctionalVariant](../CATFunctSystemItf/interface_FunctionalVariant_62254.md)
 
-Returns a Variant using its index or its name from the Variants collection.
+   Returns a Variant using its index or its name from the Variants collection.
 
 **Parameters:**
 
@@ -20,9 +20,9 @@ Returns a Variant using its index or its name from the Variants collection.
 [AnyObject.Name](../System/interface_AnyObject_17321.htm#Name) property.  **Returns:**      The retrieved Variant **Example:**      This example retrieves in `Act1` the fifth Variant in the collection and in `Act2` the Variant named `Moves`.
 
 ```VBScript
-Dim Act1 As FunctionalVariant
-Set Act1 = Desc.Variant(5)
-Dim Act2 As FunctionalVariant
-Set Act2 = Desc.Variant("Adding new substance")
+     Dim Act1 As FunctionalVariant
+     Set Act1 = Desc.Variant(5)
+     Dim Act2 As FunctionalVariant
+     Set Act2 = Desc.Variant("Adding new substance")
 
 ```

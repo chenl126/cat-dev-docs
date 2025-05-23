@@ -19,9 +19,9 @@ Methods are provided to set, unset and return the limits for each parameter.
 
 ## Properties
 
-### Property **CurrentValue1**( ) As double (Read Only)
+### Property **CurrentValue1**(| ) As double (Read Only)
 
-Gets the joint current value for first parameter.
+   Gets the joint current value for first parameter.
 
 **Parameters:**
 
@@ -29,7 +29,7 @@ Gets the joint current value for first parameter.
 
 ### Property **CurrentValue2**( ) As double (Read Only)
 
-Gets the joint current value for second parameter.
+   Gets the joint current value for second parameter.
 
 **Parameters:**
 
@@ -37,7 +37,7 @@ Gets the joint current value for second parameter.
 
 ### Property **LowerLimit1**( ) As double
 
-Gets or returns the lower limit of the joint, for the first parameter.
+   Gets or returns the lower limit of the joint, for the first parameter.
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Gets or returns the lower limit of the joint, for the first parameter.
 
 ### Property **LowerLimit2**( ) As double
 
-Gets or returns the lower limit of the joint, for the second parameter.
+   Gets or returns the lower limit of the joint, for the second parameter.
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Gets or returns the lower limit of the joint, for the second parameter.
 
 ### Property **Type**( ) As [CATBSTR](../System/typedef_CATBSTR_8129.md) (Read Only)
 
-Returns the joint type.
+   Returns the joint type.
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ Returns the joint type.
 
 ### Property **UpperLimit1**( ) As double
 
-Gets or returns the upper limit of the joint, for the first parameter.
+   Gets or returns the upper limit of the joint, for the first parameter.
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ Gets or returns the upper limit of the joint, for the first parameter.
 
 ### Property **UpperLimit2**( ) As double
 
-Gets or returns the upper limit of the joint, for the second parameter.
+   Gets or returns the upper limit of the joint, for the second parameter.
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Methods
 
 ### Sub **UnsetLowerLimit1**( )
 
-Unsets the lower limit of the joint, for the first parameter.
+   Unsets the lower limit of the joint, for the first parameter.
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ Unsets the lower limit of the joint, for the first parameter.
 
 ### Sub **UnsetLowerLimit2**( )
 
-Unsets the lower limit of the joint, for the second parameter.
+   Unsets the lower limit of the joint, for the second parameter.
 
 **Parameters:**
 
@@ -94,7 +94,7 @@ Unsets the lower limit of the joint, for the second parameter.
 
 ### Sub **UnsetUpperLimit1**( )
 
-Unsets the upper limit of the joint, for the first parameter.
+   Unsets the upper limit of the joint, for the first parameter.
 
 **Parameters:**
 
@@ -102,7 +102,7 @@ Unsets the upper limit of the joint, for the first parameter.
 
 ### Sub **UnsetUpperLimit2**( )
 
-Unsets the upper limit of the joint, for the second parameter.
+   Unsets the upper limit of the joint, for the second parameter.
 
 **Parameters:**
 

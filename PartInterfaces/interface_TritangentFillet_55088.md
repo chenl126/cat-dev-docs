@@ -6,9 +6,9 @@ be used for fillet tangency ; this face will disappear within the resulting shap
 
 ## Properties
 
-### Property **FaceToRemove**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
+### Property **FaceToRemove**(| ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns the face to be removed by the tritangent fillet.
+   Returns the face to be removed by the tritangent fillet.
 
 **Returns:**      oFaceToRemove The face to be removed by the fillet (@see CATIAReference for more information)
 
@@ -16,13 +16,13 @@ Returns the face to be removed by the tritangent fillet.
 tritangent fillet `firstTritangentFillet`:
 
 ```VBScript
-Set removedFace = firstTritangentFillet.**FaceToRemove**
+     Set removedFace = firstTritangentFillet.**FaceToRemove**
 
 ```
 
 ### Property **FirstFace**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns the first face limiting the tritangent fillet.
+   Returns the first face limiting the tritangent fillet.
 
 **Returns:**      oFirstFace The limiting face (@see CATIAReference for more information)
 
@@ -30,13 +30,13 @@ Returns the first face limiting the tritangent fillet.
 tritangent fillet `firstTritangentFillet`:
 
 ```VBScript
-Set face1 = firstTritangentFillet.**FirstFace**
+     Set face1 = firstTritangentFillet.**FirstFace**
 
 ```
 
 ### Property **SecondFace**( ) As [CATIAReference](../InfInterfaces/interface_Reference_17481.md)
 
-Returns the second face limiting the tritangent fillet.
+   Returns the second face limiting the tritangent fillet.
 
 **Returns:**      oSecondFace The limiting face (@see CATIAReference for more information)
 
@@ -44,6 +44,6 @@ Returns the second face limiting the tritangent fillet.
 tritangent fillet `firstTritangentFillet`:
 
 ```VBScript
-Set face2 = firstTritangentFillet.**SecondFace**
+     Set face2 = firstTritangentFillet.**SecondFace**
 
 ```

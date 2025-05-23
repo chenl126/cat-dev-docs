@@ -18,15 +18,15 @@ Use the CATIAHybridShapeFactory to create HybridShapeFeature object.
 
 ## Properties
 
-### Property **HybridShape**( ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
+### Property **HybridShape**(| ) As [CATIAHybridShape](../MecModInterfaces/interface_HybridShape_25589.md) (Read Only)
 
-Gets the underlying HybridShapeAffinity.
+   Gets the underlying HybridShapeAffinity.
 
 **Example:**     The following example explains how to retrieve the underlying HybridShape Affinity
 
 ```VBScript
- Dim oHybridShape as AnyObject
- Set oHybridShape=oAffinity.HybridShape
- oHybridShape.ElemToAffinity = reference1
+      Dim oHybridShape as AnyObject
+      Set oHybridShape=oAffinity.HybridShape
+      oHybridShape.ElemToAffinity = reference1
 
 ```
