@@ -1,1 +1,0 @@
-# CatShuttleVector (Enumeration)

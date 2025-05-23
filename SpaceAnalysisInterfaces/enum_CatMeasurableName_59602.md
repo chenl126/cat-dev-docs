@@ -1,3 +1,0 @@
-# CatMeasurableName (Enumeration)
-
-**__**

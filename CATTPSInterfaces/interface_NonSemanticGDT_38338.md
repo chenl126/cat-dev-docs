@@ -1,3 +1,0 @@
-# NonSemanticGDT (Object)
-
-**__**

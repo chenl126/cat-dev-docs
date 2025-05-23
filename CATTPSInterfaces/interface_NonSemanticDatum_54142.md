@@ -1,3 +1,0 @@
-# NonSemanticDatum (Object)
-
-**__**

@@ -1,3 +1,0 @@
-# CatShuttleMoveMode (Enumeration)
-
-**__**

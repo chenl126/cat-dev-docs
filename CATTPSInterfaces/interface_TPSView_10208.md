@@ -1,3 +1,0 @@
-# TPSView (Object)
-
-**__**

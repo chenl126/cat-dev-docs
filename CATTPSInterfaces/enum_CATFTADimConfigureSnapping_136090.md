@@ -1,3 +1,0 @@
-# CATFTADimConfigureSnapping (Enumeration)
-
-**__**

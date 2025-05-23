@@ -1,3 +1,0 @@
-# CatElectronicType (Enumeration)
-
-**__**
