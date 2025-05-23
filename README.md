@@ -1,0 +1,1 @@
+CATIA的Automation接口信息，基于CATIA R19导出
